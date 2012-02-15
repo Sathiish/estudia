@@ -1,0 +1,45 @@
+/** Tables **/
+th { font-weight: bold; padding: 5px; text-align: center; color: white; background-color: #00aff0; border-bottom: 1px solid #CCC; white-space: nowrap;} /*background: #00ccff;*/
+.first{ -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-top-left-radius: 3px;}
+.last{ -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-top-right-radius: 3px;}
+table {width: 100%;border: 1px solid #ddd; text-align: left; margin: 0; border-spacing: 1px; background: #fff; clear: both; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+
+form input[type="text"], form input[type="email"], form input[type="password"]{padding: 10px;border: 1px solid #DDD;border-top: 1px solid #CCC;
+background: white;font-weight: 300;color: #65645A;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;width:89%;}
+#login form input[type="text"], form input[type="email"], form input[type="password"] {width:320px;}
+form label {font-weight: bold;font-size: 14px;margin-bottom: 3px;}
+form input[type="submit"] {width: 120px;margin: 11px 0 0 0;cursor: pointer;border: 1px solid #cecece;letter-spacing: .5px;font-size: 12px;font-weight: 600;
+padding:10px;background-color:#00aff0;color:#fff;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;float:right;margin-right: 20px;}
+input[type="radio"] {margin: 3px 5px 0px 10px;}
+
+fieldset{border: none; margin-top: 5px; -webkit-margin-start: 0; -webkit-padding-start : 0;}
+fieldset legend{font-weight: bold; font-size: 14px; margin-bottom: 3px;}
+
+h3{ display: block; font-weight: bolder; font-size: 15px; color: #000}
+
+.clr { float:none; clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+
+.alert-message {
+  position: relative;
+  margin-bottom: 10px; 
+  padding: 7px 15px;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  border-width: 1px;
+  border-style: solid;
+  -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;
+}
+
+.success{color: #00c806; border: 1px solid #00c806; background-color: #d5ff95; font-weight: bold; font-size: 15px; margin-left: 15px; padding: 5px 15px;}
+.error{ color: red; border: 1px solid red; background-color: #ffacac; font-weight: bold; font-size: 15px; margin-left: 15px; padding: 5px 15px;}
+
+.close {
+position: absolute;
+right: 10px;
+top:2px;
+  color: #097f05;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255,255,255,1);
+}
+
+.alert-message a, .alert-message a:hover{ text-decoration: none;}

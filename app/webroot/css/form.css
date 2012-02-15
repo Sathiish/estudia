@@ -1,0 +1,57 @@
+/** Forms **/
+.content_resize form { clear: both; margin-right: 20px; padding: 0; width: 95%; }
+.content_resize fieldset {border: none;	margin-bottom: 1em;padding: 16px 10px;}
+.content_resize fieldset legend {color: #e32;font-size: 160%;font-weight: bold;}
+.content_resize fieldset fieldset {margin-top: 0;padding: 10px 0 0;}
+.content_resize fieldset fieldset legend {font-size: 120%;font-weight: normal;}
+.content_resize fieldset fieldset div {	clear: left;margin: 0 20px;}
+/*.content_resize form div {clear: both;margin-bottom: 1em;padding: .5em; vertical-align: text-top;}*/
+.content_resize form div {}
+.content_resize form .input {color: #444;}
+.content_resize form .required {font-weight: bold;}
+.content_resize form .required label:after {color: #e32;content: '*';display:inline;}
+.content_resize form div.submit {border: 0;clear: both;	margin-top: 10px;}
+.content_resize label {	display: block;	font-size: 110%;margin-bottom:3px;}
+.content_resize input, .content_resize textarea {clear: both;	font-size: 140%;font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;padding: 1%;width:98%;}
+.content_resize select {clear: both;font-size: 120%;vertical-align: text-bottom;}
+.content_resize select[multiple=multiple] {width: 100%;}
+.content_resize option {font-size: 120%;padding: 0 3px;}
+.content_resize input[type=checkbox] {clear: left;float: left;margin: 0px 6px 7px 2px;width: auto;}
+.content_resize div.checkbox label {display: inline;}
+.content_resize input[type=radio] {float:left;	width:auto;margin: 6px 0;padding: 0;line-height: 26px;}
+.content_resize .radio label {	margin: 0 0 6px 20px;line-height: 26px;}
+.content_resize input[type=submit] {display: inline;font-size: 110%;width: auto;}
+.content_resize form .submit input[type=submit] {background:#eaeaea;background-image: -webkit-linear-gradient(top, #fff, #eaeaea);background-image: -moz-linear-gradient(top, #24d3ff, #00ccff);border:1px solid #ccc;color: #808080;text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;padding: 8px 10px;}
+.content_resize form .submit input[type=submit]:hover {	background: #eaeaea;}
+
+/* Form errors */
+.content_resize form .error {background: #FFDACC;-moz-order-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;font-weight: normal;}
+.content_resize form .error-message {-moz-border-radius: none;-webkit-border-radius: none;border-radius: none;border: none;background: none;margin: 0;padding-left: 4px;padding-right: 0;}
+.content_resize form .error, .content_resize form .error-message {color: #9E2424;-webkit-box-shadow: none;-moz-box-shadow: none;-ms-box-shadow: none;-o-box-shadow: none;box-shadow: none;text-shadow: none;}
+
+/* ModalBox */
+.modalbox {}
+.modalbox form { clear: both; padding: 0; width: 95%; }
+.modalbox fieldset {border: 1px solid #cecece; margin-bottom: 1em; padding:5px 10px;}
+.modalbox fieldset fieldset {margin-top: 0;padding: 10px 0 0;}
+.modalbox fieldset fieldset legend {font-size: 120%; font-weight: normal;}
+.modalbox fieldset fieldset div {clear: left; margin: 0 5px;}
+.modalbox form div {clear: both; margin-bottom: 0; padding:0; vertical-align: text-top;}
+.modalbox form .input {color: #444;}
+.modalbox form .required {font-weight: bold;}
+.modalbox form .required label:after {color: #e32;content: '*';display:inline;}
+.modalbox form div.submit {border: 0;clear: both;	margin-top: 10px;}
+.modalbox label {	display: block;	font-size: 110%;margin-bottom:3px;}
+.modalbox input {clear: both;	font-size: 140%;font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;padding: 1%;width:98%;}
+.modalbox textarea {clear: both; font-size: 140%;font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;padding: 1%;width:98%; min-height: 300px;}
+.modalbox textarea.mini {height: 100px !important;}
+.modalbox select {clear: both;font-size: 120%;vertical-align: text-bottom;}
+.modalbox select[multiple=multiple] {width: 100%;}
+.modalbox option {font-size: 120%;padding: 0 3px;}
+.modalbox input[type=checkbox] {clear: left;float: left;margin: 0px 6px 7px 2px;width: auto;}
+.modalbox div.checkbox label {display: inline;}
+.modalbox input[type=radio] {float:left;	width:auto;margin: 6px 0;padding: 0;line-height: 26px;}
+.modalbox .radio label {	margin: 0 0 6px 20px;line-height: 26px;}
+.modalbox input[type=submit] {display: inline;font-size: 110%;width: auto;}
+.modalbox form .submit input[type=submit] {background:#eaeaea;background-image: -webkit-linear-gradient(top, #fff, #eaeaea);background-image: -moz-linear-gradient(top, #24d3ff, #00ccff);border:1px solid #ccc;color: #808080;text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;padding: 8px 10px;}
+.modalbox form .submit input[type=submit]:hover {	background: #eaeaea;}

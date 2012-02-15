@@ -1,0 +1,10 @@
+#MenuDeroulant {   margin: 0;    padding: 0; z-index:100000;}
+#MenuDeroulant li{    float: left;    list-style: none;     font: 12px Tahoma, Arial }
+#MenuDeroulant li a{    display: block; background: #20548E; padding: 5px 12px;text-decoration: none; border-right: 1px solid white; width: 70px; color: #FFFFFF; white-space: nowrap}
+#MenuDeroulant li a:hover{    background: #1A4473} /* Couleur de fond des titres du menu au survol de la souris (bleu encore plus foncé) */
+#MenuDeroulant li ul{    margin: 0;    padding: 0; position: absolute; visibility: hidden; border-top: 1px solid white}
+#MenuDeroulant li ul li{    float: none;     display: inline}
+#MenuDeroulant li ul li a{    width: auto;    background: #9F1B1B} /* Couleur de fond des items déroulant du menu (rouge bordeaux) */
+#MenuDeroulant li ul li a:hover{    background: #7F1616} /* Couleur de fond des items déroulant du menu au survol de la souris(rouge bordeaux encore plus foncé) */
+
+

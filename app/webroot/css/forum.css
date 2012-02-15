@@ -1,0 +1,19 @@
+/** Tables **/
+.forum {margin:0 auto; width: 100%; padding-top: 10px;}
+
+
+.forum a {display: block; text-decoration: none; font-weight: bold; color: #3B81BE;}
+.forum a:hover {text-decoration: none;}
+.forum th a.asc:after { content: ' ⇣';}
+.forum th a.desc:after { content: ' ⇡';}
+.forum table tr td { padding: 5px 10px; text-align: left; vertical-align: top; border-bottom:1px solid #ddd;}
+.forum table tr:nth-child(even) {background: #f9f9f9;}
+.forum td.actions {text-align: left;	white-space: nowrap;}
+.forum td.center {text-align: center; ; vertical-align: middle;}
+.forum h2 {margin: 0px 6px; padding:2px 5px;color: #508D9C; text-decoration: none}
+.category {background-image: url('/img/puce.png') ; font-size: 15px; color: #66b700; font-weight: bold; text-transform: uppercase;}
+
+.forum th { font-weight: bold; padding: 5px; text-align: center; color: white; background-color: #00aff0; border-bottom: 1px solid #CCC; white-space: nowrap;} /*background: #00ccff;*/
+.forum .first{ -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-top-left-radius: 3px;}
+.forum .last{ -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-top-right-radius: 3px;}
+.forum table {width: 100%;border: 1px solid #ddd; text-align: left; margin: 0; border-spacing: 1px; background: #fff; clear: both; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}

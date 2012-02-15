@@ -1,0 +1,1 @@
+<p>Vous devez tout d'abord créer le contenu avant de pouvoir lui ajouter des images. L'ajout d'image se fera en cliquant sur cette même icône.</p>

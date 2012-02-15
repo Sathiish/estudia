@@ -1,0 +1,69 @@
+.matieres {margin: 10px; background-color: #fff;}
+
+.matieres fieldset {border: 1px solid #ebebeb;	margin-bottom: 1em;padding: 16px 10px; background: url('/img/cours/bg_recherche.gif') repeat center center; -moz-border-radius: 15px; -wekbkit-border-radius: 15px; border-radius: 15px;}
+.matieres fieldset legend {color: #ff0099; margin:10px; padding: 0 20px;}
+.matieres label {font-size: 110%;margin-bottom:3px;}
+.matieres input {display: inline;font-size: 110%;width: auto;-moz-border-radius: 4px; -wekbkit-border-radius: 4px; border-radius: 4px;}
+.matieres input[type=submit] {display: inline;font-size: 110%;width: auto; float:right;cursor: pointer;}
+.matieres form .submit input[type=submit] {background:#ff0099;background-image: -webkit-linear-gradient(top, #fff, #ff0099);background-image: -moz-linear-gradient(top, #fff, #00ccff);border:1px solid #00cc99;color: #fff;text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;padding: 8px 10px;}
+.matieres form .submit input[type=submit]:hover {background: #ff0099;}
+
+.matieres .titre {border-bottom: 2px solid #333333; width:100%;}
+.matieres .titre span {background: #000; color: #fff; padding:5px 10px; margin-left:20px; font-weight: bold; -moz-border-radius: 4px 4px 0 0; -wekbkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;}
+.partie {float:left; width:100px;padding:0;margin:10px 7px; position:relative; padding:5px 5px 10px 5px; } 
+.partie .vignette {float:left; background-color: #fff; padding: 2px 2px 10px 2px;}
+
+/* VIGNETTE DES DIFFERENTES MATIERES */
+.vignette.allemand a{text-decoration: none; display:block;background: url('/img/cours/francais_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.allemand a:hover{background: url('/img/cours/francais_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.francais a{text-decoration: none; display:block;background: url('/img/cours/francais_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.français a:hover{background: url('/img/cours/francais_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.anglais a{text-decoration: none; display:block;background: url('/img/cours/francais_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.anglais a:hover{background: url('/img/cours/francais_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.chimie a{text-decoration: none; display:block;background: url('/img/cours/chimie_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.chimie a:hover{background: url('/img/cours/chimie_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.espagnol a{text-decoration: none; display:block;background: url('/img/cours/francais_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.espagnol a:hover{background: url('/img/cours/francais_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.histoire a{text-decoration: none; display:block;background: url('/img/cours/histoire_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.histoire a:hover{background: url('/img/cours/histoire_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.geographie a{text-decoration: none; display:block;background: url('/img/cours/geographie_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.geographie a:hover{background: url('/img/cours/geographie_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.maths a{text-decoration: none; display:block;background: url('/img/cours/maths_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.maths a:hover{background: url('/img/cours/maths_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.physique a{text-decoration: none; display:block;background: url('/img/cours/physique_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.physique a:hover{background: url('/img/cours/physique_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.culture-g a{text-decoration: none; display:block;background: url('/img/cours/physique_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.culture-g a:hover{background: url('/img/cours/physique_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.svt a{text-decoration: none; display:block;background: url('/img/cours/svt_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.svt a:hover{background: url('/img/cours/svt_symbol.png') no-repeat center center #Fec814;}
+
+.vignette.musique a{text-decoration: none; display:block;background: url('/img/cours/musique_symbol.png') no-repeat center center #00ccff; width: 87px; height:70px; }
+.vignette.musique a:hover{background: url('/img/cours/musique_symbol.png') no-repeat center center #Fec814;}
+
+/* NOM DE LA MATIERE */
+
+.partie.title {position:absolute; bottom:5px; left:-30px; width:95px; margin-left: 50%;height:5px; text-transform: uppercase; font-weight: bold;font-size:10px;}
+.partie.title a{color:#666666; text-decoration:none; }
+.partie.title a:hover{}
+
+.partie .vignette .bottom {position:absolute; bottom:5px; left:28px; width:73px; height:5px;}
+
+/* Liste de tous les thèmes */
+.theme{font-size:24px; line-height: 160px;}
+.quadrillage{background: url('/img/cours/.png') repeat center center; height:140px;}
+
+ul.cours { margin:0; padding:0 0 0 16px; list-style:none; color:#959595}
+ul.cours li a { color:#959595; text-decoration:none; padding:4px 8px 4px 24px; background:url(../img/cours/fleche3.png) no-repeat left center;width:500px}
+ul.cours li a:hover { color:#128be9;text-decoration:none;}
+
+.cours .suite {width: 16px; height: 16px; padding-top:10px; margin-left:50px}

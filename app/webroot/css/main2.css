@@ -1,0 +1,65 @@
+input,select{vertical-align:middle}
+
+
+
+select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif}
+
+table{font-size:inherit;font:100%}
+
+.line:after,hr:after,figure.screenshot:after,.fancybg:after,figure.feature-screen:after,#resources-research figure.research-graph:after,.signupbg:after,.banner:after,.bannerbg:after,#resources-research .legend #open:after,#resources-research .legend #click:after,.lost-banner:after,.lost-bannerbg:after,#canhaz-mail-designer .fancybanner:after,#canhaz-birthday .locations li.location:after,.lastUnit:after
+{clear:both;display:block;visibility:hidden;overflow:hidden;height:0!important;line-height:0;font-size:xx-large;}
+
+
+.imgrpl,#logo a,.bannerbg#easy-email-newsletters .bannercontent h1,.bannerbg#easy-email-newsletters .bannercontent blockquote.big-bold,.bannerbg#adwords-banner .bannercontent h1,.bannerbg#adwords-banner .bannercontent blockquote.big-bold,#canhaz-birthday .state,#homepage-bare-b #logo a{display:block;text-indent:-9999em;overflow:hidden}
+.generatedcontent,header:after,.borderright:after,.rarr:after,.darr:after,.chatwithus2:before,.emailus:before,.homepage:after{content:' ';display:block;position:absolute}
+html{background:#191919}
+
+
+.content{width:960px;margin:0 auto;padding:15px;position:relative;z-index:10}
+
+.underline:before,#resources-research .statistics h2:before{position:absolute;content:' ';width:100%;height:0;border-top:1px solid #ccc;border-bottom:1px solid #fff;bottom:0}
+.hairline,figure.screenshot figcaption:first-of-type:before,figure.feature-screen figcaption:first-of-type:before,#resources-research figure.research-graph figcaption:first-of-type:before,#resources-research .research-graph .axis-label:before{border-top:1px solid #ccc;border-bottom:1px solid #fff}
+
+
+header .line,header hr,header figure.screenshot,header .fancybg,header figure.feature-screen,header #resources-research figure.research-graph,#resources-research header figure.research-graph,header .signupbg,header .banner,header .bannerbg,header #resources-research .legend #open,#resources-research .legend header #open,header #resources-research .legend #click,#resources-research .legend header #click,header .lost-banner,header .lost-bannerbg,header #canhaz-mail-designer .fancybanner,#canhaz-mail-designer header .fancybanner,header #canhaz-birthday .locations li.location,#canhaz-birthday .locations header li.location{position:relative}
+header:after{bottom:0;width:100%;height:1px;background:rgba(0,0,0,0.2);position:relative}
+#home header:after{position:absolute}
+
+.main{
+    -webkit-border-top-left-radius:9px;
+    -webkit-border-top-right-radius:9px;
+    -moz-border-radius-topleft:9px;
+    -moz-border-radius-topright:9px;
+    border-top-left-radius:9px;
+    border-top-right-radius:9px;
+    margin-top:-52px;
+    padding-top:17px;
+    padding-bottom:37px;
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 0 5px rgba(0,0,0,0.2);
+    background:#f0f0f0;
+    height: 450px;
+}
+
+
+
+table{width:100%}
+td,th{text-align:left}
+
+
+
+.btn.small{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;font-weight:400;background:0;text-align:left;text-indent:20px;padding:4px 0 4px;letter-spacing:0;font-weight:500;font-size:13px}
+.btn.purple{box-shadow:0 1px 0 rgba(0,0,0,0.3),0px -1px 0 rgba(0,0,0,0.3);-webkit-box-shadow:0 1px 0 rgba(0,0,0,0.3),0px -1px 0 rgba(0,0,0,0.3);-moz-box-shadow:0 1px 0 rgba(0,0,0,0.3),0px -1px 0 rgba(0,0,0,0.3)}
+.btn.purple{border-top:1px solid #890288;border-bottom:1px solid #890288;background-color:#914592;box-shadow:0 1px 0 #570156,0px -1px 0 #570156;-webkit-box-shadow:0 1px 0 #570156,0px -1px 0 #570156;-moz-box-shadow:0 1px 0 #570156,0px -1px 0 #570156}
+.btn.purple:hover{background-color:#b07eb0}
+.btn.green{background-color:#72c1b0;box-shadow:0 1px 0 #4a8074,0px -1px 0 #4a8074;-webkit-box-shadow:0 1px 0 #4a8074,0px -1px 0 #4a8074;-moz-box-shadow:0 1px 0 #4a8074,0px -1px 0 #4a8074}
+.btn.green:hover{background-color:#79c4b4}
+.btn.orange{border-top:1px solid #ee836f;border-bottom:1px solid #cb563f;box-shadow:0 1px 0 #a9422e,0px -1px 0 #a9422e;-webkit-box-shadow:0 1px 0 #a9422e,0px -1px 0 #a9422e;-moz-box-shadow:0 1px 0 #a9422e,0px -1px 0 #a9422e;background-color:#e95c41}
+.btn.orange:hover{background-color:#ea644a}
+.btn.blue{border-top:1px solid #6ecbdc;border-top:1px solid #6ecbdc;background-color:#45bcd2;box-shadow:0 1px 0 #006577,0px -1px 0 #006577;-webkit-box-shadow:0 1px 0 #006577,0px -1px 0 #006577;-moz-box-shadow:0 1px 0 #006577,0px -1px 0 #006577}
+.btn.blue:hover{background-color:#4dbfd4}
+.btn.dark{border-top:1px solid #4d4d44;border-bottom:1px solid #44443d;background-color:#3f3f38;box-shadow:0 1px 0 #292925,0px -1px 0 #292925;-webkit-box-shadow:0 1px 0 #292925,0px -1px 0 #292925;-moz-box-shadow:0 1px 0 #292925,0px -1px 0 #292925}
+.btn.dark:hover{background-color:#44443d}
+.btn.light{border-top:1px solid rgba(255,255,255,0.5);background-color:#787975}
+.btn.light:hover{background-color:#7d7e7a}

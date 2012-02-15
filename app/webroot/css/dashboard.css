@@ -1,0 +1,22 @@
+.partie {float:left; width:45%;min-width: 300px;padding:0;margin:20px 10px; position:relative; border-bottom:1px dotted #999999; padding:5px 5px 10px 5px; } 
+.partie .vignette {float:left; background-color: #fff; padding: 2px 2px 10px 2px;}
+
+.vignette.messages a{display:block;background: url('/img/dashboard/messages_vignette.gif') no-repeat bottom center #fff; width: 87px; height:70px; }
+.vignette.messages a:hover{background: url('/img/dashboard/messages_vignette_activ.gif') no-repeat center center #fff;}
+
+.vignette.profil a{display:block;background: url('/img/dashboard/profil_vignette.gif') no-repeat bottom center #fff; width: 87px; height:70px; }
+.vignette.profil a:hover{background: url('/img/dashboard/profil_vignette_activ.gif') no-repeat center center #fff;}
+
+.vignette.cours a{display:block;background: url('/img/dashboard/cours_vignette.gif') no-repeat bottom center #fff; width: 87px; height:70px; }
+.vignette.cours a:hover{background: url('/img/dashboard/cours_vignette_activ.gif') no-repeat center center #fff;}
+
+.vignette.forum a{display:block;background: url('/img/dashboard/forum_vignette.gif') no-repeat bottom center #fff; width: 87px; height:70px; }
+.vignette.forum a:hover{background: url('/img/dashboard/forum_vignette_activ.gif') no-repeat center center #fff;}
+
+.partie ul {float:left; margin-left: 10px; margin-top:1px;}
+.partie ul li {color:#959595; text-decoration:none; padding:1px 8px 1px 18px; background:url(/img/puce2.png) no-repeat left center;}
+.partie ul li a{color:#666666; text-decoration:none; }
+.partie ul li a:hover{text-decoration:underline;}
+
+.partie .vignette .add {position:absolute; background: url('/img/dashboard/plus2.png') no-repeat center center; bottom:6px; right:3px; width:19px; height:18px;}
+.partie .vignette .bottom {position:absolute; bottom:5px; left:28px; width:73px; height:5px;}

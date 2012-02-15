@@ -1,0 +1,43 @@
+.quiz{
+    margin-left: 100px;
+}
+
+.quiz li{
+list-style-image: url('/img/rond-vert.gif');
+list-style-type: upper-roman;
+}
+
+.quiz li:hover{
+list-style-image: url('/img/rond-orange.gif');
+
+}
+
+input[type=radio]{ 
+color:#CCCCFF; 
+background-color:#ff9000; 
+font-size:48px; 
+font-family:arial; 
+width: 19px;
+padding: 0 5px 0 0;
+display: block;
+clear: left;
+float: left;
+} 
+input[type=radio]:hover{ 
+background-color:#35ff2e; 
+} 
+
+.reponse{
+margin-left: 20px;
+}
+
+#intro a{
+text-decoration: none;
+background-color: #0CF;
+border: 1px solid #0CF;
+color: white;
+padding: 5px 40px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
