@@ -32,12 +32,69 @@
                 var ed = tinyMCE.activeEditor;
                 ed.execCommand('mceInsertContent',false,content); 
         }
+        
+        jQuery(function(){
+            $('.tag a').live('click',function(){
+                var e = $(this);
+                $.get(e.attr('href'));
+                e.parent().fadeOut();
+                return false;
+            })
+
+            $('.TagTag a').live('click',function(){
+                var e = $(this);
+                var page = <?php echo $this->data['Quiz']['id']; ?>;
+                var url = e.attr('href')+'/'+page;
+                $.get(url, function(data) {
+                  $('#tags').html(data);
+                  $("#TagTag").attr('value', '');
+                  $("#ul_TagTag").hide();
+                });
+
+                return false;
+            })
+            
+            $('#display select#matieres').live('click', function(data){
+                var value = $('select#matieres option:selected').val();
+                var url = "/themes/selectbox/"+value;
+                
+                if(value != 0){
+                    $("#AjoutMatiere").fadeOut();
+                    $("#NewMatiere").val('');
+                    $("#NewTheme").val('');
+                    $("#AjoutTheme").fadeOut();  
+
+                    $.get(url, function(data) {
+                      $('#loader').show();
+                      $('#ListeTheme').show();
+                      $('#QuizThemeId').html(data);
+                      $('#loader').fadeOut();
+                    });
+                    
+                    $('#display select#QuizThemeId').live('click', function(data){
+                        var value2 = $('select#QuizThemeId option:selected').val();
+                        
+                        if(value2 != 0){
+                            $("#AjoutTheme").fadeOut();
+                            $("#NewTheme").val('');
+                        }else{
+                            $("#AjoutTheme").fadeIn();
+                        }
+                    });
+                    
+                 }else{
+                    $('#ListeTheme').fadeOut();
+                    $("#AjoutMatiere").fadeIn();
+                    $("#AjoutTheme").fadeIn();                  
+                 }
+            });
+            
+        });
 <?php $this->Html->scriptEnd(); ?>
 
 <div id="breadcrumbs">
 	<?php echo $this->Html->link("Gérer mes quiz", array("controller" => "quiz", "action" => "manager"), array("title" => "Voir tous mes quiz"));?>
-            >> Modifier le quiz : <?php echo $this->data['Quiz']['name']; ?>
-
+            >> <?php echo $this->data['Quiz']['name']; ?>  - <a href="" onClick='$("#display").fadeIn(); return false;'>Modifier le thème</a>
 </div>
 
 <?php echo $this->Html->link('Créer une nouvelle question', array('controller' => 'questions','action'=> 'add', $this->data['Quiz']['id'], $this->data['Quiz']['slug']), array('class' => 'button')); ?>
@@ -89,12 +146,45 @@
         
 <?php echo $this->Form->create('Quiz', array('url' => '/quiz/edit/'.$this->data['Quiz']['id'])); ?>
 
+    <div id="display" style="display:none;">
+        <?php echo $this->Form->input('', array('label' => "Matière :", 'type' => 'select','options' => $matieres, 
+        'name'=> "data[Quiz][matiere_id]", 'id'=> 'matieres')); ?>
+         
+        <div id="ListeTheme" style="display:none">
+            <span id="loader" style="display: none; float:left;"><?php echo $this->Html->image("loader.gif", array( "alt"=>"loading")); ?></span>
+            <?php echo $this->Form->input('theme_id', array('label' => "Thème:"));?>
+            
+        </div>
+         <div id="AjoutMatiere" style="display:none">
+            <?php echo $this->Form->input('newmatiere', array("type"=> "text",'name' => "data[Matiere][name]", 'id' => 'NewMatiere',
+                'label' => 'Si vous ne trouvez pas votre matière dans la liste ci-dessus, vous pouvez soumettre un nom de matière ici: '));?>
+        </div>
+        <div id="AjoutTheme" style="display:none">
+            <?php echo $this->Form->input('newtheme', array( "type"=> "text", 'name' => "data[Theme][name]", 'id' => 'NewTheme',
+                'label' => 'Si vous ne trouvez pas votre thème dans la liste ci-dessus, vous pouvez soumettre un nom de thème ici: '));?>
+        </div>
+         <hr />
+    </div>
 	<?php echo $this->Form->input('name', array('label' => "Titre du quiz:"));?>
-	<?php echo $this->Form->input('user_id', array('type' => "hidden"));?>
+	
+	<?php //echo $this->Form->input('user_id', array('type' => "hidden"));?>
 	<?php echo $this->Form->input('id', array('type' => "hidden"));?>
 	
 	<?php echo $this->Form->input('description', array('label' => "Objectif du quiz :"));?>
 	<?php echo $this->Form->input('final_screen', array('label' => "Correction :"));?>
-
+        
+        <hr />
+    <div id="tags">
+        <?php foreach($relatedTags as $tag): ?>
+                <span class="etat tag">
+                    <?php echo $tag['Tag']['name']; ?> 
+                    <?php echo $this->Html->link("x", array("controller" => "quiztags", "action" => "delete", $tag['QuizTag']['id'])); ?> 
+                </span>
+        <?php endforeach; ?>
+    </div>
+<?php echo $this->Form->input('tags', array('label' => "Saisissez les différents niveaux concernés et cliquez dessus dès qu'ils apparaissent:", 'id' => 'TagTag'));?> 
+<?php echo $this->Autocomplete->autocomplete('TagTag','Tag/name',array('TagId'=>'id')); ?>
+        
+        <hr />
 <?php echo $this->Form->end('Enregistrer'); ?>
 

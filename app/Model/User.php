@@ -188,8 +188,7 @@ class User extends AppModel {
  */
 	public function view($slug = null) {
 		$user = $this->find('first', array(
-			'contain' => array(
-				'UserDetail'),
+			'contain' => array(),
 			'conditions' => array(
 				$this->alias . '.slug' => $slug,
 				'OR' => array(
@@ -346,7 +345,7 @@ class User extends AppModel {
  */
 	public function editProfil($userId = null, $postData = null) {
 		$user = $this->find('first', array(
-			'contain' => array('UserDetail'),
+			'contain' => array(),
 			'conditions' => array($this->alias . '.id' => $userId)
 		));
 

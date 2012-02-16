@@ -9,11 +9,11 @@
     
 <div style="padding: 0; width: 530px; border: 1px solid #009EE0;-moz-border-radius: 10px;-webkit-border-radius: 10px; border-radius: 10px; font: Verdana, Helvetica, Arial, sans-serif;">
  
-    <div style="margin:0 0 5px 0; background-color: #009EE0; -moz-border-radius: 10px 10px 0 0;-webkit-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0;">
-        <img width="267" height="77" src="http://www.zeschool.com/img/logo2.png" style="display:block">
+    <div style="margin:0 0 5px 0; padding:5px 10px; background-color: #009EE0; -moz-border-radius: 10px 10px 0 0;-webkit-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0;">
+        <span style="font-size:16px; color: #fff; font-weight: bolder">ZeSchool</span>
     </div>
 
-    <div style="padding: 5px 10px;font-size:12px; color: #000; ">
+    <div style="padding: 0 10px;font-size:12px; color: #000; ">
         <?php echo $content_for_layout; ?>
     </div>
     
@@ -28,7 +28,6 @@
         écrite, d'un droit d'accès, de modification, de rectification et de
         suppression des informations nominatives concernant votre compte.</p>
 
-        <p><a href="http://www.zeschool.com" target="_blank">Données personnelles </p>
 
         <p>© 2012, ZeSchool - Tous droits réservés</p>
 

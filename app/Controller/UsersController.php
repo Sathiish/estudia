@@ -83,11 +83,11 @@ class UsersController extends AppController {
                                 }
                                 $_SESSION['Auth']['User']['name'] = $this->request->data['User']['name'];
                                 $_SESSION['Auth']['User']['lastname'] = $this->request->data['User']['lastname'];
-				$this->Session->setFlash(__('Votre profil a correctement été mis à jour.'));
+				$this->Session->setFlash('Votre profil a correctement été mis à jour', 'notif');
 				//$this->redirect(array('action' => 'index'));
 			} 
                         else {
-				$this->Session->setFlash(__('Un problème est survenue lors de la mise à jour de votre profil. Veuillez réessayer.'));
+				$this->Session->setFlash('Un problème est survenue lors de la mise à jour de votre profil. Veuillez réessayer.', 'notif', array('type' => 'error'));
 			}
 		} else {
 			$this->data = $this->User->read(null, $this->Auth->user('id'));
@@ -97,7 +97,7 @@ class UsersController extends AppController {
         
         public function avatar($data){
             if($data['User']['file']['size'] > 5*1024*1024){
-                $this->Session->setFlash("Vous ne pouvez pas utiliser une image de plus de 5Mo.");
+                $this->Session->setFlash("Vous ne pouvez pas utiliser une image de plus de 5Mo", 'notif', array('type' => 'error'));
                 $this->redirect($this->referer());
             }
             $dir = IMAGES.date('Y');
@@ -124,11 +124,11 @@ class UsersController extends AppController {
                                 //On ne garde que la miniature
                                 unlink($dir.DS.$filename.$ext);
                                 }else{
-                                    $this->Session->setFlash("Un problème est survenu avec le téléchargement de cette photo. Votre profil n'a pas été mis à jour. Si le problème persiste, nous vous conseillons de changer d'image.");
+                                    $this->Session->setFlash("Un problème est survenu avec le téléchargement de cette photo. Votre profil n'a pas été mis à jour. Si le problème persiste, nous vous conseillons de changer d'image.", 'notif', array('type' => 'error'));
                                     $this->redirect($this->referer());
                                 }
 			}else{
-				$this->Session->setFlash("L'image n'est pas au bon format","notif",array('type'=>'error'));
+				$this->Session->setFlash("L'image n'est pas au bon format", 'notif', array('type' => 'error'));
 			}
                         
                         return $this->request->data;
@@ -205,17 +205,17 @@ class UsersController extends AppController {
 				$link = array('controller'=>'users','action'=>'activate', $d['User']['email_token']);
 				App::uses('CakeEmail','Network/Email'); 
 				$mail = new CakeEmail(); 
-				$mail->from('noreply@zeschool.com')
+				$mail->from('inscription@zeschool.com')
 					->to($d['User']['email'])
 					->subject('Confirmer votre adresse email')
 					->emailFormat('html')
 					->template('inscription')
 					->viewVars(array('username'=>$d['User']['username'],'link'=>$link))
 					->send();
-				$this->Session->setFlash("Votre compte a bien été créé. Vous devez maintenant valider votre inscription en cliquant sur le lien qui vous a été envoyé par email. Attention, ce lien ne sera plus accessible dans 7 jours.");
+				$this->Session->setFlash("Votre compte a bien été créé. Vous devez maintenant valider votre inscription en cliquant sur le lien qui vous a été envoyé par email. Attention, ce lien ne sera plus accessible dans 7 jours.", 'notif');
 				$this->request->data = array(); 
 			}else{
-				$this->Session->setFlash("Merci de corriger vos erreurs");
+				$this->Session->setFlash("Merci de corriger vos erreurs", 'notif', array('type' => 'error'));
                                 $this->redirect($this->referer());
 			}
 		}
@@ -231,11 +231,11 @@ class UsersController extends AppController {
 			$this->User->saveField('email_token',0); 
 			$this->User->saveField('email_verified',1); 
 			$this->User->saveField('email_token_expiry',0); 
-			$this->Session->setFlash("Votre compte a bien été activé. Vous pouvez compléter dès à présent les informations manquantes de votre profil ci-dessous.");
+			$this->Session->setFlash("Votre compte a bien été activé. Vous pouvez compléter dès à présent les informations manquantes de votre profil ci-dessous.", 'notif');
 			$this->Auth->login($user['User']); 
                         $this->redirect('/users/edit'); 
 		}else{
-			$this->Session->setFlash("Ce lien d'activation n'est pas valide");
+			$this->Session->setFlash("Ce lien d'activation n'est pas valide", 'notif', array('type' => 'error'));
                         $this->redirect('/login');
 		}
 		die(); 
@@ -249,7 +249,7 @@ class UsersController extends AppController {
 	public function login() {
             //On vérifie que l'utilisateur n'est pas déjà connecté
             if($this->Auth->user()) {
-                $this->Session->setFlash("Vous êtes déjà connecté");
+                $this->Session->setFlash("Vous êtes déjà connecté", 'notif');
                 $this->redirect('/users/dashboard');
             }
             $this->layout = "home";
@@ -261,7 +261,7 @@ class UsersController extends AppController {
                                 $this->redirect('/dashboard');
                                 //$this->set('session', $this->Auth->user());
 			}else{
-				$this->Session->setFlash("Identifiants incorrects");
+				$this->Session->setFlash("Identifiants incorrects", 'notif', array('type' => 'error'));
                                 $this->redirect($this->referer());
 			}
 		}
@@ -318,7 +318,7 @@ class UsersController extends AppController {
 		$this->Session->destroy();
 		$this->Cookie->destroy();
 		$message = "Vous avez été correctement déconnecté";
-		$this->Session->setFlash($message);
+		$this->Session->setFlash($message, 'notif');
 		$this->redirect('/');
 		//$this->redirect($this->Auth->logout());
 	}
@@ -333,7 +333,7 @@ class UsersController extends AppController {
                 if ($this->request->is('post')) {
 			$this->request->data[$this->modelClass]['id'] = $this->Auth->user('id');
 			if ($this->User->changePassword($this->request->data)) {
-                                $this->Session->setFlash('Votre mot de passe a été changé avec succès');
+                                $this->Session->setFlash('Votre mot de passe a été changé avec succès', 'notif');
 				$this->redirect('/dashboard');
 			}
 		}
@@ -341,7 +341,7 @@ class UsersController extends AppController {
       
         public function recover_password(){
                 if ($this->Auth->user()) {
-                    $this->Session->setFlash("Vous êtes déjà connecté. Pour changer votre mot de passe, <a href=\"/users/change_password\">cliquez ici</a>");
+                    $this->Session->setFlash("Vous êtes déjà connecté. Pour changer votre mot de passe, <a href=\"/users/change_password\">cliquez ici</a>", 'notif');
                     $this->redirect('/dashboard');
                 }
             
@@ -354,7 +354,7 @@ class UsersController extends AppController {
 				$this->User->id = $user['User']['id']; 
 				$password = substr(md5(uniqid(rand(),true)),0,8); 
 				$this->User->saveField('password',Security::hash($password,null,true));
-				$this->Session->setFlash("Votre mot de passe a bien été réinitialisé, votre nouveau mot de passe temporaire est: $password. Nous vous conseillons de le changer immédiatement.");
+				$this->Session->setFlash("Votre mot de passe a bien été réinitialisé, votre nouveau mot de passe temporaire est: $password. Nous vous conseillons de le changer immédiatement.", 'notif');
                                 $this->User->saveField('password_token', 0);
                                 $this->Auth->login($user['User']);
                                 $this->redirect('/users/change_password');
@@ -370,7 +370,7 @@ class UsersController extends AppController {
 				'conditions' => array('email'=>$v['mail'],'active'=>1)
 			));
 			if(empty($user)){
-				$this->Session->setFlash("Aucun utilisateur ne correspond à cet email");
+				$this->Session->setFlash("Aucun utilisateur ne correspond à cet email", 'notif', array('type' => 'error'));
 			}else{
                                 $token = $this->User->generateToken();
                                 $this->User->id = $user['User']['id'];
@@ -386,7 +386,7 @@ class UsersController extends AppController {
 					->viewVars(array('username'=>$user['User']['username'],'link'=>$link))
 					->send();
                                 
-                                $this->Session->setFlash("Vous allez recevoir un email pour finaliser votre changement de mot de passe.");
+                                $this->Session->setFlash("Vous allez recevoir un email pour finaliser votre changement de mot de passe.", 'notif');
                                 $this->redirect('/login');
 			}
                         

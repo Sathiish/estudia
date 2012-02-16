@@ -27,8 +27,10 @@ class Quiz extends AppModel{
                         'Question'=> array(
                             'dependent' => true
                         ), 
-                        'UserAnswer');
-    public $belongsTo = array('Ressource', 'User');
+                        'UserAnswer',
+                        'QuizTag');
+    public $belongsTo = array('Theme', 'User');
+    public $hasAndBelongsToMany = array('Tag');
     
     function beforeSave($options = array()) {
         if(!empty($this->data['Quiz']['name'])){

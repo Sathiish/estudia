@@ -136,10 +136,10 @@ class CoursController extends AppController {
                 }
 
                 //On crée le thème si celui-ci n'existe pas
-                if(isset($d['Cour']['theme_id']) && empty($d['Cour']['theme_id'])){
+                if(!empty($d['Theme']['name'])){
                     $d['Theme']['id'] = null;
 
-                    $d['Theme']['matiere_id'] =  $d['Cour']['matiere_id'];
+                    $d['Theme']['matiere_id'] = $d['Cour']['matiere_id'];
 
                     $this->loadModel('Theme');
                     $ok2 = $this->Theme->save($d['Theme']);
@@ -199,7 +199,7 @@ class CoursController extends AppController {
                     )
                 ));
                 
-                $relatedTags = $this->Cour->Tag->findRelated("Cour",$coursId);
+                $relatedTags = $this->Cour->Tag->findRelated($this->modelClass,$coursId);
                 $this->set(compact('parties', 'relatedTags'));
                                 
                 }else{

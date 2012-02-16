@@ -3,6 +3,8 @@ App::uses('AppController', 'Controller');
 
 class QuizController extends AppController {
     
+    public $helpers = array('Autocomplete');
+    
     function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('index', 'view', 'theme', 'start', 'released', 'unreleased');
@@ -20,9 +22,9 @@ class QuizController extends AppController {
     
     public function theme($matiereId){
 
-      $path = $this->Quiz->Ressource->find('first', array(
-          "fields" => "Ressource.titre, Ressource.slug, Ressource.id",
-          "conditions" => "Ressource.id = $matiereId",
+      $path = $this->Quiz->Theme->find('first', array(
+          "fields" => "Theme.titre, Theme.slug, Theme.id",
+          "conditions" => "Theme.id = $matiereId",
           "recursive" => -1
       ));
       
@@ -87,8 +89,8 @@ class QuizController extends AppController {
             "conditions" => "Quiz.user_id = $user_id ORDER BY Quiz.id DESC",
             "fields" => "Quiz.id, Quiz.name, Quiz.slug, Quiz.description, Quiz.validation, Quiz.public",
             "contain" => array(
-                "Ressource" => array(
-                    "fields" => array("Ressource.id, Ressource.titre")
+                "Theme" => array(
+                    "fields" => array("Theme.id, Theme.name")
                 )
             )
         ));
@@ -133,9 +135,30 @@ class QuizController extends AppController {
         
         if($this->request->is('post') || $this->request->is('put'))
         {
-            $this->Quiz->set($this->data);
-            
-            if($this->Quiz->save($this->data, true, array('name','description','final_screen'))){
+
+            $d = $this->Quiz->set($this->data);
+            $d['Quiz']['tags'] = "";
+
+                //On crée la matière si celle-ci n'existe pas
+                if($d['Quiz']['matiere_id'] == ""){
+                    $d['Matiere']['id'] = null;
+                    $this->loadModel('Matiere');
+                    $ok = $this->Matiere->save($d['Matiere']);
+                    if($ok) $d['Quiz']['matiere_id'] = $this->Matiere->id;
+                }
+
+                //On crée le thème si celui-ci n'existe pas
+                if(!empty($d['Theme']['name'])){
+                    $d['Theme']['id'] = null;
+
+                    $d['Theme']['matiere_id'] =  $d['Quiz']['matiere_id'];
+
+                    $this->loadModel('Theme');
+                    $ok2 = $this->Theme->save($d['Theme']);
+                    if($ok2) $d['Quiz']['theme_id'] = $this->Theme->id;
+                }
+
+            if($this->Quiz->save($d)){
                 $this->Session->setFlash("Votre quiz a été correctement mise à jour", 'notif');
                 $this->redirect($this->referer());                          
             }else
@@ -143,24 +166,29 @@ class QuizController extends AppController {
                 $this->Session->setFlash("Corrigez les erreurs mentionnées.", 'notif', array('type' => 'error'));
                 $this->redirect($this->referer()); 
             }
-        }else{
-            $this->data = $this->Quiz->find('first', array(
-            "conditions" => "Quiz.id = $quizId",
-            "fields" => "Quiz.id, Quiz.name, Quiz.slug, Quiz.description, Quiz.final_screen",
-            "contain" => array()
-            ));
-            
-            $user_id = $this->Auth->User('id');
+        }
+        
+        $this->data = $this->Quiz->find('first', array(
+        "conditions" => "Quiz.id = $quizId",
+        "fields" => "Quiz.id, Quiz.name, Quiz.slug, Quiz.description, Quiz.final_screen, Quiz.theme_id",
+        "contain" => array(
+            "Theme" => array(
+                "fields" => array("Theme.id, Theme.name, Theme.slug")
+            )
+        )
+        ));
+
+        $user_id = $this->Auth->User('id');
         
         $questions = $this->Quiz->Question->find('all', array(
             "conditions" => "Question.user_id = $user_id AND Question.quiz_id = $quizId ORDER BY Question.sort_order ASC",
             "fields" => "Question.id, Question.question, Question.quiz_id, Question.sort_order",
             "contain" => array()
         ));
-        
-        
-        $this->set(compact("questions", "quizId"));
-        }
+        $matieres = $this->Quiz->Theme->Matiere->getAllMatieres() + array("" => "Soumettre une nouvelle matière");
+        $relatedTags = $this->Quiz->Tag->findRelated($this->modelClass, $quizId);
+        $this->set(compact('matieres','questions', 'quizId', 'relatedTags'));
+      
 
     }
     

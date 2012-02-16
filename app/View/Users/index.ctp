@@ -1,7 +1,7 @@
 <?php echo $this->Html->css('profil', null, array('inline'=>false)); ?>
 
 
-     <div class="titre"><?php echo $this->Html->image('titre/titre_monprofil.png', array('alt' => 'Titre dashboard','width'=>'104', 'height'=>'22')); ?></div>
+    <div class="titre"><?php echo $this->Html->image('titre/titre_monprofil.png', array('alt' => 'Titre dashboard','width'=>'104', 'height'=>'22')); ?></div>
     <div class="mes_infos">
                 <div class="fond_blanc">
                    <img src="/img/<?php echo $_SESSION['Auth']['User']['avatar']; ?>" class="profile" alt="profile" width="80" height="65"/>

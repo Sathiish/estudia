@@ -8,7 +8,7 @@
        
         echo "<li class=\"".$input_id."\">";
         echo $this->Html->link($v[$model][$search], array(
-               "controller" => "courtags",
+               "controller" => $controller,
                "action" => "addtag",
                $v[$model]['id']
             ));

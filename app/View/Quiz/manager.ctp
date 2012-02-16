@@ -16,7 +16,7 @@
      <?php foreach($quizz as $quiz_info): $quiz = current($quiz_info); ?>
         <tr>
              <td><?php echo $quiz['name'];?><br />
-             <span class="etat ressourceTitre"><?php echo $quiz_info['Ressource']['titre'];?></span>
+             <span class="etat ressourceTitre"><?php echo $quiz_info['Theme']['name'];?></span>
              <?php if($quiz['validation']){
                     if($quiz['public']){
                         echo '<span class="etat en_attente">En attente de dépublication</span>';

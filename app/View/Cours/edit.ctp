@@ -31,6 +31,41 @@
                 ed.execCommand('mceInsertContent',false,content); 
         }
         
+        $('#display select#matieres').live('click', function(data){
+                var value = $('select#matieres option:selected').val();
+                var url = "/themes/selectbox/"+value;
+
+                if(value != 0){
+                    $("#AjoutMatiere").fadeOut();
+                    $("#NewMatiere").val('');
+                    $("#NewTheme").val('');
+                    $("#AjoutTheme").fadeOut();  
+
+                    $.get(url, function(data) {
+                      $('#loader').show();
+                      $('#ListeTheme').show();
+                      $('#CourThemeId').html(data);
+                      $('#loader').fadeOut();
+                    });
+                    
+                    $('#display select#CourThemeId').live('click', function(data){
+                        var value2 = $('select#CourThemeId option:selected').val();
+                        
+                        if(value2 != 0){
+                            $("#AjoutTheme").fadeOut();
+                            $("#NewTheme").val('');
+                        }else{
+                            $("#AjoutTheme").fadeIn();
+                        }
+                    });
+                    
+                 }else{
+                    $('#ListeTheme').fadeOut();
+                    $("#AjoutMatiere").fadeIn();
+                    $("#AjoutTheme").fadeIn();                  
+                 }
+        });
+            
         <?php if(isset($this->data['Cour']['id'])): ?>
         jQuery(function(){
             $('.tag a').live('click',function(){
@@ -52,6 +87,7 @@
 
                 return false;
             })
+            
         });
         <?php endif; ?>
         
@@ -163,86 +199,24 @@
 <div id="display" style="<?php echo $display; ?>">
 
     <?php echo $this->Form->input('', array('label' => "Matière :", 'type' => 'select','options' => $matieres, 
-        'name'=> "data[Cour][matiere_id]", 'id'=> 'matieres', 'onChange'=> 'request(this)')); ?>
-        
-    <div id="ajout-matiere" style="display:none">
-        <?php echo $this->Form->input('newmatiere', array("type"=> "text",'name' => "data[Matiere][name]",
+        'name'=> "data[Cour][matiere_id]", 'id'=> 'matieres')); ?>
+     
+    
+    <div id="AjoutMatiere" style="display:none">
+        <?php echo $this->Form->input('newmatiere', array("type"=> "text",'name' => "data[Matiere][name]", 'id' => 'NewMatiere',
             'label' => 'Si vous ne trouvez pas votre matière dans la liste ci-dessus, vous pouvez soumettre un nom de matière ici: '));?>
-    </div>
-    <span id="loader" style="display: none;"><?php echo $this->Html->image("loader.gif", array( "alt"=>"loading")); ?></span>
-
-    <div id="choix-theme" style="display:none">
-	<select name="data[Cour][theme_id]" id="CourThemeId" onChange="newtheme(this)"></select>
+        
     </div>
     
-    <div id="ajout-theme" style="display:none">
-        <?php echo $this->Form->input('newtheme', array( "type"=> "text", 'name' => "data[Theme][name]",
+    <div id="ListeTheme" style="display:none">
+	<select name="data[Cour][theme_id]" id="CourThemeId"></select>
+        <span id="loader" style="display: none; float:left;"><?php echo $this->Html->image("loader.gif", array( "alt"=>"loading")); ?></span>
+    </div>
+    
+    <div id="AjoutTheme" style="display:none">
+        <?php echo $this->Form->input('newtheme', array( "type"=> "text", 'name' => "data[Theme][name]",'id' => 'NewTheme',
             'label' => 'Si vous ne trouvez pas votre thème dans la liste ci-dessus, vous pouvez soumettre un nom de thème ici: '));?>
     </div>
-    
-        <script>
-    function getXMLHttpRequest() {
-            var xhr = null;
-
-            if (window.XMLHttpRequest || window.ActiveXObject) {
-                    if (window.ActiveXObject) {
-                            try {
-                                    xhr = new ActiveXObject("Msxml2.XMLHTTP");
-                            } catch(e) {
-                                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
-                            }
-                    } else {
-                            xhr = new XMLHttpRequest(); 
-                    }
-            } else {
-                    alert("Votre navigateur ne supporte pas l'objet XMLHTTPRequest...");
-                    return null;
-            }
-
-            return xhr;
-    }
-
-    function request(oSelect) {
-            var value = oSelect.options[oSelect.selectedIndex].value;
-            var xhr   = getXMLHttpRequest();
-
-            if(value != 0){
-                $("#choix-theme").show();
-                $("#choix-theme").attr('name', 'data[Cour][Theme][name]');
-                $("#ajout-matiere").attr('name', '').hide();
-
-                xhr.onreadystatechange = function() {
-                        if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
-                                document.getElementById("CourThemeId").innerHTML = xhr.responseText;
-                                document.getElementById("loader").style.display = "none";
-                        } else if (xhr.readyState < 4) {
-                                document.getElementById("loader").style.display = "inline";
-                        }
-                };
-
-                xhr.open("POST", "/cours/selectbox", true);
-                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-                xhr.send("matieres=" + value);
-            }else{
-                $("#ajout-matiere").attr('name', 'data[Matiere][name]').show();
-                $("#ajout-theme") .attr('name', 'data[Theme][name]').show();
-                //$("#choix-theme").attr('value', '').hide();
-                //$("#CourNewtheme").value="";
-            }
-    }
-
-    function newtheme(oSelect) {
-            var value = oSelect.options[oSelect.selectedIndex].value;
-
-            if(value == ""){
-                $("#ajout-theme").show();
-            }else{
-                $("#ajout-theme").hide();
-
-            }
-    }
-    
-        </script>   
 </div> 
         <hr />
 
@@ -259,7 +233,7 @@
                 </span>
         <?php endforeach; ?>
     </div>
-<?php echo $this->Form->input('tags', array('label' => "Saisissez les différents niveaux concernés et cliquer dessus dès qu'ils apparaissent:", 'id' => 'TagTag'));?> 
+<?php echo $this->Form->input('tags', array('label' => "Saisissez les différents niveaux concernés et cliquez dessus dès qu'ils apparaissent:", 'id' => 'TagTag'));?> 
 <?php echo $this->Autocomplete->autocomplete('TagTag','Tag/name',array('TagId'=>'id')); ?>
         <?php endif; ?>
         

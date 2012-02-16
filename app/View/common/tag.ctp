@@ -1,4 +1,4 @@
-<?php Configure::write('debug', 0); ?>
+<?php Configure::write('debug', 1); ?>
 <?php if(isset($error)): ?>
     <div class="mini-alert-message error">
 	<a href="#" class="close" onclick="$(this).parent().slideUp()">x</a>
@@ -9,6 +9,6 @@
         <?php foreach($relatedTags as $tag): ?>
                 <span class="etat tag">
                     <?php echo $tag['Tag']['name']; ?> 
-                    <?php echo $this->Html->link("x", array("controller" => "courtags", "action" => "delete", $tag['CourTag']['id'])); ?> 
+                    <?php echo $this->Html->link("x", array("controller" => $this->params["controller"], "action" => "delete", $tag[$model]['id'])); ?> 
                 </span>
         <?php endforeach; ?>

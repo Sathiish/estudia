@@ -4,7 +4,7 @@ class Tag extends AppModel{
         public $actsAs = array('Containable');
 	public $useTable = "tags"; 
         
-	public $hasMany = array('CourTag');
+	public $hasMany = array('CourTag', 'QuizTag');
 	
         public function findRelated($model, $id){
             switch($model){
@@ -15,6 +15,7 @@ class Tag extends AppModel{
                     $target = "QuizTag";
                     break;
             }
+
             $tags = $this->$target->find('all', array(
                 "conditions" => "$target.".$model."_id = $id",
                 "fields" => array("$target.id, $target.".$model."_id"),

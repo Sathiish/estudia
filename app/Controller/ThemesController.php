@@ -108,6 +108,24 @@ class ThemesController extends AppController {
 		$this->Session->setFlash(__('Matiere was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+
+/*
+ * Permet de récupérer la liste des thèmes pour une matière donnée
+ */
+        public function selectbox($matiereId = null){
+            $this->layout = null;
+
+            if(!$matiereId){
+                $themes = array();              
+            }else{
+                $themes = $this->Theme->find('list', array(
+                    "fields" => "id, name",
+                    "conditions" => "Theme.matiere_id = $matiereId"
+                ));
+            }
+            $this->set(compact('themes'));            
+        }
+        
 /**
  * admin_index method
  *
