@@ -22,20 +22,29 @@ class ThemesController extends AppController {
 		$this->set(compact('themes'));
 	}
         
-        public function tag($tagId){
+        public function tag($tagId, $matiereId){
             $themes = $this->Theme->CourTag->find('all', array(
-                "conditions" => "CourTag.tag_id = $tagId",
+                "conditions" => "CourTag.tag_id = $tagId AND CourTag.matiere_id = $matiereId",
                 "fields" => "CourTag.id, CourTag.tag_id",
                 "contain" => array(
                     "Tag" => array(
-                        "fields" => "Tag.slug"
+                        "fields" => array("Tag.id, Tag.name, Tag.slug")
                     ),
                     "Theme" => array(
-                        "fields" => "Theme.name, Theme.id, Theme.slug"
+                        "fields" => array("Theme.name, Theme.id, Theme.slug, Theme.count_cours")
                     )
                 )
             ));
-            $this->set(compact('themes'));
+            
+            $matiere = $this->Theme->Matiere->find('first', array(
+                "conditions" => "Matiere.id = $matiereId",
+                "fields" => "Matiere.id, Matiere.name, Matiere.slug",
+                "contain" => array()
+            ));
+            
+            $tag = $themes['0']['Tag'];
+
+            $this->set(compact('themes', 'matiere', 'tag'));
         }
 
 /**

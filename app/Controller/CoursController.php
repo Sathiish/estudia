@@ -80,9 +80,9 @@ class CoursController extends AppController {
             $this->set(compact('cours'));
         }
         
-        public function tag($tagId){
+        public function tag($tagId, $themeId){
             $cours = $this->Cour->CourTag->find('all',array(
-                "conditions" => "CourTag.tag_id = $tagId",
+                "conditions" => "CourTag.tag_id = $tagId AND CourTag.theme_id = $themeId",
                 "fields" => "CourTag.cour_id",
                 "contain" => array(
                     "Cour" => array(
@@ -90,8 +90,24 @@ class CoursController extends AppController {
                     )
                 )
             ));
+            
+            $tag = $this->Cour->CourTag->Tag->find('first', array(
+                "conditions" => "Tag.id = $tagId",
+                "fields" => "Tag.id, Tag.name, Tag.slug",
+                "contain" => array()
+            ));
+            
+            $theme = $this->Cour->Theme->find('first', array(
+                "conditions" => "Theme.id = $themeId",
+                "fields" => "Theme.id, Theme.name, Theme.slug",
+                "contain" => array(
+                    "Matiere" => array(
+                        "fields" => array("Matiere.id, Matiere.name, Matiere.slug")
+                    )
+                )
+            ));
 
-            $this->set(compact('cours'));
+            $this->set(compact('cours', 'tag', 'theme'));
             
         }
         

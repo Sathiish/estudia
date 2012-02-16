@@ -10,9 +10,11 @@ class Matiere extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'name';
-        public $actsAs = array('Containable');
+	
+        public $actsAs = array('containable');
         public $hasMany = array('Theme', 'CourTag');
+        
+        public $displayField = 'name';
 /**
  * Validation rules
  *

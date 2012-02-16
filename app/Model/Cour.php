@@ -6,7 +6,12 @@ class Cour extends AppModel{
     
     var $useTable= "cours";
      
-    public $belongsTo = array('User', 'Theme');
+    public $belongsTo = array(
+                        'User', 
+                        'Theme'  => array(
+                            'counterCache' => 'count_cours'
+                            )
+                        );
     
     public $hasMany = array('Partie', 'CourTag');
     

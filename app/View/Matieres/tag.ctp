@@ -1,3 +1,8 @@
+<div id="breadcrumbs">
+	<?php echo $this->Html->link('Les cours par classe', array("controller" => "tags", "action" => "index")); ?>
+            >> <?php echo strip_tags($tag['Tag']['name']);?><br />
+            >> Choississez une matiere
+</div>
 
 <ul class="sommaire">
 
@@ -6,10 +11,10 @@
             array(
                 "controller" => "themes", 
                 "action" => "tag", 
-                $matiere['Tag']['id'], 
+                $matiere['Tag']['id'],
+                $matiere['Matiere']['id'],
                 $matiere['Tag']['slug']
                 )); ?></li>
 <?php endforeach; ?>
 
 </ul>
-

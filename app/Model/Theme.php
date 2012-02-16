@@ -2,10 +2,9 @@
 
 class Theme extends AppModel{
     
-    public $actsAs = array('Containable');
+    public $actsAs = array('containable');
      
-    public $belongsTo = 'Matiere';
-    
+    public $belongsTo = array('Matiere');   
     public $hasMany = array('Cour', 'CourTag');
     
     function beforeSave($options = array()) {

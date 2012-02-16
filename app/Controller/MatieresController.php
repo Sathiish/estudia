@@ -48,7 +48,13 @@ class MatieresController extends AppController {
                     )
                 )
             ));
-            $this->set(compact('matieres'));
+
+            $tag = $this->Matiere->CourTag->Tag->find('first', array(
+                "conditions" => "Tag.id = $tagId",
+                "fields" => "Tag.id, Tag.name, Tag.slug",
+                "contain" => array()
+            ));
+            $this->set(compact('matieres', 'tag'));
 	}
 /**
  * add method
