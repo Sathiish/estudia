@@ -215,6 +215,8 @@ class UsersController extends AppController {
 				$this->Session->setFlash("Votre compte a bien été créé. Vous devez maintenant valider votre inscription en cliquant sur le lien qui vous a été envoyé par email. Attention, ce lien ne sera plus accessible dans 7 jours.", 'notif');
 				$this->request->data = array(); 
 			}else{
+                            debug($this->User->validationErrors); die();
+                            //$this->User->validationErrors = $this->User->invalidFields();
 				$this->Session->setFlash("Merci de corriger vos erreurs", 'notif', array('type' => 'error'));
                                 $this->redirect($this->referer());
 			}

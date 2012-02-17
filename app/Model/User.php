@@ -31,37 +31,37 @@ class User extends AppModel {
 				'required' => array(
 					'rule' => array('notEmpty'),
 					'required' => true, 'allowEmpty' => false,
-					'message' => 'Please enter a username'),
+					'message' => 'Veuillez entrer un pseudo'),
 				'alpha' => array(
 					'rule' => array('alphaNumeric'), 
-					'message' => 'The username must be alphanumeric'),
+					'message' => 'Le pseudo ne peut contenir que des chiffres et des lettres'),
 				'unique_username' => array(
 					'rule'=>array('isUnique','username'),
-					'message' => 'This username is already in use.'),
+					'message' => 'Ce pseudo est déjà utilisé'),
 				'username_min' => array(
 					'rule' => array('minLength', '3'),
-					'message' => 'The username must have at least 3 characters.')),
+					'message' => 'Le pseudo doit contenir au moins 3 caractères')),
 			'email' => array(
 				'isValid' => array(
 					'rule' => 'email',
 					'required' => true,
-					'message' => 'Please enter a valid email address.')),
+					'message' => 'Votre adresse email ne semble pas avoir un format valide')),
 				'isUnique' => array(
 					'rule' => array('isUnique','email'),
-					'message' => 'This email is already in use.'),
+					'message' => 'Cet email est déjà utilisé'),
 			'password' => array(
 				'to_short' => array(
 					'rule' => array('minLength', '6'),
-					'message' => 'The password must have at least 6 characters.'),
+					'message' => 'Le mot de passe doit contenir au moins 6 caractères'),
 				'required' => array(
 					'rule' => 'notEmpty',
-					'message' => 'Please enter a password.')),
+					'message' => 'Veuillez entrer un mot de passe')),
 			'temppassword' => array(
 				'rule' => 'confirmPassword',
-				'message' => 'The passwords are not equal, please try again.'),
+				'message' => 'Vous avez entré deux mots de passe différents'),
 			'tos' => array(
 				'rule' => array('custom','[1]'),
-				'message' => 'You must agree to the terms of use.'));
+				'message' => 'Vous devez accepter les conditions d\'utilisation'));
 
 
     function beforeSave($options = array()) {
@@ -69,7 +69,6 @@ class User extends AppModel {
         return true;
     }
     
-
 /**
  * Custom validation method to ensure that the two entered passwords match
  *
@@ -77,6 +76,7 @@ class User extends AppModel {
  * @return boolean Success
  */
 	public function confirmPassword($password = null) {
+            
 		if ((isset($this->data[$this->alias]['password']) && isset($password['temppassword']))
 			&& !empty($password['temppassword'])
 			&& ($this->data[$this->alias]['password'] === $password['temppassword'])) {

@@ -196,13 +196,16 @@ class AppController extends Controller {
     
     public function autocomplete() { 
         if ($this->RequestHandler->isAjax() && $this->RequestHandler->isPost()) { 
-            $fields = explode(",",$this->params['data']['fields']); //debug($this->params['controller']);die();
+            $fields = explode(",",$this->params['data']['fields']); //debug($this->params['data']);die();
             //$results = $this->{$this->modelClass}->{$this->params['data']['model']}->find('all', $this->params['data']['search'].' LIKE '.$this->params['data']['query'].'%\'',$fields,$this->params['data']['search'].' ASC',$this->params['data']['numresult']);  
+
             $results = $this->{$this->modelClass}->{$this->params['data']['model']}->find('all', array(
-                "conditions" => $this->params['data']['search'].' LIKE \''.$this->params['data']['query'].'%\' ORDER BY '.$this->params['data']['search'].' ASC',
-                "fields" => $fields
-                )
-                    );
+            "conditions" => $this->params['data']['search'].' LIKE \''.$this->params['data']['query'].'%\' ORDER BY '.$this->params['data']['search'].' ASC',
+            "fields" => $fields
+            )
+                );
+            
+            
             if($this->params['controller'] == "cours"){
                 $controller = "courtags";
             }elseif($this->params['controller'] == "quiz"){
@@ -212,9 +215,14 @@ class AppController extends Controller {
             $this->set('fields',$fields); 
             $this->set('model',$this->params['data']['model']); 
             $this->set('input_id',$this->params['data']['rand']); 
-            $this->set('search',$this->params['data']['search']); 
-            $this->set('controller', $controller); 
-            $this->render('/common/autocomplete');               
+            $this->set('search',$this->params['data']['search']);
+            
+            if($this->modelClass == "Message"){
+                $this->render('/Messages/destinataire'); 
+            }else{              
+                $this->set('controller', $controller); 
+                $this->render('/common/autocomplete');    
+            }
         } 
     } 
         

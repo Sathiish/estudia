@@ -182,7 +182,7 @@ label {cursor: pointer;}
 .bulle {background-position: left; background-repeat: no-repeat; padding: 4px 0 4px 40px; margin: 10px 0; font-size: 14px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 .information{background-image: url('/img/info.png') ; color: #00ccff; }
 .success{color: #00c806; border: 1px solid #00c806; background-color: #d5ff95; font-weight: bold; font-size: 15px; margin-left: 15px; padding: 5px 15px;}
-.error{ color: red; border: 1px solid red; background-color: #ffacac; font-weight: bold; font-size: 15px; margin-left: 15px; padding: 5px 15px;}
+.error{ color: red; border: 1px solid red; background-color: #ffacac; font-weight: bold; font-size: 15px; padding: 5px 15px;}
 
 .manager a:hover {text-decoration: none;}
 .manager th { font-weight: bold; padding: 5px; text-align: center; color: white; background-color: #00aff0; border-bottom: 1px solid #CCC; white-space: nowrap;} /*background: #00ccff;*/

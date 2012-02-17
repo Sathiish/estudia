@@ -2,6 +2,8 @@
 
 class MessagesController extends AppController{
     
+    public $helpers = array('Autocomplete');
+    
     /*
      * Boîte de réception: Permet d'afficher tous les messages reçus et non supprimés (delete != 2) par l'utilisateur
      */
@@ -90,8 +92,12 @@ class MessagesController extends AppController{
         
         $this->set($data);
         
-        if($this->request->is('post')){           
-            if ($this->Message->save($this->request->data)) {
+        if($this->request->is('post')){
+            unset($this->request->data[$this->modelClass]['destinataireUsername']);
+            $d = $this->request->data;
+            
+            //debug($d); die();
+            if ($this->Message->save($d)) {
                     $this->Session->setFlash(__('Votre message a correctement été envoyé.'));
                     $this->redirect(array('action' => 'index'));
             } else {

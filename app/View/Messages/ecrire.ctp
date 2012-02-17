@@ -25,42 +25,16 @@
         (!empty($this->params['pass'][1]))? $conversation_id = $this->params['pass'][1]: $conversation_id = 0;
         (!empty($this->params['pass'][2]))? $sujet = $this->params['pass'][2]: $sujet = "";
    
-        if(empty($user_id)){
-                        echo $this->Form->input('User.username', array('label' => 'Destinaire','name' => 'destinaire', 'autocomplete' => "off","onkeyup"=>"lookup(this.value)"));
-                        
-                        ?>
-            <div id="DestinataireMessage">
-                <select name="data[Message][destinataire]" id="MessageDestinataire"></select>
-            </div>
-            
-            <script type="text/javascript">
-	function lookup(inputString) {
-		if(inputString.length == 0) {
-			// Hide the suggestion box.
-			$('#DestinataireMessage').hide();
-		} else {
-			$.post("/messages/destinataire", {queryString: ""+inputString+""}, function(data){
-				if(data.length >0) {
-                               		$('#DestinataireMessage').show();
-					$('#MessageDestinataire').html(data);
-				}
-			});
-		}
-	} 
-</script>
-            <?php
-//			echo $this->Form->input('Message.destinataire', array(
-//                                'label' => 'Destinataire',
-//                                'options' => $users,
-//				'error' => array(
-//					'required' => __('Veuillez choisir un destinaire')
-//                                                    )));
+        if(empty($user_id)){                      
+           echo $this->Form->input('destinataireUsername', array('label' => "Destinataire", 'type' => 'text','id' => 'username'));
+           echo $this->Form->input('destinataire',array("type"=>"hidden", 'id' => 'destinataire'));
+           echo $this->Autocomplete->autocomplete('username','UserDestinataire/username',array('destinataire'=>'id')); 
         }else{
-                        echo 'Destinataire: '.$users[$user_id].'<br />';
-                        echo $this->Form->input('Message.destinataire', array(
-						'type' => 'hidden',
-                                                'value' => "$user_id",
-						));
+            echo 'Destinataire: '.$users[$user_id].'<br />';
+            echo $this->Form->input('Message.destinataire', array(
+                                    'type' => 'hidden',
+                                    'value' => "$user_id",
+                                    ));
         }
        
         //Si il y a déjà un sujet, on cache le champs, sinon on l'affiche
