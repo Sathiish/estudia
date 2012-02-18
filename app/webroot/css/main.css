@@ -101,6 +101,7 @@ form input[type="submit"] {min-width: 120px;cursor: pointer; border: 1px solid #
 padding:10px;background-color:#00aff0;color:#fff;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin:20px 20px 0 20px;}
 form .label-inline label{display:inline}
 form .mini {width:650px;}
+.required.error{border:none; padding:0; background-color: transparent;}
 
 #intro{top:100px; right: 0;position: absolute;width: 400px;}
 
@@ -181,7 +182,7 @@ label {cursor: pointer;}
 
 .bulle {background-position: left; background-repeat: no-repeat; padding: 4px 0 4px 40px; margin: 10px 0; font-size: 14px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 .information{background-image: url('/img/info.png') ; color: #00ccff; }
-.success{color: #00c806; border: 1px solid #00c806; background-color: #d5ff95; font-weight: bold; font-size: 15px; margin-left: 15px; padding: 5px 15px;}
+.success{color: #00c806; border: 1px solid #00c806; background-color: #d5ff95; font-weight: bold; font-size: 15px; padding: 5px 15px;}
 .error{ color: red; border: 1px solid red; background-color: #ffacac; font-weight: bold; font-size: 15px; padding: 5px 15px;}
 
 .manager a:hover {text-decoration: none;}

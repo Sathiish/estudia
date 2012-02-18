@@ -15,8 +15,7 @@ class User extends AppModel {
             'MessageDestinataire' => array(
                 'className' => 'Message',
                 'foreignKey' => 'destinataire'
-            ),
-            'Ressource'
+            )
         );
 
         public $displayField = 'username';
@@ -42,20 +41,24 @@ class User extends AppModel {
 					'rule' => array('minLength', '3'),
 					'message' => 'Le pseudo doit contenir au moins 3 caractères')),
 			'email' => array(
+                                'required' => array(
+					'rule' => 'notEmpty',
+					'message' => 'Veuillez entrer un mot de passe'),
 				'isValid' => array(
 					'rule' => 'email',
 					'required' => true,
-					'message' => 'Votre adresse email ne semble pas avoir un format valide')),
-				'isUnique' => array(
+					'message' => 'Votre adresse email ne semble pas avoir un format valide'),
+				'unique_email' => array(
 					'rule' => array('isUnique','email'),
-					'message' => 'Cet email est déjà utilisé'),
+					'message' => 'Cet email est déjà utilisé')),
 			'password' => array(
-				'to_short' => array(
-					'rule' => array('minLength', '6'),
-					'message' => 'Le mot de passe doit contenir au moins 6 caractères'),
 				'required' => array(
 					'rule' => 'notEmpty',
-					'message' => 'Veuillez entrer un mot de passe')),
+					'message' => 'Veuillez entrer un mot de passe'),
+                                'to_short' => array(
+                                            'rule' => array('minLength', '6'),
+                                            'message' => 'Le mot de passe doit contenir au moins 6 caractères')
+                            ),
 			'temppassword' => array(
 				'rule' => 'confirmPassword',
 				'message' => 'Vous avez entré deux mots de passe différents'),

@@ -192,16 +192,19 @@ class UsersController extends AppController {
         public function inscription(){
 		if($this->request->is('post')){
 			$d = $this->request->data; 
-			$d['User']['id'] = null;
-			if(!empty($d['User']['password'])){
-				$d['User']['password'] = Security::hash($d['User']['password'],null,true);
-			}
-                        $d['User']['username'] = trim(strtolower($d['User']['username']));
-                        $d['User']['slug'] = strtolower(Inflector::slug($d['User']['username'], '-'));
-                        $d['User']['email_token'] = $this->User->generateToken();
-			$d['User']['email_token_expiry'] = date('Y-m-d H:i:s', time() + 604800);
-                        
-			if($this->User->save($d,true,array('username','slug','password','email','email_token','email_token_expiry'))){ 
+			
+                        $this->User->set($d);
+                        if ($this->User->validates()) {
+                            $d['User']['id'] = null;
+                            if(!empty($d['User']['password'])){
+                                    $d['User']['password'] = Security::hash($d['User']['password'],null,true);
+                            }
+                            $d['User']['username'] = trim(strtolower($d['User']['username']));
+                            $d['User']['slug'] = strtolower(Inflector::slug($d['User']['username'], '-'));
+                            $d['User']['email_token'] = $this->User->generateToken();
+                            $d['User']['email_token_expiry'] = date('Y-m-d H:i:s', time() + 604800);
+                            
+                            if($this->User->save($d,false,array('username','slug','password','email','email_token','email_token_expiry'))){
 				$link = array('controller'=>'users','action'=>'activate', $d['User']['email_token']);
 				App::uses('CakeEmail','Network/Email'); 
 				$mail = new CakeEmail(); 
@@ -213,13 +216,15 @@ class UsersController extends AppController {
 					->viewVars(array('username'=>$d['User']['username'],'link'=>$link))
 					->send();
 				$this->Session->setFlash("Votre compte a bien été créé. Vous devez maintenant valider votre inscription en cliquant sur le lien qui vous a été envoyé par email. Attention, ce lien ne sera plus accessible dans 7 jours.", 'notif');
-				$this->request->data = array(); 
-			}else{
-                            debug($this->User->validationErrors); die();
-                            //$this->User->validationErrors = $this->User->invalidFields();
-				$this->Session->setFlash("Merci de corriger vos erreurs", 'notif', array('type' => 'error'));
+				$this->request->data = array();
                                 $this->redirect($this->referer());
-			}
+                            }else{
+                                $this->Session->setFlash("Un problème est survenu. Veuillez réessayer", 'notif', array('type' => 'error'));                               
+                            }
+                            
+                        } else {
+                            $this->Session->setFlash("Merci de corriger vos erreurs", 'notif', array('type' => 'error'));                           
+                        }
 		}
 	}
         
@@ -336,7 +341,7 @@ class UsersController extends AppController {
 			$this->request->data[$this->modelClass]['id'] = $this->Auth->user('id');
 			if ($this->User->changePassword($this->request->data)) {
                                 $this->Session->setFlash('Votre mot de passe a été changé avec succès', 'notif');
-				$this->redirect('/dashboard');
+				$this->redirect('/users/edit');
 			}
 		}
 	}
