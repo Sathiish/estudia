@@ -95,11 +95,11 @@ form input[type="text"], form input[type="email"], form input[type="password"]{p
 background: white;font-weight: 300;color: #65645A;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;width:500px;}
 .login form input[type="text"], form input[type="email"], form input[type="password"] {width:320px;}
 .login form input[type="submit"]{float:right; margin: 10px;}
-form label {font-weight: bold;font-size: 14px; margin: 10px 0 5px 0;display: block;}
+label {font-weight: bold;font-size: 14px; margin: 10px 0 5px 0;display: block;}
 /*form label, form input, form textarea {float: left;clear: both;}*/
 form input[type="submit"] {min-width: 120px;cursor: pointer; border: 1px solid #cecece;letter-spacing: .5px;font-size: 14px;font-weight: 600;
 padding:10px;background-color:#00aff0;color:#fff;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin:20px 20px 0 20px;}
-form .label-inline label{display:inline}
+.label-inline label{display:inline}
 form .mini {width:650px;}
 .required.error{border:none; padding:0; background-color: transparent;}
 
@@ -203,7 +203,7 @@ label {cursor: pointer;}
 .contenu{margin: 10px;}
 .cours.plan {margin:10px 0;}
 
-.sidebar {padding:10px ; float:right; margin-top: 50px; margin-left: 10px; width:250px; background-color: red; height: 200px;}
+.sidebar {padding:10px ; float:right; margin-top: 50px; margin-left: 10px; margin-right: 10px; width:250px; background-color: red; height: 200px;}
 
 .alert-message {
   position: relative;
@@ -267,4 +267,7 @@ label {cursor: pointer;}
     padding:0px; 
 } 
 
+.tagspace{border:1px solid #000; width: 300px; padding:10px;}
 #tags{ margin:10px 0;}
+input[type="text"] {padding: 10px;border: 1px solid #DDD;border-top: 1px solid #CCC;
+background: white;font-weight: 300;color: #65645A;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}

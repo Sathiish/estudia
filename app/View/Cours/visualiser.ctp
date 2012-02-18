@@ -50,3 +50,10 @@ Auteur: <?php echo $this->Html->link($p['User']['username'], array("controller" 
  </div>   
  
 </div>
+
+
+
+<?php $this->Html->script('jsMath/easy/load.js',array('inline'=>false)); ?>
+<?php $this->Html->scriptStart(array('inline'=>false)); ?>
+    jsMath.Process(document);
+<?php $this->Html->scriptEnd(); ?>

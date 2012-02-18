@@ -22,3 +22,10 @@
           </ul>
       </div>
       <div class="clr"></div>
+      
+<?php echo $this->Html->script('menu.js',array('inline'=>true)); ?>
+<script type="text/javascript">
+  $(function() {
+    $('#nav').droppy();
+  });
+</script>

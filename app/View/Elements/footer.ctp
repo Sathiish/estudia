@@ -51,12 +51,7 @@
   </div>
 </div>
 
-<?php echo $this->Html->script('menu'); ?>
-<script type="text/javascript">
-  $(function() {
-    $('#nav').droppy();
-  });
-</script>
 <?php echo $scripts_for_layout ?>
+
 </body>
 </html>

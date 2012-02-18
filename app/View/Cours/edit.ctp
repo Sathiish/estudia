@@ -91,6 +91,17 @@
         });
         <?php endif; ?>
         
+        var isCtrl = false;$(document).keyup(function (e) {
+        if(e.which == 17) isCtrl=false;
+        }).keydown(function (e) {
+            if(e.which == 17) isCtrl=true;
+            if(e.which == 83 && isCtrl == true) {
+                //alert('Keyboard shortcuts + JQuery are even more cool!');
+                //return false;
+                $('.submit input').click();
+                return false;
+         }
+        });
 
 <?php $this->Html->scriptEnd(); ?>
 
@@ -222,9 +233,13 @@
 
 <?php echo $this->Form->input('name', array('label' => "Titre du cours:"));?>
 <?php echo $this->Form->input('contenu', array('label' => "Vous pouvez saisir l'introduction de ce cours ici :"));?>
+       
+<?php echo $this->Form->end('Enregistrer'); ?>
 
+                
         <?php if(isset($this->data['Cour']['id'])): ?>
         <hr />
+<div class="tagspace"
     <div id="tags">
         <?php foreach($relatedTags as $tag): ?>
                 <span class="etat tag">
@@ -233,10 +248,7 @@
                 </span>
         <?php endforeach; ?>
     </div>
-<?php echo $this->Form->input('tags', array('label' => "Saisissez les différents niveaux concernés et cliquez dessus dès qu'ils apparaissent:", 'id' => 'TagTag'));?> 
+<?php echo $this->Form->input('tags', array('label' => "Classes:", 'id' => 'TagTag'));?> 
 <?php echo $this->Autocomplete->autocomplete('TagTag','Tag/name',array('TagId'=>'id')); ?>
+</div>
         <?php endif; ?>
-        
-        <hr />
-        
-<?php echo $this->Form->end('Enregistrer'); ?>

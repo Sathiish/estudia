@@ -4,8 +4,11 @@
 <title><?php echo $title_for_layout?></title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <?php echo $this->Html->css('main'); ?>
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+
+
+
 </head>
 
   <div id="header">
