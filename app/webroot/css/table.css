@@ -2,7 +2,7 @@
 th { font-weight: bold; padding: 5px; text-align: center; color: white; background-color: #00aff0; border-bottom: 1px solid #CCC; white-space: nowrap;} /*background: #00ccff;*/
 .first{ -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-top-left-radius: 3px;}
 .last{ -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-top-right-radius: 3px;}
-table {width: 100%;border: 1px solid #ddd; text-align: left; margin: 0; border-spacing: 1px; background: #fff; clear: both; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+table {width:680px; border: 1px solid #ddd; text-align: left; margin: 0; border-spacing: 1px; background: #fff; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
 
 form input[type="text"], form input[type="email"], form input[type="password"]{padding: 10px;border: 1px solid #DDD;border-top: 1px solid #CCC;
 background: white;font-weight: 300;color: #65645A;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;width:89%;}

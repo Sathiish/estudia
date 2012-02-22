@@ -96,8 +96,6 @@
         }).keydown(function (e) {
             if(e.which == 17) isCtrl=true;
             if(e.which == 83 && isCtrl == true) {
-                //alert('Keyboard shortcuts + JQuery are even more cool!');
-                //return false;
                 $('.submit input').click();
                 return false;
          }
@@ -105,7 +103,10 @@
 
 <?php $this->Html->scriptEnd(); ?>
 
-<?php echo $this->Form->create('Cour', array('controller' => 'cours', 'action' => 'edit')); ?>
+<?php echo $this->Element('sidebar'); ?>
+
+
+
 
 <?php $display = ""; ?>
 <?php if(isset($this->data['Theme'])): ?>
@@ -124,89 +125,102 @@
       <?php echo $this->Html->link('Edition',array("controller" => "cours", "action" => "edit", $this->data['Cour']['id'], $this->data['Cour']['slug'])); ?></li>
   </ul>
 </div>
-        
         <?php echo $this->Html->link('Ajouter une partie', array('controller' => 'parties', 'action'=> 'add', $this->data['Cour']['id'], $this->data['Cour']['slug']), array('class' => 'button')); ?>
 
-<?php if($parties != array()): ?>
+    <?php if($parties != array()): ?>
 
-<table class="manager">
-   <thead>
-     <tr>
-        <th class="first" style="width: 490px">Cours</th>
-        <th>Déplacer</th>
-        <th class="last" style="width:100px;">Actions</th>
-     </tr>
-     </thead>
-     <tbody>
-     <?php foreach($parties as $cours_info): $c = current($cours_info); ?>
-        <tr>
-             <td><?php echo $this->Html->link($c['sort_order'].') '.$c['name'], array("controller" => "parties", "action" => "visualiser", $c['id'], $c['slug']));?><br />
-
-             <?php if($c['validation']){
-                    if($c['public']){
-                        echo '<span class="etat en_attente">En attente de dépublication</span>';
-                    }
-                    else{
-                        echo '<span class="etat en_attente">En attente de publication</span>';
-                    }
-                }else{
-                    if($c['public']){
-                        echo '<span class="etat publie">Publié</span>';
-                    }
-                    else{
-                        echo '<span class="etat non_publie">Non-publié</span>';
-                    }                    
-               
-                }
-                ?></td>
-              <td style="vertical-align: middle;">
-                <?php echo $this->Html->image('fleche_haut.png', array(
-                    "url"=> array("controller" => "parties", "action"=>"monter", $c['id'])
-                ));?> / 
-                <?php echo $this->Html->image('fleche_bas.png', array(
-                    "url"=> array("controller" => "parties", "action"=>"descendre", $c['id'])
-                ));?>
-             </td>
-             <td style="vertical-align: middle;">
-             <?php if(!($c['public']) AND !($c['validation'])): ?>    
-             <?php echo $this->Html->link($this->Html->image('editer.png'), array("controller" => "parties", "action"=>"edit", $c['id'], $c['slug']),array("escape" => false)); ?>
-             <?php echo $this->Html->link($this->Html->image('supprimer.png'), 
-                     array("controller" => "parties", "action"=>"delete", $c['id']),
-                     array("title" =>"Supprimer cette", 'escape' => false),
-                     "Etes-vous certain de vouloir définitivement supprimer ce cours ?"
-             );?>
-             <?php endif; ?>
-             <?php 
-             
-             if(!$c['validation']){
-                 if($c['public']){
-                    echo $this->Html->link('<span class="etat action">Dépublier</span>', 
-                         array("action"=>"askforunreleased", $c['id']),
-                         array("title" =>"Demander la publication de ce quizz", 'escape' => false),
-                         "Une fois dépublié, ce quiz n'apparaitra plus en ligne. Vous pourrez toutefois demander sa publication à nouveau. Souhaitez-vous toujours demander sa dépublication dès maintenant ?"
-                    );
-                 }else{
-                    echo $this->Html->link('<span class="etat action">Publier</span>', 
-                         array("action"=>"askforreleased", $c['id']),
-                         array("title" =>"Demander la publication de ce quizz", 'escape' => false),
-                         "Une fois publié, pour modifier ce quiz, vous devrez d'abord demander sa dépublication. Souhaitez-vous toujours demander la publication dès maintenant ?"
-                    );  
-                 }
-                 
-             
-             }
-             ?></td>
+    <table class="manager">
+       <thead>
+         <tr>
+            <th class="first" style="width: 490px">Cours</th>
+            <th>Déplacer</th>
+            <th class="last" style="width:100px;">Actions</th>
          </tr>
-     <?php endforeach; ?>
-     </tbody>
- </table>
+         </thead>
+         <tbody>
+         <?php foreach($parties as $cours_info): $c = current($cours_info); ?>
+            <tr>
+                 <td><?php echo $this->Html->link($c['sort_order'].') '.$c['name'], array("controller" => "parties", "action" => "visualiser", $c['id'], $c['slug']));?><br />
+
+                 <?php if($c['validation']){
+                        if($c['published']){
+                            echo '<span class="etat en_attente">En attente de dépublication</span>';
+                        }
+                        else{
+                            echo '<span class="etat en_attente">En attente de publication</span>';
+                        }
+                    }else{
+                        if($c['published']){
+                            echo '<span class="etat publie">Publié</span>';
+                        }
+                        else{
+                            echo '<span class="etat non_publie">Non-publié</span>';
+                        }                    
+
+                    }
+                    ?></td>
+                  <td style="vertical-align: middle;">
+                    <?php echo $this->Html->image('fleche_haut.png', array(
+                        "url"=> array("controller" => "parties", "action"=>"monter", $c['id'])
+                    ));?> / 
+                    <?php echo $this->Html->image('fleche_bas.png', array(
+                        "url"=> array("controller" => "parties", "action"=>"descendre", $c['id'])
+                    ));?>
+                 </td>
+                 <td style="vertical-align: middle;">
+                 <?php if(!($c['published']) AND !($c['validation'])): ?>    
+                 <?php echo $this->Html->link($this->Html->image('editer.png'), array("controller" => "parties", "action"=>"edit", $c['id'], $c['slug']),array("escape" => false)); ?>
+                 <?php echo $this->Html->link($this->Html->image('supprimer.png'), 
+                         array("controller" => "parties", "action"=>"delete", $c['id']),
+                         array("title" =>"Supprimer cette", 'escape' => false),
+                         "Etes-vous certain de vouloir définitivement supprimer ce cours ?"
+                 );?>
+                 <?php endif; ?>
+                 <?php 
+
+                 if(!$c['validation']){
+                     if($c['published']){
+                        echo $this->Html->link('<span class="etat action">Dépublier</span>', 
+                             array("action"=>"askforunreleased", $c['id']),
+                             array("title" =>"Demander la publication de ce quizz", 'escape' => false),
+                             "Une fois dépublié, ce quiz n'apparaitra plus en ligne. Vous pourrez toutefois demander sa publication à nouveau. Souhaitez-vous toujours demander sa dépublication dès maintenant ?"
+                        );
+                     }else{
+                        echo $this->Html->link('<span class="etat action">Publier</span>', 
+                             array("action"=>"askforreleased", $c['id']),
+                             array("title" =>"Demander la publication de ce quizz", 'escape' => false),
+                             "Une fois publié, pour modifier ce quiz, vous devrez d'abord demander sa dépublication. Souhaitez-vous toujours demander la publication dès maintenant ?"
+                        );  
+                     }      
+                 }
+                 ?></td>
+             </tr>
+         <?php endforeach; ?>
+         </tbody>
+     </table>
 
 <?php else: ?>
-    <p>Vous n'avez ajouté aucunes parties à ce cours pour le moment. Cliquez ci-dessus pour créer des parties.</p>
+        <p>Vous n'avez ajouté aucunes parties à ce cours pour le moment. Cliquez ci-dessus pour créer des parties.</p><div class="clr"></div>
+    <?php endif; ?>
+          <?php if(isset($this->data['Cour']['id'])): ?>
+ 
+    <div class="subsidebar">
+        <div id="tags">
+            <?php foreach($relatedTags as $tag): ?>
+                    <span class="etat tag">
+                        <?php echo $tag['Tag']['name']; ?> 
+                        <?php echo $this->Html->link("x", array("controller" => "courtags", "action" => "delete", $tag['CourTag']['id'])); ?> 
+                    </span>
+            <?php endforeach; ?>
+        </div>
+    <?php echo $this->Form->input('tags', array('label' => "Niveaux:", 'id' => 'TagTag'));?> 
+    <?php echo $this->Autocomplete->autocomplete('TagTag','Tag/name',array('TagId'=>'id')); ?>
+    </div>
+<?php endif; ?>  
 <?php endif; ?>
-        
-<?php endif; ?>
-        
+
+ 
+        <?php echo $this->Form->create('Cour', array('controller' => 'cours', 'action' => 'edit')); ?>
 <div id="display" style="<?php echo $display; ?>">
 
     <?php echo $this->Form->input('', array('label' => "Matière :", 'type' => 'select','options' => $matieres, 
@@ -237,18 +251,4 @@
 <?php echo $this->Form->end('Enregistrer'); ?>
 
                 
-        <?php if(isset($this->data['Cour']['id'])): ?>
-        <hr />
-<div class="tagspace"
-    <div id="tags">
-        <?php foreach($relatedTags as $tag): ?>
-                <span class="etat tag">
-                    <?php echo $tag['Tag']['name']; ?> 
-                    <?php echo $this->Html->link("x", array("controller" => "courtags", "action" => "delete", $tag['CourTag']['id'])); ?> 
-                </span>
-        <?php endforeach; ?>
-    </div>
-<?php echo $this->Form->input('tags', array('label' => "Classes:", 'id' => 'TagTag'));?> 
-<?php echo $this->Autocomplete->autocomplete('TagTag','Tag/name',array('TagId'=>'id')); ?>
-</div>
-        <?php endif; ?>
+       

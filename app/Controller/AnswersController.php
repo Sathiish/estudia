@@ -69,7 +69,7 @@ class AnswersController extends AppController {
                 $redirectTarget = $this->Answer->find('first', array("fields"=> "Answer.question_id", "conditions" => "Answer.id = $id", "recursive" => -1));
                 $redirectTarget = $redirectTarget['Answer']['question_id'];
                 $this->Session->setFlash("Votre réponse a été correctement mise à jour", 'notif');
-                $this->redirect("/answers/manager/".$redirectTarget);                            
+                $this->redirect("/questions/edit/".$redirectTarget);                            
             }else
             {
                 $this->Session->setFlash("Corrigez les erreurs mentionnées", 'notif', array('type' => 'error'));

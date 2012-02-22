@@ -15,7 +15,7 @@ class ThemesController extends AppController {
  */
 	public function view($MatiereId = null) {
 		$themes = $this->Theme->find('all', array(
-                    "conditions" => "Theme.matiere_id = $MatiereId",
+                    "conditions" => "Theme.matiere_id = $MatiereId AND Theme.published = 1",
                     "fields" => "Theme.name, Theme.slug, Theme.id"
                 ));
 

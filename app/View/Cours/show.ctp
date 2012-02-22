@@ -1,9 +1,15 @@
+<div id="breadcrumbs">
+        <?php echo $this->Html->link(strip_tags($path['Matiere']['name']), array("controller" => "matieres", "action" => "index", $path['Matiere']['id'], $path['Matiere']['slug'])); ?>
+        >> <?php echo $this->Html->link(strip_tags($path['Theme']['name']), array("controller" => "cours", "action" => "view", $path['Theme']['id'], $path['Theme']['slug'])); ?>
+        >> <?php echo strip_tags($c['Cour']['name']); ?>
+</div>
+
 <div class="cours">
 Auteur: <?php echo $this->Html->link($c['User']['username'], array("controller" => "users", "action" => "index", $c['User']['username'])); ?>
  :: Créé le <?php echo date("j M Y", strtotime($c['Cour']['created'])); ?>
 
 <div class="contenu">
-    <?php echo $p['Cour']['contenu']; ?>
+    <?php echo $c['Cour']['contenu']; ?>
 </div>
  <div class="clr"></div>
 

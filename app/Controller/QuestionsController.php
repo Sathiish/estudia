@@ -22,6 +22,28 @@ class QuestionsController extends AppController {
         }
     }
     
+    public function visualiser($questionId){
+        $contain = array("Quiz" => array(
+                            "fields" => array("Quiz.id, Quiz.name, Quiz.slug"),
+                            "User" => array(
+                                    "fields" => array("User.id, User.username")
+                            ),
+                            "Theme" => array(
+                                "fields" => array("Theme.id, Theme.name"),
+                                "Matiere" => array(
+                                    "fields" => array("Matiere.id, Matiere.name")
+                                )
+                            )
+                        ),
+                        "Answer" => array(
+                                "fields" => array("Answer.id, Answer.name")
+                        )
+                        
+                    );
+
+        $this->_visualiser($questionId, $contain);
+    } 
+    
      public function repondre($quizId, $sort_order = null){
         
         if($this->request->is('post') || $this->request->is('put')){
@@ -176,7 +198,7 @@ class QuestionsController extends AppController {
         
         if($this->request->is('post') || $this->request->is('put'))
         {
-                $this->Question->set($this->data);
+                //$this->Question->set($this->data);
                 $d = $this->request->data;
 		$d['Question']['id'] = null;
                 
@@ -202,14 +224,14 @@ class QuestionsController extends AppController {
                     $d['Question']['sort_order'] = $lastPosition['Question']['sort_order'] + 1;
                 }
                 
+                //debug($d); die();
                 if($this->Question->save($d)){
-                    $redirectTarget = $this->Question->id;
                     $this->Session->setFlash("Votre question a été correctement créé", 'notif');
-                    $this->redirect("/answers/add/".$redirectTarget);                            
+                    $this->redirect("/answers/add/".$this->Question->id);                            
                 }else
                 {
                     $this->Session->setFlash("Corrigez les erreurs mentionnées", 'notif', array('type' => 'error'));
-                    $this->redirect($this->referer()); 
+                    //$this->redirect($this->referer()); 
                 }
         }else{
             $info = $this->Question->getQuiz($quizId);

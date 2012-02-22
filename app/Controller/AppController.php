@@ -67,13 +67,13 @@ class AppController extends Controller {
             $model = $this->{$this->modelClass}->name;
             
             if($info[$model]['user_id'] != $userId){
-                $this->Session->setFlash("Vous n'êtes pas authorisé à accéder à cette page car vous n'êtes pas l'auteur");
+                $this->Session->setFlash("Vous n'êtes pas authorisé à accéder à cette page car vous n'êtes pas l'auteur", 'notif', array('type' => 'error'));
                 $this->redirect($this->referer());
                 die();
             }
 
-            if($info[$model]['public'] == 1){
-                $this->Session->setFlash("Vous n'êtes pas authorisé à accéder à cette page car son contenu est protégé contre les modifications");
+            if($info[$model]['published'] == 1){
+                $this->Session->setFlash("Vous n'êtes pas authorisé à accéder à cette page car son contenu est protégé contre les modifications", 'notif', array('type' => 'error'));
                 $this->redirect($this->referer());
                 die();
             }
@@ -90,7 +90,7 @@ class AppController extends Controller {
             $this->set(compact('p'));            
         }
         
-        public function publier($id, $tken = null){
+        public function publier($id, $publish = "publish", $tken = null){
 
             $this->loadModel('SousPartie');
             $userId = $this->Auth->user('id'); 
@@ -106,7 +106,7 @@ class AppController extends Controller {
             ));
 
             if(!$p){
-                $this->Session->setFlash("Un problème est survenu lors de la validation de votre demande. Veuillez réessayer. Si le problème persiste, contactez nos équipes par mail à contact@zeschool.com");
+                $this->Session->setFlash("Contenu introuvable", 'notif', array('type' => 'error'));
                 $this->redirect($this->referer()); 
             }else{
                 if(!$p[$model]['validation']){
@@ -123,13 +123,18 @@ class AppController extends Controller {
                         $this->{$this->modelClass}->id = $id;
             
                         $d[$model]['id'] = $this->{$this->modelClass}->id;
-                        $d[$model]['public'] = 1;
+                        if(isset($publish) && $publish == "publish"){
+                             $d[$model]['published'] = 1;
+                        }elseif(isset($publish) && $publish == "unpublish"){
+                             $d[$model]['published'] = 0;
+                        }
+                       
                         $d[$model]['validation'] = 0;
                         $d[$model]['token'] = 0;
             
                         $this->_savePublication($d, $model, $p);
                     }else{
-                        $this->Session->setFlash("Votre demande de publication a déjà été transmise");
+                        $this->Session->setFlash("Votre demande de publication a déjà été transmise", 'notif');
                         $this->redirect($this->referer());     
                     }   
                 }
@@ -151,31 +156,34 @@ class AppController extends Controller {
 //                                        ->template('askforreleased2')
 //                                        ->viewVars(array('p'=>$p,'link'=>$link))
 //                                        ->send();
-                $this->Session->setFlash("Votre demande de validation a bien été transmise. Celle-ci sera traitée très rapidement.");
+                $this->Session->setFlash("Votre demande de validation a bien été transmise. Celle-ci sera traitée très rapidement.", 'notif');
                 $this->redirect($this->referer());   
             }else{
-                $this->Session->setFlash("La demande de publication n'a pas été transmise. Un problème est survenu. Veuillez envoyer votre demande à contact@zeschool.com directement.");
+                $this->Session->setFlash("La demande de publication n'a pas été transmise. Un problème est survenu. Veuillez envoyer votre demande à contact@zeschool.com directement.", 'notif', array('type' => 'error'));
                 $this->redirect($this->referer());  
             }
         }
         
         protected function _savePublication($d, $model, $p){     
-              debug($d);
-            if($this->{$this->modelClass}->save($d,true,array('validation','public','token'))){ 
-                App::uses('CakeEmail','Network/Email'); 
-                $mail = new CakeEmail();
-                $mail->from('noreply@zeschool.com')
-                        ->to($p['User']['email'])
-                        ->subject('Votre demande de publication a été validée')
-                        ->emailFormat('html')
-                        ->template('released')
-                        ->viewVars(array('username'=>$p['User']['username']))
-                        ->send();
-                $this->Session->setFlash("Publication validée");
+      
+            if($this->{$this->modelClass}->save($d,true,array('validation','published','token'))){
+                $ToPublish = ($d[$model]['published'] == 1)? true : false;
+                //debug($d); debug(!$ToPublish); die();
+                $this->{$this->modelClass}->updateCounter($ToPublish);
+//                App::uses('CakeEmail','Network/Email'); 
+//                $mail = new CakeEmail();
+//                $mail->from('contact@zeschool.com')
+//                        ->to($p['User']['email'])
+//                        ->subject('Votre demande de publication a été validée')
+//                        ->emailFormat('html')
+//                        ->template('released')
+//                        ->viewVars(array('username'=>$p['User']['username']))
+//                        ->send();
+                $this->Session->setFlash("Ce $this->name a été mis en ligne", 'notif');
                 $this->redirect($this->referer());  
             }else{
-                $this->Session->setFlash("La demande de publication n'a pas été transmise. Un problème est survenu.");
-                $this->redirect($this->referer());  
+                $this->Session->setFlash("Ce $this->name n'a pas été correctement mis en ligne", 'notif', array('type' => 'error'));
+               // $this->redirect($this->referer());  
             }
         }
         
@@ -194,13 +202,16 @@ class AppController extends Controller {
             return $token;
     }  
     
-    public function autocomplete() { 
+        public function autocomplete() { 
         if ($this->RequestHandler->isAjax() && $this->RequestHandler->isPost()) { 
-            $fields = explode(",",$this->params['data']['fields']); //debug($this->params['data']);die();
+            $fields = explode(",",$this->params['data']['fields']);
+            $query = explode(",",$this->params['data']['query']);
+            $query = $query[sizeof($query)-1];
+            //debug($query);die();
             //$results = $this->{$this->modelClass}->{$this->params['data']['model']}->find('all', $this->params['data']['search'].' LIKE '.$this->params['data']['query'].'%\'',$fields,$this->params['data']['search'].' ASC',$this->params['data']['numresult']);  
 
             $results = $this->{$this->modelClass}->{$this->params['data']['model']}->find('all', array(
-            "conditions" => $this->params['data']['search'].' LIKE \''.$this->params['data']['query'].'%\' ORDER BY '.$this->params['data']['search'].' ASC',
+            "conditions" => $this->params['data']['search'].' LIKE \''.$query.'%\' ORDER BY '.$this->params['data']['search'].' ASC',
             "fields" => $fields
             )
                 );

@@ -15,14 +15,14 @@
              <td><?php echo $this->Html->link($c['name'], array("controller" => "cours", "action" => "visualiser", $c['id'], $c['slug']));?><br />
              <span class="etat ressourceTitre"><?php echo $cours_info['Theme']['name'];?></span>
              <?php if($c['validation']){
-                    if($c['public']){
+                    if($c['published']){
                         echo '<span class="etat en_attente">En attente de dépublication</span>';
                     }
                     else{
                         echo '<span class="etat en_attente">En attente de publication</span>';
                     }
                 }else{
-                    if($c['public']){
+                    if($c['published']){
                         echo '<span class="etat publie">Publié</span>';
                     }
                     else{
@@ -32,7 +32,7 @@
                 }
                 ?></td>
              <td style="text-align: left;">
-             <?php if(!($c['public']) AND !($c['validation'])): ?>    
+             <?php if(!($c['published']) AND !($c['validation'])): ?>    
              <?php echo $this->Html->link($this->Html->image('editer.png'), 
                      array("action"=>"edit", $c['id'], $c['slug']),
                      array("escape" => false, "title" => "Editer")); ?>
@@ -45,7 +45,7 @@
              <?php 
              
              if(!$c['validation']){
-                 if($c['public']){
+                 if($c['published']){
                     echo $this->Html->link('<span class="etat action">Modifier</span>', 
                          array("controller" => "parties","action"=>"manager", $c['id'], $c['slug']),
                          array("escape" => false, "title" => "Editer"));

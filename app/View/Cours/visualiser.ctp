@@ -26,6 +26,7 @@ Auteur: <?php echo $this->Html->link($p['User']['username'], array("controller" 
 </div>
  <div class="clr"></div>
  
+ <?php if(!empty($p['Partie'])): ?>
  <div class="cours plan">
  <span class="titre">Ce cours contient les parties suivantes :</span>
  
@@ -48,6 +49,7 @@ Auteur: <?php echo $this->Html->link($p['User']['username'], array("controller" 
     </ul>
 
  </div>   
+ <?php endif; ?>
  
 </div>
 

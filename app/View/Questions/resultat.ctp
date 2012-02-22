@@ -34,3 +34,8 @@
     <?php endforeach; ?>
     
 </table>
+
+<?php $this->Html->script('jsMath/easy/load.js',array('inline'=>false)); ?>
+<?php $this->Html->scriptStart(array('inline'=>false)); ?>
+    jsMath.Process(document);
+<?php $this->Html->scriptEnd(); ?>

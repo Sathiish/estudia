@@ -29,28 +29,17 @@ class Quiz extends AppModel{
                         ), 
                         'UserAnswer',
                         'QuizTag');
+    
     public $belongsTo = array('Theme', 'User');
     public $hasAndBelongsToMany = array('Tag');
     
     function beforeSave($options = array()) {
+        parent::beforeSave($options);
         if(!empty($this->data['Quiz']['name'])){
             $this->data['Quiz']['slug'] = strtolower(Inflector::slug($this->data['Quiz']['name'], '-'));
         }
-        
+
         return true;
-    }
-  
-    function isPublic($quizId){
-        $quizToEdit = $this->find('first', array(
-            "fields" => "Quiz.public, Quiz.validation",
-            "conditions" => "Quiz.id = $quizId",
-            "contain" => array()
-        ));
-        
-        if($quizToEdit['Quiz']['public'] == 1 OR $quizToEdit['Quiz']['validation'] == 1){            
-            return true;
-        }
-        
-        return false;
-    }
+    }    
+
 }

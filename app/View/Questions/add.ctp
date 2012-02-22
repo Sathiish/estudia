@@ -43,7 +43,7 @@
 
 <p>Vous êtes sur le point d'ajouter une nouvelle question à votre quiz. <br />Pour chaque nouvelle question de votre quiz remplissez le formulaire ci-dessous. </p>
 
-<?php echo $this->Form->create('Question', array("controller"=> "questions",'action' => 'add')); ?>
+<?php echo $this->Form->create('Question', array('action' => "add/$quizId")); ?>
 <?php echo $this->Form->input('question', array('label' => "Votre question:"));?>
 <?php echo $this->Form->input('user_id', array('type' => "hidden", "value" => $_SESSION['Auth']['User']['id']));?>
 <?php echo $this->Form->input('quiz_id', array('type' => "hidden", "value" => $quizId));?>

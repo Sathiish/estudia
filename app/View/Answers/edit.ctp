@@ -35,13 +35,22 @@
 <?php $this->Html->scriptEnd(); ?>
 
 <div id="breadcrumbs">
-	<?php echo $this->Html->link("Gérer mes quiz", array("controller" => "quiz", "action" => "manager"), array("title" => "Voir tous mes quiz"));?>
-            >> <?php echo $this->Html->link(strip_tags($info['Quiz']['name']), array("controller" => "quiz", "action" => "edit", $info['Quiz']['id']), array("title" => "Quiz"));?><br />
+	<?php echo $this->Html->link("Mes quiz", array("controller" => "quiz", "action" => "manager"), array("title" => "Voir tous mes quiz"));?>
+            >> <?php echo $this->Html->link(strip_tags($info['Quiz']['name']), array("controller" => "quiz", "action" => "edit", $info['Quiz']['id']), array("title" => "Quiz"));?>
             >> <?php echo $this->Html->link(strip_tags($info['Question']['question']), array("controller" => "questions", "action" => "edit", $info['Question']['id']), array("title" => "Question")); ?>
             >> <?php echo strip_tags($this->data['Answer']['name']); ?>
 
 </div>
 
+<div id="onglets_tutos" class="onglets_tutos">
+  <ul>
+      <li class="selected">
+      <?php echo $this->Html->link('Question hors-ligne',array("controller" => "questions", "action" => "visualiser", $info['Question']['id'])); ?></li>
+      <li>
+      <?php echo $this->Html->link('Edition',array("controller" => "questions", "action" => "edit", $info['Question']['id'])); ?></li>
+  </ul>
+</div>
+        
 <?php echo $this->Form->create('Answer'); ?>
 
 <?php echo $this->Form->input('name', array('label' => "Votre question:", "class" => "mini"));?>
@@ -51,7 +60,7 @@
 <?php echo $this->Form->radio(
                         'correct',
                         array('1' => 'Correcte', '0' => 'Incorrecte'),
-                        array('legend'=>"Cette réponse est-elle correcte ou incorrecte ?", 'separator'=>'<br />', 'value'=>false)
+                        array('legend'=>"Cette réponse est-elle correcte ou incorrecte ?", 'separator'=>'<br />', 'value'=>$this->data['Answer']['correct'])
                       ); ?>
 </div>
  

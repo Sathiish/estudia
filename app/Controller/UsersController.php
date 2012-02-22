@@ -37,8 +37,8 @@ class UsersController extends AppController {
  * @return void
  */
 	public function dashboard() {
-		$user = $this->User->read(null, $this->Auth->user('id'));
-		$this->set('user', $user);
+//		$user = $this->User->read(null, $this->Auth->user('id'));
+//		$this->set('user', $user);
 	}
 
 /**
@@ -259,7 +259,7 @@ class UsersController extends AppController {
                 $this->Session->setFlash("Vous êtes déjà connecté", 'notif');
                 $this->redirect('/users/dashboard');
             }
-            $this->layout = "home";
+
 		if($this->request->is('post')){
 			if($this->Auth->login()){
 				$this->User->id =  $this->Auth->user("id");

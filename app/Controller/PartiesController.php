@@ -20,15 +20,16 @@ class PartiesController extends AppController {
 	function show($partieId, $slug = null){    
             $partie = $this->Partie->find('first',array(
                 "fields" => "Partie.slug, Partie.name, Partie.id, Partie.contenu",
-                "conditions" => "Partie.id = $partieId AND Partie.public = 1",
+                "conditions" => "Partie.id = $partieId AND Partie.published = 1",
                 "contain" => array(
                     "SousPartie" => array(
                         "fields" => "SousPartie.id, SousPartie.name, SousPartie.slug, SousPartie.contenu"
                     )
                 )
-                    ));
+            ));
+            
             if(!$partie){
-                $this->Session->setFlash("Action impossible");
+                $this->Session->setFlash('Action impossible', 'notif', array('type' => 'error'));
                 $this->redirect("/cours/manager");
             }
             $this->set(compact('partie'));
@@ -37,7 +38,7 @@ class PartiesController extends AppController {
         public function manager($coursId){
             
             $parties = $this->Partie->find('all', array(
-                "fields" => "Partie.id, Partie.name, Partie.slug, Partie.validation, Partie.public, Partie.sort_order",
+                "fields" => "Partie.id, Partie.name, Partie.slug, Partie.validation, Partie.published, Partie.sort_order",
                 "conditions" => "Partie.cour_id = $coursId ORDER BY Partie.sort_order ASC",
                 "contain" => array(
                     "Cour" => array(
@@ -75,7 +76,7 @@ class PartiesController extends AppController {
                 ));
                 
                 if($auteur['Cour']['user_id'] != $this->Auth->user('id')){
-                    $this->Session->setFlash("Votre n'êtes pas l'auteur de ce cours. Vous ne pouvez donc pas le modifier.");
+                    $this->Session->setFlash("Votre n'êtes pas l'auteur de ce cours. Vous ne pouvez donc pas le modifier", 'notif', array('type' => 'error'));
                     $this->redirect("/cours/manager");
                 }
             
@@ -86,11 +87,11 @@ class PartiesController extends AppController {
                        $this->Session->setFlash("Mise à jour correctement effectué.");
                         $this->redirect("/parties/manager/".$d['Partie']['cour_id']); 
                     }else{
-                        $this->Session->setFlash("Votre cours a bien été crée. Vous pouvez commencer à créer des sous-parties.");
+                        $this->Session->setFlash("Votre cours a bien été crée. Vous pouvez commencer à créer des sous-parties.", 'notif');
                         $this->redirect("/sousparties/manager/".$this->Partie->id);
                     }
                 }else{
-                    $this->Session->setFlash("Un problème est survenu pendant l'ajout de cette partie. Veuillez réessayer.");
+                    $this->Session->setFlash("Un problème est survenu pendant l'ajout de cette partie. Veuillez réessayer.", 'notif', array('type' => 'error'));
                     $this->redirect($this->referer());
                 }
 
@@ -107,7 +108,7 @@ class PartiesController extends AppController {
             $path = $this->Partie->getPath($partieId);
             
             $sousParties = $this->Partie->SousPartie->find('all', array(
-                "fields" => "SousPartie.id, SousPartie.name, SousPartie.slug, SousPartie.validation, SousPartie.public, SousPartie.sort_order",
+                "fields" => "SousPartie.id, SousPartie.name, SousPartie.slug, SousPartie.validation, SousPartie.published, SousPartie.sort_order",
                 "conditions" => "SousPartie.partie_id = $partieId ORDER BY SousPartie.sort_order ASC",
                 "contain" => array(
                     "Partie" => array(
@@ -148,11 +149,11 @@ class PartiesController extends AppController {
                        $this->Session->setFlash("Mise à jour correctement effectué.");
                         $this->redirect("/parties/manager/".$d['Partie']['cour_id']); 
                     }else{
-                        $this->Session->setFlash("La partie a bien été créée. Vous pouvez commencer à lui ajouter des sous-parties.");
+                        $this->Session->setFlash("La partie a bien été créée. Vous pouvez commencer à lui ajouter des sous-parties.", 'notif');
                         $this->redirect("/sousparties/manager/".$this->Partie->id);
                     }
                 }else{
-                    $this->Session->setFlash("Un problème est survenu pendant l'ajout de cette partie. Veuillez réessayer.");
+                    $this->Session->setFlash("Un problème est survenu pendant l'ajout de cette partie. Veuillez réessayer.", 'notif', array('type' => 'error'));
                     $this->redirect($this->referer());
                 }
                 
@@ -175,7 +176,7 @@ class PartiesController extends AppController {
             $sortOrder = $req['Partie']['sort_order'];
 
             if($sortOrder <= 1){
-                $this->Session->setFlash("Cette partie est déjà la première");
+                $this->Session->setFlash("Cette partie est déjà la première", 'notif', array('type' => 'error'));
                 $this->redirect($this->referer());
                 die();
             }
@@ -217,7 +218,7 @@ class PartiesController extends AppController {
             ));
 
             if(count($liste) <= 1){
-                $this->Session->setFlash("Cette partie est déjà la dernière");
+                $this->Session->setFlash("Cette partie est déjà la dernière", 'notif', array('type' => 'error'));
                 $this->redirect($this->referer());
                 die();
             }
@@ -258,7 +259,7 @@ class PartiesController extends AppController {
         public function delete($partieId){
             $partieToDelete = $this->Partie->find("first", array(
                 "fields" => "Partie.cour_id, Partie.sort_order",
-                "conditions" => "Partie.id = $partieId", 
+                "conditions" => "Partie.id = $partieId AND Partie.published = 0", 
                 "recursive" => -1
                 ));
             $coursId = $partieToDelete['Partie']['cour_id'];
@@ -276,9 +277,9 @@ class PartiesController extends AppController {
                     $this->Partie->id =  $v; $value = $k - 1;
                     $this->Partie->saveField('sort_order',$value);            
                 }
-                $this->Session->setFlash("Partie définitivement supprimée");
+                $this->Session->setFlash("Partie définitivement supprimée", 'notif');
             } else {
-                $this->Session->setFlash("Un problème est survenu. Veuillez réessayer. Si le problème persiste, vous pouvez contacter l'administrateur du site à contact@zeschool.com");
+                $this->Session->setFlash("Un problème est survenu. Veuillez réessayer. Si le problème persiste, vous pouvez contacter l'administrateur du site à contact@zeschool.com", 'notif', array('type' => 'error'));
             }
             $this->redirect($this->referer());
         }
@@ -293,16 +294,16 @@ class PartiesController extends AppController {
                 }
 
                 if($isPublic == "public"){
-                    $condition .= " AND Partie.public = 1";
+                    $condition .= " AND Partie.published = 1";
                 }elseif($isPublic == "nonpublic"){
-                    $condition .= " AND Partie.public = 0";
+                    $condition .= " AND Partie.published = 0";
                 }
             }else{
                 $condition = "Partie.id = $coursId ORDER BY sort_order ASC";
             }
    
             $parties = $this->Partie->find('all', array(
-                "fields" => "Partie.id, Partie.name, Partie.slug, Partie.validation, Partie.public, Partie.token, Partie.sort_order",
+                "fields" => "Partie.id, Partie.name, Partie.slug, Partie.validation, Partie.published, Partie.token, Partie.sort_order",
                 "conditions" => $condition,
                 "contain" => array(
                     "Cour" => array(
@@ -364,11 +365,11 @@ class PartiesController extends AppController {
                        $this->Session->setFlash("Mise à jour correctement effectué.");
                         $this->redirect("/parties/manager/".$d['Partie']['cour_id']); 
                     }else{
-                        $this->Session->setFlash("Votre cours a bien été crée. Vous pouvez commencer à créer des sous-parties.");
+                        $this->Session->setFlash("Votre cours a bien été crée. Vous pouvez commencer à créer des sous-parties.", 'notif');
                         $this->redirect("/sousparties/manager/".$this->Partie->id);
                     }
                 }else{
-                    $this->Session->setFlash("Un problème est survenu pendant l'ajout de cette partie. Veuillez réessayer.");
+                    $this->Session->setFlash("Un problème est survenu pendant l'ajout de cette partie. Veuillez réessayer.", 'notif', array('type' => 'error'));
                     $this->redirect($this->referer());
                 }
 

@@ -31,7 +31,7 @@ class Question extends AppModel{
     
     function getQuiz($quizId){
         $quiz = $this->Quiz->find('first', array(
-            "fields" => "Quiz.id, Quiz.slug, Quiz.name, Quiz.public, Quiz.validation",
+            "fields" => "Quiz.id, Quiz.slug, Quiz.name, Quiz.published, Quiz.validation",
             "conditions" => "Quiz.id = $quizId",
             "contain" => array()
         ));
@@ -47,7 +47,7 @@ class Question extends AppModel{
         
         $quizToEdit = $this->getQuiz($question['Question']['quiz_id']);
 
-        if($quizToEdit['Quiz']['public'] == 1 OR $quizToEdit['Quiz']['validation'] == 1){            
+        if($quizToEdit['Quiz']['published'] == 1 OR $quizToEdit['Quiz']['validation'] == 1){            
             return true;
         }
         

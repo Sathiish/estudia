@@ -10,7 +10,7 @@ table.boite_reception td {vertical-align:middle;}
 /* Menu de la messagerie */
 .messagerie.menu{}
 .messagerie.menu ul{list-style: none;}
-.messagerie.menu ul li{float:left;padding: 10px 0 10px 0}
+.messagerie.menu ul li{display:inline-block; padding: 10px 0 10px 0}
 .messagerie.menu ul li a{padding: 20px 13px 10px 12px; margin:0 0 0 6px; text-decoration: none; color:#000;font-weight: bold}
 .messagerie.menu ul li a:hover, .messagerie.menu ul li a.active{color :#ffcc00; background-image: url('/img/fleche3.png'); background-repeat: no-repeat; background-position: 0% 70%;padding-left: 15px;}
 
@@ -27,7 +27,7 @@ table.boite_reception td {vertical-align:middle;}
 .messagerie.boutons a { margin: 10px 12px 10px 0px;}
 
 /* Ecrire un message */
-.messagerie.formulaire {}
+.messagerie.formulaire {display:block}
 .ss-titre {color: #00ccff; font-weight:bold; font-size:15px; }
 .ss-titre1 {color: #66b700; font-weight:bold; font-size:15px; }
-.underline {border:1px solid #999999;}
+.underline {border:1px solid #999999; width:675px; }

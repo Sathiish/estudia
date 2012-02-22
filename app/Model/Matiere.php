@@ -11,7 +11,7 @@ class Matiere extends AppModel {
  * @var string
  */
 	
-        public $actsAs = array('containable');
+        public $actsAs = array('Containable');
         public $hasMany = array('Theme', 'CourTag');
         
         public $displayField = 'name';
@@ -20,28 +20,30 @@ class Matiere extends AppModel {
  *
  * @var array
  */
-//	public $validate = array(
-//		'name' => array(
-//			'alphanumeric' => array(
-//				'rule' => array('alphanumeric'),
-//				//'message' => 'Your custom message here',
-//				//'allowEmpty' => false,
-//				//'required' => false,
-//				//'last' => false, // Stop validation after this rule
-//				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-//			),
-//		),
-//	);
+	public $validate = array(
+		'name' => array(
+			'alphanumeric' => array(
+				'rule' => array('alphanumeric'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+	);
         
         function beforeSave($options = array()) {
-            $this->data['Matiere']['slug'] = strtolower(Inflector::slug($this->data['Matiere']['name'], '-'));
-
+            if(isset($this->data['Matiere']['name'])){
+                $this->data['Matiere']['slug'] = strtolower(Inflector::slug($this->data['Matiere']['name'], '-'));
+            }
+            
             return true;
         }
         
         function getAllMatieres($onlyPublic = false){
             if($onlyPublic){
-                $condition = "public = 1";
+                $condition = "published = 1";
             }else{
                 $condition = "1 = 1";
             }

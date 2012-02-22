@@ -43,3 +43,8 @@
 
 <p>Pour continuer à vous exercer sur ZeSchool et profiter des nombreuses autres ressources disponible, 
     inscrivez-vous et connectez-vous en cliquant <a href="/inscription">ici</a></p>
+
+<?php $this->Html->script('jsMath/easy/load.js',array('inline'=>false)); ?>
+<?php $this->Html->scriptStart(array('inline'=>false)); ?>
+    jsMath.Process(document);
+<?php $this->Html->scriptEnd(); ?>

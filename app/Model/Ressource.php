@@ -4,9 +4,9 @@ class Ressource extends AppModel {
     
     var $displayField = 'titre';
     
-    var $belongsTo = array('User');
-    var $hasMany = 'Quiz';
-        
+//    var $belongsTo = array('User');
+//    var $hasMany = 'Quiz';
+//        
     var $actsAs = array('Tree', 'Containable');
 
     var $validate = array(

@@ -1,5 +1,6 @@
 <?php echo $this->Html->css('form', null, array('inline' => false));?>
 <?php $this->Html->script('tiny_mce/tiny_mce.js',array('inline'=>false)); ?>
+<?php $this->Html->script('jsMath/easy/load.js',array('inline'=>false)); ?>
 <?php $this->Html->scriptStart(array('inline'=>false)); ?>
         tinyMCE.init({
                 mode : 'textareas',
@@ -32,17 +33,28 @@
                 var ed = tinyMCE.activeEditor;
                 ed.execCommand('mceInsertContent',false,content); 
         }
+        
+        jsMath.Process(document);
 <?php $this->Html->scriptEnd(); ?>
 
-        <div id="breadcrumbs">
-	<?php echo $this->Html->link("Gérer mes quiz", array("controller" => "quiz", "action" => "manager"), array("title" => "Voir tous mes quiz"));?>
-            >> <?php echo $this->Html->link(strip_tags($this->data['Quiz']['name']), array("controller" => "questions", "action" => "manager", $this->data['Quiz']['id']), array("title" => "Quiz"));?><br />
+<div id="breadcrumbs">
+	<?php echo $this->Html->link("Mes quiz", array("controller" => "quiz", "action" => "manager"), array("title" => "Voir tous mes quiz"));?>
+            >> <?php echo $this->Html->link(strip_tags($this->data['Quiz']['name']), array("controller" => "quiz", "action" => "edit", $this->data['Quiz']['id']), array("title" => "Quiz"));?>
             >> <?php echo strip_tags($this->data['Question']['question']); ?>
 </div>
 
+<div id="onglets_tutos" class="onglets_tutos">
+  <ul>
+      <li class="selected">
+      <?php echo $this->Html->link('Question hors-ligne',array("controller" => "questions", "action" => "visualiser", $this->data['Question']['id'])); ?></li>
+      <li>
+      <?php echo $this->Html->link('Edition',array("controller" => "questions", "action" => "edit", $this->data['Question']['id'])); ?></li>
+  </ul>
+</div>
+        
 <?php echo $this->Html->link('Créer une nouvelle réponse', array('controller' => 'answers', 'action'=> 'add', $this->data['Question']['id']), array('class' => 'button')); ?>
 
-<h2><?php echo $this->data['Question']['question']; ?></h2>
+        <div class="voirQuestion"><?php echo $this->data['Question']['question']; ?></div><div class="clr"></div>
 
 <?php if($answers != array()): ?>
 <table class="manager">

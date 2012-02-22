@@ -32,73 +32,89 @@
                 var ed = tinyMCE.activeEditor;
                 ed.execCommand('mceInsertContent',false,content); 
         }
+        
+        jQuery(function(){
+            $('select#matieres').live('click', function(data){
+                var value = $('select#matieres option:selected').val();
+                var url = "/themes/selectbox/"+value;
+                
+                if(value != 0){
+                    $("#AjoutMatiere").fadeOut();
+                    $("#NewMatiere").val('');
+                    $("#NewTheme").val('');
+                    $("#AjoutTheme").fadeOut();  
+
+                    $.get(url, function(data) {
+                      $('#loader').show();
+                      $('#ListeTheme').show();
+                      $('#QuizThemeId').html(data);
+                      $('#loader').fadeOut();
+                    });
+                    
+                    $('#display select#QuizThemeId').live('click', function(data){
+                        var value2 = $('select#QuizThemeId option:selected').val();
+                        
+                        if(value2 != 0){
+                            $("#AjoutTheme").fadeOut();
+                            $("#NewTheme").val('');
+                        }else{
+                            $("#AjoutTheme").fadeIn();
+                        }
+                    });
+                    
+                 }else{
+                    $('#ListeTheme').fadeOut();
+                    $("#AjoutMatiere").fadeIn();
+                    $("#AjoutTheme").fadeIn();                  
+                 }
+            });
+            var isCtrl = false;$(document).keyup(function (e) {
+            if(e.which == 17) isCtrl=false;
+            }).keydown(function (e) {
+                if(e.which == 17) isCtrl=true;
+                if(e.which == 83 && isCtrl == true) {
+                    //alert('Keyboard shortcuts + JQuery are even more cool!');
+                    //return false;
+                    $('.submit input').click();
+                    return false;
+             }
+            });
+        });
+      
 <?php $this->Html->scriptEnd(); ?>
 
+<?php echo $this->element('sidebar');  ?>
+        
 <div id="breadcrumbs">
 	<?php echo $this->Html->link("Gérer mes quiz", array("controller" => "quiz", "action" => "manager"), array("title" => "Voir tous mes quiz"));?>
             >> Créer un nouveau quiz
 
 </div>
-<div class="professeurs form">
+
 <?php echo $this->Form->create('Quiz', array('url' => '/quiz/add')); ?>
 
-<?php echo $this->Form->input('', array('type'=>'select', 'label' => "Matière :", 'options' => $matieres, 'name'=> 'matieres', 'id'=> 'matieres', 'onChange'=> 'request(this)')); ?>
-    <span id="loader" style="display: none;"><?php echo $this->Html->image("loader.gif", array( "alt"=>"loading")); ?></span>
-    <select name="data[Quiz][ressource_id]" id="QuizRessourceId"></select>
-    
-        <script>
-function getXMLHttpRequest() {
-        var xhr = null;
+   <?php echo $this->Form->input('', array('label' => "Matière :", 'type' => 'select','options' => $matieres, 
+        'name'=> "data[Quiz][matiere_id]", 'id'=> 'matieres')); ?>
+         
+        <div id="ListeTheme" style="display:none">
+            <span id="loader" style="display: none; float:left;"><?php echo $this->Html->image("loader.gif", array( "alt"=>"loading")); ?></span>
+            <?php echo $this->Form->input('theme_id', array('label' => "Thème:"));?>
+            
+        </div>
+         <div id="AjoutMatiere" style="display:none">
+            <?php echo $this->Form->input('newmatiere', array("type"=> "text",'name' => "data[Matiere][name]", 'id' => 'NewMatiere',
+                'label' => 'Si vous ne trouvez pas votre matière dans la liste ci-dessus, vous pouvez soumettre un nom de matière ici: '));?>
+        </div>
+        <div id="AjoutTheme" style="display:none">
+            <?php echo $this->Form->input('newtheme', array( "type"=> "text", 'name' => "data[Theme][name]", 'id' => 'NewTheme',
+                'label' => 'Si vous ne trouvez pas votre thème dans la liste ci-dessus, vous pouvez soumettre un nom de thème ici: '));?>
+        </div>
+         <hr />
 
-        if (window.XMLHttpRequest || window.ActiveXObject) {
-                if (window.ActiveXObject) {
-                        try {
-                                xhr = new ActiveXObject("Msxml2.XMLHTTP");
-                        } catch(e) {
-                                xhr = new ActiveXObject("Microsoft.XMLHTTP");
-                        }
-                } else {
-                        xhr = new XMLHttpRequest(); 
-                }
-        } else {
-                alert("Votre navigateur ne supporte pas l'objet XMLHTTPRequest...");
-                return null;
-        }
-
-        return xhr;
-}
-        
-function request(oSelect) {
-	var value = oSelect.options[oSelect.selectedIndex].value;
-	var xhr   = getXMLHttpRequest();
-	
-	xhr.onreadystatechange = function() {
-		if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
-                        document.getElementById("QuizRessourceId").innerHTML = xhr.responseText;
-			document.getElementById("loader").style.display = "none";
-		} else if (xhr.readyState < 4) {
-			document.getElementById("loader").style.display = "inline";
-		}
-	};
-	
-	xhr.open("POST", "/ressources/selectbox", true);
-	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	xhr.send("matieres=" + value);
-}
-        </script> 
-	<?php echo $this->Form->input('name', array(
-                                                'label' => "Titre du quiz:",
-                                                'error' => array(
-                                                        'required' => 'Vous devez entrer un nom de quiz'
-                                                    )
-            ));?>
-	<?php echo $this->Form->input('user_id', array('type' => "hidden", "value" => $_SESSION['Auth']['User']['id'],
-				'error' => array(
-					'required' => "required"
-                                    )));?>
+	<?php echo $this->Form->input('name', array('label' => "Titre du quiz:"));?>
+	<?php echo $this->Form->input('user_id', array('type' => "hidden", "value" => $_SESSION['Auth']['User']['id']));?>
 	
 	<?php echo $this->Form->input('description', array('label' => "Objectif du quiz :"));?>
 	<?php //echo $this->Form->input('final_screen', array('label' => "Message à la fin du quiz :"));?>
  
 <?php echo $this->Form->end('Créer ce quiz'); ?>
-</div>

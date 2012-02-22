@@ -1,15 +1,43 @@
+<?php echo $this->Html->css('table', null, array('inline' => false));?>
+<table class="manager">
 
-<ul class="sommaire">
-
-<?php foreach ($matieres as $matiere): ?>
-    <li><?php echo $this->Html->link($matiere['Matiere']['name'], 
+    <th class="first">Matière</th>
+    <th>Cours</th>
+    <th class="last">Quiz</th>
+<?php foreach ($matieres as $matiere): $matiere = current($matiere); ?>
+    <tr>
+    <td><?php echo $this->Html->link($matiere['name'], 
             array(
                 "controller" => "courtags", 
                 "action" => "view", 
-                $matiere['Matiere']['id'], 
-                $matiere['Matiere']['slug']
-                )); ?></li>
+                $matiere['id'], 
+                $matiere['slug']
+                )); ?>
+    </td>
+    <td class="center"><?php 
+    if($matiere['count_published_cours'] == 0){
+        echo '0';
+    }else{
+        echo $this->Html->link($matiere['count_published_cours'], array(
+                    "controller" => "cours", 
+                    "action" => "theme", 
+                    $matiere['id'], 
+                    $matiere['slug']
+                    ));
+    }?></td>
+    <td class="center"><?php 
+    if($matiere['count_published_quiz'] == 0){
+        echo '0';
+    }else{
+        echo $this->Html->link($matiere['count_published_quiz'], array(
+                "controller" => "quiz", 
+                "action" => "theme", 
+                $matiere['id'], 
+                $matiere['slug']
+                ));
+    }?></td>
+    
+    </tr>
 <?php endforeach; ?>
 
-</ul>
-
+</table>

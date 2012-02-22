@@ -3,9 +3,9 @@
 <?php $time = time(); ?>
 <?php echo $this->Form->input('time', array('type' => "hidden", "value"=>"$time"));?>
 
-<span class="question">
+<div class="question">
     <?php echo strip_tags($question['Question']['question'], '<a>'); ?>
-</span>
+</div>
 
     <?php $options = array(); $j=1; ?>
     <?php foreach ($question['Answer'] as $o): ?>
@@ -30,12 +30,17 @@
 <?php echo $this->Form->end('Question Suivante'); ?>
 
 <script>
-$(document).ready(function(){
+
+</script>
+<?php $this->Html->script('jsMath/easy/load.js',array('inline'=>false)); ?>
+<?php $this->Html->scriptStart(array('inline'=>false)); ?>
+    jsMath.Process(document);
+    
+    $(document).ready(function(){
 	$('.qcm-answer').each(function(i,el) {
 		var $el = $(el),
 			$input = $el.find('input'),
 			$letter = $el.find('.answer-letter');
-                        console.log($letter);
 		
 		$letter.text('').addClass((i+1));
 		$input.hide();
@@ -48,4 +53,4 @@ $(document).ready(function(){
 		});
 	});
 });
-</script>
+<?php $this->Html->scriptEnd(); ?>

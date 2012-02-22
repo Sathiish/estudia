@@ -20,7 +20,7 @@ class Partie extends AppModel{
     public function getPath($partieId){
         
         $path = $this->find('first', array(
-            "fields" => "Partie.id, Partie.name, Partie.slug",
+            "fields" => array("Partie.id, Partie.name, Partie.slug"),
             "conditions" => "Partie.id = $partieId",
             "contain" => array(
                 "Cour" => array(

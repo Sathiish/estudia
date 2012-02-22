@@ -1,6 +1,8 @@
 <?php echo $this->Html->css('form', null, array('inline' => false));?>
 <?php $this->Html->script('tiny_mce/tiny_mce.js',array('inline'=>false)); ?>
+<?php $this->Html->script('jsMath/easy/load.js',array('inline'=>false)); ?>
 <?php $this->Html->scriptStart(array('inline'=>false)); ?>
+
         tinyMCE.init({
                 mode : 'textareas',
                 theme: 'advanced',               
@@ -90,13 +92,40 @@
             });
             
         });
+        
+        var isCtrl = false;$(document).keyup(function (e) {
+        if(e.which == 17) isCtrl=false;
+        }).keydown(function (e) {
+            if(e.which == 17) isCtrl=true;
+            if(e.which == 83 && isCtrl == true) {
+                //alert('Keyboard shortcuts + JQuery are even more cool!');
+                //return false;
+                $('.submit input').click();
+                return false;
+         }
+        });
+        
+        jsMath.Process(document);
 <?php $this->Html->scriptEnd(); ?>
 
+<?php echo $this->element('sidebar');  ?>
+        
 <div id="breadcrumbs">
-	<?php echo $this->Html->link("Gérer mes quiz", array("controller" => "quiz", "action" => "manager"), array("title" => "Voir tous mes quiz"));?>
+	<?php echo $this->Html->link("Mes quiz", array("controller" => "quiz", "action" => "manager"), array("title" => "Voir tous mes quiz"));?>
+            >> <?php echo $this->data['Theme']['Matiere']['name'];?>
+            >> <?php echo $this->data['Theme']['name'];?>
             >> <?php echo $this->data['Quiz']['name']; ?>  - <a href="" onClick='$("#display").fadeIn(); return false;'>Modifier le thème</a>
 </div>
 
+<div id="onglets_tutos" class="onglets_tutos">
+  <ul>
+      <li>
+      <?php echo $this->Html->link('Quiz hors ligne',array("controller" => "quiz", "action" => "visualiser", $this->data['Quiz']['id'], $this->data['Quiz']['slug'])); ?></li>
+      <li class="selected">
+      <?php echo $this->Html->link('Edition',array("controller" => "quiz", "action" => "edit", $this->data['Quiz']['id'], $this->data['Quiz']['slug'])); ?></li>
+  </ul>
+</div>
+        
 <?php echo $this->Html->link('Créer une nouvelle question', array('controller' => 'questions','action'=> 'add', $this->data['Quiz']['id'], $this->data['Quiz']['slug']), array('class' => 'button')); ?>
 
 <?php if($questions != array()): ?>
@@ -112,7 +141,7 @@
 
      <?php $i=1; foreach($questions as $question): $question = current($question); ?>
         <tr>
-             <td><?php echo $question['sort_order'].') '.strip_tags($question['question']);?></td>
+             <td><?php echo $question['sort_order'].') '.strip_tags($question['question'],'<div>,<span>');?></td>
              <td style="text-align: center">
                 <?php echo $this->Html->image('fleche_haut.png', array(
                     "url"=> array("controller"=>"questions", "action"=>"monter", $question['id'])
@@ -141,7 +170,20 @@
 <p>Vous n'avez pas encore créé de questions pour ce quiz. Cliquez sur le bouton ci-dessus pour créer votre première question.<p>
 
 <?php endif; ?>
-    
+    <div class="subsidebar">
+                
+    <div id="tags">
+        <?php foreach($relatedTags as $tag): ?>
+                <span class="etat tag">
+                    <?php echo $tag['Tag']['name']; ?> 
+                    <?php echo $this->Html->link("x", array("controller" => "quiztags", "action" => "delete", $tag['QuizTag']['id'])); ?> 
+                </span>
+        <?php endforeach; ?>
+    </div>
+<?php echo $this->Form->input('tags', array('label' => "Niveaux :", 'id' => 'TagTag'));?> 
+<?php echo $this->Autocomplete->autocomplete('TagTag','Tag/name',array('TagId'=>'id')); ?>
+        
+    </div>
     <hr />
         
 <?php echo $this->Form->create('Quiz', array('url' => '/quiz/edit/'.$this->data['Quiz']['id'])); ?>
@@ -173,18 +215,8 @@
 	<?php echo $this->Form->input('description', array('label' => "Objectif du quiz :"));?>
 	<?php echo $this->Form->input('final_screen', array('label' => "Correction :"));?>
         
-        <hr />
-    <div id="tags">
-        <?php foreach($relatedTags as $tag): ?>
-                <span class="etat tag">
-                    <?php echo $tag['Tag']['name']; ?> 
-                    <?php echo $this->Html->link("x", array("controller" => "quiztags", "action" => "delete", $tag['QuizTag']['id'])); ?> 
-                </span>
-        <?php endforeach; ?>
-    </div>
-<?php echo $this->Form->input('tags', array('label' => "Saisissez les différents niveaux concernés et cliquez dessus dès qu'ils apparaissent:", 'id' => 'TagTag'));?> 
-<?php echo $this->Autocomplete->autocomplete('TagTag','Tag/name',array('TagId'=>'id')); ?>
-        
+
         <hr />
 <?php echo $this->Form->end('Enregistrer'); ?>
 
+        

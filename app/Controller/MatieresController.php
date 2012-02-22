@@ -15,7 +15,8 @@ class MatieresController extends AppController {
  */
 	public function index() {
 		$matieres = $this->Matiere->find('all', array(
-                    "fields" => "Matiere.name, Matiere.id, Matiere.slug",
+                    "fields" => "Matiere.name, Matiere.id, Matiere.slug, Matiere.count_published_cours, Matiere.count_published_quiz",
+                    "conditions" => "Matiere.published = 1 AND (Matiere.count_published_cours > 0 OR Matiere.count_published_quiz > 0)",
                     "contain" => array()
                 ));
 		$this->set(compact('matieres'));

@@ -17,8 +17,6 @@
 </div>
 
 <div class="cours">
-<p>Auteur: <?php echo $this->Html->link($p['User']['username'], array("controller" => "users", "action" => "index", $p['User']['username'])); ?>
- :: Créé le <?php echo date("j M Y", strtotime($p['Cour']['created'])); ?></p>
 
 <?php echo $p['Partie']['name']; ?>
 <?php echo $p['Partie']['contenu']; ?>
@@ -32,3 +30,8 @@
 <?php endforeach; ?>
 
 </div>
+
+<?php $this->Html->script('jsMath/easy/load.js',array('inline'=>false)); ?>
+<?php $this->Html->scriptStart(array('inline'=>false)); ?>
+    jsMath.Process(document);
+<?php $this->Html->scriptEnd(); ?>

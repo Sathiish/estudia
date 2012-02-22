@@ -1,9 +1,8 @@
 <?php
 App::uses('AppController', 'Controller');
 /**
- * Ressources Controller
+ * Cours Controller
  *
- * @property Ressource $Ressource
  */
 class CoursController extends AppController {
               
@@ -23,13 +22,22 @@ class CoursController extends AppController {
 	}
  
         /**
-	 * Liste une ressource et tous ses enfants à partir d'un slug
+	 * Liste un cours et tous ses enfants à partir d'un slug
 	 */
-	function view($themeId,$slug = null)
-	{    
+	function view($themeId,$slug = null){    
             $cours = $this->Cour->find('all',array(
                 "fields" => "Cour.slug, Cour.name, Cour.id",
-                "conditions" => "Cour.theme_id = $themeId AND Cour.public = 1",
+                "conditions" => "Cour.theme_id = $themeId AND Cour.published = 1",
+                "contain" => array()
+                    ));
+
+            $this->set(compact('cours'));
+	}
+	
+        public function theme($matiereId,$slug = null){    
+            $cours = $this->Cour->Theme->find('all',array(
+                "fields" => "Theme.slug, Theme.name, Theme.id",
+                "conditions" => "Theme.matiere_id = $matiereId AND Theme.count_published_cours > 0",
                 "contain" => array()
                     ));
 
@@ -38,17 +46,17 @@ class CoursController extends AppController {
         
         function show($coursId, $slug = null){
             $c = $this->Cour->find('first', array(
-                "conditions" => "Cour.id = $coursId AND Cour.public = 1",
+                "conditions" => "Cour.id = $coursId AND Cour.published = 1",
                 "contain" => array(
                     "User" => array(
                         "fields" => array("User.id, User.username")
                     ),
                     "Partie" => array(
-                        "fields" => array('Partie.id, Partie.slug, Partie.name, Partie.sort_order, Partie.public'),
-                        "conditions" => array("Partie.public = 1"),
+                        "fields" => array('Partie.id, Partie.slug, Partie.name, Partie.sort_order, Partie.published'),
+                        "conditions" => array("Partie.published = 1"),
                         "SousPartie" => array(
-                            "fields" => array('SousPartie.id, SousPartie.slug, SousPartie.name, SousPartie.sort_order, SousPartie.public'),
-                            "conditions" => array("SousPartie.public = 1"),
+                            "fields" => array('SousPartie.id, SousPartie.slug, SousPartie.name, SousPartie.sort_order, SousPartie.published'),
+                            "conditions" => array("SousPartie.published = 1"),
                         )
                     )
                 )
@@ -58,9 +66,11 @@ class CoursController extends AppController {
                 $this->Session->setFlash("Contenu inaccessible", 'notif', array('type' => 'error'));
                 $this->redirect($this->referer());
                 die();
+            }else{
+                $path = $this->Cour->Theme->findPath($c['Cour']['theme_id']);
+                $this->set(compact('c', 'path'));
             }
-            
-            $this->set(compact('c'));
+  
         }
         
         function manager(){
@@ -68,7 +78,7 @@ class CoursController extends AppController {
             $userId = $this->Auth->user('id');
             
             $cours = $this->Cour->find('all',array(
-                "fields" => "Cour.slug, Cour.name, Cour.id, Cour.validation, Cour.public",
+                "fields" => "Cour.slug, Cour.name, Cour.id, Cour.validation, Cour.published",
                 "conditions" => "Cour.user_id = $userId ORDER BY created DESC",
                 "contain" => array(
                     "Theme" => array(
@@ -86,7 +96,7 @@ class CoursController extends AppController {
                 "fields" => "CourTag.cour_id",
                 "contain" => array(
                     "Cour" => array(
-                       "fields" => "Cour.slug, Cour.name, Cour.id, Cour.validation, Cour.public"
+                       "fields" => "Cour.slug, Cour.name, Cour.id, Cour.validation, Cour.published"
                     )
                 )
             ));
@@ -190,7 +200,7 @@ class CoursController extends AppController {
                  
                  $userId = $this->Auth->user('id');
                  $parties = $this->Cour->Partie->find('all',array(
-                    "fields" => "Partie.slug, Partie.name, Partie.id, Partie.validation, Partie.public, Partie.sort_order",
+                    "fields" => "Partie.slug, Partie.name, Partie.id, Partie.validation, Partie.published, Partie.sort_order",
                     "conditions" => "Partie.cour_id = $coursId AND Partie.user_id = $userId ORDER BY sort_order ASC",
                     "contain" => array(
                         "SousPartie" => array(
@@ -258,7 +268,7 @@ class CoursController extends AppController {
             $this->redirect(array('controller' => 'cours', 'action' => 'manager'));
         }
         
-        public function admin_manager($isPublic, $enAttente = null){
+        public function admin_manager($isPublished = "unpublished", $enAttente = null){
 
             if($enAttente == "enattente"){
                 $condition = "Cour.validation = 1";
@@ -266,14 +276,14 @@ class CoursController extends AppController {
                 $condition = "Cour.validation = 0";
             }
 
-            if($isPublic == "public"){
-                $condition .= " AND Cour.public = 1";
-            }elseif($isPublic == "nonpublic"){
-                $condition .= " AND Cour.public = 0";
+            if($isPublished == "published"){
+                $condition .= " AND Cour.published = 1";
+            }elseif($isPublished == "unpublished"){
+                $condition .= " AND Cour.published = 0";
             }
 
             $cours = $this->Cour->find('all', array(
-                "fields" => "Cour.slug, Cour.name, Cour.id, Cour.validation, Cour.public",
+                "fields" => "Cour.slug, Cour.name, Cour.id, Cour.validation, Cour.published, Cour.token",
                 "conditions" => "$condition ORDER BY Cour.created DESC",
                 "contain" => array(
                     "Theme" => array(
@@ -367,7 +377,7 @@ class CoursController extends AppController {
                     ));
                  
                  $parties = $this->Cour->Partie->find('all',array(
-                    "fields" => "Partie.slug, Partie.name, Partie.id, Partie.validation, Partie.public, Partie.sort_order",
+                    "fields" => "Partie.slug, Partie.name, Partie.id, Partie.validation, Partie.published, Partie.sort_order",
                     "conditions" => "Partie.cour_id = $coursId ORDER BY sort_order ASC",
                     "contain" => array(
                         "SousPartie" => array(

@@ -8,7 +8,7 @@
 <table class="manager">
    <thead>
      <tr>
-        <th class="first" style="width:650px">Quiz</th>
+        <th class="first" style="width:550px">Quiz</th>
         <th class="last" style="width:100px">Actions</th>
      </tr>
      </thead>
@@ -18,14 +18,14 @@
              <td><?php echo $quiz['name'];?><br />
              <span class="etat ressourceTitre"><?php echo $quiz_info['Theme']['name'];?></span>
              <?php if($quiz['validation']){
-                    if($quiz['public']){
+                    if($quiz['published']){
                         echo '<span class="etat en_attente">En attente de dépublication</span>';
                     }
                     else{
                         echo '<span class="etat en_attente">En attente de publication</span>';
                     }
                 }else{
-                    if($quiz['public']){
+                    if($quiz['published']){
                         echo '<span class="etat publie">Publié</span>';
                     }
                     else{
@@ -35,7 +35,7 @@
                 }
                 ?></td>
              <td style="text-align: center; vertical-align: middle">
-             <?php if(!($quiz_info['Quiz']['public']) AND !($quiz_info['Quiz']['validation'])): ?>    
+             <?php if(!($quiz_info['Quiz']['published']) AND !($quiz_info['Quiz']['validation'])): ?>    
              <?php echo $this->Html->link($this->Html->image('editer.png'), array("action"=>"edit", $quiz['id'], $quiz['slug']),array("escape" => false)); ?>
              <?php echo $this->Html->link($this->Html->image('supprimer.png'), 
                      array("action"=>"delete", $quiz['id']),
@@ -46,7 +46,7 @@
              <?php 
              
              if(!$quiz['validation']){
-                 if($quiz['public']){
+                 if($quiz['published']){
                     echo $this->Html->link('<span class="etat action">Dépublier</span>', 
                          array("action"=>"askforunreleased", $quiz['id']),
                          array("title" =>"Demander la publication de ce quizz", 'escape' => false),

@@ -1,6 +1,8 @@
 <?php echo $this->Html->css('messagerie', null, array('inline' => false));?>
 <?php echo $this->Html->css('form', null, array('inline' => false)); ?>
 
+<?php echo $this->Element('sidebar'); ?>
+
 <div class="messagerie">
     <div class="titre"><?php echo $this->Html->image('titre/titre_messagerie.png', array('alt' => 'Titre dashboard','width'=>'143', 'height'=>'29')); ?></div>
     <div class="messagerie menu">
