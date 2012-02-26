@@ -1,0 +1,1941 @@
+2012-01-14 12:36:06 Debug: Notice (8): Array to string conversion in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:06 Debug: Notice (8): Undefined variable: Array in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:17 Debug: Notice (8): Array to string conversion in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:17 Debug: Notice (8): Undefined variable: Array in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:18 Debug: Notice (8): Array to string conversion in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:18 Debug: Notice (8): Undefined variable: Array in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:52 Debug: Notice (8): Array to string conversion in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:52 Debug: Notice (8): Undefined variable: Array in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:53 Debug: Notice (8): Array to string conversion in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:53 Debug: Notice (8): Undefined variable: Array in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:53 Debug: Notice (8): Array to string conversion in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:53 Debug: Notice (8): Undefined variable: Array in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:53 Debug: Notice (8): Array to string conversion in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:53 Debug: Notice (8): Undefined variable: Array in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:54 Debug: Notice (8): Array to string conversion in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:54 Debug: Notice (8): Undefined variable: Array in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:54 Debug: Notice (8): Array to string conversion in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-01-14 12:36:54 Debug: Notice (8): Undefined variable: Array in [C:\wamp\www\zeschool.dev\app\View\Messages\destinataire.ctp, line 2]
+Trace:
+include - APP\View\Messages\destinataire.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 598
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 365
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 114
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 89
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 12:26:50 Debug: Notice (8): Undefined offset: 1 in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 12]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 12:26:50 Debug: Notice (8): Undefined offset: 1 in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 12]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 12:26:50 Debug: Notice (8): Undefined offset: 1 in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 12]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 12:26:50 Debug: Notice (8): Undefined offset: 1 in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 12]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 12:26:50 Debug: Notice (8): Undefined offset: 1 in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 12]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 12:26:50 Debug: Notice (8): Undefined offset: 1 in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 12]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 12:28:11 Debug: Notice (8): Undefined variable: result in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 2]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 12:28:11 Debug: Notice (8): Undefined variable: result in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 2]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 2
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 211
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 17:58:10 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 17:59:36 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:20:18 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:20:35 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:29:56 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:29:56 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 116]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 116
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:29:56 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 120]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 120
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:36:59 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:37:18 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:38:38 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:38:39 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:38:39 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 116]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 116
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:38:39 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 120]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 120
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:39:32 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:39:32 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 116]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 116
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:39:32 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 120]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 120
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:39:47 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:39:47 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 116]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 116
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:39:47 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 120]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 120
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:40:14 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:40:14 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 116]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 116
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:40:14 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 120]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 120
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:40:55 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:40:55 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 116]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 116
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:40:55 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 120]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 120
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:41:36 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:41:36 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 116]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 116
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:41:36 Debug: Notice (8): Undefined variable: coursId in [C:\wamp\www\zeschool.dev\app\Controller\CourTagsController.php, line 120]
+Trace:
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 120
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:41:55 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:44:49 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:44:55 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:46:22 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:46:24 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:46:25 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:46:27 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:47:23 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:47:32 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-15 19:49:53 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 9]
+Trace:
+include - APP\View\common\tag.ctp, line 9
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+CourTagsController::addtag() - APP\Controller\CourTagsController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:40:00 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:40:00 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:40:10 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:40:10 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:40:11 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:41:11 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:41:11 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:41:11 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:41:11 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:42:07 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:42:07 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:42:07 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:42:07 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:42:43 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:42:43 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:42:43 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:43:27 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:43:27 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 13:43:27 Debug: Notice (8): Undefined index: CourTag in [C:\wamp\www\zeschool.dev\app\View\common\tag.ctp, line 12]
+Trace:
+include - APP\View\common\tag.ctp, line 12
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+QuizTagsController::addtag() - APP\Controller\QuiztagsController.php, line 54
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:24:06 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:24:07 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:24:09 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:24:10 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:24:11 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:24:11 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:25:18 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:25:21 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:25:23 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:25:23 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:25:29 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:25:30 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:26:04 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:26:06 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:26:16 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:26:18 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:29:37 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:29:41 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:29:44 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-16 14:29:45 Debug: Notice (8): Undefined variable: themes in [C:\wamp\www\zeschool.dev\app\View\Cours\selectbox.ctp, line 3]
+Trace:
+include - APP\View\Cours\selectbox.ctp, line 3
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 10]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 10
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 13]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 13
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 10]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 10
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 13]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 13
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 10]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 10
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 13]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 13
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 10]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 10
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 13]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 13
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 10]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 10
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 13]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 13
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 6]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 6
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 10]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 10
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-17 16:11:44 Debug: Notice (8): Undefined index: User in [C:\wamp\www\zeschool.dev\app\View\common\autocomplete.ctp, line 13]
+Trace:
+include - APP\View\common\autocomplete.ctp, line 13
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+AppController::autocomplete() - APP\Controller\AppController.php, line 230
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:26:38 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:26:55 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:27:28 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:27:44 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:27:57 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:28:20 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:28:31 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:28:49 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:29:33 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:29:47 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:30:02 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:30:16 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:30:31 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:30:45 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:30:59 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:31:43 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:32:01 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:33:09 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:33:29 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:36:01 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:39:44 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:43:03 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:45:14 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 20:47:24 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 21:03:40 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-18 21:04:12 Debug: Notice (8): Undefined index: theme_id in [C:\wamp\www\zeschool.dev\app\Controller\CoursController.php, line 160]
+Trace:
+CoursController::edit() - APP\Controller\CoursController.php, line 160
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
