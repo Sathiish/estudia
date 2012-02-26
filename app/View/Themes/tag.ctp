@@ -8,7 +8,7 @@
 
 <ul class="sommaire">
     <?php foreach($themes as $theme): ?>
-    <li><?php echo $this->Html->link($theme['Theme']['name'].' ('.$theme['Theme']['count_cours'].')', array(
+    <li><?php echo $this->Html->link($theme['Theme']['name'].' ('.$theme['Theme']['count_published_cours'].')', array(
         "controller" => "cours", 
         "action" => "tag", 
         $theme['CourTag']['tag_id'],

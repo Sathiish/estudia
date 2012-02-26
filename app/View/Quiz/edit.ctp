@@ -168,21 +168,20 @@
 <?php else: ?>
 
 <p>Vous n'avez pas encore créé de questions pour ce quiz. Cliquez sur le bouton ci-dessus pour créer votre première question.<p>
-
+<div class="clr"></div>
 <?php endif; ?>
     <div class="subsidebar">
-                
-    <div id="tags">
+
+<?php echo $this->Form->input('tags', array('label' => "Niveaux :", 'id' => 'TagTag'));?> 
+<?php echo $this->Autocomplete->autocomplete('TagTag','Tag/name',array('TagId'=>'id')); ?>
+     <div id="tags">
         <?php foreach($relatedTags as $tag): ?>
                 <span class="etat tag">
                     <?php echo $tag['Tag']['name']; ?> 
                     <?php echo $this->Html->link("x", array("controller" => "quiztags", "action" => "delete", $tag['QuizTag']['id'])); ?> 
                 </span>
         <?php endforeach; ?>
-    </div>
-<?php echo $this->Form->input('tags', array('label' => "Niveaux :", 'id' => 'TagTag'));?> 
-<?php echo $this->Autocomplete->autocomplete('TagTag','Tag/name',array('TagId'=>'id')); ?>
-        
+    </div>   
     </div>
     <hr />
         

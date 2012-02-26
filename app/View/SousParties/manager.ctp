@@ -25,14 +25,14 @@
              <td><?php echo $c['sort_order'].') '.$c['name'];?><br />
 
              <?php if($c['validation']){
-                    if($c['public']){
+                    if($c['published']){
                         echo '<span class="etat en_attente">En attente de dépublication</span>';
                     }
                     else{
                         echo '<span class="etat en_attente">En attente de publication</span>';
                     }
                 }else{
-                    if($c['public']){
+                    if($c['published']){
                         echo '<span class="etat publie">Publié</span>';
                     }
                     else{
@@ -50,7 +50,7 @@
                 ));?>
              </td>
              <td style="text-align: left;">
-             <?php if(!($c['public']) AND !($c['validation'])): ?>    
+             <?php if(!($c['published']) AND !($c['validation'])): ?>    
              <?php echo $this->Html->link('<span class="etat action">'.$this->Html->image('editer.png').' Modifier</span>', array("action"=>"edit", $c['id'], $c['slug']),array("escape" => false)); ?>
              <?php echo $this->Html->link('<span class="etat action">'.$this->Html->image('supprimer.png').' Supprimer</span>', 
                      array("action"=>"delete", $c['id']),
@@ -61,7 +61,7 @@
              <?php 
              
              if(!$c['validation']){
-                 if($c['public']){
+                 if($c['published']){
                     echo $this->Html->link('<span class="etat action">Dépublier</span>', 
                          array("action"=>"askforunreleased", $c['id']),
                          array("title" =>"Demander la publication de ce quizz", 'escape' => false),

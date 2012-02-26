@@ -34,7 +34,7 @@ class AppModel extends Model{
         $model = $this->name;
         $type = $this->useTable;
 
-        if(isset($this->data[$model]['theme_id'])){
+        if(isset($this->data[$model]['theme_id']) && !empty($this->data[$model]['theme_id'])){
             $d = $this->data[$model]; 
             
             $matiereId = $d['matiere_id'];

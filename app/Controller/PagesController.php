@@ -8,9 +8,16 @@ class PagesController extends AppController{
     }
     
     function display(){
-        
         $this->set('title_for_layout', 'ZeSchool | Bienvenue');
         $this->render('newhome', 'homenew');
+    }
+    
+    function quisommesnous(){
+        $this->set('title_for_layout', 'ZeSchool | Qui sommes nous ?');
+    }
+    
+    function mentionslegales(){
+        $this->set('title_for_layout', 'ZeSchool | Mentions légales');   
     }
     
     function tutoriel_cours(){

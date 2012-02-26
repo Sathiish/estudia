@@ -43,7 +43,7 @@ class CourTag extends AppModel{
                     'callbacks' => false
                 )
             );
-            //debug($info); die();
+
             return true; 
     }
 }

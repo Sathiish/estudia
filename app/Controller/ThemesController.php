@@ -15,7 +15,7 @@ class ThemesController extends AppController {
  */
 	public function view($MatiereId = null) {
 		$themes = $this->Theme->find('all', array(
-                    "conditions" => "Theme.matiere_id = $MatiereId AND Theme.published = 1",
+                    "conditions" => "Theme.matiere_id = $MatiereId AND Theme.count_published_cours > 0",
                     "fields" => "Theme.name, Theme.slug, Theme.id"
                 ));
 
@@ -31,7 +31,7 @@ class ThemesController extends AppController {
                         "fields" => array("Tag.id, Tag.name, Tag.slug")
                     ),
                     "Theme" => array(
-                        "fields" => array("Theme.name, Theme.id, Theme.slug, Theme.count_cours")
+                        "fields" => array("Theme.name, Theme.id, Theme.slug, Theme.count_published_cours")
                     )
                 )
             ));

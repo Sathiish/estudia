@@ -200,7 +200,8 @@
      </table>
 
 <?php else: ?>
-        <p>Vous n'avez ajouté aucunes parties à ce cours pour le moment. Cliquez ci-dessus pour créer des parties.</p><div class="clr"></div>
+        <p>Vous n'avez ajouté aucunes parties à ce cours pour le moment. Cliquez ci-dessus pour créer des parties.</p>
+        <div class="clr"></div>
     <?php endif; ?>
           <?php if(isset($this->data['Cour']['id'])): ?>
  

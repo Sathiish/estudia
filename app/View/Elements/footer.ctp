@@ -31,8 +31,8 @@
         <h2>INFOS</h2>
         <div class="clr"></div>
         <ul>
-          <li><a href="http://zeschool.fr/blog/qui-sommes-nous/" target="_blank">Qui sommes-nous ?</a></li>
-          <li><a href="#">Mentions légales</a></li>
+          <li><?php echo $this->Html->link('Qui sommes-nous ?', array("controller" => "pages", "action" => "quisommesnous")); ?></li>
+          <li><?php echo $this->Html->link('Mentions légales', array("controller" => "pages", "action" => "mentionslegales")); ?></li>
           <li><?php echo $this->Html->link('Contact', array("controller" => "contact", "action" => "index")); ?></li>
         </ul>
       </div>

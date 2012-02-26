@@ -1,10 +1,11 @@
-html,body,div,span,object,iframe,h1,blockquote.big-bold,h2,h3,dl dt,h4,blockquote.simple,h5,h6,p,blockquote.simple,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video
-{margin:0;padding:0;border:0;outline:0;font-size:12px;vertical-align:baseline;background:transparent; font:normal Arial, Helvetica, sans-serif;}
+html,body,div,span,object,iframe,h1,blockquote.big-bold,h2,h3,dl dt,h4,blockquote.simple,h5,h6,blockquote.simple,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video
+{margin:0;padding:0;border:0;outline:0;font-size:12px;vertical-align:baseline;background:transparent; font:normal Arial, Helvetica, sans-serif; text-align: justify}
 /*p {color: #006577; margin-left:10px; width:383px}*/
 body{background-color:#f0f0f0;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;font-stretch:normal;color:#3f3f38; min-width:990px;}
 .logo { padding:0; float:left; margin-top: -30px; width:auto; margin-bottom: 10px;margin-left: 30px}
 a{text-decoration: none;}
 ul {list-style:none;}
+hr{border:1px solid #00aff0; }
 
 .clr { float:none; clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 
@@ -202,8 +203,8 @@ label {cursor: pointer;}
 .contenu{margin: 10px;}
 .cours.plan {margin:10px 0;}
 
-.sidebar {padding:10px ; float:right;  margin: 0; width:250px; background-color: red; height: 200px;}
-.subsidebar {padding:0 10px ; float:right;  margin: 0; margin-top: 6px; margin-bottom: 10px; width:250px; border-style:inset; border-top:1px solid #9a9a9a;}
+.sidebar {padding:10px ; float:right; margin: 0 0 5px 10px; width:250px; background-color: red; height: 200px;}
+.subsidebar {padding:0 10px ; float:right;  margin: 6px 0 10px 0; width:250px; border-top:2px solid #00aff0;}
 /*.sidebar {padding:10px ; position:absolute; right:15px; top:60px; width:250px; background-color: red; height: 200px;}*/
 
 .alert-message {
@@ -269,7 +270,7 @@ label {cursor: pointer;}
 } 
 
 .tagspace{border:1px solid #000; width: 249px; padding:10px; position: absolute; right: 14px; top: 10px;}
-#tags{ margin:10px 0;}
+#tags{ margin:10px 0; text-align: left}
 input[type="text"] {padding: 10px;border: 1px solid #DDD;border-top: 1px solid #CCC;
 background: white;font-weight: 300;color: #65645A;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 

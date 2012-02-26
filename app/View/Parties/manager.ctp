@@ -25,14 +25,14 @@
              <td><?php echo $c['sort_order'].') '.$c['name'];?><br />
 
              <?php if($c['validation']){
-                    if($c['public']){
+                    if($c['published']){
                         echo '<span class="etat en_attente">En attente de dépublication</span>';
                     }
                     else{
                         echo '<span class="etat en_attente">En attente de publication</span>';
                     }
                 }else{
-                    if($c['public']){
+                    if($c['published']){
                         echo '<span class="etat publie">Publié</span>';
                     }
                     else{
@@ -44,7 +44,7 @@
               <td style="text-align: center">
               <?php 
               if(!$c['validation']):
-                 if(!$c['public']): ?>
+                 if(!$c['published']): ?>
                 <?php echo $this->Html->image('fleche_haut.png', array(
                     "url"=> array("action"=>"monter", $c['id'])
                 ));?> / 
@@ -56,7 +56,7 @@
              endif;?>
              </td>
              <td style="text-align: left;">
-             <?php if(!($c['public']) AND !($c['validation'])): ?>    
+             <?php if(!($c['published']) AND !($c['validation'])): ?>    
              <?php echo $this->Html->link($this->Html->image('editer.png'), array("action"=>"edit", $c['id'], $c['slug']),array("escape" => false)); ?>
              <?php echo $this->Html->link('<span class="etat action">'.$this->Html->image('supprimer.png').' Supprimer</span>', 
                      array("action"=>"delete", $c['id']),
@@ -67,7 +67,7 @@
              <?php 
              
              if(!$c['validation']){
-                 if($c['public']){
+                 if($c['published']){
                     echo $this->Html->link('<span class="etat action">Ajouter/Dépublier les sous-parties</span>', 
                         array("controller" => "sousparties", "action" => "manager", $c['id'], $c['slug']),
                         array("title" =>"Ajouter ou dépublier une sous-partie", "escape"=>false));

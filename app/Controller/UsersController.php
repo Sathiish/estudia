@@ -37,8 +37,9 @@ class UsersController extends AppController {
  * @return void
  */
 	public function dashboard() {
-//		$user = $this->User->read(null, $this->Auth->user('id'));
-//		$this->set('user', $user);
+		$user = $this->User->read(null, $this->Auth->user('id'));
+		$this->set('user', $user);
+
 	}
 
 /**

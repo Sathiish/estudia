@@ -16,7 +16,7 @@ class SousPartiesController extends AppController {
         public function manager($partieId){
 
             $sousParties = $this->SousPartie->find('all', array(
-                "fields" => "SousPartie.id, SousPartie.name, SousPartie.slug, SousPartie.validation, SousPartie.public, SousPartie.sort_order",
+                "fields" => "SousPartie.id, SousPartie.name, SousPartie.slug, SousPartie.validation, SousPartie.published, SousPartie.sort_order",
                 "conditions" => "SousPartie.partie_id = $partieId ORDER BY sort_order ASC",
                 "contain" => array(
                     "Partie" => array(
@@ -63,7 +63,11 @@ class SousPartiesController extends AppController {
             
 //                $d['SousPartie']['partie_id'] = $auteur['Partie']['cour_id'];
                                 //debug($d['SousPartie']); die();
-                if($this->SousPartie->save($d['SousPartie'])){
+                if($this->SousPartie->save($d['SousPartie'], array(    
+                    'validate' => true,    
+                    'fieldList' => array(),    
+                    'callbacks' => false
+                ))){
                     $this->Session->setFlash("Mise à jour correctement effectuée.");
                     $this->redirect($this->referer()); 
 
@@ -233,9 +237,9 @@ class SousPartiesController extends AppController {
                 }
 
                 if($isPublic == "public"){
-                    $condition .= " AND SousPartie.public = 1";
+                    $condition .= " AND SousPartie.published = 1";
                 }elseif($isPublic == "nonpublic"){
-                    $condition .= " AND SousPartie.public = 0";
+                    $condition .= " AND SousPartie.published = 0";
                 }
             }else{
                 $condition = "SousPartie.partie_id = $partieId ORDER BY sort_order ASC";
@@ -244,7 +248,7 @@ class SousPartiesController extends AppController {
            
             $this->loadModel('SousPartie');
             $sousParties = $this->SousPartie->find('all', array(
-                "fields" => "SousPartie.id, SousPartie.name, SousPartie.slug, SousPartie.validation, SousPartie.public, SousPartie.token, SousPartie.sort_order",
+                "fields" => "SousPartie.id, SousPartie.name, SousPartie.slug, SousPartie.validation, SousPartie.published, SousPartie.token, SousPartie.sort_order",
                 "conditions" => $condition,
                 "contain" => array(
                     "Partie" => array(

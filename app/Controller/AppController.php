@@ -125,6 +125,7 @@ class AppController extends Controller {
                         $d[$model]['id'] = $this->{$this->modelClass}->id;
                         if(isset($publish) && $publish == "publish"){
                              $d[$model]['published'] = 1;
+                             
                         }elseif(isset($publish) && $publish == "unpublish"){
                              $d[$model]['published'] = 0;
                         }
@@ -133,6 +134,8 @@ class AppController extends Controller {
                         $d[$model]['token'] = 0;
             
                         $this->_savePublication($d, $model, $p);
+                        
+                       
                     }else{
                         $this->Session->setFlash("Votre demande de publication a déjà été transmise", 'notif');
                         $this->redirect($this->referer());     
@@ -168,8 +171,20 @@ class AppController extends Controller {
       
             if($this->{$this->modelClass}->save($d,true,array('validation','published','token'))){
                 $ToPublish = ($d[$model]['published'] == 1)? true : false;
-                //debug($d); debug(!$ToPublish); die();
                 $this->{$this->modelClass}->updateCounter($ToPublish);
+                
+                //On met à jour les count dans la table CourTag et QuizTag
+                $typeTag = $this->modelClass."Tag";
+                $cible = $this->modelKey;
+
+                $this->{$this->modelClass}->$typeTag->updateAll(    
+                        array("$typeTag.published" => $d[$model]['published']),
+                        array($typeTag.".".$cible."_id" => $d[$model]['id'])
+                );
+                
+                //Puis on met à jour les count dans la table Tag
+                $this->{$this->modelClass}->$typeTag->Tag->updatecount();
+                        
 //                App::uses('CakeEmail','Network/Email'); 
 //                $mail = new CakeEmail();
 //                $mail->from('contact@zeschool.com')
