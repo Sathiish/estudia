@@ -7,19 +7,23 @@ App::uses('AppController', 'Controller');
  */
 class MatieresController extends AppController {
 
-
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow('index', 'view', 'tag');
+    }
 /**
  * index method
  *
  * @return void
  */
-	public function index() {
+	public function index($model) {
+            
 		$matieres = $this->Matiere->find('all', array(
-                    "fields" => "Matiere.name, Matiere.id, Matiere.slug, Matiere.count_published_cours, Matiere.count_published_quiz",
-                    "conditions" => "Matiere.published = 1 AND (Matiere.count_published_cours > 0 OR Matiere.count_published_quiz > 0)",
+                    "fields" => "Matiere.name, Matiere.id, Matiere.slug, Matiere.count_published_$model",
+                    "conditions" => "Matiere.published = 1 AND Matiere.count_published_$model > 0",
                     "contain" => array()
                 ));
-		$this->set(compact('matieres'));
+		$this->set(compact('matieres', 'model'));
 	}
 
 /**
@@ -203,4 +207,11 @@ class MatieresController extends AppController {
 		$this->Session->setFlash(__('Matiere was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+        
+        public function mliste(){
+            return $this->Matiere->find('list', array(
+                //"conditions" => "Matiere.published = 1 AND (Matiere.count_published_cours > 0 OR Matiere.count_published_quiz > 0)",
+                "contain" => array()
+                )) + array('0' => 'Autre');
+        }
 }

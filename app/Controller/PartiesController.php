@@ -20,7 +20,7 @@ class PartiesController extends AppController {
 	function show($partieId, $slug = null){    
             $partie = $this->Partie->find('first',array(
                 "fields" => "Partie.slug, Partie.name, Partie.id, Partie.contenu",
-                "conditions" => "Partie.id = $partieId AND Partie.published = 1",
+                "conditions" => "Partie.id = $partieId",
                 "contain" => array(
                     "SousPartie" => array(
                         "fields" => "SousPartie.id, SousPartie.name, SousPartie.slug, SousPartie.contenu"
@@ -84,8 +84,9 @@ class PartiesController extends AppController {
                                 
                 if($this->Partie->save($d['Partie'])){
                     if($partieId != null){
-                       $this->Session->setFlash("Mise à jour correctement effectué.");
-                        $this->redirect("/parties/manager/".$d['Partie']['cour_id']); 
+                       $this->Session->setFlash("Mise à jour correctement effectué", 'notif');
+                        $this->redirect($this->referer()); 
+                        //$this->redirect("/parties/manager/".$d['Partie']['cour_id']); 
                     }else{
                         $this->Session->setFlash("Votre cours a bien été crée. Vous pouvez commencer à créer des sous-parties.", 'notif');
                         $this->redirect("/sousparties/manager/".$this->Partie->id);
@@ -99,28 +100,12 @@ class PartiesController extends AppController {
                 if($partieId != null){
                     $this->data = $this->Partie->find('first', array(
                         "conditions" => "Partie.id = $partieId",
-                        "fields" => 'Partie.id, Partie.name, Partie.slug, Partie.contenu',
+                        "fields" => 'Partie.id, Partie.name, Partie.slug, Partie.contenu, Partie.cour_id',
                         "contain" => array()
                     ));
                 }
             }
 
-            $path = $this->Partie->getPath($partieId);
-            
-            $sousParties = $this->Partie->SousPartie->find('all', array(
-                "fields" => "SousPartie.id, SousPartie.name, SousPartie.slug, SousPartie.validation, SousPartie.published, SousPartie.sort_order",
-                "conditions" => "SousPartie.partie_id = $partieId ORDER BY SousPartie.sort_order ASC",
-                "contain" => array(
-                    "Partie" => array(
-                        "fields" => array("Partie.name, Partie.slug, Partie.id"),
-                        "Cour" => array(
-                            "fields" => array("Cour.name, Cour.slug, Cour.id")
-                        )
-                    )
-                )
-            ));
-            
-            $this->set(compact('sousParties', 'path')); 
 
         }
         
@@ -145,13 +130,8 @@ class PartiesController extends AppController {
                 }
                 
                 if($this->Partie->save($d['Partie'])){
-                    if($partieId != null){
-                       $this->Session->setFlash("Mise à jour correctement effectué.");
-                        $this->redirect("/parties/manager/".$d['Partie']['cour_id']); 
-                    }else{
-                        $this->Session->setFlash("La partie a bien été créée. Vous pouvez commencer à lui ajouter des sous-parties.", 'notif');
-                        $this->redirect("/sousparties/manager/".$this->Partie->id);
-                    }
+                    $this->Session->setFlash("Mise à jour correctement effectué.");
+                    $this->redirect($this->referer());
                 }else{
                     $this->Session->setFlash("Un problème est survenu pendant l'ajout de cette partie. Veuillez réessayer.", 'notif', array('type' => 'error'));
                     $this->redirect($this->referer());

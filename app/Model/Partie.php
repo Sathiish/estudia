@@ -9,7 +9,7 @@ class Partie extends AppModel{
     public $hasMany = array('SousPartie');
     
     function beforeSave($options = array()) {
-        parent::beforeSave($options); 
+        //parent::beforeSave($options); 
         if(!empty($this->data['Partie']['name'])){
             $this->data['Partie']['slug'] = strtolower(Inflector::slug($this->data['Partie']['name'], '-'));
         }

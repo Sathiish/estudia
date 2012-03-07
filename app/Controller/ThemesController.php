@@ -6,7 +6,12 @@ App::uses('AppController', 'Controller');
  * @property Matiere $Matiere
  */
 class ThemesController extends AppController {
-
+        
+        public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow('view', 'tag');
+        }
+        
 /**
  * view method
  *
@@ -112,7 +117,7 @@ class ThemesController extends AppController {
 /*
  * Permet de récupérer la liste des thèmes pour une matière donnée
  */
-        public function selectbox($matiereId = null){
+        public function selectbox($matiereId = null, $withNew = null){
             $this->layout = null;
 
             if(!$matiereId){
@@ -123,7 +128,11 @@ class ThemesController extends AppController {
                     "conditions" => "Theme.matiere_id = $matiereId"
                 ));
             }
-            $this->set(compact('themes'));            
+            $this->set(compact('themes')); 
+            if(isset($withNew) && $withNew == "recherche"){
+                $this->render('recherche');
+            }
+                       
         }
         
 /**

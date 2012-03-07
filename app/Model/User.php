@@ -7,7 +7,7 @@ App::uses('AppModel', 'Model');
  */
 class User extends AppModel {
     
-        var $hasMany = array(
+        var $hasMany = array('CourFavori',
             'MessageExpediteur' => array(
                 'className' => 'Message',
                 'foreignKey' => 'expediteur'

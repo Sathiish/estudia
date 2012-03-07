@@ -1,5 +1,5 @@
 <?php echo $this->Html->css('messagerie', null, array('inline' => false));?>
-<div class="titre"><?php echo $this->Html->image('titre/titre_messagerie.png', array('alt' => 'Titre dashboard','width'=>'143', 'height'=>'29')); ?></div>
+<!--<div class="titre"><?php echo $this->Html->image('titre/titre_messagerie.png', array('alt' => 'Titre dashboard','width'=>'143', 'height'=>'29')); ?></div>-->
 <div class="messagerie menu">
     <ul>
         <li><?php echo $this->Html->link('Boîte de réception', array('controller'=>'messages', 'action' => 'index'), array('class' => 'active')); ?> | </li>
@@ -8,6 +8,7 @@
     </ul>
     
 </div>
+
 
 <table class="boite_reception">
     <?php $i = 0; foreach ($messages as $message): ?>
@@ -45,3 +46,4 @@
     </tr>
     <?php endforeach; ?>
 </table>
+    

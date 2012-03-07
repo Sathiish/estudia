@@ -6,6 +6,7 @@
 
 <?php echo $this->Html->css('style'); ?>
 <?php echo $this->Html->css('table'); ?>
+<?php echo $this->Html->css('print', array('media' => 'print')); ?>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <?php echo $scripts_for_layout; ?>
 </head>
@@ -19,7 +20,7 @@
     <div class="header_resize">
         <div class="menu_nav">
         <ul>
-           <li><?php echo $this->Html->link('Accueil', '/', array()); ?></li>
+          <li><?php echo $this->Html->link('Accueil', '/', array()); ?></li>
           <li><?php echo $this->Html->link(' | Ressources', array('controller'=>'ressources', 'action' => 'index')); ?></li>
           <li><?php echo $this->Html->link(' | Quiz', array('controller'=>'quiz', 'action' => 'index')); ?></li>
           <li><?php echo $this->Html->link(' | Forum', array('controller'=>'categories', 'action' => 'index')); ?></li>
@@ -35,7 +36,7 @@
       </div>
         <div class="clr"></div>
         
-        <?php echo $this->Html->image('logo2.png', array('alt' => 'logo','width'=>'194', 'height'=>'49', 'class' => 'logo'))?>
+        <?php echo $this->Html->link($this->Html->image('logo2.png', array('alt' => 'logo','width'=>'194', 'height'=>'49', 'class' => 'logo')), '/', array('escape' => false));?>
         
         
         <div class="clr"></div>

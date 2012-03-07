@@ -8,56 +8,78 @@ class CoursController extends AppController {
               
         function beforeFilter() {
             parent::beforeFilter();
-            $this->Auth->allow('index');
+            $this->Auth->allow('index', 'theme', 'show', 'view');
         }
-        
+                
         public $helpers = array('Autocomplete');
         
-	/**
-	 * Liste des matières
-	 */
-	function index()
-	{
-
-	}
  
         /**
 	 * Liste un cours et tous ses enfants à partir d'un slug
 	 */
 	function view($themeId,$slug = null){    
             $cours = $this->Cour->find('all',array(
-                "fields" => "Cour.slug, Cour.name, Cour.id",
+                "fields" => "Cour.slug, Cour.name, Cour.id, Cour.user_id, Cour.count, Cour.moyenne",
                 "conditions" => "Cour.theme_id = $themeId AND Cour.published = 1",
-                "contain" => array()
-                    ));
+                "contain" => array(
+                    'User' => array(
+                        "fields" => "User.username, User.slug"
+                    )
+                )
+            ));
 
-            $this->set(compact('cours'));
+            $path = $this->Cour->Theme->findPath($themeId);
+            $this->set(compact('cours', 'path'));
 	}
 	
-        public function theme($matiereId,$slug = null){    
+        public function theme($matiereId, $slug = null){    
             $cours = $this->Cour->Theme->find('all',array(
-                "fields" => "Theme.slug, Theme.name, Theme.id",
+                "fields" => "Theme.slug, Theme.name, Theme.id, Theme.count_published_cours",
                 "conditions" => "Theme.matiere_id = $matiereId AND Theme.count_published_cours > 0",
                 "contain" => array()
                     ));
 
-            $this->set(compact('cours'));
+            $this->loadModel('Matiere');
+            $matiere = $this->Matiere->find('first', array(
+                'conditions' => "Matiere.id = $matiereId", 
+                'contain' => array(),
+                'fields' => 'Matiere.id, Matiere.slug, Matiere.name'
+            ));
+            
+            $this->set(compact('cours', 'matiere'));
 	}
         
-        function show($coursId, $slug = null){
+        public function show($coursId, $slug = null){
+            if($this->Auth->user('id')){
+                $user_id = $this->Auth->user('id');
+            }else{
+                $user_id = 0;
+            }
+            
             $c = $this->Cour->find('first', array(
                 "conditions" => "Cour.id = $coursId AND Cour.published = 1",
+                "fields" => array("Cour.id, Cour.slug, Cour.name, Cour.contenu, Cour.theme_id, Cour.created, Cour.moyenne, Cour.raccourci, Cour.meta_description, Cour.meta_keywords"),
                 "contain" => array(
                     "User" => array(
                         "fields" => array("User.id, User.username")
                     ),
                     "Partie" => array(
-                        "fields" => array('Partie.id, Partie.slug, Partie.name, Partie.sort_order, Partie.published'),
-                        "conditions" => array("Partie.published = 1"),
+                        "fields" => array('Partie.id, Partie.slug, Partie.name, Partie.sort_order, Partie.contenu, Partie.published'),
+//                        "conditions" => array("Partie.published = 1"),
                         "SousPartie" => array(
-                            "fields" => array('SousPartie.id, SousPartie.slug, SousPartie.name, SousPartie.sort_order, SousPartie.published'),
-                            "conditions" => array("SousPartie.published = 1"),
+                            "fields" => array('SousPartie.id, SousPartie.slug, SousPartie.name, SousPartie.sort_order, SousPartie.contenu, SousPartie.published')
+//                            ,"conditions" => array("SousPartie.published = 1"),
                         )
+                    ),
+                    "CourNote" => array(
+                        "fields" => array("CourNote.note"),
+                        "conditions" => "CourNote.cour_id = $coursId AND CourNote.user_id = $user_id",
+                        "limit" => 1
+                    ),
+                    "CourFavori" => array(
+                        "fields" => array("CourFavori.id"),
+                        "conditions" => "CourFavori.cour_id = $coursId AND CourFavori.user_id = $user_id",
+                        "limit" => 1
                     )
                 )
             ));
@@ -67,8 +89,29 @@ class CoursController extends AppController {
                 $this->redirect($this->referer());
                 die();
             }else{
-                $path = $this->Cour->Theme->findPath($c['Cour']['theme_id']);
-                $this->set(compact('c', 'path'));
+                $this->Cour->id = $c['Cour']['id'];
+                $this->Cour->incrementField('count');
+                $theme_id = $c['Cour']['theme_id'];
+                $coursRelated = $this->Cour->find('all',array(
+                    "conditions" => "Cour.theme_id = $theme_id AND Cour.id != $coursId",
+                    "fields" => "Cour.id, Cour.name, Cour.slug",
+                    "order" => "Cour.moyenne DESC",
+                    "limit" => 3
+                ));
+                
+                $this->loadModel('Quiz');
+                $quizRelated = $this->Quiz->find('all',array(
+                    "conditions" => "Quiz.theme_id = $theme_id",
+                    "fields" => "Quiz.id, Quiz.name, Quiz.slug",
+                    "order" => "Quiz.moyenne DESC",
+                    "limit" => 3
+                ));
+                
+                $path = $this->Cour->Theme->findPath($theme_id);
+                $this->set(compact('c', 'path', 'coursRelated'));
+                $this->set('title_for_layout', $c['Cour']['name']);
+                $this->set('meta_description', $c['Cour']['meta_description']);
+                $this->set('meta_keywords', $c['Cour']['meta_keywords']);
             }
   
         }
@@ -128,6 +171,10 @@ class CoursController extends AppController {
             
             if($coursId != null){
                 $this->_checkAuthorization($coursId);
+            }else{
+                $matieres = $this->Cour->Theme->Matiere->getAllMatieres() + array("" => "Autre");
+                $this->set(compact('matieres'));
+                $this->render('add');
             }
                         
             if($this->request->is('post') || $this->request->is('put')) {
@@ -136,9 +183,10 @@ class CoursController extends AppController {
                 $d = $this->Cour->set($this->data);
                 $d['Cour']['user_id'] = $userId;
                 $d['Cour']['tags'] = "";
+                unset($d['Cour']['tags']);
 
                 //On crée la matière si celle-ci n'existe pas
-                if($d['Cour']['matiere_id'] == ""){
+                if(!empty($d['Matiere']['name']) && $d['Cour']['matiere_id'] == ""){
                     $d['Matiere']['id'] = null;
                     $this->loadModel('Matiere');
                     $ok = $this->Matiere->save($d['Matiere']);
@@ -146,7 +194,7 @@ class CoursController extends AppController {
                 }
 
                 //On crée le thème si celui-ci n'existe pas
-                if(!empty($d['Theme']['name'])){
+                if(isset($d['Theme']['name']) && !empty($d['Theme']['name'])){
                     $d['Theme']['id'] = null;
 
                     $d['Theme']['matiere_id'] = $d['Cour']['matiere_id'];
@@ -156,26 +204,34 @@ class CoursController extends AppController {
                     if($ok2) $d['Cour']['theme_id'] = $this->Theme->id;
                 }
 
+
                 //On modifie ou on crée un nouveau cours ?
                 if($coursId != null){
                     $d['Cour']['id'] = $coursId;
                 }else{
                     $d['Cour']['id'] = null;
                 }
-
+//debug($d); die();
                 //On enregistre le cours
                 if($this->Cour->save($d['Cour'])){
                     //On met à jour les tags au cas où
-                    $this->Cour->CourTag->updateAll(
-                            array('CourTag.theme_id' => $d['Cour']['theme_id'], 'CourTag.matiere_id' => $d['Cour']['matiere_id']),
-                            array('CourTag.cour_id' => $this->Cour->id)
-                    );
-                    if($coursId != null){
-                        $this->Session->setFlash("Votre cours a été mis à jour", 'notif');
-                        $this->redirect($this->referer());
+                    if(isset($d['Cour']['matiere_id']) && !empty($d['Cour']['matiere_id']) && isset($d['Cour']['theme_id']) && !empty($d['Cour']['theme_id'])){
+                        $this->Cour->CourTag->updateAll(
+                                array('CourTag.theme_id' => $d['Cour']['theme_id'], 'CourTag.matiere_id' => $d['Cour']['matiere_id']),
+                                array('CourTag.cour_id' => $this->Cour->id)
+                        );
+                    }
+                    
+                    if($this->RequestHandler->isAjax()){
+                        die();
                     }else{
-                        $this->Session->setFlash("Votre cours a bien été crée. Vous pouvez commencer à créer ses parties.", 'notif');
-                        $this->redirect("/parties/manager/".$this->Cour->id);
+                        if($coursId != null){
+                            $this->Session->setFlash("Votre cours a été mis à jour", 'notif');
+                            $this->redirect($this->referer());
+                        }else{
+                            $this->Session->setFlash("Votre cours a bien été crée. Vous pouvez commencer à créer ses parties.", 'notif');
+                            $this->redirect("/cours/edit/".$this->Cour->id);
+                        }   
                     }
 
                 }else{
@@ -187,30 +243,38 @@ class CoursController extends AppController {
                 if($coursId != null){
                     $this->data = $this->Cour->find('first', array(
                         "conditions" => "Cour.id = $coursId",
-                        "fields" => 'Cour.id, Cour.name, Cour.slug, Cour.theme_id, Cour.contenu',
+                        "fields" => 'Cour.id, Cour.name, Cour.slug, Cour.theme_id, Cour.contenu, Cour.validation, Cour.published, Cour.difficult, Cour.meta_description, Cour.meta_keywords',
                         "contain" => array(
                             "Theme" => array(
                                 "fields" => array("Theme.id, Theme.name"),
                                 "Matiere" => array(
                                     "fields" => array("Matiere.id, Matiere.name")
                                 )
+                            ),
+                            "Partie" => array(
+                                "fields" => array("Partie.slug, Partie.name, Partie.id, Partie.validation, Partie.contenu, Partie.published, Partie.sort_order"),
+                                "order" => "Partie.sort_order ASC",
+                                "SousPartie" => array(
+                                    "fields" => array('SousPartie.id', 'SousPartie.name', 'SousPartie.slug', 'SousPartie.contenu', 'SousPartie.sort_order'),
+                                    "order" => "SousPartie.sort_order ASC"
+                                 )
                             )
                         )
                     ));
                  
-                 $userId = $this->Auth->user('id');
-                 $parties = $this->Cour->Partie->find('all',array(
-                    "fields" => "Partie.slug, Partie.name, Partie.id, Partie.validation, Partie.published, Partie.sort_order",
-                    "conditions" => "Partie.cour_id = $coursId AND Partie.user_id = $userId ORDER BY sort_order ASC",
-                    "contain" => array(
-                        "SousPartie" => array(
-                            "fields" => array('SousPartie.name')
-                        )
-                    )
-                ));
+//                 $userId = $this->Auth->user('id');
+//                 $parties = $this->Cour->Partie->find('all',array(
+//                    "fields" => "Partie.slug, Partie.name, Partie.id, Partie.validation, Partie.published, Partie.sort_order",
+//                    "conditions" => "Partie.cour_id = $coursId AND Partie.user_id = $userId ORDER BY sort_order ASC",
+//                    "contain" => array(
+//                        "SousPartie" => array(
+//                            "fields" => array('SousPartie.name')
+//                        )
+//                    )
+//                ));
                 
                 $relatedTags = $this->Cour->Tag->findRelated($this->modelClass,$coursId);
-                $this->set(compact('parties', 'relatedTags'));
+                $this->set(compact('relatedTags'));
                                 
                 }else{
                     $this->request->data['Cour']['id'] = null;
@@ -221,7 +285,7 @@ class CoursController extends AppController {
             $this->set(compact('matieres'));
         }
         
-        public function visualiser($coursId){
+        public function preview($coursId){
             $contain = array("Theme" => array(
                                 "fields" => array("Theme.id, Theme.name"),
                                 "Matiere" => array(
@@ -232,9 +296,11 @@ class CoursController extends AppController {
                                     "fields" => array("User.id, User.username")
                             ),
                             "Partie" => array(
-                                "fields" => array('Partie.id, Partie.slug, Partie.name, Partie.sort_order'),
+                                "fields" => array('Partie.id, Partie.slug, Partie.name, Partie.sort_order, Partie.contenu'),
+                                "order" => array('Partie.sort_order ASC'),
                                 "SousPartie" => array(
-                                    "fields" => array('SousPartie.id, SousPartie.slug, SousPartie.name, SousPartie.sort_order')
+                                    "fields" => array('SousPartie.id, SousPartie.slug, SousPartie.name, SousPartie.sort_order, SousPartie.contenu'),
+                                    "order" => array('SousPartie.sort_order ASC'),
                                 )
                             )
                         );
@@ -395,4 +461,6 @@ class CoursController extends AppController {
             $this->set(compact('matieres'));
             $this->render('edit');
         }
+        
+
 }

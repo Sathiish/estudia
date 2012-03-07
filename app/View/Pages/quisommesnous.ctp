@@ -1,5 +1,3 @@
-<?php echo $this->Element('sidebar'); ?>
-
 <h1>Qui sommes-nous ?</h1>            
 <br />
 <p>Bienvenue sur ZeSchool, un portail éducatif gratuit pour tous.</p>

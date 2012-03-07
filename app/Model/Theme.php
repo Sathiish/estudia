@@ -20,6 +20,7 @@ class Theme extends AppModel{
     function findPath($themeId){
         $path = $this->find('first', array(
             "fields" => "Theme.id, Theme.name, Theme.slug",
+            "conditions" => "Theme.id = $themeId",
             "contain" => array(
                 "Matiere" => array(
                     "fields" => array("Matiere.id, Matiere.name, Matiere.slug")

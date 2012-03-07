@@ -1939,3 +1939,1671 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
 [main] - APP\webroot\index.php, line 96
 
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 23]
+Trace:
+include - APP\View\Cours\edit.ctp, line 23
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Theme in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 141]
+Trace:
+include - APP\View\Cours\edit.ctp, line 141
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Theme in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 151]
+Trace:
+include - APP\View\Cours\edit.ctp, line 151
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 194]
+Trace:
+include - APP\View\Cours\edit.ctp, line 194
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 207]
+Trace:
+include - APP\View\Cours\edit.ctp, line 207
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 207]
+Trace:
+include - APP\View\Cours\edit.ctp, line 207
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 209]
+Trace:
+include - APP\View\Cours\edit.ctp, line 209
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 217]
+Trace:
+include - APP\View\Cours\edit.ctp, line 217
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 227]
+Trace:
+include - APP\View\Cours\edit.ctp, line 227
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 228]
+Trace:
+include - APP\View\Cours\edit.ctp, line 228
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 236]
+Trace:
+include - APP\View\Cours\edit.ctp, line 236
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Theme in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 256]
+Trace:
+include - APP\View\Cours\edit.ctp, line 256
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Theme in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 257]
+Trace:
+include - APP\View\Cours\edit.ctp, line 257
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 261]
+Trace:
+include - APP\View\Cours\edit.ctp, line 261
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 262]
+Trace:
+include - APP\View\Cours\edit.ctp, line 262
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 262]
+Trace:
+include - APP\View\Cours\edit.ctp, line 262
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 265]
+Trace:
+include - APP\View\Cours\edit.ctp, line 265
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:22:00 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 276]
+Trace:
+include - APP\View\Cours\edit.ctp, line 276
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:10:57 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:11:24 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:22:19 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:22:35 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:22:58 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:23:17 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:33:37 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:34:03 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:34:40 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:39:27 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:39:37 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:40:08 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 11:40:32 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:15:51 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:16:35 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:16:48 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:17:04 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:17:39 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:17:41 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:17:42 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:17:52 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:19:04 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:19:16 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:19:31 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:20:00 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:27:55 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:28:12 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:28:54 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:32:57 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:33:12 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:33:25 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:34:52 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:34:58 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:35:04 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 12:36:21 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 13:03:27 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 13:03:42 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:52:52 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:53:11 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:53:14 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:54:54 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:55:02 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:55:13 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:55:17 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:55:27 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:55:42 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:56:03 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:56:15 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:56:59 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:57:09 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:57:44 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:57:59 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:58:59 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 16:59:21 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:02:47 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:03:00 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:03:13 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:04:38 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:05:14 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:05:28 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:05:43 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:09:42 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:13:33 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:14:40 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:14:58 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:19:08 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:19:29 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:19:36 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:19:46 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:21:28 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:21:39 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:21:50 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:28:53 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:35:54 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:36:28 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:37:42 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 17:38:06 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:24:47 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:25:10 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:25:43 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:26:12 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:26:16 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:27:04 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:27:10 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:29:13 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:30:22 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:31:08 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:31:29 Debug: Notice (8): Undefined index: Partie in [C:\wamp\www\zeschool.dev\app\View\Parties\add.ctp, line 25]
+Trace:
+include - APP\View\Parties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:45:47 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 18:46:04 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:07:32 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:15:31 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:15:54 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:16:02 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:16:22 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:16:29 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:16:44 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:16:51 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:16:57 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:17:05 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:17:13 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:17:20 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:17:28 Debug: Notice (8): Undefined index: Cour in [C:\wamp\www\zeschool.dev\app\View\SousParties\add.ctp, line 25]
+Trace:
+include - APP\View\SousParties\add.ctp, line 25
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:17:46 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:18:48 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:37:33 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:38:26 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:38:37 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:38:51 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 11:42:58 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 12:30:56 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 12:31:05 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 12:40:04 Debug: Notice (8): Undefined variable: path in [C:\wamp\www\zeschool.dev\app\View\Parties\edit.ctp, line 26]
+Trace:
+include - APP\View\Parties\edit.ctp, line 26
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 22:43:46 Debug: Notice (8): Undefined index: HTTP_REFERER in [C:\wamp\www\zeschool.dev\app\View\Cours\show.ctp, line 49]
+Trace:
+include - APP\View\Cours\show.ctp, line 49
+View::_render() - CORE\Cake\View\View.php, line 595
+View::render() - CORE\Cake\View\View.php, line 362
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 22:44:08 Debug: Notice (8): Undefined index: HTTP_REFERER in [C:\wamp\www\zeschool.dev\app\View\Cours\show.ctp, line 49]
+Trace:
+include - APP\View\Cours\show.ctp, line 49
+View::_render() - CORE\Cake\View\View.php, line 595
+View::render() - CORE\Cake\View\View.php, line 362
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-28 22:44:18 Debug: Notice (8): Undefined index: HTTP_REFERER in [C:\wamp\www\zeschool.dev\app\View\Cours\show.ctp, line 49]
+Trace:
+include - APP\View\Cours\show.ctp, line 49
+View::_render() - CORE\Cake\View\View.php, line 595
+View::render() - CORE\Cake\View\View.php, line 362
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-29 12:08:16 Debug: Notice (8): Undefined variable: user_id in [C:\wamp\www\zeschool.dev\app\Controller\AppController.php, line 274]
+Trace:
+AppController::note() - APP\Controller\AppController.php, line 274
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-29 12:08:26 Debug: Notice (8): Undefined variable: user_id in [C:\wamp\www\zeschool.dev\app\Controller\AppController.php, line 274]
+Trace:
+AppController::note() - APP\Controller\AppController.php, line 274
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-29 12:08:26 Debug: Notice (8): Undefined variable: alreadyVoted in [C:\wamp\www\zeschool.dev\app\Controller\AppController.php, line 281]
+Trace:
+AppController::note() - APP\Controller\AppController.php, line 281
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-29 12:08:55 Debug: Notice (8): Undefined variable: user_id in [C:\wamp\www\zeschool.dev\app\Controller\AppController.php, line 274]
+Trace:
+AppController::note() - APP\Controller\AppController.php, line 274
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-29 12:08:55 Debug: Notice (8): Undefined variable: alreadyVoted in [C:\wamp\www\zeschool.dev\app\Controller\AppController.php, line 281]
+Trace:
+AppController::note() - APP\Controller\AppController.php, line 281
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-29 12:09:11 Debug: Notice (8): Undefined variable: user_id in [C:\wamp\www\zeschool.dev\app\Controller\AppController.php, line 274]
+Trace:
+AppController::note() - APP\Controller\AppController.php, line 274
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-03-05 15:10:20 Debug: Notice (8): Undefined index: 33 in [C:\wamp\www\zeschool.dev\app\View\Messages\ecrire.ctp, line 31]
+Trace:
+include - APP\View\Messages\ecrire.ctp, line 31
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+

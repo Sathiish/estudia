@@ -35,12 +35,12 @@ class SousPartiesController extends AppController {
         
         public function edit($sousPartieId = null){
 
-            $this->_checkAuthorization($sousPartieId);
+            //$this->_checkAuthorization($sousPartieId);
             
             if($this->request->is('post') || $this->request->is('put')) {
- 
+
                 $d = $this->SousPartie->set($this->data);
-                
+                 
                 if($sousPartieId == null){
                     $sousPartieId = $d['SousPartie']['id'];
                 }
@@ -62,7 +62,7 @@ class SousPartiesController extends AppController {
 //                }
             
 //                $d['SousPartie']['partie_id'] = $auteur['Partie']['cour_id'];
-                                //debug($d['SousPartie']); die();
+//                            debug($d['SousPartie']); die();   
                 if($this->SousPartie->save($d['SousPartie'], array(    
                     'validate' => true,    
                     'fieldList' => array(),    
@@ -113,8 +113,7 @@ class SousPartiesController extends AppController {
                 
                 if($this->SousPartie->save($d['SousPartie'])){
                     $this->Session->setFlash("Mise à jour correctement effectué.");
-                    $this->redirect("/sousparties/manager/$partieId"); 
-
+                    $this->redirect($this->referer());
                 }else{
                     $this->Session->setFlash("Un problème est survenu pendant l'ajout de cette partie. Veuillez réessayer.");
                     $this->redirect($this->referer());

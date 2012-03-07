@@ -82,8 +82,6 @@
         });
       
 <?php $this->Html->scriptEnd(); ?>
-
-<?php echo $this->element('sidebar');  ?>
         
 <div id="breadcrumbs">
 	<?php echo $this->Html->link("Gérer mes quiz", array("controller" => "quiz", "action" => "manager"), array("title" => "Voir tous mes quiz"));?>

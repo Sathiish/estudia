@@ -1,20 +1,20 @@
-<?php echo $this->Html->css('form', null, array('inline'=>false)); ?>
-<?php $this->Html->script('tiny_mce/tiny_mce.js',array('inline'=>false)); ?>
-<?php $this->Html->scriptStart(array('inline'=>false)); ?>
+<?php echo $this->Html->css('form'); ?>
+<script>
         tinyMCE.init({
                 mode : 'textareas',
-                theme: 'advanced',               
-                plugins: 'inlinepopups,paste,emotions,image',
+                theme: 'advanced',
+                editor_deselector : "mceNoEditor",
+                plugins: 'inlinepopups,paste,emotions,image, fullscreen',
                 entity_encoding : "raw",
                 
-                theme_advanced_buttons1 : 'bold,italic,underline,|,bullist,numlist,|,justifyleft,justifycenter,justifyright,justifyfull,|,image,|,link,unlink',
+                theme_advanced_buttons1 : 'bold,italic,underline,|,bullist,numlist,|,justifyleft,justifycenter,justifyright,justifyfull,|,link,unlink,|,emotions, image,|, fullscreen',
                 theme_advanced_buttons2 : '',
                 theme_advanced_buttons3 : '',
                 theme_advanced_buttons4 : '',
                 theme_advanced_toolbar_location:'top',
                 theme_advanced_statusbar_location : 'bottom',
-                theme_advanced_resizing : true,
-                width : '675',
+                theme_advanced_resizing : false,
+                width : '655',
                 height : '400',
                 forced_root_block : false,
                 force_br_newlines : true,
@@ -22,7 +22,7 @@
                 paste_remove_styles : true,
                 paste_remove_spans :  true,
                 paste_stip_class_attributes : "all",
-                image_explorer : '<?php echo $this->Html->url(array('controller'=>'medias','action'=>'index', 'cours', $path['Cour']['id'])); ?>',
+                image_explorer : '<?php echo $this->Html->url(array('controller'=>'medias','action'=>'index', "cours", $path['Cour']['id'])); ?>',
                 image_edit : '<?php echo $this->Html->url(array('controller'=>'medias','action'=>'show')); ?>',
                 relative_urls : false,
                 content_css : '/css/wysiwyg.css'
@@ -32,18 +32,17 @@
                 var ed = tinyMCE.activeEditor;
                 ed.execCommand('mceInsertContent',false,content); 
         }
-<?php $this->Html->scriptEnd(); ?>
-        
-<div id="breadcrumbs">
-	<?php echo $this->Html->link("Mes cours", array("controller" => "cours", "action" => "manager"), array("title" => "Voir tous mes cours"));?>
-            >> <?php echo $this->Html->link($path['Cour']['name'], array("controller" => "cours", "action" => "show", $path['Cour']['id'], $path['Cour']['slug']), array("title" => "Voir tous mes cours"));?>
-            <br />>> <?php echo $path['Partie']['name'];?> >> Ajouter une sous-partie
+</script>
 
-</div>
-
+ <div id="cours-edit" class="content-bloc">
+        <h3>Ajouter une sous-partie</h3>
+        <div class="inside">
 <?php
         echo $this->Form->create('SousPartie', array('url' => "add/".$path['Partie']['id']));
-        echo $this->Form->input('name', array('label' => 'Titre de la partie :'));
-        echo $this->Form->input('contenu', array('label' => 'Introduction :'));
-        echo $this->Form->end('Enregistrer');
+        echo $this->Form->input('name', array('label' => 'Titre de la sous-partie :'));
+        echo $this->Form->input('contenu', array('label' => 'Contenu :'));
 ?>
+        <a href="" onClick="$(this).parent().parent().parent().slideUp(); return false;" class="modifier">Annuler</a>
+<?php 
+        echo $this->Form->end('Enregistrer');
+?>      </div>

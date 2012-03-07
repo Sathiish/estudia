@@ -2,58 +2,61 @@
 <html lang="fr">
 <head>
 <title><?php echo $title_for_layout?></title>
+<?php if(isset($meta_description)) echo '<meta name="description" content="'.$meta_description.'">'; ?>
+<?php if(isset($meta_keywords)) echo '<meta name="keywords" content="'.$meta_keywords.'">'; ?>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<?php echo $this->Html->css('style'); ?>
+<?php echo $this->Html->css('main'); ?>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<?php echo $this->Html->script('menu'); ?>
 
 <?php echo $scripts_for_layout ?>
+<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29775947-1']);
+  _gaq.push(['_setDomainName', 'zeschool.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </head>
-<body>
 
-    <div class="main">
+  <div id="headerintro">
+      
+      <div class="header_resize">
 
-
-<div class="header" style="background:none">
-    <div class="header_resize">
-        <div class="menu_nav">
-        <ul>
-          <li class="active"><?php echo $this->Html->link('Accueil', '/', array()); ?></li>
-          <li><?php echo $this->Html->link(' | Ressources', array('controller'=>'ressources', 'action' => 'index')); ?></li>
-          <li><?php echo $this->Html->link(' | Forum', array('controller'=>'categories', 'action' => 'index')); ?></li>
-          <li><a href="http://zeschool.fr/blog" target="_blank"> | Actualité</a></li>
-          
-              <?php if(isset($_SESSION['Auth']['User']['id'])){ ?>
-                    <li><?php echo $this->Html->link(' | Se déconnecter', array('controller'=>'users', 'action' => 'logout')); ?></li>
-              <?php } else{ ?>
-                    <li><?php echo $this->Html->link('Se connecter', array('controller'=>'users', 'action' => 'login')); ?></li>
-                    <li><?php echo $this->Html->link('S\'inscrire', array('controller'=>'users', 'action' => 'inscription')); ?></li>
-            <?php  } ?>   
-        </ul>
-      </div>
-        <div class="clr"></div>
+        <?php echo $this->element('menu'); ?>
         
-        <?php echo $this->Html->image('logo2.png', array('alt' => 'logo','width'=>'245', 'height'=>'62', 'class' => 'logo'))?>
+        <?php echo $this->Html->image('logo_beta_blanc.png', array('alt' => 'logo','width'=>'200', 'height'=>'54', 'class' => 'logo'))?>
         
         
         <div class="clr"></div>
+        <div style="float:left; margin-top: 6px; margin-left:70px">
+        <?php echo $this->Html->image('/img/frise4.png', array('width' => '382', 'height' => '246')); ?>
+        </div>
+        
+        <div id="intro">   
+            <img src="/img/enviedeprogresser.png"/><br /><br />
+                <p>ZeSchool est une plateforme collaborative de e-learning permettant l’édition et le partage de cours et d'exercices en quelques clics. <br />
+                    C'est 100% gratuit et efficace.</p>
+            <button class="button" style="margin-left: 100px"><a href="/arguments" style="color:#fff;">Besoin d'être convaincu?</a></button>
+        </div>      
       
     </div>
-</div>
 
-</div>
-<!-- END Header -->
+  </div>
 
-<div class="home">		
-    <div class="content_resize">        
-        
-        <?php 
-            echo $this->Session->flash();
-            echo $this->Session->flash('auth');
-        ?>
-        
-<!-- Here's where I want my views to be displayed -->
-<?php echo $content_for_layout ?>
+      <div class='content main'>
+              <?php 
+              echo $this->Session->flash(); 
+              echo $this->Session->flash('auth');           
+              echo $content_for_layout ?>
+      </div>
 
-<?php echo $this->element('footer'); ?>
+          <?php echo $this->element('footer'); ?>

@@ -1,57 +1,45 @@
-<?php echo $this->Html->css('dashboard', null, array('inline'=>false)); ?>
-  
-     <div class="titre"><?php echo $this->Html->image('titre/titre_dashboard.png', array('alt' => 'Titre dashboard','width'=>'155', 'height'=>'22')); ?></div>
-     <div class="sous-titre"><img src="/img/fleche.png" /> le suivi de mon activité</div>
-    <div class="partie">
-        <div class="vignette">
-            <div class="vignette messages"><a href="#"></a></div>
-            <a href="#"><img class="add" src="/img/dashboard/plus2.png" /></a>
-            <img class="bottom" src="/img/cours/bottom_matiere.png" />
-        </div>
-            <ul>
-                <li><?php echo $this->Html->link('Boite de réception', array('controller' => 'messages', 'action' => 'index')); ?></li>
-                <li><?php echo $this->Html->link('Messages envoyés', array('controller' => 'messages', 'action' => 'sent')); ?></li>
-                <li><?php echo $this->Html->link('Ecrire un nouveau message', array('controller' => 'messages', 'action' => 'ecrire')); ?></li>
-            </ul>
-    </div>
-    
-    <div class="partie">
-        <div class="vignette">
-            <div class="vignette profil"><a href="#"></a></div>
-            <a href="#"><img class="add" src="/img/dashboard/plus2.png" /></a>
-            <img class="bottom" src="/img/cours/bottom_matiere.png" />
-        </div>
-            <ul>
-                <li><?php echo $this->Html->link('Voir mon profil', array('controller' => 'users', 'action' => 'index', $_SESSION['Auth']['User']['username'])); ?></li>
-                <li><?php echo $this->Html->link('Mettre à jour mon profil', array('controller' => 'users', 'action' => 'edit')); ?></li>
-            </ul>
-    </div>
+<?php $this->Html->script('dashboard',array('inline'=>false)); ?>
+<?php echo $this->Html->css('messagerie', null, array('inline' => false));?>
 
+<div class="titre"><?php echo $this->Html->image('titre/titre_dashboard.png', array('alt' => 'Titre dashboard','width'=>'155', 'height'=>'22')); ?></div>
 
-    <div class="clr"></div>
-    
-    <div class="partie">
-        <div class="vignette">
-            <div class="vignette cours"><a href="#"></a></div>
-            <a href="#"><img class="add" src="/img/dashboard/plus2.png" /></a>
-            <img class="bottom" src="/img/cours/bottom_matiere.png" />
-        </div>
-            <ul>
-                <li><?php echo $this->Html->link('Voir tous mes cours', array('controller' => 'cours', 'action' => 'manager')); ?></li>
-                <li><?php echo $this->Html->link('Créer un cours', array('controller' => 'cours', 'action' => 'edit')); ?></li>
-                <li><?php echo $this->Html->link('Voir mes exercices', array('controller' => 'quiz', 'action' => 'manager')); ?></li>
-                <li><?php echo $this->Html->link('Créer un exercice', array('controller' => 'quiz', 'action' => 'add')); ?></li>
-            </ul>
+<div class="bloc profil">
+    <div class="title">
+        Mon Profil
     </div>
-    <div class="partie">
-        <div class="vignette">
-            <div class="vignette forum"><a href="#"></a></div>
-            <a href="#"><img class="add" src="/img/dashboard/plus2.png" /></a>
-            <img class="bottom" src="/img/cours/bottom_matiere.png" />
-        </div>
-            <ul>
-                <li><a href="#">Voir tous mes posts</a></li>
-                <li><a href="#">Voir mes derniers posts</a></li>
-                <li><a href="#">Créer un nouveau post</a></li>
-            </ul>
+    <div id="profil">
+
+        <h3>Mes infos</h3>
+        
+        <?php echo $this->Html->image($_SESSION['Auth']['User']['avatar']);?>
+        <span id="name"><?php echo $_SESSION['Auth']['User']['lastname'].' '.$_SESSION['Auth']['User']['name']; ?></span>
+        <p>Actuellement en <?php echo $_SESSION['Auth']['User']['classe']; ?></p>
+
+        <?php echo $this->Html->link('Voir mon profil', array('controller' => 'users', 'action' => 'index', $_SESSION['Auth']['User']['username']), array('class' => 'button')); ?>
+        <?php echo $this->Html->link('Modifier mes infos', array('controller' => 'users', 'action' => 'edit'), array('class' => 'button')); ?>
+        <?php echo $this->Html->link("Mon mot de passe", array("controller"=>"users", "action" => "change_password"), array("class" => "button")); ?>
     </div>
+</div>
+
+<div class="bloc">
+    <div class="title">
+        <div class="tabs" id="tabs1">
+            <?php echo $this->Html->link('Mes cours', array('controller' => 'users', 'action' => 'dashboard'));?>
+            <a href="#contenu2">Mes quiz</a>
+            <?php echo $this->Html->link('Mes messages', array('controller' => 'messages', 'action' => 'index'));?>
+<!--            <a href="#contenu3">Forum</a>-->
+            <a href="#contenu3">Espace rédacteur</a>
+        </div>
+    </div>
+    <div id="conteneur">
+
+        <h3>Mes cours favoris</h3>
+        <ul class="sommaire">
+            <?php foreach($favoris as $f): ?>
+            <li>
+                <?php echo $this->Html->link($f['Cour']['name'], array('controller' => 'cours', 'action' => 'show', $f['Cour']['id'], $f['Cour']['slug'])); ?>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</div>

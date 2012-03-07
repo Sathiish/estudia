@@ -1,10 +1,8 @@
 <?php echo $this->Html->css('messagerie', null, array('inline' => false));?>
 <?php echo $this->Html->css('form', null, array('inline' => false)); ?>
 
-<?php echo $this->Element('sidebar'); ?>
-
 <div class="messagerie">
-    <div class="titre"><?php echo $this->Html->image('titre/titre_messagerie.png', array('alt' => 'Titre dashboard','width'=>'143', 'height'=>'29')); ?></div>
+<!--    <div class="titre"><?php echo $this->Html->image('titre/titre_messagerie.png', array('alt' => 'Titre dashboard','width'=>'143', 'height'=>'29')); ?></div>-->
     <div class="messagerie menu">
     <div class="item1"></div>
     <ul>
@@ -18,9 +16,7 @@
     <div class="messagerie formulaire">    
 <?php echo $this->Form->create('Message');?>
 	<fieldset>
-	
-            <div><span class="ss-titre">Votre message</span> <hr class="underline"></hr></div>
-            
+
 	<?php 
         
         if(!empty($this->params['pass'][0])){ $user_id = $this->params['pass'][0]; }

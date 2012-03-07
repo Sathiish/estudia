@@ -206,7 +206,7 @@ class QuestionsController extends AppController {
                     $quizId = $d['Question']['quiz_id'];
                 }
                 
-                if($this->Question->Quiz->isPublic($quizId)){
+                if($this->Question->Quiz->isPublished($quizId)){
                     $this->Session->setFlash("Action impossible sur un élément publié ou en attente de publication", 'notif', array('type' => 'error'));
                     $this->redirect("/quiz/manager");
                     die();
@@ -242,11 +242,11 @@ class QuestionsController extends AppController {
     
     public function edit($id){
 
-        if($this->Question->isPublic($id)){
-            $this->Session->setFlash("Action impossible sur un élément publié ou en attente de publication", 'notif', array('type' => 'error'));
-            $this->redirect("/quiz/manager");
-            die();
-        }
+//        if($this->Question->isPublished($id)){
+//            $this->Session->setFlash("Action impossible sur un élément publié ou en attente de publication", 'notif', array('type' => 'error'));
+//            $this->redirect("/quiz/manager");
+//            die();
+//        }
         
         if($this->request->is('post') || $this->request->is('put'))
         {

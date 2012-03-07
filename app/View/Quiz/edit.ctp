@@ -108,8 +108,6 @@
         jsMath.Process(document);
 <?php $this->Html->scriptEnd(); ?>
 
-<?php echo $this->element('sidebar');  ?>
-        
 <div id="breadcrumbs">
 	<?php echo $this->Html->link("Mes quiz", array("controller" => "quiz", "action" => "manager"), array("title" => "Voir tous mes quiz"));?>
             >> <?php echo $this->data['Theme']['Matiere']['name'];?>

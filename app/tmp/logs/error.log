@@ -20054,3 +20054,1783 @@ Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
 #13 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(SousPartiesController), Object(CakeRequest), Object(CakeResponse))
 #14 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #15 {main}
+2012-02-26 19:05:20 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\CourTags\delete.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CourTagsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-02-26 19:05:23 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\CourTags\delete.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CourTagsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-02-26 19:42:30 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\CourTags\delete.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CourTagsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-02-26 20:00:06 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(175): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:01:29 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(175): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:02:30 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(177): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:04:55 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(177): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:06:15 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(177): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:08:27 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(177): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:08:46 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(177): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:09:24 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(177): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:13:01 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(177): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:18:01 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(177): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:21:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `CourTag`.`cour_id` = 6' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('UPDATE `cours_t...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\Database\Mysql.php(376): DboSource->execute('UPDATE `cours_t...')
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2189): Mysql->update(Object(CourTag), Array, NULL, Array)
+#4 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(174): Model->updateAll(Array, Array)
+#5 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-02-26 20:22:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `CourTag`.`cour_id` = 6' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('UPDATE `cours_t...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\Database\Mysql.php(376): DboSource->execute('UPDATE `cours_t...')
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2189): Mysql->update(Object(CourTag), Array, NULL, Array)
+#4 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(174): Model->updateAll(Array, Array)
+#5 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-02-26 20:23:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `CourTag`.`cour_id` = 6' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('UPDATE `cours_t...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\Database\Mysql.php(376): DboSource->execute('UPDATE `cours_t...')
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2189): Mysql->update(Object(CourTag), Array, NULL, Array)
+#4 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(174): Model->updateAll(Array, Array)
+#5 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-02-26 20:24:05 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(178): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:24:46 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(178): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 20:25:46 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CoursController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(178): Controller->redirect('http://zeschool...')
+#6 [internal function]: CoursController->edit('6', 'la-demographie-...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 23:42:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SousPartie.content' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `SousPar...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `SousPar...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1282): DboSource->fetchAll('SELECT `SousPar...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1150): DboSource->fetchAssociated(Object(Partie), 'SELECT `SousPar...', Array)
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1166): DboSource->queryAssociation(Object(Partie), Object(SousPartie), 'hasMany', 'SousPartie', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1069): DboSource->queryAssociation(Object(Cour), Object(Partie), 'hasMany', 'Partie', Array, Array, true, Array, 1, Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Cour), Array)
+#8 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(215): Model->find('first', Array)
+#9 [internal function]: CoursController->edit('4', 'cours-2')
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#11 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-02-27 00:22:00 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 194]
+Trace:
+include - APP\View\Cours\edit.ctp, line 194
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-27 00:59:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `CourTag`.`matiere_id` = 4  WHERE `CourTag`.`cour_id` = 4' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('UPDATE `cours_t...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\Database\Mysql.php(376): DboSource->execute('UPDATE `cours_t...')
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2189): Mysql->update(Object(CourTag), Array, NULL, Array)
+#4 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(174): Model->updateAll(Array, Array)
+#5 [internal function]: CoursController->edit('4', 'cours-2')
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-02-27 00:59:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `CourTag`.`cour_id` = 4' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('UPDATE `cours_t...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\Database\Mysql.php(376): DboSource->execute('UPDATE `cours_t...')
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2189): Mysql->update(Object(CourTag), Array, NULL, Array)
+#4 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(174): Model->updateAll(Array, Array)
+#5 [internal function]: CoursController->edit('4', 'cours-2')
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-02-27 01:00:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `CourTag`.`matiere_id` = 4  WHERE `CourTag`.`cour_id` = 4' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('UPDATE `cours_t...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\Database\Mysql.php(376): DboSource->execute('UPDATE `cours_t...')
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2189): Mysql->update(Object(CourTag), Array, NULL, Array)
+#4 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(174): Model->updateAll(Array, Array)
+#5 [internal function]: CoursController->edit('4', 'cours-2')
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-02-27 01:00:17 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\CourTags\delete.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CourTagsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-02-27 01:01:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `CourTag`.`matiere_id` = 4  WHERE `CourTag`.`cour_id` = 4' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('UPDATE `cours_t...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\Database\Mysql.php(376): DboSource->execute('UPDATE `cours_t...')
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2189): Mysql->update(Object(CourTag), Array, NULL, Array)
+#4 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(174): Model->updateAll(Array, Array)
+#5 [internal function]: CoursController->edit('4', 'cours-2')
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-02-27 01:23:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `SousPartie`.`sort_order` >  ORDER BY sort_order ASC' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `SousPar...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `SousPar...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `SousPar...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(SousPartie), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\SouspartiesController.php(214): Model->find('list', Array)
+#6 [internal function]: SousPartiesController->delete('4', 'cours-2')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(SousPartiesController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(SousPartiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-27 01:23:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `SousPartie`.`sort_order` >  ORDER BY sort_order ASC' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `SousPar...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `SousPar...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `SousPar...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(SousPartie), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\SouspartiesController.php(214): Model->find('list', Array)
+#6 [internal function]: SousPartiesController->delete('4', 'cours-2')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(SousPartiesController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(SousPartiesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-27 10:48:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `CourTag...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `CourTag...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `CourTag...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(CourTag), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CourtagsController.php(25): Model->find('first', Array)
+#6 [internal function]: CourTagsController->addtag('8')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CourTagsController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CourTagsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-27 10:48:46 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\CourTags\delete.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CourTagsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-02-27 10:49:06 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\CourTags\delete.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CourTagsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-02-27 10:55:47 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 11:01:02 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 11:05:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Partie.theme_id' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Partie`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Partie`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Partie`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Partie), Array)
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1463): Model->find('first', Array)
+#6 C:\wamp\www\zeschool.dev\app\Model\AppModel.php(20): Model->field('theme_id')
+#7 C:\wamp\www\zeschool.dev\app\Model\Partie.php(12): AppModel->beforeSave(Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1586): Partie->beforeSave(Array)
+#9 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(85): Model->save(Array)
+#10 [internal function]: PartiesController->edit('7')
+#11 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#12 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-02-27 12:43:20 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\preview.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-02-27 12:44:48 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\CourTags\delete.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CourTagsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-02-27 17:04:29 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 17:13:29 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 17:14:36 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 17:19:01 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 17:21:26 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 17:25:56 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(SousPartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\SouspartiesController.php(38): AppController->_checkAuthorization('13')
+#7 [internal function]: SousPartiesController->edit('13', 'sous-partie-de-...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(SousPartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(SousPartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 17:27:37 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(SousPartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\SouspartiesController.php(38): AppController->_checkAuthorization('13')
+#7 [internal function]: SousPartiesController->edit('13', 'sous-partie-de-...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(SousPartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(SousPartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 17:28:51 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 17:35:52 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 17:37:39 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 17:39:18 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\CourTags\delete.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CourTagsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-02-27 18:21:40 Error: [MissingActionException] Action CoursController::add() could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-02-27 18:45:59 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 18:46:00 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('10')
+#7 [internal function]: PartiesController->edit('10', 'nouvelle-partie...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-27 21:52:25 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(SousPartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\SouspartiesController.php(38): AppController->_checkAuthorization('13')
+#7 [internal function]: SousPartiesController->edit('13', 'sous-partie-de-...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(SousPartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(SousPartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-28 11:41:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SousPartie.theme_id' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `SousPar...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `SousPar...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `SousPar...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(SousPartie), Array)
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1463): Model->find('first', Array)
+#6 C:\wamp\www\zeschool.dev\app\Model\AppModel.php(20): Model->field('theme_id')
+#7 C:\wamp\www\zeschool.dev\app\Model\SousPartie.php(10): AppModel->beforeSave(Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1586): SousPartie->beforeSave(Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1502): Model->save(Array, Array)
+#10 C:\wamp\www\zeschool.dev\app\Controller\SouspartiesController.php(220): Model->saveField('sort_order', 1)
+#11 [internal function]: SousPartiesController->delete('33', 'une-civilisatio...')
+#12 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(SousPartiesController), Array)
+#13 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(SousPartiesController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2012-02-28 11:42:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SousPartie.theme_id' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `SousPar...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `SousPar...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `SousPar...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(SousPartie), Array)
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1463): Model->find('first', Array)
+#6 C:\wamp\www\zeschool.dev\app\Model\AppModel.php(20): Model->field('theme_id')
+#7 C:\wamp\www\zeschool.dev\app\Model\SousPartie.php(10): AppModel->beforeSave(Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1586): SousPartie->beforeSave(Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1502): Model->save(Array, Array)
+#10 C:\wamp\www\zeschool.dev\app\Controller\SouspartiesController.php(220): Model->saveField('sort_order', 2)
+#11 [internal function]: SousPartiesController->delete('34', 'l-uniformisatio...')
+#12 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(SousPartiesController), Array)
+#13 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#14 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(SousPartiesController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2012-02-28 14:10:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-28 14:10:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-28 14:22:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-28 18:10:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'undefined' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Theme`....', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Theme`....', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Theme`....', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Theme), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\ThemesController.php(124): Model->find('list', Array)
+#6 [internal function]: ThemesController->selectbox('undefined')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(ThemesController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(ThemesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-28 18:10:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'undefined' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Theme`....', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Theme`....', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Theme`....', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Theme), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\ThemesController.php(124): Model->find('list', Array)
+#6 [internal function]: ThemesController->selectbox('undefined')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(ThemesController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(ThemesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-28 18:11:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'undefined' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Theme`....', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Theme`....', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Theme`....', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Theme), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\ThemesController.php(124): Model->find('list', Array)
+#6 [internal function]: ThemesController->selectbox('undefined')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(ThemesController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(ThemesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-28 19:04:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Autre' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Theme`....', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Theme`....', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Theme`....', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Theme), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\ThemesController.php(124): Model->find('list', Array)
+#6 [internal function]: ThemesController->selectbox('Autre', 'recherche')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(ThemesController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(ThemesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-28 19:04:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Autre' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Theme`....', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Theme`....', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Theme`....', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Theme), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\ThemesController.php(124): Model->find('list', Array)
+#6 [internal function]: ThemesController->selectbox('Autre', 'recherche')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(ThemesController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(ThemesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-28 19:04:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Autre' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Theme`....', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Theme`....', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Theme`....', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Theme), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\ThemesController.php(124): Model->find('list', Array)
+#6 [internal function]: ThemesController->selectbox('Autre', 'recherche')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(ThemesController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(ThemesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-28 22:16:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cour.code' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT Cour.id,...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT Cour.id,...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT Cour.id,...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Cour), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(64): Model->find('first', Array)
+#6 [internal function]: CoursController->show('3', 'les-grandes-pha...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-29 01:34:19 Error: [MissingControllerException] Controller class QuestController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-29 11:44:35 Warning: Warning (2): Missing argument 2 for AppController::note() in [C:\wamp\www\zeschool.dev\app\Controller\AppController.php, line 257]
+Trace:
+AppController::note() - APP\Controller\AppController.php, line 257
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-02-29 12:16:09 Error: [MissingTableException] Database table cour_notes for model CourNote was not found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(3258): Model->setSource('cour_notes')
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1564): Model->getDataSource()
+#2 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(278): Model->save(Array)
+#3 [internal function]: AppController->note('3', '5')
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-02-29 12:23:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''.'.cour_id = 3    LIMIT 1' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `CourNot...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `CourNot...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `CourNot...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(AppModel), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(272): Model->find('first', Array)
+#6 [internal function]: AppController->note('3', '4')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-29 12:41:36 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'joey.cournote' doesn't exist
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT AVG(note...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT AVG(note...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(515): DboSource->fetchAll('SELECT AVG(note...')
+#4 [internal function]: DboSource->query('SELECT AVG(note...')
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2875): call_user_func_array(Array, Array)
+#6 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(284): Model->query('SELECT AVG(note...')
+#7 [internal function]: AppController->note('3', '4')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-29 12:42:52 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'joey.cournote' doesn't exist
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT AVG(note...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT AVG(note...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(515): DboSource->fetchAll('SELECT AVG(note...')
+#4 [internal function]: DboSource->query('SELECT AVG(note...')
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2875): call_user_func_array(Array, Array)
+#6 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(284): Model->query('SELECT AVG(note...')
+#7 [internal function]: AppController->note('3', '3')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-29 12:45:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CourNote.cour_id' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT AVG(note...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT AVG(note...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(515): DboSource->fetchAll('SELECT AVG(note...')
+#4 [internal function]: DboSource->query('SELECT AVG(note...')
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2875): call_user_func_array(Array, Array)
+#6 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(285): Model->query('SELECT AVG(note...')
+#7 [internal function]: AppController->note('3', '4')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-03-01 11:37:05 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('1')
+#7 [internal function]: PartiesController->edit('1', 'partie-1-du-cou...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-03-01 11:37:07 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(SousPartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\SouspartiesController.php(38): AppController->_checkAuthorization('1')
+#7 [internal function]: SousPartiesController->edit('1', 'sous-partie-1-d...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(SousPartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(SousPartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-03-01 11:37:08 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(PartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\PartiesController.php(57): AppController->_checkAuthorization('2')
+#7 [internal function]: PartiesController->edit('2', 'partie-2-du-cou...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-03-01 11:37:09 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Core\Object.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Component\RequestHandlerComponent.php(238): Object->requestAction('http://zeschool...', Array)
+#2 [internal function]: RequestHandlerComponent->beforeRedirect(Object(SousPartiesController), 'http://zeschool...', NULL, true)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Utility\ObjectCollection.php(104): call_user_func_array(Array, Array)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(698): ObjectCollection->trigger('beforeRedirect', Array, Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(79): Controller->redirect('http://zeschool...')
+#6 C:\wamp\www\zeschool.dev\app\Controller\SouspartiesController.php(38): AppController->_checkAuthorization('3')
+#7 [internal function]: SousPartiesController->edit('3', 'sous-partie-1-d...')
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(SousPartiesController), Array)
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(SousPartiesController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-03-01 12:39:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Partie.sort_order' in 'order clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT SousPart...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT SousPart...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1282): DboSource->fetchAll('SELECT SousPart...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1150): DboSource->fetchAssociated(Object(Partie), 'SELECT SousPart...', Array)
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1166): DboSource->queryAssociation(Object(Partie), Object(SousPartie), 'hasMany', 'SousPartie', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1069): DboSource->queryAssociation(Object(Cour), Object(Partie), 'hasMany', 'Partie', Array, Array, true, Array, 1, Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Cour), Array)
+#8 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(90): Model->find('first', Array)
+#9 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(276): AppController->_visualiser('2', Array)
+#10 [internal function]: CoursController->preview('2', 'les-premiers-ca...')
+#11 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#12 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-03-01 14:09:33 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Quiz.id' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Quiz`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Quiz`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Quiz`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Cour), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(309): Model->find('first', Array)
+#6 [internal function]: AppController->code('5757')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-01 14:14:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '5454df' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Cour`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Cour`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Cour`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Cour), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(301): Model->find('first', Array)
+#6 [internal function]: AppController->code('5454df')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-01 14:14:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '5454d' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Cour`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Cour`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Cour`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Cour), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(301): Model->find('first', Array)
+#6 [internal function]: AppController->code('5454d')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-01 14:15:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '5454d' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Cour`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Cour`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Cour`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Cour), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(302): Model->find('first', Array)
+#6 [internal function]: AppController->code('5454d')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-01 14:16:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '5454d' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Quiz`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Quiz`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Quiz`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Quiz), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(309): Model->find('first', Array)
+#6 [internal function]: AppController->code('5454d')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-01 15:02:35 Error: [MissingActionException] Action QuizController::repondre() could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(QuizController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-01 15:05:08 Error: [MissingControllerException] Controller class CourController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-01 15:06:50 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Quiz`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Quiz`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Quiz`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Quiz), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\QuizController.php(84): Model->find('first', Array)
+#6 [internal function]: QuizController->start()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(QuizController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-01 15:09:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Quiz`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Quiz`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Quiz`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Quiz), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\QuizController.php(84): Model->find('first', Array)
+#6 [internal function]: QuizController->start()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(QuizController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-01 15:09:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Quiz`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Quiz`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Quiz`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Quiz), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\QuizController.php(84): Model->find('first', Array)
+#6 [internal function]: QuizController->start()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(QuizController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-01 15:09:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Quiz`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Quiz`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Quiz`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Quiz), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\QuizController.php(84): Model->find('first', Array)
+#6 [internal function]: QuizController->start()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(QuizController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-01 15:10:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Quiz`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Quiz`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Quiz`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Quiz), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\QuizController.php(84): Model->find('first', Array)
+#6 [internal function]: QuizController->start()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(QuizController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-01 15:39:17 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\add.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName('add')
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render('add', NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render('add', NULL)
+#3 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(148): Controller->render('add')
+#4 [internal function]: CoursController->edit()
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-03-02 09:49:04 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\recommander.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-02 09:50:40 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\recommander.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-02 09:51:28 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\recommander.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-02 09:51:59 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\recommander.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-02 10:10:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Recommandation.theme_id' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Recomma...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Recomma...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Recomma...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(AppModel), Array)
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1463): Model->find('first', Array)
+#6 C:\wamp\www\zeschool.dev\app\Model\AppModel.php(20): Model->field('theme_id')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1586): AppModel->beforeSave(Array)
+#8 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(450): Model->save(Array)
+#9 [internal function]: CoursController->recommander()
+#10 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#11 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-03-02 11:09:10 Error: [MissingControllerException] Controller class ProspectsController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-02 11:09:41 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Prospects\contact.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(ProspectsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-02 12:30:27 Error: [MissingActionException] Action CoursController::prospects() could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-02 12:48:07 Error: [MissingControllerException] Controller class PropectsController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-02 13:00:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'cour_id' cannot be null
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('INSERT INTO `re...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(967): DboSource->execute('INSERT INTO `re...')
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1646): DboSource->create(Object(AppModel), Array, Array)
+#4 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(370): Model->save(Array, Array)
+#5 [internal function]: AppController->recommander()
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-02 13:01:29 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'cour_id' cannot be null
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('INSERT INTO `re...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(967): DboSource->execute('INSERT INTO `re...')
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1646): DboSource->create(Object(AppModel), Array, Array)
+#4 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(370): Model->save(Array, Array)
+#5 [internal function]: AppController->recommander()
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-02 13:01:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'cour_id' cannot be null
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('INSERT INTO `re...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(967): DboSource->execute('INSERT INTO `re...')
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(1646): DboSource->create(Object(AppModel), Array, Array)
+#4 C:\wamp\www\zeschool.dev\app\Controller\AppController.php(370): Model->save(Array, Array)
+#5 [internal function]: AppController->recommander()
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-02 13:56:31 Warning: Warning (2): preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Empty regular expression in [C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php, line 3010]
+Trace:
+preg_match - [internal], line ??
+Model::invalidFields() - CORE\Cake\Model\Model.php, line 3010
+Model::validates() - CORE\Cake\Model\Model.php, line 2888
+Model::save() - CORE\Cake\Model\Model.php, line 1559
+ProspectsController::contact() - APP\Controller\ProspectsController.php, line 18
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-03-02 13:56:47 Warning: Warning (2): preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Empty regular expression in [C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php, line 3010]
+Trace:
+preg_match - [internal], line ??
+Model::invalidFields() - CORE\Cake\Model\Model.php, line 3010
+Model::validates() - CORE\Cake\Model\Model.php, line 2888
+Model::save() - CORE\Cake\Model\Model.php, line 1559
+ProspectsController::contact() - APP\Controller\ProspectsController.php, line 18
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 473
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-03-02 14:18:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Quiz.moyenne' in 'order clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Quiz`.`...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Quiz`.`...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Quiz`.`...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Quiz), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(95): Model->find('all', Array)
+#6 [internal function]: CoursController->show('3', 'les-grandes-pha...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-03 10:27:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:16:38 Error: [MissingActionException] Action QuizController::index() could not be found.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(QuizController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-03 11:27:16 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:27:26 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:28:37 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:28:48 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:29:01 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:29:35 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:29:42 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:30:52 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:30:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:31:11 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 11:31:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 14:10:51 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Matieres\admin_index.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-03 14:11:03 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Matieres\admin_edit.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-03 14:11:38 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Matieres\admin_index.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-03 14:59:08 Error: [MissingControllerException] Controller class ArgumentsController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 15:09:26 Error: [MissingControllerException] Controller class ArgumentsController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 15:10:23 Error: [MissingControllerException] Controller class ArgumentsController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 15:10:26 Error: [MissingControllerException] Controller class ArgumentsController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 15:11:42 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Pages\arguments.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-03 15:54:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Matiere.count_published_cour' in 'where clause'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Matiere...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Matiere...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Matiere...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Matiere), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\MatieresController.php(25): Model->find('all', Array)
+#6 [internal function]: MatieresController->index('cour')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(MatieresController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-03 16:21:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 16:22:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 16:22:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 16:25:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 16:25:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 16:25:46 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 16:27:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 16:28:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 16:33:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 16:43:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Matiere.count_published_' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Matiere...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Matiere...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Matiere...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Matiere), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\MatieresController.php(25): Model->find('all', Array)
+#6 [internal function]: MatieresController->index()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(MatieresController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-03 16:43:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Matiere.count_published_' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Matiere...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Matiere...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Matiere...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Matiere), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\MatieresController.php(25): Model->find('all', Array)
+#6 [internal function]: MatieresController->index()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(MatieresController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-03 16:43:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Matiere.count_published_' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Matiere...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Matiere...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Matiere...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Matiere), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\MatieresController.php(25): Model->find('all', Array)
+#6 [internal function]: MatieresController->index()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(MatieresController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-03 16:43:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Matiere.count_published_' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Matiere...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Matiere...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Matiere...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Matiere), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\MatieresController.php(25): Model->find('all', Array)
+#6 [internal function]: MatieresController->index()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(MatieresController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-03 16:43:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Matiere.count_published_' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Matiere...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Matiere...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Matiere...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Matiere), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\MatieresController.php(25): Model->find('all', Array)
+#6 [internal function]: MatieresController->index()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(MatieresController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-03 16:44:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Matiere.count_published_' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Matiere...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Matiere...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Matiere...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Matiere), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\MatieresController.php(25): Model->find('all', Array)
+#6 [internal function]: MatieresController->index()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(MatieresController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-03 17:01:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:02:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:02:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:02:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:04:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:04:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:04:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:04:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:05:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:05:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-03 17:29:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Matiere.count_published_' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Matiere...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Matiere...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Matiere...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Matiere), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\MatieresController.php(25): Model->find('all', Array)
+#6 [internal function]: MatieresController->index()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(MatieresController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-03 17:29:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Matiere.count_published_' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Matiere...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Matiere...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Matiere...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Matiere), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\MatieresController.php(25): Model->find('all', Array)
+#6 [internal function]: MatieresController->index()
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(MatieresController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-03 17:29:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 08:54:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 08:54:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 08:58:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Matiere.count_published_2' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `Matiere...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `Matiere...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `Matiere...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Matiere), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\MatieresController.php(25): Model->find('all', Array)
+#6 [internal function]: MatieresController->index('2', 'histoire')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(MatieresController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(MatieresController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-05 09:00:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 09:00:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 09:40:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 09:40:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:13:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:13:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:16:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:16:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:17:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:17:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:29:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cour.note' in 'field list'
+#0 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT Cour.slu...', Array)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT Cour.slu...', Array, Array)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT Cour.slu...', false)
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Model\Model.php(2483): DboSource->read(Object(Cour), Array)
+#5 C:\wamp\www\zeschool.dev\app\Controller\CoursController.php(29): Model->find('all', Array)
+#6 [internal function]: CoursController->view('31', 'de-la-societe-i...')
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(CoursController), Array)
+#8 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-05 10:39:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:39:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:39:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:39:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:39:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 10:39:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 11:11:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 11:11:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 11:11:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 11:12:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 11:12:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 11:46:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 11:46:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:23:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:23:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:23:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:23:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:24:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:24:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:25:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:25:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:25:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:27:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:27:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:27:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:28:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:28:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:28:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:30:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:30:29 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:31:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:32:05 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:32:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:32:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:33:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:33:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:33:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:33:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:33:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:34:05 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:35:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:35:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:35:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:39:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:39:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:52:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 12:52:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 15:09:34 Error: [MissingControllerException] Controller class UndefinedController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 15:15:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 15:15:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-05 15:18:04 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 15:18:32 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 15:18:42 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 15:32:11 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 15:33:53 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 15:34:26 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 15:34:36 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 15:37:21 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 15:37:29 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 15:37:50 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 15:39:20 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Cours\favoris.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName(NULL)
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render(NULL, NULL)
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render(NULL, NULL)
+#3 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(111): Controller->render()
+#4 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(CoursController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-03-05 16:05:15 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-07 09:09:35 Error: [MissingViewException] View file "C:\wamp\www\zeschool.dev\app\View\Pages\index.ctp" is missing.
+#0 C:\wamp\www\zeschool.dev\lib\Cake\View\View.php(360): View->_getViewFileName('index')
+#1 C:\wamp\www\zeschool.dev\app\Plugin\DebugKit\View\DebugView.php(85): View->render('index', 'home')
+#2 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(900): DebugView->render('index', 'home')
+#3 C:\wamp\www\zeschool.dev\app\Controller\PagesController.php(19): Controller->render('index', 'home')
+#4 [internal function]: PagesController->display('home')
+#5 C:\wamp\www\zeschool.dev\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#6 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#7 C:\wamp\www\zeschool.dev\lib\Cake\Routing\Dispatcher.php(86): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\zeschool.dev\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}

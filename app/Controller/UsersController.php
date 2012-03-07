@@ -13,7 +13,6 @@ class UsersController extends AppController {
         parent::beforeFilter();
         $this->Auth->allow('inscription', 'activate', 'login', 'add', 'logout', 'index', 'view', 'recover_password');
     }
-    
 
 /**
  * Voir son profil
@@ -37,8 +36,18 @@ class UsersController extends AppController {
  * @return void
  */
 	public function dashboard() {
-		$user = $this->User->read(null, $this->Auth->user('id'));
-		$this->set('user', $user);
+            $user_id = $this->Auth->user('id');
+            $favoris = $this->User->CourFavori->find('all', array(
+                "conditions" => "CourFavori.user_id = $user_id ORDER BY CourFavori.created DESC",
+                "contain" => array(
+                    "Cour" => array(
+                        "fields" => array("Cour.id, Cour.name, Cour.slug")
+                    )
+                )
+            ));
+            
+            $this->set('title_for_layout', 'Mon tableau de bord');
+            $this->set(compact('favoris'));
 
 	}
 
@@ -84,15 +93,25 @@ class UsersController extends AppController {
                                 }
                                 $_SESSION['Auth']['User']['name'] = $this->request->data['User']['name'];
                                 $_SESSION['Auth']['User']['lastname'] = $this->request->data['User']['lastname'];
+                                $_SESSION['Auth']['User']['tag_id'] = $this->request->data['User']['tag_id'];
+                                
+                                $this->loadModel('Tag');
+                                $this->Tag->id = $this->Auth->user("tag_id");
+                                $_SESSION['Auth']['User']['classe'] = $this->Tag->field('name');
+                                
 				$this->Session->setFlash('Votre profil a correctement été mis à jour', 'notif');
-				//$this->redirect(array('action' => 'index'));
 			} 
                         else {
 				$this->Session->setFlash('Un problème est survenue lors de la mise à jour de votre profil. Veuillez réessayer.', 'notif', array('type' => 'error'));
 			}
 		} else {
+                        
 			$this->data = $this->User->read(null, $this->Auth->user('id'));
 		}
+                
+                $this->loadModel('Tag');
+                $tags = $this->Tag->find('list', array('contain' => array()));
+                $this->set(compact('tags'));
 	}
         
         
@@ -256,7 +275,7 @@ class UsersController extends AppController {
  */
 	public function login() {
             //On vérifie que l'utilisateur n'est pas déjà connecté
-            if($this->Auth->user()) {
+            if($this->Auth->user('id')) {
                 $this->Session->setFlash("Vous êtes déjà connecté", 'notif');
                 $this->redirect('/users/dashboard');
             }
@@ -266,8 +285,11 @@ class UsersController extends AppController {
 				$this->User->id =  $this->Auth->user("id");
                                 $this->_setCookie();
 				$this->User->saveField('lastlogin',date('Y-m-d H:i:s'));
-                                $this->redirect('/dashboard');
-                                //$this->set('session', $this->Auth->user());
+                                
+                                $this->loadModel('Tag');
+                                $this->Tag->id = $this->Auth->user("tag_id");
+                                $_SESSION['Auth']['User']['classe'] = $this->Tag->field('name');
+                                $this->redirect($this->referer());
 			}else{
 				$this->Session->setFlash("Identifiants incorrects", 'notif', array('type' => 'error'));
                                 $this->redirect($this->referer());
@@ -327,8 +349,7 @@ class UsersController extends AppController {
 		$this->Cookie->destroy();
 		$message = "Vous avez été correctement déconnecté";
 		$this->Session->setFlash($message, 'notif');
-		$this->redirect('/');
-		//$this->redirect($this->Auth->logout());
+		$this->redirect($this->referer());
 	}
 
 

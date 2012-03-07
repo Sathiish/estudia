@@ -156,5 +156,16 @@ class AppModel extends Model{
         }
         
         return false;
-    }       
+    } 
+    
+    function updateRatingAverage($id,$avg){  
+       $this->id = $id;
+       $this->saveField('moyenne',$avg);
+    }
+    
+    public function incrementField($field){
+        $count = $this->field($field);
+        $count++;
+        $this->saveField($field, $count);
+    }
 }

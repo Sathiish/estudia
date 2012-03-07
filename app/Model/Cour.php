@@ -8,7 +8,7 @@ class Cour extends AppModel{
      
     public $belongsTo = array('User', 'Theme');
     
-    public $hasMany = array('Partie', 'CourTag');
+    public $hasMany = array('Partie', 'CourTag', 'CourNote', 'CourFavori');
     
     public $hasAndBelongsToMany = array('Tag');
     
@@ -16,6 +16,10 @@ class Cour extends AppModel{
         parent::beforeSave($options); 
         if(!empty($this->data['Cour']['name'])){
             $this->data['Cour']['slug'] = strtolower(Inflector::slug($this->data['Cour']['name'], '-'));
+        }
+        
+        if(!$this->id){
+            $this->data['Cour']['raccourci'] = substr(uniqid(),1, 6);
         }
         return true;
     }

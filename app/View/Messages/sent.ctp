@@ -1,5 +1,5 @@
 <?php echo $this->Html->css('messagerie', null, array('inline' => false));?>
-<div class="titre"><?php echo $this->Html->image('titre/titre_messagerie.png', array('alt' => 'Titre dashboard','width'=>'143', 'height'=>'29')); ?></div>
+<!--<div class="titre"><?php echo $this->Html->image('titre/titre_messagerie.png', array('alt' => 'Titre dashboard','width'=>'143', 'height'=>'29')); ?></div>-->
 <div class="messagerie menu">
     <div class="item1"></div>
     <ul>

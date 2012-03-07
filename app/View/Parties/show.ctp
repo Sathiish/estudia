@@ -1,3 +1,4 @@
+<?php echo $this->Element('sharebar'); ?>
 
 <?php echo $partie['Partie']['name']; ?>
 <?php echo $partie['Partie']['contenu']; ?>
