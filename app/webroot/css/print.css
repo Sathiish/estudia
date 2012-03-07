@@ -1,0 +1,7 @@
+#header, .sidebar, #sharebar, #FBG, .footer{display:none;}
+
+body{margin:0; padding: 0; margin-top: 50px;}
+.main, #cours, p, #cours-intro, .content, .souspartie, li
+{border:none; background-color :#fff; margin-left:0;  width:830px; box-shadow:none;}
+
+#code{display: block; width:825px;}
