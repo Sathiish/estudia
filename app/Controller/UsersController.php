@@ -93,11 +93,11 @@ class UsersController extends AppController {
                                 }
                                 $_SESSION['Auth']['User']['name'] = $this->request->data['User']['name'];
                                 $_SESSION['Auth']['User']['lastname'] = $this->request->data['User']['lastname'];
-                                $_SESSION['Auth']['User']['tag_id'] = $this->request->data['User']['tag_id'];
+                                $_SESSION['Auth']['User']['classe_id'] = $this->request->data['User']['classe_id'];
                                 
-                                $this->loadModel('Tag');
-                                $this->Tag->id = $this->Auth->user("tag_id");
-                                $_SESSION['Auth']['User']['classe'] = $this->Tag->field('name');
+                                $this->loadModel('Classe');
+                                $this->Classe->id = $this->Auth->user("classe_id");
+                                $_SESSION['Auth']['User']['classe'] = $this->Classe->field('name');
                                 
 				$this->Session->setFlash('Votre profil a correctement été mis à jour', 'notif');
 			} 
@@ -109,9 +109,9 @@ class UsersController extends AppController {
 			$this->data = $this->User->read(null, $this->Auth->user('id'));
 		}
                 
-                $this->loadModel('Tag');
-                $tags = $this->Tag->find('list', array('contain' => array()));
-                $this->set(compact('tags'));
+                $this->loadModel('Classe');
+                $classes = $this->Classe->find('list', array('contain' => array())) + array('0' => "Plus étudiant");
+                $this->set(compact('classes'));
 	}
         
         
@@ -161,6 +161,8 @@ class UsersController extends AppController {
  * @return void
  */
 	public function admin_edit($userId = null) {
+            $this->_isAdmin();
+            
 		try {
 			$result = $this->User->edit($userId, $this->data);
 			if ($result === true) {
@@ -186,6 +188,8 @@ class UsersController extends AppController {
  * @return void
  */
 	public function admin_delete($userId = null) {
+            $this->_isAdmin();
+            
 		if ($this->User->delete($userId)) {
 			$this->Session->setFlash(__d('users', 'User deleted', true));
 		} else {
@@ -201,6 +205,8 @@ class UsersController extends AppController {
  * @return void
  */
 	public function admin_search() {
+            $this->_isAdmin();
+            
 		$this->search();
 	}
 
@@ -286,9 +292,9 @@ class UsersController extends AppController {
                                 $this->_setCookie();
 				$this->User->saveField('lastlogin',date('Y-m-d H:i:s'));
                                 
-                                $this->loadModel('Tag');
-                                $this->Tag->id = $this->Auth->user("tag_id");
-                                $_SESSION['Auth']['User']['classe'] = $this->Tag->field('name');
+                                $this->loadModel('Classe');
+                                $this->Classe->id = $this->Auth->user("classe_id");
+                                $_SESSION['Auth']['User']['classe'] = $this->Classe->field('name');
                                 $this->redirect($this->referer());
 			}else{
 				$this->Session->setFlash("Identifiants incorrects", 'notif', array('type' => 'error'));

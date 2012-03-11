@@ -36,7 +36,7 @@
                 ?></td>
              <td style="text-align: center; vertical-align: middle">
              <?php if(!($quiz_info['Quiz']['published']) AND !($quiz_info['Quiz']['validation'])): ?>    
-             <?php echo $this->Html->link($this->Html->image('editer.png'), array("action"=>"edit", $quiz['id'], $quiz['slug']),array("escape" => false)); ?>
+             <?php echo $this->Html->link($this->Html->image('editer.png'), array("action"=>"edit", $quiz['id'], $quiz['slug']),array('class' => 'not-ajax', "escape" => false)); ?>
              <?php echo $this->Html->link($this->Html->image('supprimer.png'), 
                      array("action"=>"delete", $quiz['id']),
                      array("title" =>"Supprimer cette", 'escape' => false),

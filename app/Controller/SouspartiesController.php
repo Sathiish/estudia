@@ -227,7 +227,8 @@ class SousPartiesController extends AppController {
         }
         
         public function admin_manager($partieId, $isPublic = null, $enAttente = null){
-
+            $this->_isAdmin();
+            
             if($partieId == "tous"){
                 if($enAttente == "enattente"){
                     $condition = "SousPartie.validation = 1";
@@ -265,6 +266,7 @@ class SousPartiesController extends AppController {
         }
         
         public function admin_edit($sousPartieId = null){
+            $this->_isAdmin();
             
             if($this->request->is('post') || $this->request->is('put')) {
  

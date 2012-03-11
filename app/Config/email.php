@@ -43,16 +43,17 @@ class EmailConfig {
 
 	public $default = array(
 		'transport' => 'Mail',
-		'from' => 'cayoul@gmail.com'
+		'from' => 'contact@zeschool.com'
 	);
 
 	public $smtp = array(
 		'transport' => 'Smtp',
-		'from' => array('ZeSchool', 'cayoul@localhost'),
+		'from' => array('ZeSchool', 'contact@zeschool.com'),
+                'replyTo' => 'contact@zeschool.com',
 		'host' => 'smtp.gmail.com',
 		'port' => 25,
 		'timeout' => 30,
-		'username' => 'cayoul@gmail.com',
+		'username' => 'contact@zeschool.com',
 		'password' => 'Estudia88',
 		'client' => null
 	);
@@ -74,7 +75,7 @@ class EmailConfig {
 		'to' => null,
 		'cc' => null,
 		'bcc' => null,
-		'replyTo' => null,
+		'replyTo' => 'contact@zeschool.com',
 		'readReceipt' => null,
 		'returnPath' => null,
 		'messageId' => true,

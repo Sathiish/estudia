@@ -3,7 +3,7 @@
 <div id="FBG">
     <div class="FBG_resize">
       <div class="click_blog">
-        <p><?php echo $this->Html->image('test_img.gif', array('alt' => 'picture','width'=>'26', 'height'=>'24'))?> 
+        <p><?php //echo $this->Html->image('test_img.gif', array('alt' => 'picture','width'=>'26', 'height'=>'24'))?> 
 L'éducation est un progrès social... L'éducation est non pas une préparation à la vie, l'éducation est la vie même. <span class="auteur">John Dewey</span></p>
         
 

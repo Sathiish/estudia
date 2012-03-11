@@ -3607,3 +3607,51 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
 [main] - APP\webroot\index.php, line 96
 
+2012-03-10 17:48:18 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 258]
+Trace:
+include - APP\View\Cours\edit.ctp, line 258
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-03-10 18:15:06 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 258]
+Trace:
+include - APP\View\Cours\edit.ctp, line 258
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-03-10 18:15:54 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 258]
+Trace:
+include - APP\View\Cours\edit.ctp, line 258
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+
+2012-03-10 18:15:59 Debug: Notice (8): Undefined variable: relatedTags in [C:\wamp\www\zeschool.dev\app\View\Cours\edit.ctp, line 258]
+Trace:
+include - APP\View\Cours\edit.ctp, line 258
+View::_render() - CORE\Cake\View\View.php, line 595
+DebugView::_render() - APP\Plugin\DebugKit\View\DebugView.php, line 43
+View::render() - CORE\Cake\View\View.php, line 362
+DebugView::render() - APP\Plugin\DebugKit\View\DebugView.php, line 85
+Controller::render() - CORE\Cake\Controller\Controller.php, line 900
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 86
+[main] - APP\webroot\index.php, line 96
+

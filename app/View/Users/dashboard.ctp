@@ -13,7 +13,9 @@
         
         <?php echo $this->Html->image($_SESSION['Auth']['User']['avatar']);?>
         <span id="name"><?php echo $_SESSION['Auth']['User']['lastname'].' '.$_SESSION['Auth']['User']['name']; ?></span>
-        <p>Actuellement en <?php echo $_SESSION['Auth']['User']['classe']; ?></p>
+        <?php if(!empty($_SESSION['Auth']['User']['classe'])): ?>
+            <p>Actuellement en <?php echo $_SESSION['Auth']['User']['classe']; ?></p>
+        <?php endif; ?>
 
         <?php echo $this->Html->link('Voir mon profil', array('controller' => 'users', 'action' => 'index', $_SESSION['Auth']['User']['username']), array('class' => 'button')); ?>
         <?php echo $this->Html->link('Modifier mes infos', array('controller' => 'users', 'action' => 'edit'), array('class' => 'button')); ?>
@@ -24,11 +26,11 @@
 <div class="bloc">
     <div class="title">
         <div class="tabs" id="tabs1">
-            <?php echo $this->Html->link('Mes cours', array('controller' => 'users', 'action' => 'dashboard'));?>
-            <a href="#contenu2">Mes quiz</a>
+            <?php echo $this->Html->link('Mes cours', array('controller' => 'users', 'action' => 'dashboard'), array('class' => 'not-ajax'));?>
+<!--            <a href="#contenu2">Mes quiz</a>-->
             <?php echo $this->Html->link('Mes messages', array('controller' => 'messages', 'action' => 'index'));?>
 <!--            <a href="#contenu3">Forum</a>-->
-            <a href="#contenu3">Espace rédacteur</a>
+            <?php echo $this->Html->link('Espace rédacteur', array('controller' => 'cours', 'action' => 'manager'));?>
         </div>
     </div>
     <div id="conteneur">
@@ -37,9 +39,10 @@
         <ul class="sommaire">
             <?php foreach($favoris as $f): ?>
             <li>
-                <?php echo $this->Html->link($f['Cour']['name'], array('controller' => 'cours', 'action' => 'show', $f['Cour']['id'], $f['Cour']['slug'])); ?>
+                <?php echo $this->Html->link($f['Cour']['name'], array('controller' => 'cours', 'action' => 'show', $f['Cour']['id'], $f['Cour']['slug']), array('class' => 'not-ajax')); ?>
             </li>
             <?php endforeach; ?>
         </ul>
     </div>
 </div>
+

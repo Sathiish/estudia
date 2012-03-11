@@ -128,6 +128,7 @@ class MatieresController extends AppController {
  * @return void
  */
 	public function admin_index() {
+            $this->_isAdmin();
 		$this->Matiere->recursive = 0;
 		$this->set('matieres', $this->paginate());
 	}
@@ -139,6 +140,7 @@ class MatieresController extends AppController {
  * @return void
  */
 	public function admin_view($id = null) {
+            $this->_isAdmin();
 		$this->Matiere->id = $id;
 		if (!$this->Matiere->exists()) {
 			throw new NotFoundException(__('Invalid matiere'));
@@ -152,6 +154,7 @@ class MatieresController extends AppController {
  * @return void
  */
 	public function admin_add() {
+            $this->_isAdmin();
 		if ($this->request->is('post')) {
 			$this->Matiere->create();
 			if ($this->Matiere->save($this->request->data)) {
@@ -170,6 +173,7 @@ class MatieresController extends AppController {
  * @return void
  */
 	public function admin_edit($id = null) {
+            $this->_isAdmin();
 		$this->Matiere->id = $id;
 		if (!$this->Matiere->exists()) {
 			throw new NotFoundException(__('Invalid matiere'));
@@ -193,18 +197,16 @@ class MatieresController extends AppController {
  * @return void
  */
 	public function admin_delete($id = null) {
-		if (!$this->request->is('post')) {
-			throw new MethodNotAllowedException();
-		}
+            $this->_isAdmin();
 		$this->Matiere->id = $id;
 		if (!$this->Matiere->exists()) {
-			throw new NotFoundException(__('Invalid matiere'));
+			throw new NotFoundException('Matière non trouvée', 'notif', array('type' => 'error'));
 		}
 		if ($this->Matiere->delete()) {
-			$this->Session->setFlash(__('Matiere deleted'));
+			$this->Session->setFlash('Matière supprimée', 'notif');
 			$this->redirect(array('action'=>'index'));
 		}
-		$this->Session->setFlash(__('Matiere was not deleted'));
+		$this->Session->setFlash('Matière non supprimée', 'notif', array('type' => 'error'));
 		$this->redirect(array('action' => 'index'));
 	}
         

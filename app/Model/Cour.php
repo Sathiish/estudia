@@ -8,9 +8,7 @@ class Cour extends AppModel{
      
     public $belongsTo = array('User', 'Theme');
     
-    public $hasMany = array('Partie', 'CourTag', 'CourNote', 'CourFavori');
-    
-    public $hasAndBelongsToMany = array('Tag');
+    public $hasMany = array('Partie', 'CourNote', 'CourFavori');
     
     function beforeSave($options = array()) {
         parent::beforeSave($options); 
@@ -35,7 +33,11 @@ class Cour extends AppModel{
                     "limit" => 1,
                     "Matiere" => array(
                         "fields" => array("Matiere.id, Matiere.name, Matiere.slug")
-                    )
+                    ),
+                    "Classe" => array(
+                        "fields" => array("Classe.id, Classe.name, Classe.slug"),
+                        "limit" => 1
+                    ) 
                 )
             )
         ));

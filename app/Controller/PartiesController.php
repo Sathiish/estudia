@@ -265,7 +265,8 @@ class PartiesController extends AppController {
         }
         
         public function admin_manager($coursId, $isPublic = null, $enAttente = null){
-    
+            $this->_isAdmin();
+            
             if($coursId == "tous"){
                 if($enAttente == "enattente"){
                     $condition = "Partie.validation = 1";
@@ -298,6 +299,8 @@ class PartiesController extends AppController {
         }
         
         public function admin_visualiser($partieId){
+            $this->_isAdmin();
+            
             $contain = array(
                             "SousPartie" => array(
                                 "fields" => "SousPartie.id, SousPartie.name, SousPartie.slug, SousPartie.contenu"
@@ -321,6 +324,7 @@ class PartiesController extends AppController {
         }
         
         public function admin_edit($partieId = null){
+            $this->_isAdmin();
             
             if($this->request->is('post') || $this->request->is('put')) {
  

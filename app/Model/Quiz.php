@@ -27,11 +27,10 @@ class Quiz extends AppModel{
                         'Question'=> array(
                             'dependent' => true
                         ), 
-                        'UserAnswer',
-                        'QuizTag');
+                        'UserAnswer'
+        );
     
     public $belongsTo = array('Theme', 'User');
-    public $hasAndBelongsToMany = array('Tag');
     
     function beforeSave($options = array()) {
         parent::beforeSave($options);

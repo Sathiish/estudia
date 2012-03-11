@@ -32,6 +32,7 @@ class CategoriesController extends AppController {
      * @return void
      */
     public function admin_index() {
+        $this->_isAdmin();
 
         $categories = $this->Category->find('list', array(
             "fields" => "Category.id, Category.name",
@@ -48,6 +49,7 @@ class CategoriesController extends AppController {
      * @return void
      */
     public function admin_add($id = null) {
+        $this->_isAdmin();
         $this->layout = "modal";
         
            if($this->request->is('post'))
@@ -80,8 +82,9 @@ class CategoriesController extends AppController {
      *
      * @param int $id Id de la catégorie
      */
-    function admin_delete($id = null)
-    {
+    function admin_delete($id = null){
+        $this->_isAdmin();
+        
         $this->Category->id = $id;
 
         if(!$this->Category->exists())

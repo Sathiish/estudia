@@ -58,7 +58,7 @@ Configure::write('Media.formats',array(
  * Inflector::rules('plural', array('rules' => array(), 'irregular' => array(), 'uninflected' => array()));
  *
  */
-Inflector::rules('singular', array('irregular' => array('parties' => 'partie', 'sousparties' => 'sousPartie')));
+Inflector::rules('singular', array('irregular' => array('parties' => 'partie', 'sousparties' => 'sousPartie', 'classes' => 'classe'), 'uninflected' => array('admin')));
 
 
 /**

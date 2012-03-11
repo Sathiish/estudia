@@ -422,7 +422,8 @@ class QuizController extends AppController {
     }
     
      public function admin_manager($isPublished = "unpublished", $enAttente = null){
-
+         $this->_isAdmin();
+         
             if($enAttente == "enattente"){
                 $condition = "Quiz.validation = 1";
             }else{

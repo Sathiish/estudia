@@ -8,7 +8,7 @@
         echo $this->Form->input('id');
         echo $this->Form->input('name', array('label' => 'Votre nom :'));
         echo $this->Form->input('lastname', array('label' => 'Votre prénom :'));
-        echo $this->Form->input('tag_id', array('label' => 'Votre classe :'));
+        echo $this->Form->input('classe_id', array('label' => 'Votre classe :'));
         echo $this->Form->input('email', array('label' => 'Votre adresse email :'));
         echo $this->Form->input('file',array('label'=>"Image (format png/jpg)","type"=>"file"));
         echo $this->Form->end('Mettre à jour mon profil');

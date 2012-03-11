@@ -96,6 +96,8 @@ class MediasController extends AppController{
 	}
         
 	function admin_index($type, $post_id){
+            $this->_isAdmin();
+            
             //On choisit si c'est un quiz ou un cours
             if($type == "cours"){
                 $target = "cour_id";
@@ -145,6 +147,7 @@ class MediasController extends AppController{
 	}
 
 	function admin_show($id=null,$format = ''){
+            $this->_isAdmin();
 		$d = array();
 		if($this->request->is('post')){
 			$this->set($this->request->data['Media']);
@@ -166,6 +169,7 @@ class MediasController extends AppController{
 	}
 
 	function admin_delete($id){
+            $this->_isAdmin();
 		$this->Media->id = $id;
 		$file = $this->Media->field('url');
 		unlink(IMAGES.DS.$file);

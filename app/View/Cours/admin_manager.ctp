@@ -38,10 +38,10 @@
              <td style="text-align: left;">
              <?php if(!($c['published']) AND !($c['validation'])): ?>    
              <?php echo $this->Html->link($this->Html->image('editer.png'), 
-                     array("action"=>"edit", $c['id'], $c['slug'], "admin" => false),
+                     array("action"=>"edit", $c['id'], $c['slug']),
                      array("escape" => false, "title" => "Editer")); ?>
              <?php echo $this->Html->link($this->Html->image('supprimer.png'), 
-                     array("action"=>"delete", $c['id'], "admin" => false),
+                     array("action"=>"delete", $c['id']),
                      array("title" =>"Supprimer ce cours", 'escape' => false),
                      "Etes-vous certain de vouloir définitivement supprimer ce cours et toutes les parties associées ?"
              );?>

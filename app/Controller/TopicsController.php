@@ -46,7 +46,8 @@ class TopicsController extends AppController {
      * @return void
      */
     public function admin_index($id) {
-
+        $this->_isAdmin();
+        
         $topics = $this->Topic->find('list', array(
             "conditions" => "Topic.forum_id = $id",
             "fields" => "Topic.id, Topic.name",
@@ -93,7 +94,8 @@ class TopicsController extends AppController {
      * @return void
      */
     public function admin_edit($id = null) {
-
+        $this->_isAdmin();
+        
         $this->layout = "modal";
         
            if($this->request->is('post'))
@@ -124,8 +126,9 @@ class TopicsController extends AppController {
      *
      * @param int $id Id du topic
      */
-    function admin_delete($id = null)
-    {
+    function admin_delete($id = null){
+        $this->_isAdmin();
+        
         $this->Topic->id = $id;
 
         if(!$this->Topic->exists())

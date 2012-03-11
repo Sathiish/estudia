@@ -43,6 +43,6 @@
         echo $this->Form->input('contenu', array('label' => 'Contenu :'));
 ?>
         <a href="" onClick="$(this).parent().parent().parent().slideUp(); return false;" class="modifier">Annuler</a>
-<?php 
-        echo $this->Form->end('Enregistrer');
-?>      </div>
+<?php echo $this->Form->end('Enregistrer'); ?>      
+        <div style="height:35px;"></div>
+</div>

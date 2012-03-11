@@ -11,7 +11,7 @@
 <?php echo $this->Html->script('menu'); ?>
 
 <?php echo $scripts_for_layout ?>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-29775947-1']);
@@ -24,7 +24,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+</script>-->
 </head>
 
   <div id="headerintro">
@@ -37,8 +37,8 @@
         
         
         <div class="clr"></div>
-        <div style="float:left; margin-top: 6px; margin-left:70px">
-        <?php echo $this->Html->image('/img/frise4.png', array('width' => '382', 'height' => '246')); ?>
+        <div style="float:left; margin-top:0px; margin-left: -25px;">
+        <?php echo $this->Html->image('/img/frise4.png', array('width' => '737', 'height' => '259')); ?>
         </div>
         
         <div id="intro">   

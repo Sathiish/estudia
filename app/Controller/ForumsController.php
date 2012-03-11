@@ -42,6 +42,7 @@ class ForumsController extends AppController {
      * @return void
      */
     public function admin_add($id) {
+        $this->_isAdmin();
         $this->layout = "modal";
         
            if($this->request->is('post'))
@@ -66,6 +67,7 @@ class ForumsController extends AppController {
      * @return void
      */
     public function admin_edit($id = null) {
+        $this->_isAdmin();
         $this->layout = "modal";
         
            if($this->request->is('post'))
@@ -99,8 +101,8 @@ class ForumsController extends AppController {
      *
      * @param int $id Id du Forum
      */
-    function admin_delete($id = null)
-    {
+    function admin_delete($id = null){
+        $this->_isAdmin();
         $this->Forum->id = $id;
 
         if(!$this->Forum->exists())
@@ -122,7 +124,8 @@ class ForumsController extends AppController {
      * @return void
      */
     public function admin_index($id) {
-
+        $this->_isAdmin();
+        
         $forums = $this->Forum->find('list', array(
             "conditions" => "Forum.category_id = $id",
             "fields" => "Forum.id, Forum.name",

@@ -45,7 +45,8 @@ class PostsController extends AppController {
      * @return void
      */
     public function admin_index($topic_id) {
-
+        $this->_isAdmin();
+        
         $posts = $this->Post->find('all', array(
             "fields" => "Post.id, Post.content, User.username",
             "conditions" => "topic_id = $topic_id",
@@ -88,7 +89,8 @@ class PostsController extends AppController {
      * @return void
      */
     public function admin_add($topic_id) {
-
+        $this->_isAdmin();
+        
         $this->layout = "modal";
         
            if($this->request->is('post'))
@@ -114,7 +116,8 @@ class PostsController extends AppController {
      * @return void
      */
     public function admin_edit($id = null) {
-
+        $this->_isAdmin();
+        
         $this->layout = "modal";
         
            if($this->request->is('post'))
@@ -145,8 +148,9 @@ class PostsController extends AppController {
      *
      * @param int $id Id du topic
      */
-    function admin_delete($id = null)
-    {
+    function admin_delete($id = null){
+        $this->_isAdmin();
+        
         $this->Post->id = $id;
 
         if(!$this->Post->exists())

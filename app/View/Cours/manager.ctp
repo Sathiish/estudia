@@ -1,6 +1,7 @@
 <?php echo $this->Html->css('form', null, array('inline' => false));?>
 
 <?php echo $this->Html->link('Créer un nouveau cours', array('controller' => 'cours', 'action'=> 'edit'), array('class' => 'button')); ?>
+<?php echo $this->Html->link('Créer un nouveau quiz', array('action'=> 'add'), array( 'class' => 'button')); ?>
 
 <table class="manager">
    <thead>
@@ -35,10 +36,10 @@
              <?php if(!($c['published']) AND !($c['validation'])): ?>    
              <?php echo $this->Html->link($this->Html->image('editer.png'), 
                      array("action"=>"edit", $c['id'], $c['slug']),
-                     array("escape" => false, "title" => "Editer")); ?>
+                     array('class' => 'not-ajax', "escape" => false, "title" => "Editer")); ?>
              <?php echo $this->Html->link($this->Html->image('supprimer.png'), 
                      array("action"=>"delete", $c['id']),
-                     array("title" =>"Supprimer ce cours", 'escape' => false),
+                     array('class' => 'not-ajax', "title" =>"Supprimer ce cours", 'escape' => false),
                      "Etes-vous certain de vouloir définitivement supprimer ce cours et toutes les parties associées ?"
              );?>
              <?php endif; ?>
