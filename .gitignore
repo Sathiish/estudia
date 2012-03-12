@@ -1,9 +1,9 @@
-/app/Config/core.php
-/app/Config/database.php
-/app/tmp/**/*
-/app/tmp/**/**/*
-/nbproject
-/plugins
-/vendors
+app/Config/core.php
+app/Config/database.php
+app/tmp/**/*
+app/tmp/**/**/*
+nbproject
+plugins
+vendors
 .DS_Store
 tags
