@@ -1,6 +1,6 @@
 <h1>Panneau d'administration</h1>
 
-<p>Je verrais bien ici un panneau du type joomla</p>
+<p>Je verrais bien ici un panneau du type joomla avec les petites vignettes encadré</p>
 
 <h2><?php echo $this->Html->link('Cours', array('controller' => 'cours', 'action' => 'manager', 'admin' => true)); ?></h2>
 <h2><?php echo $this->Html->link('Membres', array('controller' => 'users', 'action' => 'index', 'admin' => true)); ?></h2>
