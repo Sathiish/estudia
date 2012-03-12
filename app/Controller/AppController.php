@@ -360,47 +360,47 @@ class AppController extends Controller {
     /*
      * Méthode qui permet d'envoyer par mail le lien d'un contenu
      */
-//    public function recommander(){
-//        if($this->request->is('post') || $this->request->is('put')) {
-//            $this->loadModel('Recommandation');
-//            $d = $this->Recommandation->set($this->data);
-//
-//            if($this->Auth->user('id')){
-//                $d['Recommandation']['user_id'] = $this->Auth->user('id');
-//                $d['Recommandation']['username'] = '('.$this->Auth->user('username').') ';
-//                $d['Recommandation']['email'] = $this->Auth->user('email');    
-//            }else{
-//                $d['Recommandation']['user_id'] = null;
-//                $d['Recommandation']['username'] = '';
-//                $d['Recommandation']['email'] = 'contact@zeschool.com';
-//            }
-//
-//            $type = strtolower($this->modelClass);
-//            $d['Recommandation']['type'] = $type;
-//            $d['Recommandation'][$type.'_id'] = $d['Recommandation']['id'];
-//            $d['Recommandation']['id'] = null;
-//
-//            $this->Recommandation->save($d, array(
-//                    'validate' => false,
-//                    'fieldList' => array(),
-//                    'callbacks' => false
-//                )
-//            );
-//            
-//            $username = $d['Recommandation']['username'];
-//            $from = $d['Recommandation']['email'];
-//            App::uses('CakeEmail','Network/Email'); 
-//                $mail = new CakeEmail();
-//                $mail->from("$from")
-//                        ->to($d['Recommandation']['sendEmail'])
-//                        ->subject("Un ami $username vous recommande un lien sur ZeSchool")
-//                        ->emailFormat('html')
-//                        ->template('recommandation')
-//                        ->viewVars(array('username'=>$username,'url'=>$d['Recommandation']['url'],'name'=>$d['Recommandation']['name'] ))
-//                        ->send();
-//
-//        }
-//    }
+    public function recommander(){
+        if($this->request->is('post') || $this->request->is('put')) {
+            $this->loadModel('Recommandation');
+            $d = $this->Recommandation->set($this->data);
+
+            if($this->Auth->user('id')){
+                $d['Recommandation']['user_id'] = $this->Auth->user('id');
+                $d['Recommandation']['username'] = '('.$this->Auth->user('username').') ';
+                $d['Recommandation']['email'] = $this->Auth->user('email');    
+            }else{
+                $d['Recommandation']['user_id'] = null;
+                $d['Recommandation']['username'] = '';
+                $d['Recommandation']['email'] = 'contact@zeschool.com';
+            }
+
+            $type = strtolower($this->modelClass);
+            $d['Recommandation']['type'] = $type;
+            $d['Recommandation'][$type.'_id'] = $d['Recommandation']['id'];
+            $d['Recommandation']['id'] = null;
+
+            $this->Recommandation->save($d, array(
+                    'validate' => false,
+                    'fieldList' => array(),
+                    'callbacks' => false
+                )
+            );
+            
+            $username = $d['Recommandation']['username'];
+            $from = $d['Recommandation']['email'];
+            App::uses('CakeEmail','Network/Email'); 
+                $mail = new CakeEmail();
+                $mail->from("$from")
+                        ->to($d['Recommandation']['sendEmail'])
+                        ->subject("Un ami $username vous recommande un lien sur ZeSchool")
+                        ->emailFormat('html')
+                        ->template('recommandation')
+                        ->viewVars(array('username'=>$username,'url'=>$d['Recommandation']['url'],'name'=>$d['Recommandation']['name'] ))
+                        ->send();
+
+        }
+    }
     
     public function favoris($id){
         if(!$this->Auth->user('id')){
