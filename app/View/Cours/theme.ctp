@@ -1,4 +1,4 @@
-<h1>Les différents thèmes en <?php echo strtolower($matiere['Matiere']['name']); ?></h1>
+<h1>Les thèmes en <?php echo strtolower($matiere['Matiere']['name']); ?></h1>
 
 <?php foreach ($cours as $c): ?>
     <div class="box">
