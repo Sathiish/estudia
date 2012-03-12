@@ -1,0 +1,9 @@
+/app/Config/core.php
+/app/Config/database.php
+/app/tmp/cache/models/
+/app/tmp/cache/persistent/
+/nbproject
+/plugins
+/vendors
+.DS_Store
+tags
