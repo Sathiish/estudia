@@ -11,7 +11,7 @@ class CoursController extends AppController {
             $this->Auth->allow('index', 'theme', 'show', 'view');
         }
                 
-        public $helpers = array('Autocomplete');
+        public $helpers = array('Autocomplete', 'Tinymce');
         
  
         /**

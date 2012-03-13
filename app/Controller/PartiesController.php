@@ -6,7 +6,9 @@ App::uses('AppController', 'Controller');
  * @property Ressource $Ressource
  */
 class PartiesController extends AppController {
-              
+             
+        public $helpers = array('Tinymce');
+    
         function beforeFilter() {
             parent::beforeFilter();
             $this->Auth->allow('index');

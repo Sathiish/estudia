@@ -4,42 +4,6 @@
 
 <?php $result = (isset($this->params->pass[1]))? "index": "message";?>
 <?php $this->Html->script('coursEdit',array('inline'=>false)); ?>
-<?php $this->Html->script('tiny_mce/tiny_mce.js',array('inline'=>false)); ?>
-<?php $this->Html->scriptStart(array('inline'=>false)); ?>
-        tinyMCE.init({
-                mode : 'textareas',
-                theme: 'advanced',
-                skin : "o2k7",
-                skin_variant : "silver",
-                editor_deselector : "mceNoEditor",
-                plugins: 'save, inlinepopups,paste,table,image, fullscreen, info, latex',
-                entity_encoding : "raw",
-                
-                theme_advanced_buttons1 : 'save,|,bold,italic,underline,|,undo,redo,|,bullist,numlist,|,justifyleft,justifycenter,justifyright,justifyfull,|,link,unlink,|, image, infobulle, latex,table,|, fullscreen,|, code',
-                theme_advanced_buttons2 : '',
-                theme_advanced_buttons3 : '',
-                theme_advanced_buttons4 : '',
-                theme_advanced_toolbar_location:'top',
-                theme_advanced_toolbar_align : "left",
-                theme_advanced_statusbar_location : 'bottom',
-                theme_advanced_resizing : true,
-                width : '655',
-                height : '350',
-                paste_remove_styles : true,
-                paste_remove_spans :  true,
-                paste_stip_class_attributes : "all",
-                image_explorer : '<?php echo $this->Html->url(array('controller'=>'medias','action'=>$result, "cours", $this->request->data['Cour']['id'])); ?>',
-                image_edit : '<?php echo $this->Html->url(array('controller'=>'medias','action'=>'show')); ?>',
-                relative_urls : false,
-                content_css : '/css/wysiwyg.css'
-        });
-        
-        function send_to_editor(content){
-                var ed = tinyMCE.activeEditor;
-                ed.execCommand('mceInsertContent',false,content); 
-        }
-
-<?php $this->Html->scriptEnd(); ?>
 
 <div class="sidebar">
 
@@ -197,12 +161,16 @@
         <h3>Modifier le titre et l'introduction du cours</h3>
         <div class="inside">
             <?php echo $this->Form->create('Cour'); ?>
-<!--            <form action="/cours/edit/<?php echo $this->data['Cour']['id']; ?>" method="post">-->
             <?php echo $this->Form->input('id');?>
             <?php echo $this->Form->input('name', array('label' => "Titre du cours:"));?>
-            <?php echo $this->Form->input('contenu', array('label' => "Vous pouvez saisir l'introduction de ce cours ici :"));?>      
-            
-            
+            <?php echo $this->Tinymce->input('Cour.contenu', 
+                        array('label' => 'Introduction'),
+                        array(
+                            'image_explorer' => $this->Html->url(array('controller'=>'medias','action'=>$result, "cours", $this->request->data['Cour']['id'])),
+                            'image_edit' => $this->Html->url(array('controller'=>'medias','action'=>'show'))
+                        ),
+                      'perso'
+            ); ?>     
             
             <a href="" onClick="$('#cours-edit')..slideUp(); $('#cours-intro'). fadeIn(); return false;" class="modifier">Annuler</a>
             <?php echo $this->Form->end('Mettre à jour'); ?>
@@ -212,7 +180,7 @@
     </div>
         
 <?php //echo $this->Html->link('Ajouter une partie', array('controller' => 'parties', 'action'=> 'add', $this->data['Cour']['id'], $this->data['Cour']['slug']), array('class' => 'button')); ?>
-
+<div style="clear:left; height: 30px;"></div>
     <?php if($this->data['Partie'] != array()): ?>
 
         <?php foreach($this->data['Partie'] as $c): ?>
@@ -225,10 +193,10 @@
         <?php echo $this->Html->link($this->Html->image('editer.png'), array("controller" => "parties", "action"=>"edit", $c['id'], $c['slug']),array("escape" => false, 'title' => 'Modifier', 'class' => 'ajax')); ?>
     </div>
     
-    <div class="contenu" id="<?php echo $c['slug']; ?>" style="display:none">   
+    <div class="contenu" id="<?php echo $c['slug']; ?>" style="display:none; float:none">   
         <?php echo $c['contenu']; ?>
     </div>
-    
+     
         <?php foreach($c['SousPartie'] as $sousPartie): ?>
          <h3><?php echo $this->Html->link($this->Html->image('delete.jpg'), array('controller' => 'sousparties', 'action'=> 'delete', $sousPartie['id'], $sousPartie['slug']), array('escape' => false, 'title' => 'Supprimer cette sous-partie')); ?>
             <?php echo $sousPartie['sort_order'].') '.$sousPartie['name']; ?>
@@ -236,7 +204,7 @@
                 <?php echo $this->Html->link($this->Html->image('editer.png'), array("controller" => "sousparties", "action"=>"edit", $sousPartie['id'], $sousPartie['slug']),array("escape" => false, 'title' => 'Modifier', 'class' => 'ajax')); ?>
 
          </h3>
- 
+ <div style="display:block; float:none; "></div>
              <?php endforeach; ?>
        <?php endforeach; ?>
 
