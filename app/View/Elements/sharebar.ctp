@@ -112,16 +112,22 @@ $(function(){
        <a href="" onClick="$(document).scrollTop(0); return false;" title="Remonter"></a>
     </div>  
         
-    
+    <?php if(isset($c['CourFavori'])): ?>
        <?php if(empty($c['CourFavori'])):?>
-    <div id="favoris">
-       <?php echo $this->Html->link('', array('action' => 'favoris', $c['Cour']['id']), array('id' => 'favorisLink','title' => 'Ajouter à mes favoris'));?>
-            </div>
-       <?php else: ?>
-        <div id="favorisDelete">
-       <?php echo $this->Html->link('', array('action' => 'favoris', $c['Cour']['id']), array('id' => 'favorisLink','title' => 'Supprimer de mes favoris'));?>
+        <div id="favoris">
+           <?php echo $this->Html->link('', array('action' => 'favoris', $c['Cour']['id']), array('id' => 'favorisLink','title' => 'Ajouter à mes favoris'));?>
                 </div>
-       <?php endif; ?>
+           <?php else: ?>
+            <div id="favorisDelete">
+           <?php echo $this->Html->link('', array('action' => 'favoris', $c['Cour']['id']), array('id' => 'favorisLink','title' => 'Supprimer de mes favoris'));?>
+                    </div>
+           <?php endif; ?>
+    
+    <?php else: ?>
+    <div id="favoris">
+           <?php echo $this->Html->link('', array('action' => 'favoris'), array('id' => 'favorisLink','title' => 'Ajouter à mes favoris', 'onClick' => 'alert("Vous ne pouvez pas ajouter de favoris à partir de la prévisualisation")'));?>
+                </div>
+    <?php endif; ?>
 
     
 <!-- AddThis Button BEGIN -->
