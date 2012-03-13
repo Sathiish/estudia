@@ -5,3 +5,34 @@
 body{font-size: 12px}
 
 tr, td {text-align: left!important;}
+table[align=left] {
+float:none;
+    
+}
+.rmq {
+background-position: left;
+background-repeat: no-repeat;
+padding: 4px 0 4px 50px;
+margin: 15px;
+line-height: 30px;
+}
+
+.information {
+color: #7D9B0A;
+background-image: url('/img/infobulles/information_tn.png');
+}
+
+.question {
+color: #145AC1;
+background-image: url('/img/infobulles/question_tn.png');
+}
+
+.attention {
+color: #DA5E0F;
+background-image: url('/img/infobulles/attention_tn.png');
+}
+
+.erreur {
+color: #BE0B0B;
+background-image: url('/img/infobulles/erreur_tn.png');
+}

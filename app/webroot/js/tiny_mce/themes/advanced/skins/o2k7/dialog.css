@@ -45,8 +45,8 @@ padding-bottom:2px;
 float:left;
 }
 
-#insert {background:url(../default/img/buttons.png) 0 -52px}
-#cancel {background:url(../default/img/buttons.png) 0 0; float:right}
+#insert {margin:10px 0 10px 5px !important; padding: 4px 15px !important; border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; float:right; background: none !important; color: #3F3F38 !important; font-weight:normal !important;}
+#cancel {margin:10px 0 10px 5px !important; padding: 4px 15px !important; border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; float:right; background: none !important; color: #3F3F38 !important; font-weight:normal !important; float:right}
 
 /* Browse */
 a.pickcolor, a.browse {text-decoration:none}

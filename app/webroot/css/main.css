@@ -218,7 +218,7 @@ label {cursor: pointer;}
 .vert {color:#66B700}
 
 .bulle {background-position: left; background-repeat: no-repeat; padding: 4px 0 4px 40px; margin: 10px 0; font-size: 14px; display:inline-block; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
-.information{background-image: url('/img/info.png') ; color: #00ccff; }
+/*.information{background-image: url('/img/info.png') ; color: #00ccff; }*/
 .success{color: #00c806; border: 1px solid #00c806; background-color: #d5ff95; font-weight: bold; font-size: 15px; padding: 5px 15px;}
 .error{ color: red; border: 1px solid red; background-color: #ffacac; font-weight: bold; font-size: 15px; padding: 5px 15px;}
 
@@ -771,4 +771,33 @@ ul#menu-admin{
 #menu-admin li a:hover{
     font-weight: bold;
     color: #2bcbff; 
+}
+
+/* INFOBULLES */
+.rmq {
+background-position: left;
+background-repeat: no-repeat;
+padding: 4px 0 4px 50px;
+margin: 15px;
+line-height: 30px;
+}
+
+.information {
+color: #7D9B0A;
+background-image: url('/img/infobulles/information_tn.png');
+}
+
+.question {
+color: #145AC1;
+background-image: url('/img/infobulles/question_tn.png');
+}
+
+.attention {
+color: #DA5E0F;
+background-image: url('/img/infobulles/attention_tn.png');
+}
+
+.erreur {
+color: #BE0B0B;
+background-image: url('/img/infobulles/erreur_tn.png');
 }
