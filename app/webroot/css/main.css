@@ -746,32 +746,10 @@ span#name{
 }
 
 /* ADMIN */
-
-ul#menu-admin{
-    list-style: none;
-    padding: 14px; 
-    background-color: #2bcbff; 
-    color: #fff;
-    border-radius:10px 0 10px 0;
-    width: 420px;
-    margin: -20px 0 0 -20px;
-}
-
-#menu-admin li{
-    display: inline-block;
-    padding: 5px;
-    background-color: #fff;
-    border-radius:5px;
-}
-
-#menu-admin li a{
-    font-weight: bold;
-}
-
-#menu-admin li a:hover{
-    font-weight: bold;
-    color: #2bcbff; 
-}
+ul#menu-admin{list-style: none; padding: 14px; background-color: #2bcbff; color: #fff; border-radius:10px 0 10px 0; width: 420px; margin: -20px 0 0 -20px;}
+#menu-admin li{display: inline-block; padding: 5px; background-color: #fff; border-radius:5px;}
+#menu-admin li a{font-weight: bold;}
+#menu-admin li a:hover{font-weight: bold; color: #2bcbff;}
 
 /* INFOBULLES */
 .rmq {background-position: left; background-repeat: no-repeat; padding: 4px 0 4px 50px; margin: 15px; line-height: 30px; }
