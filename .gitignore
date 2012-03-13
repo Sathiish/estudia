@@ -2,7 +2,6 @@ tags
 app/Config/core.php
 app/Config/database.php
 nbproject
-plugins
 vendors
 
 # MAC

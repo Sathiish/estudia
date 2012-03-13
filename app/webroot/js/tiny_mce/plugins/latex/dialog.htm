@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Ajouter une formule mathématique</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+</head>
+<body>
+
+<form onsubmit="ExampleDialog.insert();return false;" action="#">
+	<p>Saisissez ou copier votre code Latex</p>
+	<p><input type="button" id="preview" name="preview" value="Prévisualiser" onclick="LatexDialog.preview();" /></p>
+	<p><img id="previewImg" src="" alt=""/></p>
+	<p><textarea name="latex_code" cols="100" rows="19"></textarea></p>
+
+	<div class="mceActionPanel">
+		<input type="button" id="insert" name="insert" value="{#insert}" onclick="LatexDialog.insert();" />
+		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+	</div>
+        
+        <div style="float:left; display: inline">
+            <p>Aide mémoire</p>
+            <table>
+                <tr>
+                    <th>Symbole</th>
+                    <th>Commande LaTeX</th>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">∃</td>
+                    <td valign="top"><code>\exists</code></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">∈</td>
+                    <td valign="top"><code>\in</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">∏</td>
+                    <td valign="top"><code>\prod</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">∑</td>
+                    <td valign="top"><code>\sum</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">√</td>
+                    <td valign="top"><code>\sqrt</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">∞</td>
+                    <td valign="top"><code>\infty</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">∩</td>
+                    <td valign="top"><code>\cap</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">∪</td>
+                    <td valign="top"><code>\cup</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">∫</td>
+                    <td valign="top"><code>\int</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">≠</td>
+                    <td valign="top"><code>\ne</code></td>
+              </tr>
+                <tr>
+                        <td align="center" valign="top">≤</td>
+                        <td valign="top"><code>\le</code></td>
+                  </tr>
+                <tr>
+                        <td align="center" valign="top">≥</td>
+                        <td valign="top"><code>\ge</code></td>
+                  </tr>
+                <tr>
+                    <td align="center" valign="top">⇔</td>
+                    <td valign="top" class="code"><code>\Leftrightarrow</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">⇒</td>
+                    <td valign="top" class="code"><code>\Rightarrow</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">⇐</td>
+                    <td valign="top" class="code"><code>\Leftarrow</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">α</td>
+                    <td valign="top"><code>\alpha</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">β</td>
+                    <td valign="top"><code>\beta</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">Δ</td>
+                    <td valign="top"><code>\Delta</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">Ω</td>
+                    <td valign="top"><code>\Omega</code></td>
+              </tr>
+                
+            </table>
+        </div>
+        
+        <div style="float:right; display: inline-block; width: 60%; margin-top: 50px;">
+            <table>
+                <tr>
+                    <th>Opération</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">Indices</td>
+                    <td valign="top"><code>X_{indice}</code></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">Exposant</td>
+                    <td valign="top"><code>X^{exposant</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">Fractions</td>
+                    <td valign="top"><code>\frac{numérateur}{dénominateur}</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">racine</td>
+                    <td valign="top"><code>\sqrt{expression}</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">Racine n-ième</td>
+                    <td valign="top"><code>\sqrt[n]{expression}</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">Somme</td>
+                    <td valign="top"><code> \displaystyle { \sum_{condition de départ}^{condition d'arrivée}} expression de la somme</code></td>
+              </tr>
+                <tr>
+                    <td align="center" valign="top">Limite</td>
+                    <td valign="top"><code>\displaystyle {\lim_{variable \rightarrow (valeur vers laquelle tend la variable)}}f(x)</code></td>
+              </tr>
+            </table>
+        </div>
+</form>
+
+</body>
+</html>
