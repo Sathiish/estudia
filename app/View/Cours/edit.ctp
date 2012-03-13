@@ -15,7 +15,7 @@
                 plugins: 'save, inlinepopups,paste,table,image, fullscreen, info, latex',
                 entity_encoding : "raw",
                 
-                theme_advanced_buttons1 : 'save,bold,italic,underline,|,undo,redo,|,bullist,numlist,|,justifyleft,justifycenter,justifyright,justifyfull,|,link,unlink,|, image, infobulle, latex,table,|, fullscreen,|, code',
+                theme_advanced_buttons1 : 'save,|,bold,italic,underline,|,undo,redo,|,bullist,numlist,|,justifyleft,justifycenter,justifyright,justifyfull,|,link,unlink,|, image, infobulle, latex,table,|, fullscreen,|, code',
                 theme_advanced_buttons2 : '',
                 theme_advanced_buttons3 : '',
                 theme_advanced_buttons4 : '',
