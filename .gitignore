@@ -3,6 +3,8 @@ app/Config/core.php
 app/Config/database.php
 nbproject
 vendors
+app/webroot/img/2012
+lib/Cakeold
 
 # MAC
 .DS_Store
