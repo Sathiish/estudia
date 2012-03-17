@@ -9,7 +9,8 @@
     <?php echo $this->Html->css('main'); ?>
     <?php echo $this->Html->css('print', 'stylesheet', array('media' => 'print')); ?>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<!--    <script type="text/javascript">
+    <?php if($_SERVER['HTTP_HOST'] == "zeschool.com"): ?>
+    <script type="text/javascript">
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-29775947-1']);
@@ -22,7 +23,8 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-    </script>-->
+    </script>
+    <?php endif; ?>
 </head>
 
 <body>
