@@ -25,7 +25,7 @@ class AppController extends Controller {
                                         )
                                 ));
                 
-        function beforeFilter(){
+        public function beforeFilter(){
             if($this->RequestHandler->isAjax()){
                 Configure::write('debug', 0);
                 $this->layout = null;
