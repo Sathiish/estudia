@@ -39,3 +39,4 @@ echo $this->Form->end('Créer mon compte');
             <?php echo $this->Html->link("J'ai oublié mon mot de passe", array("controller" => "users", "action" => "recover_password"), array('class' => "button"));  ?>
 		
 	</div>
+
