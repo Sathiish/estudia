@@ -1,6 +1,4 @@
-TEST
-	
-	<div class="login" style="float:left; border-right:1px solid grey; padding-right:50px; width:360px; margin-left:50px;">
+<div class="login" style="float:left; border-right:1px solid grey; padding-right:50px; width:360px; margin-left:50px;">
             <h1 style="margin-bottom:20px; padding-bottom:10px; border-bottom:1px grey solid;width:340px">Nouveau membre ?</h1>
 <?php   
 echo $this->Form->create('User', array("controller" => "users", "action" => "inscription"));           
