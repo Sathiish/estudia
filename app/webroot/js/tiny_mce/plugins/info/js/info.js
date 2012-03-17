@@ -19,7 +19,7 @@ var InfoDialog = {
                 var test = title.split("_");
                 var test = test[0];
 
-                tinyMCEPopup.execCommand('mceInsertContent', false, '<div class="rmq '+ test +'">' + el + '</div><p></p>');
+                tinyMCEPopup.execCommand('mceInsertContent', false, '<p></p><div class="rmq '+ test +'">' + el + '</div><p></p>');
 
 		tinyMCEPopup.close();
 	}
