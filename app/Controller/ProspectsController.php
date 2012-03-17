@@ -34,16 +34,16 @@ class ProspectsController extends AppController {
                 $d['Prospect']['name'] = $this->Auth->user('name').' '.$this->Auth->user('lastname');
             if(!isset($d['Prospect']['email']))
                 $d['Prospect']['email'] = $this->Auth->user('email');
-            if(!isset($d['Prospect']['tag_id']))
-                $d['Prospect']['tag_id'] = $this->Auth->user('tag_id');
+            if(!isset($d['Prospect']['classe_id']))
+                $d['Prospect']['classe_id'] = $this->Auth->user('tag_id');
             
             $this->data = $d;
         }
         
-        $this->loadModel('Tag');
-        $tags = $this->Tag->find('list', array('contain' => array()));
+        $this->loadModel('Classe');
+        $classes = $this->Classe->find('list', array('contain' => array()));
 
-        $this->set(compact('tags'));
+        $this->set(compact('classes'));
         
     }
             
