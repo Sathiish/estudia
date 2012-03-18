@@ -1,5 +1,5 @@
 <?php
-
+App::uses('Model', 'Model');
 class AppModel extends Model{
     
     public $actsAs = array('Containable');
@@ -16,16 +16,16 @@ class AppModel extends Model{
     
     public function beforeSave($options = array()) {
         
-        if($this->id){  
-            $this->OldTheme = $this->field('theme_id');
-            $this->Theme->id = $this->OldTheme;
-            $this->OldCountTheme = $this->Theme->field('count_quiz');
-            
-            $this->OldMatiere = $this->Theme->field('matiere_id');
-            $this->Theme->Matiere->id = $this->OldMatiere;
-            $this->OldCountMatiere = $this->Theme->Matiere->field('count_quiz');
-        }
-        
+//        if($this->id){  
+//            $this->OldTheme = $this->field('theme_id');
+//            $this->Theme->id = $this->OldTheme;
+//            $this->OldCountTheme = $this->Theme->field('count_quiz');
+//            
+//            $this->OldMatiere = $this->Theme->field('matiere_id');
+//            $this->Theme->Matiere->id = $this->OldMatiere;
+//            $this->OldCountMatiere = $this->Theme->Matiere->field('count_quiz');
+//        }
+//        
         return true;
     }
     

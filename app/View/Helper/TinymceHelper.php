@@ -130,7 +130,7 @@ class TinymceHelper extends AppHelper
      */
     private function preset($name)
     {
-        // Full Feature
+        // Perso
         if($name == 'perso')
         {
             return array(
@@ -142,7 +142,7 @@ class TinymceHelper extends AppHelper
                 'plugins'=> 'save, inlinepopups,paste,table,image, fullscreen, info, latex',
                 'entity_encoding' => "raw",
                 
-                'theme_advanced_buttons1' => 'save,|,bold,italic,underline,|,undo,redo,|,bullist,numlist,|,justifyleft,justifycenter,justifyright,justifyfull,|,link,unlink,|, image, infobulle, latex,table,|, fullscreen,|, code',
+                'theme_advanced_buttons1' => 'save,|,bold,italic,underline,|,undo,redo,|,justifyleft,justifycenter,justifyright,justifyfull,|,bullist,numlist,|,forecolor,link,unlink,|,image, infobulle, latex,table,|, fullscreen,|, code',
                 'theme_advanced_buttons2' => '',
                 'theme_advanced_buttons3' => '',
                 'theme_advanced_buttons4' => '',
@@ -150,8 +150,44 @@ class TinymceHelper extends AppHelper
                 'theme_advanced_toolbar_align' => "left",
                 'theme_advanced_statusbar_location' => 'bottom',
                 'theme_advanced_resizing' => true,
+                'theme_advanced_text_colors' => "FF00FF,FFFF00,000000",
                 'width' => '655',
                 'height' => '350',
+                'paste_remove_styles' => true,
+                'paste_remove_spans' => true,
+                'paste_stip_class_attributes' => "all",
+                'relative_urls' => false,
+                'content_css' => '/css/wysiwyg.css'
+            );
+        }
+        
+        // Ressource
+        if($name == 'ressource')
+        {
+            return array(
+                'mode' => 'textareas',
+                'theme'=> 'advanced',
+                'skin' => "o2k7",
+                'skin_variant' => "silver",
+                'editor_deselector' => "mceNoEditor",
+                'plugins'=> 'save, inlinepopups,paste,table,image, fullscreen, info, latex',
+                'entity_encoding' => "raw",
+                
+                'theme_advanced_buttons1' => 'save,|,bold,italic,underline,|,undo,redo,|,justifyleft,justifycenter,justifyright,justifyfull,|,formatselect,|, infobulle,|,bullist,numlist,|,forecolor, sub, sup,|,link,unlink,|,image, latex,table,|, code,|, fullscreen',
+                'theme_advanced_buttons2' => '',
+                'theme_advanced_buttons3' => '',
+                'theme_advanced_buttons4' => '',
+                'theme_advanced_toolbar_location'=>'top',
+                'theme_advanced_toolbar_align' => "left",
+                'theme_advanced_statusbar_location' => 'bottom',
+                'theme_advanced_resizing' => true,
+                'theme_advanced_text_colors' => "FF00FF,FFFF00,000000",
+                'theme_advanced_more_colors' => false,
+                'theme_advanced_styles' => "Titre de partie=h2;Titre de sous-partie=h3;",
+                'theme_advanced_blockformats' => "h2,h3,blockquote",
+                'theme_advanced_resizing_max_width' => '700',
+                'width' => '700',
+                'height' => '650',
                 'paste_remove_styles' => true,
                 'paste_remove_spans' => true,
                 'paste_stip_class_attributes' => "all",

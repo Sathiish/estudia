@@ -15,7 +15,7 @@
 <?php echo $this->Form->create('Prospect', array('url' => '/prospects/contact')); ?>
 
 <?php echo $this->element('matiere_liste', array('cache'=>'+1 week')); ?>
-<?php echo $this->Form->input('tag_id', array('label' => 'Votre classe')); ?>
+<?php echo $this->Form->input('classe_id', array('label' => 'Votre classe')); ?>
 <?php echo $this->Form->input('name', array('label' => 'Votre nom')); ?>
 <?php echo $this->Form->input('email', array('label' => 'Votre email')); ?>
 <?php echo $this->Form->input('phone', array('label' => 'Votre numéro de téléphone')); ?>

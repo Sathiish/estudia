@@ -28,6 +28,15 @@ class Classe extends AppModel{
             return $tags;
         }
         
+        function getListClasse(){
+            $listClasse = $this->find('list', array(
+                "fields" => "id, name",
+                "order" => "id ASC"
+            ));
+
+            return $listClasse;
+        }
+        
         public function updatecount(){
         
 //            //On met à jour le nombre de cours publié par tag

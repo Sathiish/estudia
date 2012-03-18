@@ -3,24 +3,24 @@
 <div id="FBG">
     <div class="FBG_resize">
       <div class="click_blog">
-        <p><?php //echo $this->Html->image('test_img.gif', array('alt' => 'picture','width'=>'26', 'height'=>'24'))?> 
-L'éducation est un progrès social... L'éducation est non pas une préparation à la vie, l'éducation est la vie même. <span class="auteur">John Dewey</span></p>
+        <p style="margin-top:-10px;color:#fff;margin-left:70px">L'éducation est un progrès social... L'éducation est non pas une préparation à la vie, l'éducation est la vie même. John Dewey</p>
         
 
         <div class="clr"></div>
 
       </div>
+        <img class="footer_border" src="/img/footer_border.gif" alt="border"/>
       <div class="blog">
-        <h2>RESSOURCES<span></span></h2>
+        <img src="/img/ressource.png" alt="ressources"/>
         <div class="clr"></div>
         <ul>
           <li><?php echo $this->Html->link('Cours', array("controller" => "matieres", "action" => "index", "cours")); ?></li>
-          <li><?php echo $this->Html->link('Quiz', array("controller" => "matieres", "action" => "index", "quiz")); ?></li>
-          <li><?php echo $this->Html->link('Par niveaux', '#', array('onclick' => "alert('A venir très prochainement'); return false;")); ?></li>
+          <li><?php echo $this->Html->link('QCM', array("controller" => "matieres", "action" => "index", "quiz")); ?></li>
+          <li><?php echo $this->Html->link('Classes', '#', array('onclick' => "alert('A venir très prochainement'); return false;")); ?></li>
         </ul>
       </div>
       <div class="blog">
-        <h2>INFOS</h2>
+        <img src="/img/infos.png" alt="infos"/>
         <div class="clr"></div>
         <ul>
           <li><?php echo $this->Html->link('Qui sommes-nous ?', array("controller" => "pages", "action" => "quisommesnous")); ?></li>
@@ -28,20 +28,24 @@ L'éducation est un progrès social... L'éducation est non pas une préparation
           <li><?php echo $this->Html->link('Contact', array("controller" => "contact", "action" => "index")); ?></li>
         </ul>
       </div>
-      <div class="blog last">
-        
-        <h2>SUIVEZ-NOUS!</h2>
+
+        <img class="footer_border2" src="/img/footer_border.gif" alt="border"/>
+
+              <div class="blog last">
+           <img src="/img/followus.png" alt="réseaux sociaux"/>
         <div class="clr"></div>
-        <div id="sprite">
-            <ul>
-                 <li><a id="mysprite1" href="http://www.facebook.com/pages/ZeSchool/176348839105396" target="_blank"></a></li>
-                 <li><a id="mysprite2" href="http://twitter.com/#!/zeschool" target="_blank"></a></li>
-                 <li><a id="mysprite3" href="mailto:contact@zeschool.fr"></a></li>
-                 <li><a id="mysprite4" href="http://zeschool.fr/blog/feed" target="_blank"></a></li>
+        <div>
+            <ul id="sprite">
+                 <li class="facebook"><a href="http://www.facebook.com/pages/ZeSchool/176348839105396" target="_blank">     </a></li>
+                 <li class="twitter"><a href="http://twitter.com/#!/zeschool" target="_blank"></a></li>
+                 <li class="email"><a href="mailto:contact@zeschool.fr"></a></li>
+                 <li class="rss"><a href="http://zeschool.fr/blog/feed" target="_blank"></a></li>
             
             </ul>
         </div>
+       
       </div>
+         
       <div class="clr"></div>
     </div>
     
