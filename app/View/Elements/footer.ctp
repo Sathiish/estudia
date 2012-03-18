@@ -3,7 +3,7 @@
 <div id="FBG">
     <div class="FBG_resize">
       <div class="click_blog">
-        <p style="margin-top:-10px;color:#fff;margin-left:70px">L'éducation est un progrès social... L'éducation est non pas une préparation à la vie, l'éducation est la vie même. John Dewey</p>
+        <p class="citation">L'éducation est un progrès social... L'éducation est non pas une préparation à la vie, l'éducation est la vie même. John Dewey</p>
         
 
         <div class="clr"></div>
