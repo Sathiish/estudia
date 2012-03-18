@@ -46,9 +46,9 @@
        
       </div>
          
-      <div class="clr"></div>
+<!--      <div class="clr"></div>-->
     </div>
-    
+    <div class="clr"></div>
     <div class="footer">
       <div class="footer_resize">
 

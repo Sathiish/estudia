@@ -10,8 +10,8 @@ hr{width: 50%; margin: 20px auto; }
 .clr { float:none; clear:both; padding:0; margin:0;width:100%; font-size:0px; line-height:0px;}
 
 /* FBG */
-#FBG {padding:0; width:990px; margin:0 auto; background:url(/img/footer_fd.gif) repeat-x; color: #fff}
-.FBG_resize { width:950px; margin:0 auto; padding:35px 35px 35px 70px;}
+#FBG {padding:0; width:990px; margin:0 auto; background:url(/img/footer_fd.gif) repeat-x; color: #fff;}
+.FBG_resize { width:885px; margin:0 auto; padding:35px 35px 35px 70px; height:145px; position:relative;}
 .FBG_resize img { float:left; margin:0; padding:0;}
 .FBG_resize a { color:#618bb6; text-decoration:none; }
 .FBG_resize h2 { font: bold 18px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#bababa; padding:10px 0; margin:0; text-align: left;}
@@ -22,12 +22,12 @@ hr{width: 50%; margin: 20px auto; }
 .FBG_resize li a:hover { color:#fff; text-decoration:none;}
 .FBG_resize .blog { width:220px; float:left; margin:0; padding:20px 35px 10px 0;}
 .FBG_resize .blog.last { width:250px; padding:20px 0 10px 0;margin-left:80px;}
-.FBG_resize .footer_border{margin:-45px 0 0 -90px}
-.FBG_resize .footer_border2{float:right; margin:-45px 10px 0 -15px}
+.FBG_resize .footer_border{position:absolute; top: 10px; left: -20px;box-shadow: 0 0 5px rgba(0,0,0,0.2);}
+.FBG_resize .footer_border2{position:absolute; top: 10px; right: -20px;box-shadow: 0 0 5px rgba(0,0,0,0.2);}
 
 /* footer */
-.footer {padding:2px 0 0 0; width:990px;margin:0 auto; background: #f4f4f4 url(/img/footer.gif) 0 0 no-repeat;}
-.footer_resize {width:960px; margin:0 auto;margin-bottom:15px; margin-top:-48px;padding:15px; background:#fff; color:#3F3F38; box-shadow:0 0 5px rgba(0,0,0,0.2);
+.footer {padding:2px 0 0 0; width:990px; margin:0 auto;}
+.footer_resize {padding:15px; background:#fff; color:#3F3F38; box-shadow:0 0 5px rgba(0,0,0,0.2);
 -moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px; 
     -webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); -moz-box-shadow:0 0 5px rgba(0,0,0,0.2);}
 .footer a { font:bold 12px Arial, Helvetica, sans-serif; text-decoration:none; color: #333;}
