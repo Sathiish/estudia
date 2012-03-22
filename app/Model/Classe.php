@@ -3,7 +3,8 @@ class Classe extends AppModel{
     
         public $actsAs = array('Containable');
         
-	public $hasMany = array('Theme');
+	public $hasMany = array('Matiere');
+        public $belongsTo = array('Niveau');
 	
         public function findRelated($model, $id){
             switch($model){
@@ -28,9 +29,16 @@ class Classe extends AppModel{
             return $tags;
         }
         
-        function getListClasse(){
+        function getListClasse($niveauId = null){
+            if($niveauId != null){
+                $condition = "Classe.niveau_id = $niveauId";
+            }else{
+                $condition = "1 = 1";
+            }
+            
             $listClasse = $this->find('list', array(
                 "fields" => "id, name",
+                "conditions" => $condition,
                 "order" => "id ASC"
             ));
 

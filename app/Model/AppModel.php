@@ -29,84 +29,84 @@ class AppModel extends Model{
         return true;
     }
     
-    public function afterSave($created) {
-    
-        $model = $this->name;
-        $type = $this->useTable;
-
-        if(isset($this->data[$model]['theme_id']) && !empty($this->data[$model]['theme_id'])){
-            $d = $this->data[$model]; 
-            
-            $matiereId = $d['matiere_id'];
-            $themeId = $d['theme_id'];
-
-            $isPublished = $this->isPublished($this->id);
-
-            if($isPublished){
-                $fieldToUpdate = "count_published_$type";
-            }else{
-                $fieldToUpdate = "count_$type";
-            }
-
-            $data = $this->Theme->find('first', array(
-                "conditions" => "Theme.id = $themeId",
-                "fields" => array("Theme.$fieldToUpdate"),
-                "contain" => array(
-                    "Matiere" => array(
-                        "fields" => array("Matiere.$fieldToUpdate")
-                    )
-                )
-            ));
-
-            $oldCountTheme = $data['Theme'][$fieldToUpdate];
-            $oldCountMatiere = $data['Matiere'][$fieldToUpdate];
-
-
-            if(isset($this->OldTheme)){
-                if($this->OldTheme != $themeId){
-                    //On met à jour le nombre de quiz dans le thème
-                    $this->Theme->id =  $themeId;
-                    $newCountTheme = $oldCountTheme + 1;
-                    $d['Theme'][$fieldToUpdate] = $oldCountTheme + 1;
-                    $this->Theme->save($d);
-                    
-                    //Et ensuite on met à jour l'ancien thème en enlevant 1
-                    if($this->OldCountTheme > 0){     
-                        $this->Theme->id = $this->OldTheme;
-                        $OldnewCountTheme = $this->OldCountTheme - 1;
-                        $this->Theme->saveField($fieldToUpdate,$OldnewCountTheme);
-                    }
-
-                    //Si la matière est différente, on met à jour aussi
-                    if($matiereId != $this->OldMatiere){
-                        //On met à jour la nouvelle matière
-                        //$this->Matiere->id = $matiereId;
-                        $NewMatiere['Matiere']['id'] = $matiereId;
-                        $NewMatiere['Matiere'][$fieldToUpdate] = $oldCountMatiere + 1;
-                        //die(debug($matiere));
-                        $this->Theme->Matiere->save($NewMatiere);
-                        
-                        //On met également à jour l'ancienne matière
-                        //$this->Matiere->id = $this->OldMatiere;
-                        $OldMatiere['Matiere']['id'] = $this->OldMatiere;
-                        $OldMatiere['Matiere'][$fieldToUpdate] = $this->OldCountMatiere - 1;
-                        $this->Theme->Matiere->save($OldMatiere);
-                    }
-                }
-            }else{
-                $this->Theme->id =  $themeId;
-                $newCountTheme = $oldCountTheme + 1;
-                $this->Theme->saveField($fieldToUpdate,$newCountTheme);
-                
-                $this->Theme->Matiere->id =  $matiereId;
-                $NewCountMatiere = $oldCountMatiere +1;
-                $this->Theme->Matiere->saveField($fieldToUpdate,$NewCountMatiere);
-            }
-
-        }
-        
-        return true;
-    }
+//    public function afterSave($created) {
+//    
+//        $model = $this->name;
+//        $type = $this->useTable;
+//
+//        if(isset($this->data[$model]['theme_id']) && !empty($this->data[$model]['theme_id'])){
+//            $d = $this->data[$model]; 
+//            
+//            $matiereId = $d['matiere_id'];
+//            $themeId = $d['theme_id'];
+//
+//            $isPublished = $this->isPublished($this->id);
+//
+//            if($isPublished){
+//                $fieldToUpdate = "count_published_$type";
+//            }else{
+//                $fieldToUpdate = "count_$type";
+//            }
+//
+//            $data = $this->Theme->find('first', array(
+//                "conditions" => "Theme.id = $themeId",
+//                "fields" => array("Theme.$fieldToUpdate"),
+//                "contain" => array(
+//                    "Matiere" => array(
+//                        "fields" => array("Matiere.$fieldToUpdate")
+//                    )
+//                )
+//            ));
+//
+//            $oldCountTheme = $data['Theme'][$fieldToUpdate];
+//            $oldCountMatiere = $data['Matiere'][$fieldToUpdate];
+//
+//
+//            if(isset($this->OldTheme)){
+//                if($this->OldTheme != $themeId){
+//                    //On met à jour le nombre de quiz dans le thème
+//                    $this->Theme->id =  $themeId;
+//                    $newCountTheme = $oldCountTheme + 1;
+//                    $d['Theme'][$fieldToUpdate] = $oldCountTheme + 1;
+//                    $this->Theme->save($d);
+//                    
+//                    //Et ensuite on met à jour l'ancien thème en enlevant 1
+//                    if($this->OldCountTheme > 0){     
+//                        $this->Theme->id = $this->OldTheme;
+//                        $OldnewCountTheme = $this->OldCountTheme - 1;
+//                        $this->Theme->saveField($fieldToUpdate,$OldnewCountTheme);
+//                    }
+//
+//                    //Si la matière est différente, on met à jour aussi
+//                    if($matiereId != $this->OldMatiere){
+//                        //On met à jour la nouvelle matière
+//                        //$this->Matiere->id = $matiereId;
+//                        $NewMatiere['Matiere']['id'] = $matiereId;
+//                        $NewMatiere['Matiere'][$fieldToUpdate] = $oldCountMatiere + 1;
+//                        //die(debug($matiere));
+//                        $this->Theme->Matiere->save($NewMatiere);
+//                        
+//                        //On met également à jour l'ancienne matière
+//                        //$this->Matiere->id = $this->OldMatiere;
+//                        $OldMatiere['Matiere']['id'] = $this->OldMatiere;
+//                        $OldMatiere['Matiere'][$fieldToUpdate] = $this->OldCountMatiere - 1;
+//                        $this->Theme->Matiere->save($OldMatiere);
+//                    }
+//                }
+//            }else{
+//                $this->Theme->id =  $themeId;
+//                $newCountTheme = $oldCountTheme + 1;
+//                $this->Theme->saveField($fieldToUpdate,$newCountTheme);
+//                
+//                $this->Theme->Matiere->id =  $matiereId;
+//                $NewCountMatiere = $oldCountMatiere +1;
+//                $this->Theme->Matiere->saveField($fieldToUpdate,$NewCountMatiere);
+//            }
+//
+//        }
+//        
+//        return true;
+//    }
     
     public function updateCounter($ToPublish = false){
         

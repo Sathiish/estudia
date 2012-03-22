@@ -34,6 +34,21 @@ class Theme extends AppModel{
         
         return $path;
     }
-    
+   
+    function getAllthemes($matiereId){
+            if($matiereId != null){
+                $condition = "Theme.matiere_id = $matiereId";
+            }else{
+                $condition = "1 = 1";
+            }
+            
+            $AllThemes = $this->find('list', array(
+                "fields" => "id, name",
+                "conditions" => $condition,
+                "order" => "id ASC"
+            ));
+
+            return $AllThemes;
+        }
 }
 ?>

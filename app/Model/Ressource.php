@@ -4,10 +4,8 @@ class Ressource extends AppModel{
     
     public $actsAs = array('Containable');
          
-    public $belongsTo = array('User', 'Matiere');
-    
-    public $hasAndBelongsToMany = array('Classe');
-    
+    public $belongsTo = array('User', 'Theme');
+        
     //public $hasMany = array('CourNote', 'CourFavori');
     //public $hasMany = array('CourFavori');
     
@@ -45,6 +43,27 @@ class Ressource extends AppModel{
 //        
 //        return $path;
 //    } 
+    
+    public function filAriane($ressourceId){
+        $filAriane = $this->find('first', array(
+            'conditions' => "Ressource.id = $ressourceId",
+            'fields' => array('Ressource.id, Ressource.name, Ressource.slug, Ressource.theme_id'),
+            'contain' => array(
+                'Theme' => array(
+                    'fields' => array('Theme.id, Theme.name, Theme.slug, Theme.matiere_id'),
+                    'Matiere' => array(
+                        'fields' => array('Matiere.id, Matiere.name, Matiere.slug'),
+                        'Classe' => array(
+                            'fields' => array('Classe.id, Classe.name, Classe.slug'),
+                            'Niveau' => array()
+                        )
+                    )
+                )
+            )
+        ));
+                
+        return $filAriane;
+    }
     
 }
 ?>

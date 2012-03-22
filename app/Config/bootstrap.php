@@ -59,7 +59,7 @@ Configure::write('Media.formats',array(
  *
  */
 Inflector::rules('singular', array('irregular' => array('parties' => 'partie', 'sousparties' => 'sousPartie', 'classes' => 'classe'), 'uninflected' => array('admin')));
-
+Inflector::rules('plural', array('rules' => array(), 'irregular' => array('niveau' => 'niveaux'), 'uninflected' => array()));
 
 /**
  * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call

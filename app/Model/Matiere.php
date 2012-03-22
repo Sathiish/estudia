@@ -13,6 +13,7 @@ class Matiere extends AppModel {
 	
         public $actsAs = array('Containable');
         public $hasMany = array('Theme', 'CourTag');
+        public $belongsTo = array('Classe');
         
         public $displayField = 'name';
 /**
@@ -41,9 +42,9 @@ class Matiere extends AppModel {
             return true;
         }
         
-        function getAllMatieres($onlyPublic = false){
-            if($onlyPublic){
-                $condition = "published = 1";
+        function getAllMatieres($classeId){
+            if($classeId != null){
+                $condition = "Matiere.classe_id = $classeId";
             }else{
                 $condition = "1 = 1";
             }
