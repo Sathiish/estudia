@@ -6,7 +6,7 @@ class Theme extends AppModel{
      
     public $belongsTo = array('Matiere', 'Classe');
 
-    public $hasMany = array('Cour');
+    public $hasMany = array('Cour', 'Ressource');
     
     function beforeSave($options = array()) {
         if(!empty($this->data['Theme']['name'])){
@@ -17,7 +17,7 @@ class Theme extends AppModel{
     }
     
     
-    function findPath($themeId){
+    public function findPath($themeId){
         $path = $this->find('first', array(
             "fields" => "Theme.id, Theme.name, Theme.slug",
             "conditions" => "Theme.id = $themeId",

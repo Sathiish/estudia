@@ -12,12 +12,12 @@
         <?php $menu = $this->requestAction('/niveaux/menu'); ?>
         
         <?php foreach($menu as $m): ?>
-            <li><?php echo $this->Html->link($m['Niveau']['name'], array('controller' => 'niveaux', 'action' => 'view', $m['Niveau']['id'], $m['Niveau']['slug'])); ?>
+            <li><?php echo $this->Html->link($m['Niveau']['name'], array()); ?>
             <ul>
                 <?php foreach($m['Classe'] as $c): ?>
-                <li><?php echo $this->Html->link($c['name'], array('controller' => 'niveaux', 'action' => 'view')); ?>
+                <li><?php echo $this->Html->link($c['name'], array()); ?>
                     <ul><?php foreach($c['Matiere'] as $mat): ?>
-                        <li><?php echo $this->Html->link($mat['name'], array('controller' => 'niveaux', 'action' => 'view')); ?></li>
+                        <li><?php echo $this->Html->link($mat['name'], array('controller' => 'themes', 'action' => 'view', $mat['id'], $mat['slug'])); ?></li>
                     <?php endforeach; ?></ul></li>
                 <?php endforeach; ?>
             </ul></li>

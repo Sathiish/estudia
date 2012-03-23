@@ -12,7 +12,7 @@ class Matiere extends AppModel {
  */
 	
         public $actsAs = array('Containable');
-        public $hasMany = array('Theme', 'CourTag');
+        public $hasMany = array('Theme');
         public $belongsTo = array('Classe');
         
         public $displayField = 'name';

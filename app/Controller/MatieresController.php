@@ -33,34 +33,36 @@ class MatieresController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-		$this->Matiere->id = $id;
-		if (!$this->Matiere->exists()) {
-			throw new NotFoundException(__('Invalid matiere'));
-		}
-		$this->set('matiere', $this->Matiere->read(null, $id));
+            $this->Matiere->id = $id;
+            if (!$this->Matiere->exists()) {
+                    throw new NotFoundException('Matière introuvable');
+            }
+            
+            
+            $this->set('matiere', $this->Matiere->read(null, $id));
 	}
 
-        public function tag($tagId) {
-            $matieres = $this->Matiere->CourTag->find('all', array(
-                "conditions" => "CourTag.tag_id = $tagId",
-                "fields" => "CourTag.id",
-                "contain" => array(
-                    "Matiere" => array(
-                        "fields" => "Matiere.name, Matiere.id, Matiere.slug"
-                    ),
-                    "Tag" => array(
-                        "fields" => "Tag.slug"
-                    )
-                )
-            ));
-
-            $tag = $this->Matiere->CourTag->Tag->find('first', array(
-                "conditions" => "Tag.id = $tagId",
-                "fields" => "Tag.id, Tag.name, Tag.slug",
-                "contain" => array()
-            ));
-            $this->set(compact('matieres', 'tag'));
-	}
+//        public function tag($tagId) {
+//            $matieres = $this->Matiere->CourTag->find('all', array(
+//                "conditions" => "CourTag.tag_id = $tagId",
+//                "fields" => "CourTag.id",
+//                "contain" => array(
+//                    "Matiere" => array(
+//                        "fields" => "Matiere.name, Matiere.id, Matiere.slug"
+//                    ),
+//                    "Tag" => array(
+//                        "fields" => "Tag.slug"
+//                    )
+//                )
+//            ));
+//
+//            $tag = $this->Matiere->CourTag->Tag->find('first', array(
+//                "conditions" => "Tag.id = $tagId",
+//                "fields" => "Tag.id, Tag.name, Tag.slug",
+//                "contain" => array()
+//            ));
+//            $this->set(compact('matieres', 'tag'));
+//	}
 /**
  * add method
  *

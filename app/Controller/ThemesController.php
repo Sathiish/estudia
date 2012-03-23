@@ -18,13 +18,38 @@ class ThemesController extends AppController {
  * @param string $id
  * @return void
  */
-	public function view($MatiereId = null) {
+	public function view($classeId = null) {
 		$themes = $this->Theme->find('all', array(
-                    "conditions" => "Theme.matiere_id = $MatiereId AND Theme.count_published_cours > 0",
-                    "fields" => "Theme.name, Theme.slug, Theme.id"
+                    "conditions" => "Theme.classe_id = $classeId AND Theme.count_published_cours > 0",
+                    "fields" => array("Theme.name, Theme.slug, Theme.id, Theme.count_published_cours"),
+                    "contain" => array(
+                        "Cour" => array(
+                            'fields' => array('Cour.id, Cour.name, Cour.slug, Cour.published, Cour.user_id, Cour.count, Cour.moyenne'),
+                            'User' => array(
+                                'fields' => array('User.id, User.username, User.slug')
+                            )
+                        ),
+                        "Ressource" => array(
+                            'fields' => array('Ressource.id, Ressource.name, Ressource.slug'),
+                            'User' => array(
+                                'fields' => array('User.id, User.username, User.slug')
+                            )
+                        )
+                    )
+                ));
+                
+                $filAriane = $this->Theme->Matiere->find('first', array(
+                    "conditions" => "Matiere.id = $classeId",
+                    "fields" => array("Matiere.id, Matiere.name, Matiere.slug, Matiere.classe_id"),
+                    "contain" => array(
+                        "Classe" => array(
+                                'fields' => array('Classe.id, Classe.name, Classe.slug')
+                        )
+                    )
                 ));
 
 		$this->set(compact('themes'));
+		$this->set(compact('filAriane'));
 	}
         
         public function tag($tagId, $matiereId){
