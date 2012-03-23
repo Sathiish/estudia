@@ -48,8 +48,9 @@ hr{width: 50%; margin: 20px auto; }
 #menu_nav { margin:0 auto; padding:0; float:right; position: absolute; top:64px; right: 10px;}
 #menu_nav_index { margin:0 auto; padding:0; float:right; position: absolute; top:0px; right: 10px;}
 #menu_nav ul, #menu_nav_index ul { list-style:none; float:left; margin: 0 !important;}
-#menu_nav ul li {float: left; background: #fff url(/img/menu-li.png) top left repeat-x; margin-left: 5px;
+#menu_nav ul li {display: inline-block; background: #fff url(/img/menu-li.png) top left repeat-x; margin-left: 5px;
 -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;}
+#menu_nav ul li ul li{display:block; margin-left: 5px; z-index: 555555;}
 #menu_nav_index ul li {float: left; background: #fff url(/img/menu-li.png) top left repeat-x; margin-left: 5px;
 -moz-border-radius:  0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;}
 /*#menu_nav ul li .hover{margin-top: -10px; padding: 10px 13px 0 13px; height: 50px;}*/
@@ -63,52 +64,30 @@ font: normal 17px "Trebuchet MS";}
 #nav #loginForm input[type="text"], #nav #loginForm input[type="password"]{width: 200px}
 #nav #loginForm input[type="submit"]{margin:5px; float:right}
 
+/* Menu déroulant */
+.ddsmoothmenu ul li{position: relative;display: inline;float: left;}
+.ddsmoothmenu ul li ul{position: absolute;left: 0;display: none; visibility: hidden;}
+.ddsmoothmenu ul li ul li{display: list-item;float: none;margin-left:0 !important;border-bottom: 1px solid #353535;}
+.ddsmoothmenu ul li ul li ul{top: 0;}
+.ddsmoothmenu ul li ul li a{width: 120px; padding: 0px; margin: 0;background-color: #434343;}
+* html .ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+
+
 /* Sprite Réseaux sociaux dans le Footer */
-.facebook a, .twitter a, .email a, .rss a, .google_plus a{
-background: url(/img/sprites.png) no-repeat;
-width: 48px;
-height: 48px;
-}
-
-.email a:hover, .twitter a:hover, .facebook a:hover, .rss a:hover, .google_plus a:hover{
-width: 48px;
-height: 46px;
-}
-
+.facebook a, .twitter a, .email a, .rss a, .google_plus a{background: url(/img/sprites.png) no-repeat;width: 48px;height: 48px;}
+.email a:hover, .twitter a:hover, .facebook a:hover, .rss a:hover, .google_plus a:hover{width: 48px;height: 46px;}
 #sprite a, #sprite a:hover{text-decoration: none; display:block; padding: 0;}
 #sprite li {border:none; display: inline-block;}
-
-a#facebook{
-background-position: -1px 0;
-}
-.twitter a{
-background-position: -50px 0;
-
-}
-.email a{
-background-position: -151px 0;
-}
-.rss a{
-background-position: -201px 0;
-}
-.google_plus a{
-background-position: -101px 0;
-}
-.email a:hover{
-background-position: -150px -52px;
-}
-.twitter a:hover{
-background-position: -50px -53px;
-}
-.facebook a:hover{
-background-position: 1px -53px;
-}
-.rss a:hover{
-background-position: -200px -53px;
-}
-.google_plus a:hover{
-background-position: -100px -53px;
-}
+a#facebook{background-position: -1px 0;}
+.twitter a{background-position: -50px 0;}
+.email a{background-position: -151px 0;}
+.rss a{background-position: -201px 0;}
+.google_plus a{background-position: -101px 0;}
+.email a:hover{background-position: -150px -52px;}
+.twitter a:hover{background-position: -50px -53px;}
+.facebook a:hover{background-position: 1px -53px;}
+.rss a:hover{background-position: -200px -53px;}
+.google_plus a:hover{background-position: -100px -53px;}
 
 
 #headerintro{height:365px; background-color: #2bcbff;color:white;padding-top:0;position:relative;border-bottom:1px solid #fff}
@@ -793,3 +772,4 @@ ul#menu-admin{list-style: none; padding: 14px; background-color: #2bcbff; color:
 
 /* LEGEND */
 legend{font-weight: bold; font-size: 14px; margin: 10px 0 5px 0; padding:10px}
+
