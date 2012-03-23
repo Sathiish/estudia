@@ -1,6 +1,6 @@
 <div id="breadcrumbs">
-        <?php echo $this->Html->link('Matière', array("controller" => "matieres", "action" => "index", 'cours'), array('title' => 'Toutes les matières')); ?>
-        >> <?php echo $this->Html->link(strip_tags($path['Matiere']['name']), array("controller" => "cours", "action" => "theme", $path['Matiere']['id'], $path['Matiere']['slug'])); ?>
+        <?php echo $this->Html->link(strip_tags($path['Matiere']['Classe']['name']), array()); ?>
+        >> <?php echo $this->Html->link(strip_tags($path['Matiere']['name']), array("controller" => "themes", "action" => "view", $path['Matiere']['id'], $path['Matiere']['slug'])); ?>
         >> <?php echo $this->Html->link(strip_tags($path['Theme']['name']), array("controller" => "cours", "action" => "view", $path['Theme']['id'], $path['Theme']['slug'])); ?>
         >> <?php echo strip_tags($c['Cour']['name']); ?>
 </div>

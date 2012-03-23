@@ -4,7 +4,7 @@ class Theme extends AppModel{
     
     public $actsAs = array('Containable');
      
-    public $belongsTo = array('Matiere', 'Classe');
+    public $belongsTo = array('Matiere');
 
     public $hasMany = array('Cour', 'Ressource');
     
@@ -19,16 +19,16 @@ class Theme extends AppModel{
     
     public function findPath($themeId){
         $path = $this->find('first', array(
-            "fields" => "Theme.id, Theme.name, Theme.slug",
+            "fields" => "Theme.id, Theme.name, Theme.slug, Theme.matiere_id",
             "conditions" => "Theme.id = $themeId",
             "contain" => array(
                 "Matiere" => array(
-                    "fields" => array("Matiere.id, Matiere.name, Matiere.slug")
-                ),
-                "Classe" => array(
-                    "fields" => array("Classe.id, Classe.name, Classe.slug"),
-                    "limit" => 1
-                ) 
+                    "fields" => array("Matiere.id, Matiere.name, Matiere.slug, Matiere.classe_id"),
+                    "Classe" => array(
+                        "fields" => array("Classe.id, Classe.name, Classe.slug"),
+                        "limit" => 1
+                    ) 
+                )
             )
         ));
         

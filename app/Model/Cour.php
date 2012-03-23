@@ -25,19 +25,17 @@ class Cour extends AppModel{
     public function getPath($coursId){
         
         $path = $this->find('first', array(
-            "fields" => array("Cour.id, Cour.name, Cour.slug"),
+            "fields" => array("Cour.id, Cour.name, Cour.slug, Cour.theme_id"),
             "conditions" => array("Cour.id" => $coursId),
             "contain" => array(
                 "Theme" => array(
-                    "fields" => array("Theme.id, Theme.name, Theme.slug"),
-                    "limit" => 1,
+                    "fields" => array("Theme.id, Theme.name, Theme.slug, Theme.matiere_id"),
                     "Matiere" => array(
-                        "fields" => array("Matiere.id, Matiere.name, Matiere.slug")
-                    ),
-                    "Classe" => array(
-                        "fields" => array("Classe.id, Classe.name, Classe.slug"),
-                        "limit" => 1
-                    ) 
+                        "fields" => array("Matiere.id, Matiere.name, Matiere.slug"),
+                        "Classe" => array(
+                            "fields" => array("Classe.id, Classe.name, Classe.slug")
+                        ) 
+                    )
                 )
             )
         ));

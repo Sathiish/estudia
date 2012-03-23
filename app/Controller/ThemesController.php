@@ -18,19 +18,21 @@ class ThemesController extends AppController {
  * @param string $id
  * @return void
  */
-	public function view($classeId = null) {
+	public function view($matiereId = null) {
 		$themes = $this->Theme->find('all', array(
-                    "conditions" => "Theme.classe_id = $classeId AND Theme.count_published_cours > 0",
+                    "conditions" => "Theme.matiere_id = $matiereId AND Theme.count_published_cours > 0",
                     "fields" => array("Theme.name, Theme.slug, Theme.id, Theme.count_published_cours"),
                     "contain" => array(
                         "Cour" => array(
                             'fields' => array('Cour.id, Cour.name, Cour.slug, Cour.published, Cour.user_id, Cour.count, Cour.moyenne'),
+                            'conditions' => array('Cour.published  = 1'),
                             'User' => array(
                                 'fields' => array('User.id, User.username, User.slug')
                             )
                         ),
                         "Ressource" => array(
-                            'fields' => array('Ressource.id, Ressource.name, Ressource.slug'),
+                            'fields' => array('Ressource.id, Ressource.name, Ressource.slug, Ressource.count, Ressource.note'),
+                            'conditions' => array('Ressource.published  = 1'),
                             'User' => array(
                                 'fields' => array('User.id, User.username, User.slug')
                             )
@@ -39,7 +41,7 @@ class ThemesController extends AppController {
                 ));
                 
                 $filAriane = $this->Theme->Matiere->find('first', array(
-                    "conditions" => "Matiere.id = $classeId",
+                    "conditions" => "Matiere.id = $matiereId",
                     "fields" => array("Matiere.id, Matiere.name, Matiere.slug, Matiere.classe_id"),
                     "contain" => array(
                         "Classe" => array(

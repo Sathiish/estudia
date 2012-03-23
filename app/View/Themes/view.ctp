@@ -22,7 +22,7 @@
         <th class="last">Note</th>
     </tr>
 <?php foreach ($theme['Cour'] as $c): ?>
-    <tr><?php debug($c); ?>
+    <tr>
     <td><?php echo $this->Html->link($c['name'], 
             array(
                 "controller" => "cours", 
@@ -43,10 +43,10 @@
 <?php endforeach; ?>
     
     <?php foreach ($theme['Ressource'] as $c): ?>
-    <tr><?php debug($c); ?>
+    <tr>
     <td><?php echo $this->Html->link($c['name'], 
             array(
-                "controller" => "cours", 
+                "controller" => "ressources", 
                 "action" => "show", 
                 $c['id'], 
                 $c['slug']
@@ -58,7 +58,7 @@
                 $c['User']['slug']
                 )); ?></td>
     <td style="text-align: center"><?php echo $c['count']; ?></td>
-    <td style="text-align: center; width: 110px;"><?php if(ceil($c['moyenne']) >=1) echo $this->Html->image(ceil($c['moyenne']).'etoiles.png'); ?></td>
+    <td style="text-align: center; width: 110px;"><?php if(ceil($c['note']) >=1) echo $this->Html->image(ceil($c['note']).'etoiles.png'); ?></td>
     
     </tr>
 <?php endforeach; ?>
