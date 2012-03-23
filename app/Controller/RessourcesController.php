@@ -17,10 +17,10 @@ class RessourcesController extends RessourcesAppController {
         /**
 	 * Liste un cours et tous ses enfants à partir d'un slug
 	 */
-	public function view($ressourceId){    
-            $cours = $this->Ressource->find('first',array(
+	public function preview($ressourceId){    
+            $r = $this->Ressource->find('first',array(
                 //"fields" => "Cour.slug, Cour.name, Cour.id, Cour.user_id, Cour.count, Cour.moyenne",
-                "conditions" => "Ressource.id = $RessourceId",
+                "conditions" => "Ressource.id = $ressourceId",
                 "contain" => array(
                     'User' => array(
                         "fields" => "User.username, User.slug"
@@ -28,8 +28,8 @@ class RessourcesController extends RessourcesAppController {
                 )
             ));
 
-            $path = $this->Cour->Theme->findPath($themeId);
-            $this->set(compact('cours', 'path'));
+            $this->set('filAriane', $this->Ressource->filAriane($ressourceId));
+            $this->set(compact('r'));
 	}
         
         public function edit($ressourceId){
@@ -225,31 +225,7 @@ class RessourcesController extends RessourcesAppController {
             $this->set(compact('matieres', 'classes'));
             //$this->render('edit');
         }
-        
-        public function preview($coursId){
-            $contain = array("Theme" => array(
-                                "fields" => array("Theme.id, Theme.name"),
-                                "Matiere" => array(
-                                    "fields" => array("Matiere.id, Matiere.name")
-                                )
-                            ),
-                            "User" => array(
-                                    "fields" => array("User.id, User.username")
-                            ),
-                            "Partie" => array(
-                                "fields" => array('Partie.id, Partie.slug, Partie.name, Partie.sort_order, Partie.contenu'),
-                                "order" => array('Partie.sort_order ASC'),
-                                "SousPartie" => array(
-                                    "fields" => array('SousPartie.id, SousPartie.slug, SousPartie.name, SousPartie.sort_order, SousPartie.contenu'),
-                                    "order" => array('SousPartie.sort_order ASC'),
-                                )
-                            )
-                        );
-            
-            $this->_visualiser($coursId, $contain);
-        }
-        
-        
+                
         function selectbox(){
             $this->layout = null;
 
