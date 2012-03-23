@@ -30,7 +30,7 @@
 <!--            <a href="#contenu2">Mes quiz</a>-->
             <?php echo $this->Html->link('Mes messages', array('controller' => 'messages', 'action' => 'index'));?>
 <!--            <a href="#contenu3">Forum</a>-->
-            <?php echo $this->Html->link('Espace rédacteur', array('controller' => 'cours', 'action' => 'manager'));?>
+            <?php echo $this->Html->link('Espace rédacteur', array('controller' => 'ressources', 'action' => 'manager'));?>
         </div>
     </div>
     <div id="conteneur">

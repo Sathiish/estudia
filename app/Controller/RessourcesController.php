@@ -102,7 +102,35 @@ class RessourcesController extends RessourcesAppController {
             $this->loadModel('Classe');
             $this->set('classes', $this->Classe->getListClasse());
             $this->set('types', array('cours-complet' => 'Cours structuré', 'cours' => 'Cours simple', 'fiche' => 'Fiche de révision', 'correction' => 'Exercice corrigé', 'dissertation' => 'Dissertation'));
-        }       
+        }  
+        
+        public function manager(){
+            
+            $userId = $this->Auth->user('id');
+            
+            $ressources = $this->Ressource->find('all',array(
+                "fields" => "Ressource.slug, Ressource.name, Ressource.id, Ressource.published, Ressource.type",
+                "conditions" => "Ressource.user_id = $userId ORDER BY created DESC",
+                "contain" => array(
+                    "Theme" => array(
+                        "fields" => array('Theme.name')
+                    )
+                )
+            ));
+
+            $this->loadModel('Cour');
+            $cours = $this->Cour->find('all',array(
+                "fields" => "Cour.slug, Cour.name, Cour.id, Cour.validation, Cour.published",
+                "conditions" => "Cour.user_id = $userId ORDER BY created DESC",
+                "contain" => array(
+                    "Theme" => array(
+                        "fields" => array('Theme.name')
+                    )
+                )
+            ));
+
+            $this->set(compact('cours', 'ressources'));
+        }
                 
         /*
          * Permet à l'administrateur de modifier un cours

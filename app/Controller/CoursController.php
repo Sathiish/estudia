@@ -173,7 +173,8 @@ class CoursController extends AppController {
                 $this->_checkAuthorization($coursId);
             }else{
                 $matieres = $this->Cour->Theme->Matiere->getAllMatieres() + array("" => "Autre");
-                $classes = $this->Cour->Theme->Classe->find('list', array('contain' => array()));
+                $this->loadModel('Classe');
+                $classes = $this->Classe->find('list', array('contain' => array()));
                 $this->set(compact('matieres', 'classes'));
                 $this->render('add');
             }
@@ -284,8 +285,8 @@ class CoursController extends AppController {
                     $this->request->data['Cour']['id'] = null;
                 }
             }
- 
-            $classes = $this->Cour->Theme->Classe->find('list', array('contain' => array()));
+            $this->loadModel('Classe');
+            $classes = $this->Classe->find('list', array('contain' => array()));
             $matieres = $this->Cour->Theme->Matiere->getAllMatieres() + array("" => "Autre");
             $this->set(compact('matieres', 'classes'));
         }
