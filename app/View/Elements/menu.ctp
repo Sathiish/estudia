@@ -42,7 +42,6 @@
       <div class="clr"></div>
       
 <?php echo $this->Html->script('ddsmoothmenu',array('inline'=>true)); ?>
-<?php echo $this->Html->css('ddsmoothmenu'); ?>
 <script type="text/javascript">
   $(function() {
     //$('#nav').droppy({speed: 100});
