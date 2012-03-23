@@ -31,7 +31,7 @@ class ThemesController extends AppController {
                             )
                         ),
                         "Ressource" => array(
-                            'fields' => array('Ressource.id, Ressource.name, Ressource.slug, Ressource.count, Ressource.note'),
+                            'fields' => array('Ressource.id, Ressource.name, Ressource.slug, Ressource.count, Ressource.note, Ressource.type'),
                             'conditions' => array('Ressource.published  = 1'),
                             'User' => array(
                                 'fields' => array('User.id, User.username, User.slug')

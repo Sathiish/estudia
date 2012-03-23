@@ -16,13 +16,14 @@
         
 <table class="manager" style="width: 100%">
     <tr>
-        <th class="first">Titre du cours</th>
-        <th>Auteur</th>
-        <th>Vues</th>
-        <th class="last">Note</th>
+        <th class="first" colspan="2">Titre du cours</th>
+        <th style="text-align: center; width: 140px">Auteur</th>
+        <th style="text-align: center; width: 90px;">Vues</th>
+        <th  style="text-align: center; width: 110px;" class="last">Note</th>
     </tr>
 <?php foreach ($theme['Cour'] as $c): ?>
     <tr>
+    <td style="width: 30px"><?php echo $this->Html->image('/img/cours-structure.png'); ?></td>
     <td><?php echo $this->Html->link($c['name'], 
             array(
                 "controller" => "cours", 
@@ -44,21 +45,22 @@
     
     <?php foreach ($theme['Ressource'] as $c): ?>
     <tr>
-    <td><?php echo $this->Html->link($c['name'], 
+    <td style="width: 30px"><?php echo $this->Html->image('/img/'.$c['type'].'.png'); ?></td>
+    <td style="width: 30px"><?php echo $this->Html->link($c['name'], 
             array(
                 "controller" => "ressources", 
                 "action" => "show", 
                 $c['id'], 
                 $c['slug']
                 )); ?></td>
-    <td style="text-align: center"><?php echo $this->Html->link(ucfirst($c['User']['username']), 
+    <td><?php echo $this->Html->link(ucfirst($c['User']['username']), 
             array(
                 "controller" => "users", 
                 "action" => "index", 
                 $c['User']['slug']
                 )); ?></td>
-    <td style="text-align: center"><?php echo $c['count']; ?></td>
-    <td style="text-align: center; width: 110px;"><?php if(ceil($c['note']) >=1) echo $this->Html->image(ceil($c['note']).'etoiles.png'); ?></td>
+    <td><?php echo $c['count']; ?></td>
+    <td><?php if(ceil($c['note']) >=1) echo $this->Html->image(ceil($c['note']).'etoiles.png'); ?></td>
     
     </tr>
 <?php endforeach; ?>
