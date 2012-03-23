@@ -42,7 +42,7 @@ class Matiere extends AppModel {
             return true;
         }
         
-        function getAllMatieres($classeId){
+        function getAllMatieres($classeId=null){
             if($classeId != null){
                 $condition = "Matiere.classe_id = $classeId";
             }else{
