@@ -773,3 +773,5 @@ ul#menu-admin{list-style: none; padding: 14px; background-color: #2bcbff; color:
 /* LEGEND */
 legend{font-weight: bold; font-size: 14px; margin: 10px 0 5px 0; padding:10px}
 
+/* CORRECTION Puissance */
+sup { vertical-align: top; position: relative; top: -0.5em; }
