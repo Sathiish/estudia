@@ -34,7 +34,9 @@ var LatexDialog = {
 	
 	getSrc : function(code){
 		
-		return 'https://chart.googleapis.com/chart?cht=tx&chf=a,s,000000|bg,s,FFFFFF00&chl=' + encodeURI(code);
+                src = encodeURI(code).replace(/\+/g,'%2B');
+                
+		return 'https://chart.googleapis.com/chart?cht=tx&chf=a,s,000000|bg,s,FFFFFF00&chl=' + src;
 		
 	}
 };
