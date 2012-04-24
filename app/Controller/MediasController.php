@@ -14,6 +14,8 @@ class MediasController extends AppController{
                 $target = "cour_id";
             }elseif($type == "quiz"){
                 $target = "quiz_id";
+            }elseif($type == "ressource"){
+                $target = "ressource_id";
             }
                             
 		if($this->request->is('post')){

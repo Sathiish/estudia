@@ -8,6 +8,7 @@ class Ressource extends AppModel{
         
     //public $hasMany = array('CourNote', 'CourFavori');
     //public $hasMany = array('CourFavori');
+    public $hasMany = array('Media');
     
     function beforeSave($options = array()) {
         parent::beforeSave($options); 

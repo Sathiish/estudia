@@ -67,7 +67,7 @@
 <?php echo $this->Tinymce->input('Ressource.content', 
                         array('label' => ''),
                         array(
-                            'image_explorer' => $this->Html->url(array('controller'=>'medias','action'=> 'index', "cours", $this->request->data['Ressource']['id'])),
+                            'image_explorer' => $this->Html->url(array('controller'=>'medias','action'=> 'index', "ressource", $this->request->data['Ressource']['id'])),
                             'image_edit' => $this->Html->url(array('controller'=>'medias','action'=>'show'))
                         ),
                       'ressource'
