@@ -2,7 +2,7 @@
 .alignRight{ float:right; margin-left: 10px; }
 .alignCenter{ display:block; margin:0 auto; }
 
-body{font-size: 12px}
+body{font-family: "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif; color: #3F3F38;font-size: 13px;}
 
 tr, td {text-align: left!important;}
 table[align=left] {
@@ -36,3 +36,14 @@ background-image: url('/img/infobulles/attention_tn.png');
 color: #BE0B0B;
 background-image: url('/img/infobulles/erreur_tn.png');
 }
+
+h1,h3,dl dt,.h3,h5,.h5{font-weight:700; display: block;}
+h2,.h2,h4,blockquote.simple,.h4,h6,.h6{font-weight:normal}
+h3,h4,h5,h6{margin-left: 50px; color: #3F3F38;}
+h1{font-size:30px;letter-spacing:-1px;margin:10px 0;}
+h2,h2 a,.h2{font-size:20px;font-weight:bold; color: #E8A22B !important;margin:15px 0;line-height:1em}
+h3,dl dt,.h3,h4,blockquote.simple,.h4{font-size:15px}
+h5,.h5,h6,.h6{font-size:13px;line-height:18px}
+
+.main h1,.main blockquote.big-bold,.main .h1,.main blockquote.big{line-height:30px}
+.main h4,.main blockquote.simple,.main .h4,.main #resources-research ul.reports li,#resources-research ul.reports .main li{line-height:20px}

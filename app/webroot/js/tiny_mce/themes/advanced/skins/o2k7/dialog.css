@@ -28,8 +28,9 @@ label.msg {display:none;}
 label.invalid {color:#EE0000; display:inline;}
 input.invalid {border:1px solid #EE0000;}
 input {background:#FFF; border:1px solid #CCC;}
-input, select, textarea {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px;}
-input, select, textarea {border:1px solid #808080;}
+input, select, textarea {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;}
+input, select {margin:3px 1px; padding: 7px !important; border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; background: none !important; color: #3F3F38 !important; font-weight:normal !important;}
+textarea {width: 95%; margin:0; padding: 10px !important; border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; background: none !important; color: #3F3F38 !important; font-weight:normal !important;}
 input.radio {border:1px none #000000; background:transparent; vertical-align:middle;}
 input.checkbox {border:1px none #000000; background:transparent; vertical-align:middle;}
 .input_noborder {border:0;}
@@ -45,8 +46,8 @@ padding-bottom:2px;
 float:left;
 }
 
-#insert {margin:10px 0 10px 5px !important; padding: 4px 15px !important; border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; float:right; background: none !important; color: #3F3F38 !important; font-weight:normal !important;}
-#cancel {margin:10px 0 10px 5px !important; padding: 4px 15px !important; border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; float:right; background: none !important; color: #3F3F38 !important; font-weight:normal !important; float:right}
+#insert {margin:5px 0 10px 5px !important; padding: 4px 15px !important; border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; float:right; background: none !important; color: #3F3F38 !important; font-weight:normal !important;}
+#cancel {margin:5px 0 10px 5px !important; padding: 4px 15px !important; border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; float:right; background: none !important; color: #3F3F38 !important; font-weight:normal !important; float:right}
 
 /* Browse */
 a.pickcolor, a.browse {text-decoration:none}

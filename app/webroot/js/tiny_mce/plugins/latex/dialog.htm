@@ -4,6 +4,35 @@
 	<title>Ajouter une formule mathématique</title>
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="js/dialog.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+        <script>
+            function insertTag(startTag, endTag, textareaId, tagType) {
+                    var field  = document.getElementById(textareaId); 
+                    var scroll = field.scrollTop;
+                    field.focus();
+
+                    if (window.ActiveXObject) { // C'est IE
+                            var textRange = document.selection.createRange();            
+                            var currentSelection = textRange.text;
+
+                            textRange.text = startTag + currentSelection + endTag;
+                            textRange.moveStart("character", -endTag.length - currentSelection.length);
+                            textRange.moveEnd("character", -endTag.length);
+                            textRange.select();     
+                    } else { // Ce n'est pas IE
+                            var startSelection   = field.value.substring(0, field.selectionStart);
+                            var currentSelection = field.value.substring(field.selectionStart, field.selectionEnd);
+                            var endSelection     = field.value.substring(field.selectionEnd);
+
+                            field.value = startSelection + startTag + currentSelection + endTag + endSelection;
+                            field.focus();
+                            field.setSelectionRange(startSelection.length + startTag.length, startSelection.length + startTag.length + currentSelection.length);
+                    } 
+
+                    field.scrollTop = scroll; // et on redéfinit le scroll.
+            }
+        </script>
 </head>
 <body>
 
@@ -11,137 +40,49 @@
 	<p>Saisissez ou copier votre code Latex</p>
 	<p><input type="button" id="preview" name="preview" value="Prévisualiser" onclick="LatexDialog.preview();" /></p>
 	<p><img id="previewImg" src="" alt=""/></p>
-	<p><textarea name="latex_code" cols="100" rows="19"></textarea></p>
+               
+        <p>
+            <input type="button" title="Multiplication" value="x" onclick="insertTag('\\time','','latex');" />
+            <input type="button" value="Puissance" onclick="insertTag('^{','}','latex');" />
+            <input type="button" value="Indice" onclick="insertTag('_{','}','latex');" />
+            <input type="button" value="Fraction" onclick="insertTag('\\frac{numérateur}{dénominateur}','','latex');" />
+            <input type="button" value="Racine" onclick="insertTag('\\sqrt{expression}','','latex');" />
+            <input type="button" value="Racine n-ième" onclick="insertTag('\\sqrt[n]{expression}','','latex');" />
+            <input type="button" value="Somme" onclick="insertTag('\\displaystyle { \\sum_{condition de départ}^{condition d\'arrivée}} expression de la somme','','latex');" />
+            <input type="button" value="Limite" onclick="insertTag('\\displaystyle {\\lim_{variable \\rightarrow (valeur vers laquelle tend la variable)}}f(x)','','latex');" />
+        </p>
+        
+        <p>
+            <input type="button" value="π" title="Pi" onclick="insertTag('\\pi','','latex');" />
+            <input type="button" value="∃" title="Il existe" onclick="insertTag('\\exists','','latex');" />
+            <input type="button" value="∈" title="Appartient à" onclick="insertTag('\\in','','latex');" />
+            <input type="button" value="∏" onclick="insertTag('\\prod','','latex');" />
+            <input type="button" value="∑" onclick="insertTag('\\sum','','latex');" />
+            <input type="button" value="√" onclick="insertTag('\\sqrt','','latex');" />
+            <input type="button" value="∞" title="Infini" onclick="insertTag('\\infty','','latex');" />
+            <input type="button" value="∩" title="Inter" onclick="insertTag('\\cap','','latex');" />
+            <input type="button" value="∪" title="Union" onclick="insertTag('\\cup','','latex');" />
+            <input type="button" value="∫" onclick="insertTag('\\int','','latex');" />
+            <input type="button" value="≠" title="Différent de" onclick="insertTag('\\ne','','latex');" />
+            <input type="button" value="≤" title="Inférieur ou égal" onclick="insertTag('\\le','','latex');" />
+            <input type="button" value="≥" title="Supérieur ou égal" onclick="insertTag('\\ge','','latex');" />
+            <input type="button" value="⇔" title="Equivalent" onclick="insertTag('\\Leftrightarrow','','latex');" />
+            <input type="button" value="⇒" title="Implication" onclick="insertTag('\\Rightarrow','','latex');" />
+            <input type="button" value="⇐" title="Implication" onclick="insertTag('\\Leftarrow','','latex');" />
+            <input type="button" value="α" title="Alpha" onclick="insertTag('\\alpha','','latex');" />
+            <input type="button" value="β" title="Bêta" onclick="insertTag('\\beta','','latex');" />
+            <input type="button" value="Δ" title="Delta" onclick="insertTag('\\Delta','','latex');" />
+            <input type="button" value="Ω" title="Omega" onclick="insertTag('\\Omega','','latex');" />
+        </p>
+  
+	<p><textarea id="latex" name="latex_code" cols="100" rows="19"></textarea></p>
 
 	<div class="mceActionPanel">
 		<input type="button" id="insert" name="insert" value="{#insert}" onclick="LatexDialog.insert();" />
 		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
 	</div>
         
-        <div style="float:left; display: inline">
-            <p>Aide mémoire</p>
-            <table>
-                <tr>
-                    <th>Symbole</th>
-                    <th>Commande LaTeX</th>
-                </tr>
-                <tr>
-                    <td align="center" valign="top">∃</td>
-                    <td valign="top"><code>\exists</code></td>
-                </tr>
-                <tr>
-                    <td align="center" valign="top">∈</td>
-                    <td valign="top"><code>\in</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">∏</td>
-                    <td valign="top"><code>\prod</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">∑</td>
-                    <td valign="top"><code>\sum</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">√</td>
-                    <td valign="top"><code>\sqrt</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">∞</td>
-                    <td valign="top"><code>\infty</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">∩</td>
-                    <td valign="top"><code>\cap</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">∪</td>
-                    <td valign="top"><code>\cup</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">∫</td>
-                    <td valign="top"><code>\int</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">≠</td>
-                    <td valign="top"><code>\ne</code></td>
-              </tr>
-                <tr>
-                        <td align="center" valign="top">≤</td>
-                        <td valign="top"><code>\le</code></td>
-                  </tr>
-                <tr>
-                        <td align="center" valign="top">≥</td>
-                        <td valign="top"><code>\ge</code></td>
-                  </tr>
-                <tr>
-                    <td align="center" valign="top">⇔</td>
-                    <td valign="top" class="code"><code>\Leftrightarrow</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">⇒</td>
-                    <td valign="top" class="code"><code>\Rightarrow</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">⇐</td>
-                    <td valign="top" class="code"><code>\Leftarrow</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">α</td>
-                    <td valign="top"><code>\alpha</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">β</td>
-                    <td valign="top"><code>\beta</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">Δ</td>
-                    <td valign="top"><code>\Delta</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">Ω</td>
-                    <td valign="top"><code>\Omega</code></td>
-              </tr>
-                
-            </table>
-        </div>
-        
-        <div style="float:right; display: inline-block; width: 60%; margin-top: 50px;">
-            <table>
-                <tr>
-                    <th>Opération</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td align="center" valign="top">Indices</td>
-                    <td valign="top"><code>X_{indice}</code></td>
-                </tr>
-                <tr>
-                    <td align="center" valign="top">Exposant</td>
-                    <td valign="top"><code>X^{exposant</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">Fractions</td>
-                    <td valign="top"><code>\frac{numérateur}{dénominateur}</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">racine</td>
-                    <td valign="top"><code>\sqrt{expression}</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">Racine n-ième</td>
-                    <td valign="top"><code>\sqrt[n]{expression}</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">Somme</td>
-                    <td valign="top"><code> \displaystyle { \sum_{condition de départ}^{condition d'arrivée}} expression de la somme</code></td>
-              </tr>
-                <tr>
-                    <td align="center" valign="top">Limite</td>
-                    <td valign="top"><code>\displaystyle {\lim_{variable \rightarrow (valeur vers laquelle tend la variable)}}f(x)</code></td>
-              </tr>
-            </table>
-        </div>
 </form>
-
+    
 </body>
 </html>

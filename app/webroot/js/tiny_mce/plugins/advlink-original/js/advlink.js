@@ -28,22 +28,23 @@ function init() {
 	var action = "insert";
 	var html;
 
-//	document.getElementById('hrefbrowsercontainer').innerHTML = getBrowserHTML('hrefbrowser','href','file','advlink');
-//	document.getElementById('popupurlbrowsercontainer').innerHTML = getBrowserHTML('popupurlbrowser','popupurl','file','advlink');
+	document.getElementById('hrefbrowsercontainer').innerHTML = getBrowserHTML('hrefbrowser','href','file','advlink');
+	document.getElementById('popupurlbrowsercontainer').innerHTML = getBrowserHTML('popupurlbrowser','popupurl','file','advlink');
+	document.getElementById('targetlistcontainer').innerHTML = getTargetListHTML('targetlist','target');
 
-//	// Link list
-//	html = getLinkListHTML('linklisthref','href');
-//	if (html == "")
-//		document.getElementById("linklisthrefrow").style.display = 'none';
-//	else
-//		document.getElementById("linklisthrefcontainer").innerHTML = html;
-//
-//	// Anchor list
-//	html = getAnchorListHTML('anchorlist','href');
-//	if (html == "")
-//		document.getElementById("anchorlistrow").style.display = 'none';
-//	else
-//		document.getElementById("anchorlistcontainer").innerHTML = html;
+	// Link list
+	html = getLinkListHTML('linklisthref','href');
+	if (html == "")
+		document.getElementById("linklisthrefrow").style.display = 'none';
+	else
+		document.getElementById("linklisthrefcontainer").innerHTML = html;
+
+	// Anchor list
+	html = getAnchorListHTML('anchorlist','href');
+	if (html == "")
+		document.getElementById("anchorlistrow").style.display = 'none';
+	else
+		document.getElementById("anchorlistcontainer").innerHTML = html;
 
 	// Resize some elements
 	if (isVisible('hrefbrowser'))
@@ -58,64 +59,60 @@ function init() {
 
 	formObj.insert.value = tinyMCEPopup.getLang(action, 'Insert', true); 
 
-//	setPopupControlsDisabled(true);
+	setPopupControlsDisabled(true);
 
 	if (action == "update") {
 		var href = inst.dom.getAttrib(elm, 'href');
-		//var onclick = inst.dom.getAttrib(elm, 'onclick');
+		var onclick = inst.dom.getAttrib(elm, 'onclick');
 
-                //Si il y a http:// devant, on le supprime
-                if (/^\s*http:\/\//i.test(href))
-                    href = href.replace(/^\s*http:\/\//i, '');
-                    
 		// Setup form data
 		setFormValue('href', href);
 		setFormValue('title', inst.dom.getAttrib(elm, 'title'));
-//		setFormValue('id', inst.dom.getAttrib(elm, 'id'));
-//		setFormValue('style', inst.dom.getAttrib(elm, "style"));
-//		setFormValue('rel', inst.dom.getAttrib(elm, 'rel'));
-//		setFormValue('rev', inst.dom.getAttrib(elm, 'rev'));
-//		setFormValue('charset', inst.dom.getAttrib(elm, 'charset'));
-//		setFormValue('hreflang', inst.dom.getAttrib(elm, 'hreflang'));
-//		setFormValue('dir', inst.dom.getAttrib(elm, 'dir'));
-//		setFormValue('lang', inst.dom.getAttrib(elm, 'lang'));
-//		setFormValue('tabindex', inst.dom.getAttrib(elm, 'tabindex', typeof(elm.tabindex) != "undefined" ? elm.tabindex : ""));
-//		setFormValue('accesskey', inst.dom.getAttrib(elm, 'accesskey', typeof(elm.accesskey) != "undefined" ? elm.accesskey : ""));
-//		setFormValue('type', inst.dom.getAttrib(elm, 'type'));
-//		setFormValue('onfocus', inst.dom.getAttrib(elm, 'onfocus'));
-//		setFormValue('onblur', inst.dom.getAttrib(elm, 'onblur'));
-//		setFormValue('onclick', onclick);
-//		setFormValue('ondblclick', inst.dom.getAttrib(elm, 'ondblclick'));
-//		setFormValue('onmousedown', inst.dom.getAttrib(elm, 'onmousedown'));
-//		setFormValue('onmouseup', inst.dom.getAttrib(elm, 'onmouseup'));
-//		setFormValue('onmouseover', inst.dom.getAttrib(elm, 'onmouseover'));
-//		setFormValue('onmousemove', inst.dom.getAttrib(elm, 'onmousemove'));
-//		setFormValue('onmouseout', inst.dom.getAttrib(elm, 'onmouseout'));
-//		setFormValue('onkeypress', inst.dom.getAttrib(elm, 'onkeypress'));
-//		setFormValue('onkeydown', inst.dom.getAttrib(elm, 'onkeydown'));
-//		setFormValue('onkeyup', inst.dom.getAttrib(elm, 'onkeyup'));
-//		setFormValue('target', inst.dom.getAttrib(elm, 'target'));
-//		setFormValue('classes', inst.dom.getAttrib(elm, 'class'));
+		setFormValue('id', inst.dom.getAttrib(elm, 'id'));
+		setFormValue('style', inst.dom.getAttrib(elm, "style"));
+		setFormValue('rel', inst.dom.getAttrib(elm, 'rel'));
+		setFormValue('rev', inst.dom.getAttrib(elm, 'rev'));
+		setFormValue('charset', inst.dom.getAttrib(elm, 'charset'));
+		setFormValue('hreflang', inst.dom.getAttrib(elm, 'hreflang'));
+		setFormValue('dir', inst.dom.getAttrib(elm, 'dir'));
+		setFormValue('lang', inst.dom.getAttrib(elm, 'lang'));
+		setFormValue('tabindex', inst.dom.getAttrib(elm, 'tabindex', typeof(elm.tabindex) != "undefined" ? elm.tabindex : ""));
+		setFormValue('accesskey', inst.dom.getAttrib(elm, 'accesskey', typeof(elm.accesskey) != "undefined" ? elm.accesskey : ""));
+		setFormValue('type', inst.dom.getAttrib(elm, 'type'));
+		setFormValue('onfocus', inst.dom.getAttrib(elm, 'onfocus'));
+		setFormValue('onblur', inst.dom.getAttrib(elm, 'onblur'));
+		setFormValue('onclick', onclick);
+		setFormValue('ondblclick', inst.dom.getAttrib(elm, 'ondblclick'));
+		setFormValue('onmousedown', inst.dom.getAttrib(elm, 'onmousedown'));
+		setFormValue('onmouseup', inst.dom.getAttrib(elm, 'onmouseup'));
+		setFormValue('onmouseover', inst.dom.getAttrib(elm, 'onmouseover'));
+		setFormValue('onmousemove', inst.dom.getAttrib(elm, 'onmousemove'));
+		setFormValue('onmouseout', inst.dom.getAttrib(elm, 'onmouseout'));
+		setFormValue('onkeypress', inst.dom.getAttrib(elm, 'onkeypress'));
+		setFormValue('onkeydown', inst.dom.getAttrib(elm, 'onkeydown'));
+		setFormValue('onkeyup', inst.dom.getAttrib(elm, 'onkeyup'));
+		setFormValue('target', inst.dom.getAttrib(elm, 'target'));
+		setFormValue('classes', inst.dom.getAttrib(elm, 'class'));
 
-//		// Parse onclick data
-//		if (onclick != null && onclick.indexOf('window.open') != -1)
-//			parseWindowOpen(onclick);
-//		else
-//			parseFunction(onclick);
-//
-//		// Select by the values
-//		selectByValue(formObj, 'dir', inst.dom.getAttrib(elm, 'dir'));
-//		selectByValue(formObj, 'rel', inst.dom.getAttrib(elm, 'rel'));
-//		selectByValue(formObj, 'rev', inst.dom.getAttrib(elm, 'rev'));
-//		selectByValue(formObj, 'linklisthref', href);
-//
-//		if (href.charAt(0) == '#')
-//			selectByValue(formObj, 'anchorlist', href);
-//
-//		addClassesToList('classlist', 'advlink_styles');
-//
-//		selectByValue(formObj, 'classlist', inst.dom.getAttrib(elm, 'class'), true);
-//		selectByValue(formObj, 'targetlist', inst.dom.getAttrib(elm, 'target'), true);
+		// Parse onclick data
+		if (onclick != null && onclick.indexOf('window.open') != -1)
+			parseWindowOpen(onclick);
+		else
+			parseFunction(onclick);
+
+		// Select by the values
+		selectByValue(formObj, 'dir', inst.dom.getAttrib(elm, 'dir'));
+		selectByValue(formObj, 'rel', inst.dom.getAttrib(elm, 'rel'));
+		selectByValue(formObj, 'rev', inst.dom.getAttrib(elm, 'rev'));
+		selectByValue(formObj, 'linklisthref', href);
+
+		if (href.charAt(0) == '#')
+			selectByValue(formObj, 'anchorlist', href);
+
+		addClassesToList('classlist', 'advlink_styles');
+
+		selectByValue(formObj, 'classlist', inst.dom.getAttrib(elm, 'class'), true);
+		selectByValue(formObj, 'targetlist', inst.dom.getAttrib(elm, 'target'), true);
 	} else
 		addClassesToList('classlist', 'advlink_styles');
 }
@@ -124,9 +121,7 @@ function checkPrefix(n) {
 	if (n.value && Validator.isEmail(n) && !/^\s*mailto:/i.test(n.value) && confirm(tinyMCEPopup.getLang('advlink_dlg.is_email')))
 		n.value = 'mailto:' + n.value;
 
-        // On met systèmatiquement le préfixe http://
-	//if (/^\s*www\./i.test(n.value) && confirm(tinyMCEPopup.getLang('advlink_dlg.is_external')))
-	//if (/^\s*www\./i.test(n.value))
+	if (/^\s*www\./i.test(n.value) && confirm(tinyMCEPopup.getLang('advlink_dlg.is_external')))
 		n.value = 'http://' + n.value;
 }
 
@@ -192,7 +187,7 @@ function getOption(opts, name) {
 
 function setPopupControlsDisabled(state) {
 	var formObj = document.forms[0];
-console.log(formObj.popupname);
+
 	formObj.popupname.disabled = state;
 	formObj.popupurl.disabled = state;
 	formObj.popupwidth.disabled = state;
@@ -279,76 +274,76 @@ function parseOptions(opts) {
 	return options;
 }
 
-//function buildOnClick() {
-//	var formObj = document.forms[0];
-//
-//	if (!formObj.ispopup.checked) {
-//		formObj.onclick.value = "";
-//		return;
-//	}
-//
-//	var onclick = "window.open('";
-//	var url = formObj.popupurl.value;
-//
-//	onclick += url + "','";
-//	onclick += formObj.popupname.value + "','";
-//
-//	if (formObj.popuplocation.checked)
-//		onclick += "location=yes,";
-//
-//	if (formObj.popupscrollbars.checked)
-//		onclick += "scrollbars=yes,";
-//
-//	if (formObj.popupmenubar.checked)
-//		onclick += "menubar=yes,";
-//
-//	if (formObj.popupresizable.checked)
-//		onclick += "resizable=yes,";
-//
-//	if (formObj.popuptoolbar.checked)
-//		onclick += "toolbar=yes,";
-//
-//	if (formObj.popupstatus.checked)
-//		onclick += "status=yes,";
-//
-//	if (formObj.popupdependent.checked)
-//		onclick += "dependent=yes,";
-//
-//	if (formObj.popupwidth.value != "")
-//		onclick += "width=" + formObj.popupwidth.value + ",";
-//
-//	if (formObj.popupheight.value != "")
-//		onclick += "height=" + formObj.popupheight.value + ",";
-//
-//	if (formObj.popupleft.value != "") {
-//		if (formObj.popupleft.value != "c")
-//			onclick += "left=" + formObj.popupleft.value + ",";
-//		else
-//			onclick += "left='+(screen.availWidth/2-" + (formObj.popupwidth.value/2) + ")+',";
-//	}
-//
-//	if (formObj.popuptop.value != "") {
-//		if (formObj.popuptop.value != "c")
-//			onclick += "top=" + formObj.popuptop.value + ",";
-//		else
-//			onclick += "top='+(screen.availHeight/2-" + (formObj.popupheight.value/2) + ")+',";
-//	}
-//
-//	if (onclick.charAt(onclick.length-1) == ',')
-//		onclick = onclick.substring(0, onclick.length-1);
-//
-//	onclick += "');";
-//
-//	if (formObj.popupreturn.checked)
-//		onclick += "return false;";
-//
-//	// tinyMCE.debug(onclick);
-//
-//	formObj.onclick.value = onclick;
-//
-//	if (formObj.href.value == "")
-//		formObj.href.value = url;
-//}
+function buildOnClick() {
+	var formObj = document.forms[0];
+
+	if (!formObj.ispopup.checked) {
+		formObj.onclick.value = "";
+		return;
+	}
+
+	var onclick = "window.open('";
+	var url = formObj.popupurl.value;
+
+	onclick += url + "','";
+	onclick += formObj.popupname.value + "','";
+
+	if (formObj.popuplocation.checked)
+		onclick += "location=yes,";
+
+	if (formObj.popupscrollbars.checked)
+		onclick += "scrollbars=yes,";
+
+	if (formObj.popupmenubar.checked)
+		onclick += "menubar=yes,";
+
+	if (formObj.popupresizable.checked)
+		onclick += "resizable=yes,";
+
+	if (formObj.popuptoolbar.checked)
+		onclick += "toolbar=yes,";
+
+	if (formObj.popupstatus.checked)
+		onclick += "status=yes,";
+
+	if (formObj.popupdependent.checked)
+		onclick += "dependent=yes,";
+
+	if (formObj.popupwidth.value != "")
+		onclick += "width=" + formObj.popupwidth.value + ",";
+
+	if (formObj.popupheight.value != "")
+		onclick += "height=" + formObj.popupheight.value + ",";
+
+	if (formObj.popupleft.value != "") {
+		if (formObj.popupleft.value != "c")
+			onclick += "left=" + formObj.popupleft.value + ",";
+		else
+			onclick += "left='+(screen.availWidth/2-" + (formObj.popupwidth.value/2) + ")+',";
+	}
+
+	if (formObj.popuptop.value != "") {
+		if (formObj.popuptop.value != "c")
+			onclick += "top=" + formObj.popuptop.value + ",";
+		else
+			onclick += "top='+(screen.availHeight/2-" + (formObj.popupheight.value/2) + ")+',";
+	}
+
+	if (onclick.charAt(onclick.length-1) == ',')
+		onclick = onclick.substring(0, onclick.length-1);
+
+	onclick += "');";
+
+	if (formObj.popupreturn.checked)
+		onclick += "return false;";
+
+	// tinyMCE.debug(onclick);
+
+	formObj.onclick.value = onclick;
+
+	if (formObj.href.value == "")
+		formObj.href.value = url;
+}
 
 function setAttrib(elm, attrib, value) {
 	var formObj = document.forms[0];
@@ -369,26 +364,26 @@ function setAttrib(elm, attrib, value) {
 	dom.setAttrib(elm, attrib, value);
 }
 
-//function getAnchorListHTML(id, target) {
-//	var ed = tinyMCEPopup.editor, nodes = ed.dom.select('a'), name, i, len, html = "";
-//
-//	for (i=0, len=nodes.length; i<len; i++) {
-//		if ((name = ed.dom.getAttrib(nodes[i], "name")) != "")
-//			html += '<option value="#' + name + '">' + name + '</option>';
-//	}
-//
-//	if (html == "")
-//		return "";
-//
-//	html = '<select id="' + id + '" name="' + id + '" class="mceAnchorList"'
-//		+ ' onchange="this.form.' + target + '.value=this.options[this.selectedIndex].value"'
-//		+ '>'
-//		+ '<option value="">---</option>'
-//		+ html
-//		+ '</select>';
-//
-//	return html;
-//}
+function getAnchorListHTML(id, target) {
+	var ed = tinyMCEPopup.editor, nodes = ed.dom.select('a'), name, i, len, html = "";
+
+	for (i=0, len=nodes.length; i<len; i++) {
+		if ((name = ed.dom.getAttrib(nodes[i], "name")) != "")
+			html += '<option value="#' + name + '">' + name + '</option>';
+	}
+
+	if (html == "")
+		return "";
+
+	html = '<select id="' + id + '" name="' + id + '" class="mceAnchorList"'
+		+ ' onchange="this.form.' + target + '.value=this.options[this.selectedIndex].value"'
+		+ '>'
+		+ '<option value="">---</option>'
+		+ html
+		+ '</select>';
+
+	return html;
+}
 
 function insertAction() {
 	var inst = tinyMCEPopup.editor;
@@ -503,34 +498,34 @@ function getLinkListHTML(elm_id, target_form_element, onchange_func) {
 
 	// tinyMCE.debug('-- image list start --', html, '-- image list end --');
 }
-//
-//function getTargetListHTML(elm_id, target_form_element) {
-//	var targets = tinyMCEPopup.getParam('theme_advanced_link_targets', '').split(';');
-//	var html = '';
-//
-//	html += '<select id="' + elm_id + '" name="' + elm_id + '" onf2ocus="tinyMCE.addSelectAccessibility(event, this, window);" onchange="this.form.' + target_form_element + '.value=';
-//	html += 'this.options[this.selectedIndex].value;">';
-//	html += '<option value="_self">' + tinyMCEPopup.getLang('advlink_dlg.target_same') + '</option>';
-//	html += '<option value="_blank">' + tinyMCEPopup.getLang('advlink_dlg.target_blank') + ' (_blank)</option>';
-//	html += '<option value="_parent">' + tinyMCEPopup.getLang('advlink_dlg.target_parent') + ' (_parent)</option>';
-//	html += '<option value="_top">' + tinyMCEPopup.getLang('advlink_dlg.target_top') + ' (_top)</option>';
-//
-//	for (var i=0; i<targets.length; i++) {
-//		var key, value;
-//
-//		if (targets[i] == "")
-//			continue;
-//
-//		key = targets[i].split('=')[0];
-//		value = targets[i].split('=')[1];
-//
-//		html += '<option value="' + key + '">' + value + ' (' + key + ')</option>';
-//	}
-//
-//	html += '</select>';
-//
-//	return html;
-//}
+
+function getTargetListHTML(elm_id, target_form_element) {
+	var targets = tinyMCEPopup.getParam('theme_advanced_link_targets', '').split(';');
+	var html = '';
+
+	html += '<select id="' + elm_id + '" name="' + elm_id + '" onf2ocus="tinyMCE.addSelectAccessibility(event, this, window);" onchange="this.form.' + target_form_element + '.value=';
+	html += 'this.options[this.selectedIndex].value;">';
+	html += '<option value="_self">' + tinyMCEPopup.getLang('advlink_dlg.target_same') + '</option>';
+	html += '<option value="_blank">' + tinyMCEPopup.getLang('advlink_dlg.target_blank') + ' (_blank)</option>';
+	html += '<option value="_parent">' + tinyMCEPopup.getLang('advlink_dlg.target_parent') + ' (_parent)</option>';
+	html += '<option value="_top">' + tinyMCEPopup.getLang('advlink_dlg.target_top') + ' (_top)</option>';
+
+	for (var i=0; i<targets.length; i++) {
+		var key, value;
+
+		if (targets[i] == "")
+			continue;
+
+		key = targets[i].split('=')[0];
+		value = targets[i].split('=')[1];
+
+		html += '<option value="' + key + '">' + value + ' (' + key + ')</option>';
+	}
+
+	html += '</select>';
+
+	return html;
+}
 
 // While loading
 preinit();

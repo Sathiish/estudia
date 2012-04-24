@@ -164,8 +164,8 @@ h3,dl dt,.h3,h4,blockquote.simple,.h4,#resources-research ul.reports li{font-siz
 h5,.h5,h6,.h6{font-size:13px;line-height:18px}
 h2,.h2,h3,dl dt,.h3,h4,blockquote.simple,.h4,#resources-research ul.reports li{margin:15px 0;line-height:1em}
 
-.main h1,.main blockquote.big-bold,.main .h1,.main blockquote.big{line-height:30px}
-.main h4,.main blockquote.simple,.main .h4,.main #resources-research ul.reports li,#resources-research ul.reports .main li{line-height:20px}
+h1,.main blockquote.big-bold,.main .h1,.main blockquote.big{line-height:30px}
+h4,.main blockquote.simple,.main .h4,.main #resources-research ul.reports li,#resources-research ul.reports .main li{line-height:20px}
 
 /*.button{padding: 15px;border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px;}*/
 
@@ -774,4 +774,5 @@ ul#menu-admin{list-style: none; padding: 14px; background-color: #2bcbff; color:
 legend{font-weight: bold; font-size: 14px; margin: 10px 0 5px 0; padding:10px}
 
 /* CORRECTION Puissance */
-sup { vertical-align: top; position: relative; top: -0.5em; }
+sup{vertical-align: super; font-size: smaller;}
+sup span{vertical-align: super; position: relative; font-size: 1em; top: 4px;}

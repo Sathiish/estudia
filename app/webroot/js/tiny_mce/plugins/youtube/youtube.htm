@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Insérer une vidéo depuis YouTube</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+  <script type="text/javascript" src="js/dialog.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/youtube.css" />
+</head>
+<body>
+<!--<div class="y_logo_contener">
+	<img src="img/Google-YouTube-128.png" width="128" height="128" alt="Youtube" />
+</div>
+<div class="yinstr">
+	<p>{#youtube_dlg.instr}</p>
+</div>-->
+<form onsubmit="YouTubeDialog.insert();return false;" action="#">
+ <div class="mceActionPanel">
+ <table>
+ <tr>
+ 	<td>URL de la vidéo (au format http://youtu.be/xxxx) 
+            <img title="Pour obtenir l'url de partage, sur le site de YouTube cliquer sur Partager et copier ici le lien qui apparait sous la vidéo" 
+                 src="/js/tiny_mce/plugins/info/img/question_tn.png" /></td>
+ </tr>
+ <tr>
+ 	<td><input id="youtubeID" name="youtubeID" type="text" class="text" size="37" value="" /></td>
+ </tr>
+ <tr>
+ 	<td>Ajouter les suggestions à la fin de la vidéo</td>
+ </tr>
+ <tr>
+	<td>
+		<select name="youtubeREL" id="youtubeREL" style="width: 80px;">
+		  <option value="0">Oui</option>
+		  <option selected="selected" value="1">Non</option>
+		</select>
+	</td>
+  </tr>
+ <tr>
+ 	<td>Insérer en Hauté Définition (HD)</td>
+ </tr>
+ <tr>
+	<td>
+		<select name="youtubeHD" id="youtubeHD" style="width: 80px;">
+			<option value="0">Non</option>
+			<option selected="selected" value="1">Oui</option>
+		</select>
+	</td>
+ </tr>
+ <tr>
+ 	<td>Lancer la vidéo au chargement de la page</td>
+ </tr>
+ <tr>
+	<td>
+		<select name="youtubeAutoplay" id="youtubeAutoplay" style="width: 80px;">
+			<option selected="selected" value="0">Non</option>
+			<option value="1">Oui</option>
+		</select>
+	</td>
+ </tr>
+ <tr>
+ 	<td>
+ 	Largeur <input id="youtubeWidth" name="youtubeWidth" type="text" class="text" size="3" value="680" />&nbsp;
+ 	Hauteur <input id="youtubeHeight" name="youtubeHeight" type="text" class="text" size="3" value="405" />
+ 	</td>
+ <td>&nbsp;</td>
+ </tr>
+   </table>
+  </div>
+  <div class="mceActionPanel">
+    <div style="float:right;padding-top:5px">
+      <input type="button" id="insert" name="insert" value="{#insert}" onclick="YouTubeDialog.insert();" />
+      <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
