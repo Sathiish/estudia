@@ -124,9 +124,9 @@ function checkPrefix(n) {
 	if (n.value && Validator.isEmail(n) && !/^\s*mailto:/i.test(n.value) && confirm(tinyMCEPopup.getLang('advlink_dlg.is_email')))
 		n.value = 'mailto:' + n.value;
 
-        // On met systèmatiquement le préfixe http://
+        // S'il n'y a pas de préfixe http://, on le rajoute
 	//if (/^\s*www\./i.test(n.value) && confirm(tinyMCEPopup.getLang('advlink_dlg.is_external')))
-	//if (/^\s*www\./i.test(n.value))
+	if (!(/^\s*http:\/\//i.test(n.value)))
 		n.value = 'http://' + n.value;
 }
 

@@ -10,18 +10,21 @@
 	<link href="css/advlink.css" rel="stylesheet" type="text/css" />
 </head>
 <body id="advlink">
-	<form onsubmit="insertAction();return false;" action="#">
-                        <label id="hreflabel" for="href">URL du lien
-                        <input id="href" name="href" type="text" class="mceFocus" value="" onchange="selectByValue(this.form,'linklisthref',this.value);" aria-required="true" /></label>
-
-
-                            <label>Texte à afficher au passage de la souris
-                            <input id="title" name="title" type="text" value="" /></label>
-
-            <div class="mceActionPanel">
-                    <input type="submit" id="insert" name="insert" value="{#insert}" />
-                    <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+    <form onsubmit="insertAction();return false;" action="#">
+        <label id="hreflabel" for="href">URL du lien
+            <div class="prepend">
+                <span class="add-on">http://</span>
+                <input id="href" name="href" type="text" class="mceFocus" value="" onchange="selectByValue(this.form,'linklisthref',this.value);" aria-required="true" />
             </div>
-	</form>
+        </label>
+
+        <label>Texte à afficher au passage de la souris
+        <input id="title" name="title" type="text" value="" /></label>
+
+        <div class="mceActionPanel">
+                <input type="submit" id="insert" name="insert" value="{#insert}" />
+                <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+        </div>
+    </form>
 </body>
 </html>

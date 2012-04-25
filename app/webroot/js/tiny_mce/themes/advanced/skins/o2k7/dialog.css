@@ -34,6 +34,11 @@ textarea {width: 95%; margin:0; padding: 10px !important; border:1px solid #cece
 input.radio {border:1px none #000000; background:transparent; vertical-align:middle;}
 input.checkbox {border:1px none #000000; background:transparent; vertical-align:middle;}
 .input_noborder {border:0;}
+.add-on {display: inline-block;width: auto;height: 19px;min-width: 16px;padding: 4px 5px; font-weight: normal;line-height: 18px;text-align: center;
+         text-shadow: 0 1px 0 white;vertical-align: middle;background-color: #EEE;color:#444; border: 1px solid #CCC;-webkit-border-radius: 3px 0 0 3px;
+         -moz-border-radius: 3px 0 0 3px;border-radius: 3px 0 0 3px;margin-right: -6px;margin-top:1px;}
+.prepend input{position: relative;width: 236px !important; vertical-align: middle;-webkit-border-radius: 0 3px 3px 0;-moz-border-radius: 0 3px 3px 0;border-radius: 0 3px 3px 0;}
+
 
 /* Buttons */
 #insert, #cancel, input.button, .updateButton {
