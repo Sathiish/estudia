@@ -13,15 +13,28 @@
         <div id="import">
             <?php echo $this->Form->create('Media',array('type'=>'file')); ?>
                 <?php echo $this->Form->input('name',array('label'=>"Nom de l'image :")); ?>
-            <div id="droparea">
-                <p>Déposez vos fichiers (jpg/png) ici</p>
-        		<span class="or">ou</span>
                 <?php echo $this->Form->input('file',array('label'=>'', "type"=>"file")); ?>
-            </div>
-            <?php echo $this->Form->end('Ajouter', array('id' => 'uploader')); ?>
+            <?php echo $this->Form->end('Ajouter'); ?>
             
-            <div id="filelist">
-            </div>
+            <?php 
+
+            if(!isset($this->params->pass[1])){
+                echo "<p>Vous devez tout d'abord créer le contenu avant de pouvoir lui ajouter des images. L'ajout d'image se fera en cliquant sur cette même icône.</p>";
+                die();    
+            } ?>
+            
+            <?php foreach ($medias as $k => $v): $v = current($v); ?>
+
+                <?php echo $this->Html->image($v['url'],array('style'=>'max-width:200px')); ?>
+                <?php echo $v['name']; ?>
+
+                        <?php foreach($formats as $kk=>$vv): ?>
+                                <?php echo $this->Html->link($vv."px",array('action'=>'show',$v['id'],$kk)); ?>
+                        <?php endforeach; ?>
+                        <?php echo $this->Html->link("Image originale",array('action'=>'show',$v['id'])); ?>
+                        <?php echo $this->Html->link($this->Html->image('supprimer.png'),array('action'=>'delete',$v['id']),array('escape' => false),'Voulez vraiment supprimer l\'image'); ?>
+
+            <?php endforeach ?>
             
         </div>
 
@@ -32,33 +45,19 @@
         </div>
 
         <div id="bibliotheque">
-            <?php 
+            
+            <?php foreach ($biblio as $k => $v): $v = current($v); ?>
 
-            if(!isset($this->params->pass[1])){
-                echo "<p>Vous devez tout d'abord créer le contenu avant de pouvoir lui ajouter des images. L'ajout d'image se fera en cliquant sur cette même icône.</p>";
-                die();    
-            } ?>
+                <?php echo $this->Html->image($v['url'],array('style'=>'max-width:200px')); ?>
+                <?php echo $v['name']; ?>
 
-            <table>
-                <tr>
-                    <th class="first">Image</th>
-                    <th>Nom</th>
-                    <th class="last">Actions</th>
-                </tr>
-                <?php foreach ($medias as $k => $v): $v = current($v); ?>
-                <tr>
-                    <td><?php echo $this->Html->image($v['url'],array('style'=>'max-width:200px')); ?></td>
-                    <td><?php echo $v['name']; ?></td>
-                    <td>
-                            <?php foreach($formats as $kk=>$vv): ?>
-                                    <?php echo $this->Html->link("Image ".$vv."px",array('action'=>'show',$v['id'],$kk)); ?> <br>
-                            <?php endforeach; ?>
-                            <?php echo $this->Html->link("Image originale",array('action'=>'show',$v['id'])); ?> <br>
-                            <?php echo $this->Html->link("Supprimer",array('action'=>'delete',$v['id']),null,'Voulez vraiment supprimer l\'image'); ?>
-                    </td>
-                </tr>
-                <?php endforeach ?>
-            </table>
+                        <?php foreach($formats as $kk=>$vv): ?>
+                                <?php echo $this->Html->link($vv."px",array('action'=>'show',$v['id'],$kk)); ?>
+                        <?php endforeach; ?>
+                        <?php echo $this->Html->link("Image originale",array('action'=>'show',$v['id'])); ?>
+                        <?php echo $this->Html->link($this->Html->image('supprimer.png'),array('action'=>'delete',$v['id']),array('escape' => false),'Voulez vraiment supprimer l\'image'); ?>
+
+            <?php endforeach ?>
         </div>
 
     </div>

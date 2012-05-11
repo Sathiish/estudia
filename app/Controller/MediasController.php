@@ -55,7 +55,10 @@ class MediasController extends AppController{
 		}
 		$d = array(); 
 		$d['medias'] = $this->Media->find('all',array(
-			'conditions' => array($target => $post_id, 'user_id' => $this->Auth->user('id'))
+			'conditions' => array($target => $post_id)
+		));
+		$d['biblio'] = $this->Media->find('all',array(
+			'conditions' => array('user_id' => $this->Auth->user('id'))
 		));
 		$d['formats'] = Configure::read('Media.formats'); 
 		$this->set($d);
@@ -69,14 +72,14 @@ class MediasController extends AppController{
 			$this->render('tinymce'); 
 			return; 
 		}
-		if($id){
+                if(is_numeric($id)){
 			$this->Media->id = $id;  
 			$media = current($this->Media->read());
 			$d['src'] = Router::url('/img/'.$media['url'.$format]); 
 			$d['alt'] = $media['name'];  
 			$d['class'] = 'alignLeft';  
 		}else{
-			$d = $this->request->query;
+			$d = $this->request->query; 
 			$d['src'] = urldecode($d['src']); 
 		}
 		$this->set($d);

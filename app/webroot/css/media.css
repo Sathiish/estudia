@@ -11,7 +11,7 @@ html,body,div,span,object,iframe,h1,blockquote.big-bold,h2,h3,dl dt,h4,blockquot
 #menu-media ul li a:hover.active{border-left: #DD4B39 10px solid;}
 
 /*  */
-#bloc{padding: 20px; float:left}
+#bloc{padding: 20px; float:left; width:760px}
 #import{}
 
 label {margin: 10px 0 5px 0;display: block; float:left;}
