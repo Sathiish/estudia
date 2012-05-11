@@ -77,7 +77,7 @@ class RessourcesController extends RessourcesAppController {
             if($this->request->is('post') || $this->request->is('put')) {
                 $d = $this->Ressource->set($this->data);
                 $d['Ressource']['user_id'] = $this->Auth->user('id');
-                
+
                 if($d['Ressource']['type'] == "cours-complet"){
                     $d['Cour'] = $d['Ressource'];
                     $this->loadModel('Cour');
@@ -97,11 +97,10 @@ class RessourcesController extends RessourcesAppController {
                     }
                 }
             }
-            $this->loadModel('Matiere');
-            $this->set('matieres', $this->Matiere->getAllMatieres());
+
             $this->loadModel('Classe');
             $this->set('classes', $this->Classe->getListClasse());
-            $this->set('types', array('cours-complet' => 'Cours structuré', 'cours' => 'Cours simple', 'fiche' => 'Fiche de révision', 'correction' => 'Exercice corrigé', 'dissertation' => 'Dissertation'));
+            $this->set('types', array('cours' => 'Cours', 'fiche' => 'Fiche de révision', 'correction' => 'Exercice corrigé', 'dissertation' => 'Dissertation'));
         }  
         
         public function manager(){

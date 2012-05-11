@@ -1,11 +1,11 @@
 <?php
-App::uses('AppController', 'Controller');
+App::uses('RessourcesAppController', 'Controller');
 /**
  * Matieres Controller
  *
  * @property Matiere $Matiere
  */
-class ThemesController extends AppController {
+class ThemesController extends RessourcesAppController {
         
         public function beforeFilter() {
             parent::beforeFilter();
@@ -172,12 +172,12 @@ class ThemesController extends AppController {
             
             if($this->request->is('post')){
                 $matiereId = $this->data['Theme']['matiere_id'];
-                $classeId = $this->data['Theme']['classe_id'];
+                //$classeId = $this->data['Theme']['classe_id'];
                 
-                $condition = "Theme.matiere_id = $matiereId AND Theme.classe_id = $classeId";
+                $condition = "Theme.matiere_id = $matiereId";
             }else{
                 if($matiereId == null){
-                $condition = "1 = 1";
+                    $condition = "1 = 1";
                 }else{
                     $condition = "Theme.matiere_id = $matiereId";
                 }
@@ -185,12 +185,12 @@ class ThemesController extends AppController {
             
             $themes = $this->Theme->find('all', array(
                 'conditions' => $condition,
-                'fields' => array('Theme.id, Theme.name, Theme.slug, Theme.classe_id'),
-                'order' => array('Theme.classe_id', 'Theme.matiere_id'),
+                'fields' => array('Theme.id, Theme.name, Theme.slug'),
+                'order' => array('Theme.matiere_id'),
                 'contain' => array()
             ));
 
-            $classes = $this->Theme->Classe->find('list', array('contain' => array()));
+            $classes = $this->Theme->listClasse($matiereId);
             $matieres = $this->Theme->Matiere->getAllMatieres();
             $this->set(compact('themes', 'matieres', 'classes'));
 	}
