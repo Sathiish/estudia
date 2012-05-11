@@ -434,7 +434,7 @@ class AppController extends Controller {
     }
     
     protected function _isAdmin(){
-        if(!($this->Auth->user('role')) || $this->Auth->user('role') != "admin"){
+        if(!($this->Auth->user('credential')) || !$this->Auth->user('credential') >= 20){
             $this->Session->setFlash('Seul les administrateurs peuvent accéder à cette partie du site', 'notif', array('type' => 'error'));
             $this->redirect($this->referer());
             die();
