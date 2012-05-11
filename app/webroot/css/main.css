@@ -152,6 +152,11 @@ text-align: center;
 .label-inline label{display:inline;}
 form .mini {width:650px;}
 .required.error{border:none; padding:0; background-color: transparent;}
+.add-on {display: inline-block;width: auto;height: 19px;min-width: 16px;padding: 4px 5px; font-weight: normal;line-height: 18px;text-align: center;
+         text-shadow: 0 1px 0 white;vertical-align: middle;background-color: #EEE;color:#444; border: 1px solid #CCC;-webkit-border-radius: 3px 0 0 3px;
+         -moz-border-radius: 3px 0 0 3px;border-radius: 3px 0 0 3px;margin-right: -6px;margin-top:1px;}
+.prepend input{position: relative;width: 236px !important; vertical-align: middle;-webkit-border-radius: 0 3px 3px 0;-moz-border-radius: 0 3px 3px 0;border-radius: 0 3px 3px 0;}
+
 
 #intro{top:100px; right: 30px;position: absolute;width: 410px;}
 
@@ -174,6 +179,7 @@ h4,.main blockquote.simple,.main .h4,.main #resources-research ul.reports li,#re
 /*a:hover.button{ text-decoration: none; background-color:#00a6ff; color:#f0f0f0; font-weight: bold;}*/
 
 h6{padding:0 10px;margin:0;display: inline;height:27px;line-height:27px;width:282px;font-size:1em; font-weight:bold;}
+
 
 .menu_deroulant{position: absolute; top:20px; right:20px}
 
@@ -234,13 +240,13 @@ label {cursor: pointer;}
 .success{color: #00c806; border: 1px solid #00c806; background-color: #d5ff95; font-weight: bold; font-size: 15px; padding: 5px 15px;}
 .error{ color: red; border: 1px solid red; background-color: #ffacac; font-weight: bold; font-size: 15px; padding: 5px 15px;}
 
-.manager a:hover {text-decoration: none;}
-.manager th { font-weight: bold; padding: 5px; text-align: center; color: white; background-color: #00aff0; border-bottom: 1px solid #CCC; white-space: nowrap;} /*background: #00ccff;*/
-.manager .first{ -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-top-left-radius: 3px;}
-.manager .last{ -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-top-right-radius: 3px;}
-.manager table {width: 100%;border: 1px solid #ddd; text-align: left; margin: 0; border-spacing: 1px; background: #fff; clear: both; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
-.manager tr td {padding: 6px; text-align: left; vertical-align: middle; border-bottom: 1px solid #DDD; }
+#cours table th { font-weight: bold; padding: 5px; text-align: center; color: white; background-color: #00aff0;  white-space: nowrap;} /*background: #00ccff;*/
+#cours table .first{ -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-top-left-radius: 3px;}
+#cours table .last{ -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-top-right-radius: 3px;}
+#cours table {width: 100%;border: 1px solid #ddd; border-bottom: none;text-align: left; margin: 0; border-spacing: 1px; background: #fff; clear: both; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+#cours table tr td {padding: 6px; text-align: left; vertical-align: middle; border-bottom: 1px solid #DDD; }
 
+/*.mceLayout{padding:0px;margin:0;}*/
 
 #breadcrumbs{border-bottom: 1px dotted #999; width: 70%; padding: 5px; margin-bottom: 10px; font-size: 14px; font-size: 0.8em;}
 #breadcrumbs a {text-decoration: none; color: #2677C9;}

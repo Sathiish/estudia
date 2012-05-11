@@ -47,3 +47,14 @@ h5,.h5,h6,.h6{font-size:13px;line-height:18px}
 
 .main h1,.main blockquote.big-bold,.main .h1,.main blockquote.big{line-height:30px}
 .main h4,.main blockquote.simple,.main .h4,.main #resources-research ul.reports li,#resources-research ul.reports .main li{line-height:20px}
+
+/*.image{border: 1px solid #CCC; padding: 3px !important; background-color: #F9F9F9; font-size: 94%; text-align: center; overflow: hidden;}
+.image img{display:block;}
+.image span{display:block; clear:both}
+.image span span{display:block;}*/
+
+table th { font-weight: bold; padding: 5px; text-align: center; color: white; background-color: #00aff0; white-space: nowrap;} /*background: #00ccff;*/
+table .first{ -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-top-left-radius: 3px;}
+table .last{ -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-top-right-radius: 3px;}
+table {width: 100%;border: 1px solid #ddd; border-bottom: none;text-align: left; margin: 0; border-spacing: 1px; background: #fff; clear: both; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+table tr td {padding: 6px; text-align: left; vertical-align: middle; border-bottom: 1px solid #DDD; }
