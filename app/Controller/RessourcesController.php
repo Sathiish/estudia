@@ -37,6 +37,7 @@ class RessourcesController extends RessourcesAppController {
                 $d = $this->Ressource->set($this->data);
                 $d['Ressource']['user_id'] = $this->Auth->user('id');
              
+                //TO DO 
                 //Vérifier si l'utilisateur est l'auteur du cours
                 
                 if($this->Ressource->save($d['Ressource'])){

@@ -50,7 +50,57 @@
             <?php echo $this->Form->end('Enregistrer'); ?>
         </div>
     </div>
-       
+           <div class="sidebar-bloc">
+        <h3>Publier</h3>
+        <a href="" class="handlediv" title="Agrandir"></a>
+        <div class="inside">
+            <?php echo $this->Html->link('Prévisualiser les modifications', array("controller" => "cours", "action" => "preview", $this->data['Ressource']['id'], $this->data['Ressource']['slug']), array('class' => 'modifier', 'target' => 'onBlank')); ?>
+            <div class="clr"></div>
+
+            <p><span class="bold">Statut :</span> 
+                <?php if($this->data['Ressource']['validation']){
+                        if($this->data['Ressource']['published']){
+                                echo '<span class="waiting">En attente de dépublication</span>';
+                            }
+                            else{
+                                echo '<span class="waiting">En attente de publication</span>';
+                            }
+                        }else{
+                            if($this->data['Cour']['published']){
+                                echo '<span class="published">Publié</span>';
+                            }
+                            else{
+                                echo '<span class="unpublished">Non-publié</span>';
+                            }                    
+                        }
+                ?></p>
+            <?php 
+
+                 if(!$this->data['Ressource']['validation']){
+                     if($this->data['Ressource']['published']){
+                        echo $this->Html->link('Demander la mise hors-ligne', 
+                             array("action"=>"askforunreleased", $this->data['Ressource']['id']),
+                             array("title" =>"Demander la publication de ce quiz", 'class' => 'modifier', 'escape' => false),
+                             "Une fois dépublié, ce quiz n'apparaitra plus en ligne. Vous pourrez toutefois demander sa publication à nouveau. Souhaitez-vous toujours demander sa dépublication dès maintenant ?"
+                        );
+                     }else{
+                        echo $this->Html->link('Publier', 
+                             array("action"=>"publier", $this->data['Ressource']['id']),
+                             array("title" =>"Demander la publication de ce quiz", 'class' => 'modifier', 'escape' => false),
+                             "Une fois publié, pour modifier ce quiz, vous devrez d'abord demander sa dépublication. Souhaitez-vous toujours demander la publication dès maintenant ?"
+                        );  
+                     }      
+                 }else{
+                    echo $this->Html->link('Annuler la demande', 
+                         array("action"=>"askforunreleased", $this->data['Ressource']['id']),
+                         array("title" =>"Demander la publication de ce quizz", 'class' => 'modifier', 'escape' => false),
+                         "Une fois dépublié, ce quiz n'apparaitra plus en ligne. Vous pourrez toutefois demander sa publication à nouveau. Souhaitez-vous toujours demander sa dépublication dès maintenant ?"
+                    );      
+                 }
+                 ?>
+            <div class="clr"></div>
+        </div>
+    </div>
         
 </div>
     

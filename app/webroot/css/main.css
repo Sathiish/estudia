@@ -413,7 +413,7 @@ span.typeset{display: inline !important;}
     margin-top: 10px !important;
 }
 
-.modifier, .inside form input[type="submit"]{margin:10px 0 0 5px !important; padding: 4px 15px !important; border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; /*float:right;*/ background: none !important; color: #3F3F38 !important; font-weight:normal !important;}
+.modifier, .inside form input[type="submit"]{margin:10px 0 0 0 !important; padding: 4px 15px !important; border:1px solid #cecece;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; /*float:right;*/ background: none !important; color: #3F3F38 !important; font-weight:normal !important;}
 a.modifier, a:hover.modifier {text-decoration: none;}
 
 .loader{ margin: 0 5px 0 -10px; float:left; display:none;}
