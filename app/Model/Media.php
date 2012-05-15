@@ -9,6 +9,13 @@ class Media extends AppModel{
 			'message'	 => "Le fichier n'est pas une image valide"
 		)
 	);
+        
+        public $belongsTo = array(
+          'Ressource' => array(
+              'className' => 'Ressource',
+              'foreignKey' => 'foreign_key'
+          )  
+        );
 
 	public function beforeDelete(){
 		$file = $this->field('url');

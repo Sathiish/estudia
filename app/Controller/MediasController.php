@@ -8,60 +8,57 @@ class MediasController extends AppController{
 		$this->layout = 'modal';
 	}
 
-	public function index($type, $post_id){
-            //On choisit si c'est un quiz ou un cours
-            if($type == "cours"){
-                $target = "cour_id";
-            }elseif($type == "quiz"){
-                $target = "quiz_id";
-            }elseif($type == "ressource"){
-                $target = "ressource_id";
+	public function index($model, $post_id){
+
+            $model = ucfirst(strtolower($model));
+                  
+            if($this->request->is('post')){
+                    $data = $this->request->data['Media'];
+                    if(isset($data['url'])){
+                            $this->redirect(array('action'=>'show','?class=&alt=&src='.urlencode($data['url'])));
+                    }
+                    $dir = IMAGES.date('Y');
+                    if(!file_exists($dir))
+                            mkdir($dir,0777);
+                    $dir .= DS.date('m');
+                    if(!file_exists($dir))
+                            mkdir($dir,0777);
+                    $dir .= DS.$model;
+                    if(!file_exists($dir))
+                            mkdir($dir,0777);
+                    $f = explode('.',$data['file']['name']); 
+                    $ext = '.'.end($f);  
+                    $filename = Inflector::slug(implode('.',array_slice($f,0,-1)),'-');
+                    // Sauvegarde en bdd
+                    $success = $this->Media->save(array(
+                            'name' => $data['name'],
+                            'url'  => date('Y').'/'.date('m').'/'.$model.'/'.$filename.$ext,
+                            'model' => $model,
+                            'foreign_key' => $post_id,
+                            'user_id' => $this->Auth->user('id')
+                    ));
+                    if($success){
+                            move_uploaded_file($data['file']['tmp_name'], $dir.DS.$filename.$ext);
+                            foreach(Configure::read('Media.formats') as $k=>$v){
+                                    $prefix = $k;
+                                    $size = explode('x',$v);
+                                    $this->Img->crop( $dir.DS.$filename.$ext,$dir.DS.$filename.'_'.$prefix.'.jpg',$size[0],$size[1]); 
+                            }
+                    }else{
+                            $this->Session->setFlash("L'image n'est pas au bon format","notif",array('type'=>'error'));
+                    }
             }
-                            
-		if($this->request->is('post')){
-			$data = $this->request->data['Media'];
-			if(isset($data['url'])){
-				$this->redirect(array('action'=>'show','?class=&alt=&src='.urlencode($data['url'])));
-			}
-			$dir = IMAGES.date('Y');
-			if(!file_exists($dir))
-				mkdir($dir,0777);
-			$dir .= DS.date('m');
-			if(!file_exists($dir))
-				mkdir($dir,0777);
-                        $dir .= DS.$type;
-			if(!file_exists($dir))
-				mkdir($dir,0777);
-			$f = explode('.',$data['file']['name']); 
-			$ext = '.'.end($f);  
-			$filename = Inflector::slug(implode('.',array_slice($f,0,-1)),'-');
-			// Sauvegarde en bdd
-			$success = $this->Media->save(array(
-				'name' => $data['name'],
-				'url'  => date('Y').'/'.date('m').'/'.$type.'/'.$filename.$ext,
-				$target => $post_id,
-                                'user_id' => $this->Auth->user('id')
-			));
-			if($success){
-				move_uploaded_file($data['file']['tmp_name'], $dir.DS.$filename.$ext);
-				foreach(Configure::read('Media.formats') as $k=>$v){
-					$prefix = $k;
-					$size = explode('x',$v);
-					$this->Img->crop( $dir.DS.$filename.$ext,$dir.DS.$filename.'_'.$prefix.'.jpg',$size[0],$size[1]); 
-				}
-			}else{
-				$this->Session->setFlash("L'image n'est pas au bon format","notif",array('type'=>'error'));
-			}
-		}
-		$d = array(); 
-		$d['medias'] = $this->Media->find('all',array(
-			'conditions' => array($target => $post_id)
-		));
-		$d['biblio'] = $this->Media->find('all',array(
-			'conditions' => array('user_id' => $this->Auth->user('id'))
-		));
-		$d['formats'] = Configure::read('Media.formats'); 
-		$this->set($d);
+            $d = array(); 
+            $d['medias'] = $this->Media->find('all',array(
+                    'conditions' => array(
+                        'model' => $model,
+                        'foreign_key' => $post_id)
+            ));
+            $d['biblio'] = $this->Media->find('all',array(
+                    'conditions' => array('Media.user_id' => $this->Auth->user('id'))
+            ));
+            $d['formats'] = Configure::read('Media.formats'); 
+            $this->set($d);
 	}
 
 	public function show($id=null,$format = ''){
