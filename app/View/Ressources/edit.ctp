@@ -54,7 +54,7 @@
         <h3>Publier</h3>
         <a href="" class="handlediv" title="Agrandir"></a>
         <div class="inside">
-            <?php echo $this->Html->link('Prévisualiser les modifications', array("controller" => "cours", "action" => "preview", $this->data['Ressource']['id'], $this->data['Ressource']['slug']), array('class' => 'modifier', 'target' => 'onBlank')); ?>
+            <?php echo $this->Html->link('Prévisualiser les modifications', array("controller" => "ressources", "action" => "preview", $this->data['Ressource']['id'], $this->data['Ressource']['slug']), array('class' => 'modifier', 'target' => 'onBlank')); ?>
             <div class="clr"></div>
 
             <p><span class="bold">Statut :</span> 
